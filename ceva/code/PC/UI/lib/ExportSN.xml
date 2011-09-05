@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<define version="1.0.0.0" requireversion="1.0.0.0">
+	<process type="export">
+		<!--
+	type=export(runexport),import(runimport),convert(runconvert)
+	not used
+	-->
+	<source type="DataSet">
+		<!--
+			note: all word please use lower-case.
+			type="businessobject",DataSet,textfile,xlsfile
+			object_type: no-use
+			columntype=name, position(column must have col property)
+			firstdata=1(only for text source)
+			delimiter=tab,comma(only for text file)
+			-->
+		<table type="column" name="DN" coltype="name">
+			<field name="DN_NO" caption="dn单" datatype="string" length="20" pk="0" />
+			<field name="SKU_NO" caption="物料号" datatype="string" length="20" pk="0" />
+			<field name="ID" caption="序号" datatype="string" length="20" pk="0" />
+			<field name="SERIAL_NO" caption="机身号" datatype="string" length="20" pk="0" />
+		</table>
+	</source>
+	<!--
+	type=xlsfile,textfile
+	method="Excel",html,xml
+	template's file must store same with this file.
+	 -->
+	<target seq="1" type="xlsfile" method="Excel">
+		<table name="机身号" columns="3" type="data">
+			<body type="header" firstrow="1">
+				<cell name="DN_NO" col="1" format="text">
+					<data type="value" value="单号"></data>
+				</cell>
+				<cell name="SKU_NO" col="2" format="text">
+					<data type="value" value="SKU"></data>
+				</cell>
+				<cell name="ID" col="3" format="text">
+					<data type="value" value="序号"></data>
+				</cell>
+				<cell name="SERIAL_NO" col="4" format="text">
+					<data type="value" value="机身号"></data>
+				</cell>
+			</body>
+			<body type="body" firstrow="2" maxrecords="-1">
+				<!--Rows will repeat output-->
+				<cell name="DN_NO" col="1" format="text">
+					<data type="source" table="DN" field="DN_NO" value="value"></data>
+				</cell>
+				<cell name="SKU_NO" col="2" format="text">
+					<data type="source" table="DN" field="SKU_NO" value="value"></data>
+				</cell>
+				<cell name="ID" col="3" format="text">
+					<data type="source" table="DN" field="ID" value="value"></data>
+				</cell>
+				<cell name="SERIAL_NO" col="4" format="text">
+					<data type="source" table="DN" field="SERIAL_NO" value="value"></data>
+				</cell>
+			</body>
+			<body type="footer"></body>
+		</table>
+	</target>
+	</process>
+</define>

@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsdataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ID_InvalidLookupValue">
+		<value>Invalid value for {0}</value>
+	</data>
+	<data name="ID_cap_clsOPERATORs">
+		<value>用户表</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR">
+		<value>用户</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_user_code">
+		<value>用户代码</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_user_name">
+		<value>用户名称</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_password">
+		<value>用户密码</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_STCD">
+		<value>公司ID</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_allowlogin">
+		<value>允许登录</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_isadmin">
+		<value>是超级用户</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_title">
+		<value>头衔</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_tel">
+		<value>电话</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_fax">
+		<value>传真</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_mobile">
+		<value>手机</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_email">
+		<value>邮件电子</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_create_date">
+		<value>创建时间</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_update_date">
+		<value>更新时间</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsUserpermissions">
+		<value>用户权限</value>
+	</data>
+	<data name="ID_cap_clsUserpermission">
+		<value>用户权限</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_user_code">
+		<value>用户代码</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_right_no">
+		<value>权限代码</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsUserroles">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code">
+		<value>用户代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code">
+		<value>角色代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsPermissions">
+		<value>权限</value>
+	</data>
+	<data name="ID_cap_clsPermission">
+		<value>权限</value>
+	</data>
+	<data name="ID_cap_clsPermission_right_no">
+		<value>权限代码</value>
+	</data>
+	<data name="ID_cap_clsPermission_description">
+		<value>权限描述</value>
+	</data>
+	<data name="ID_cap_clsPermission_trans_type">
+		<value>事物代码</value>
+	</data>
+	<data name="ID_cap_clsPermission_doc_type">
+		<value>单号类型</value>
+	</data>
+	<data name="ID_cap_clsPermission_cmd_type">
+		<value>命令类型</value>
+	</data>
+	<data name="ID_cap_clsPermission_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsRoles">
+		<value>角色</value>
+	</data>
+	<data name="ID_cap_clsRole">
+		<value>角色</value>
+	</data>
+	<data name="ID_cap_clsRole_role_code">
+		<value>角色代码</value>
+	</data>
+	<data name="ID_cap_clsRole_role_name">
+		<value>角色名称</value>
+	</data>
+	<data name="ID_cap_clsRole_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsRolepermissions">
+		<value>角色权限</value>
+	</data>
+	<data name="ID_cap_clsRolepermission">
+		<value>角色权限</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_role_code">
+		<value>角色代码</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_right_no">
+		<value>权限代码</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsUserroles1">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole1">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code1">
+		<value>用户代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code1">
+		<value>角色代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark1">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by1">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime1">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp1">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsUserroles2">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole2">
+		<value>用户角色</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code2">
+		<value>用户代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code2">
+		<value>角色代码</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark2">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by2">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime2">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp2">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsTRLOGs">
+		<value>事务日志</value>
+	</data>
+	<data name="ID_cap_clsTRLOG">
+		<value>事物日志</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_log_id">
+		<value>日志ID</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_trans_type">
+		<value>事务类型</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_cmd_type">
+		<value>命令类型</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_doc_no">
+		<value>业务单号</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_LINENUM">
+		<value>明细行号</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_STCD">
+		<value>公司ID</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_ITEMNO">
+		<value>物料编码</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_ITEM_DESC">
+		<value>物料名称</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_BANTCH">
+		<value>批次</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_QTY">
+		<value>数量</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_status">
+		<value>事务状态</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_reason">
+		<value>事务原因</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_BY">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_ADDR">
+		<value>终端地址</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_DATE">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_TIMESTAMP">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_TransTpye1">
+		<value>PO-PC</value>
+	</data>
+	<data name="ID_TransTpye2">
+		<value>WO-PC</value>
+	</data>
+	<data name="ID_TransTpye3">
+		<value>SO-PC</value>
+	</data>
+	<data name="ID_TransTpye4">
+		<value>打印</value>
+	</data>
+	<data name="ID_TransTpye5">
+		<value>接口</value>
+	</data>
+	<data name="ID_TransTpye6">
+		<value>权限</value>
+	</data>
+	<data name="ID_CmdType1">
+		<value>新增</value>
+	</data>
+	<data name="ID_CmdType2">
+		<value>修改</value>
+	</data>
+	<data name="ID_CmdType3">
+		<value>删除</value>
+	</data>
+	<data name="ID_CmdType4">
+		<value>接口请求</value>
+	</data>
+	<data name="ID_CmdType5">
+		<value>导入</value>
+	</data>
+	<data name="ID_cap_clsbchhdrs">
+		<value>发货批次</value>
+	</data>
+	<data name="ID_cap_clsbchhdr">
+		<value>发货批次</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_bch_no">
+		<value>批次号</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_wh_code">
+		<value>仓库</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_description">
+		<value>描述</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_bch_type">
+		<value>批次类型</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_status_code">
+		<value>状态</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_locked">
+		<value>是否锁定</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbchlins">
+		<value>批次明细</value>
+	</data>
+	<data name="ID_cap_clsbchlin">
+		<value>批次明细</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbchlin_bch_no">
+		<value>批次号</value>
+	</data>
+	<data name="ID_cap_clsbchlin_wh_code">
+		<value>仓库</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dn_no">
+		<value>发货单</value>
+	</data>
+	<data name="ID_cap_clsbchlin_bch_type">
+		<value>批次类型</value>
+	</data>
+	<data name="ID_cap_clsbchlin_status_code">
+		<value>状态</value>
+	</data>
+	<data name="ID_cap_clsbchlin_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clsbchlin_locked">
+		<value>是否锁定</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbchlin_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsbchlin_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsdnhdrs">
+		<value>发货单据</value>
+	</data>
+	<data name="ID_cap_clsdnhdr">
+		<value>发货单据</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_description">
+		<value>描述</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_own_code">
+		<value>货主</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_wh_code">
+		<value>仓库</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_due_date">
+		<value>出货日期</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_doc_type">
+		<value>单据类型</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_source">
+		<value>数据来源</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_stat_type">
+		<value>stat_type</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_have_tag">
+		<value>是否有箱</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_ref_no">
+		<value>参考号</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_status_code">
+		<value>状态</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_status_trk">
+		<value>外部状态</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_imp_dtime">
+		<value>导入时间</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_plant">
+		<value>工厂</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_city_from">
+		<value>发货城市</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_from">
+		<value>发货方名称</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_city_to">
+		<value>送达方城市</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_to">
+		<value>bill_to</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_name">
+		<value>bill_name</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_person">
+		<value>bill_person</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_addr">
+		<value>bill_addr</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_tel">
+		<value>bill_tel</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_to">
+		<value>送达方代码</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_name">
+		<value>送达方名称</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_person">
+		<value>送达方人</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_tel">
+		<value>送达方电话</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_carr_code">
+		<value>卡车号</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_method">
+		<value>配送方式</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_unloading_address">
+		<value>卸货地址</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_instruction">
+		<value>发货指导</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_route">
+		<value>运输线路</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_point">
+		<value>point</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_condition">
+		<value>condition</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_exp_status">
+		<value>exp_status</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_close_auto">
+		<value>自动关闭标记</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_archived">
+		<value>archived</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_dtime">
+		<value> 打印日期</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_remark">
+		<value>备注</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsdnlins">
+		<value>发货单明细</value>
+	</data>
+	<data name="ID_cap_clsdnlin">
+		<value>发货单明细</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dc_code">
+		<value>物流中心编号</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clsdnlin_row_id">
+		<value>记录号</value>
+	</data>
+	<data name="ID_cap_clsdnlin_own_code">
+		<value>货主</value>
+	</data>
+	<data name="ID_cap_clsdnlin_wh_code">
+		<value>仓库代码</value>
+	</data>
+	<data name="ID_cap_clsdnlin_bin_code">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_no">
+		<value>产品代码</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_status">
+		<value>产品状态</value>
+	</data>
+	<data name="ID_cap_clsdnlin_lot_no">
+		<value>批号</value>
+	</data>
+	<data name="ID_cap_clsdnlin_serialed">
+		<value>指定机号发货</value>
+	</data>
+	<data name="ID_cap_clsdnlin_qty">
+		<value>数量</value>
+	</data>
+	<data name="ID_cap_clsdnlin_act_qty">
+		<value>实发数量</value>
+	</data>
+	<data name="ID_cap_clsdnlin_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_ref">
+		<value>发货套装代码</value>
+	</data>
+	<data name="ID_cap_clsdnlin_tag_no">
+		<value>箱号</value>
+	</data>
+	<data name="ID_cap_clsdnlin_tag_qty">
+		<value>箱数</value>
+	</data>
+	<data name="ID_cap_clsdnlin_req_id">
+		<value>req_id</value>
+	</data>
+	<data name="ID_cap_clsdnlin_to_no">
+		<value>to_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_to_row">
+		<value>to_row</value>
+	</data>
+	<data name="ID_cap_clsdnlin_exp_status">
+		<value>导出状态</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clstaskhdrs">
+		<value>捡货任务</value>
+	</data>
+	<data name="ID_cap_clstaskhdr">
+		<value>捡货任务</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_wh_code">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_task_id">
+		<value>任务号</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_bch_no">
+		<value>批次号</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_locked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clstasklins">
+		<value>上架明细</value>
+	</data>
+	<data name="ID_cap_clstasklin">
+		<value>上架明细</value>
+	</data>
+	<data name="ID_cap_clstasklin_rowid">
+		<value>流水号</value>
+	</data>
+	<data name="ID_cap_clstasklin_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clstasklin_wh_code">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clstasklin_task_id">
+		<value>任务号</value>
+	</data>
+	<data name="ID_cap_clstasklin_bch_no">
+		<value>批次号</value>
+	</data>
+	<data name="ID_cap_clstasklin_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clstasklin_bin_area">
+		<value>货位区域</value>
+	</data>
+	<data name="ID_cap_clstasklin_bin_code">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clstasklin_sku_no">
+		<value>产品编码</value>
+	</data>
+	<data name="ID_cap_clstasklin_sno">
+		<value>机身号</value>
+	</data>
+	<data name="ID_cap_clstasklin_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clstasklin_qty">
+		<value>数量</value>
+	</data>
+	<data name="ID_cap_clstasklin_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clstasklin_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clstasklin_locked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clstasklin_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clstasklin_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clstasklists">
+		<value>任务明细</value>
+	</data>
+	<data name="ID_cap_clstasklist">
+		<value>任务明细</value>
+	</data>
+	<data name="ID_cap_clstasklist_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clstasklist_wh_code">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clstasklist_task_id">
+		<value>任务号</value>
+	</data>
+	<data name="ID_cap_clstasklist_bch_no">
+		<value>批次号</value>
+	</data>
+	<data name="ID_cap_clstasklist_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clstasklist_assigned_opt">
+		<value>任务接受人</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_area">
+		<value>货位区域</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_code">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clstasklist_sku_no">
+		<value>产品编码</value>
+	</data>
+	<data name="ID_cap_clstasklist_qty">
+		<value>数量</value>
+	</data>
+	<data name="ID_cap_clstasklist_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clstasklist_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clstasklist_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clstasklist_locked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clstasklist_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clstasklist_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbinareas">
+		<value>货区管理</value>
+	</data>
+	<data name="ID_cap_clsbinarea">
+		<value>货区管理</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbinarea_bin_area">
+		<value>货区代码</value>
+	</data>
+	<data name="ID_cap_clsbinarea_description">
+		<value>货区描述</value>
+	</data>
+	<data name="ID_cap_clsbinarea_wh_code">
+		<value>仓库代码</value>
+	</data>
+	<data name="ID_cap_clsbinarea_seq">
+		<value>配货优先顺序</value>
+	</data>
+	<data name="ID_cap_clsbinarea_address">
+		<value>地址</value>
+	</data>
+	<data name="ID_cap_clsbinarea_person">
+		<value>联系人</value>
+	</data>
+	<data name="ID_cap_clsbinarea_tel">
+		<value>电话</value>
+	</data>
+	<data name="ID_cap_clsbinarea_fax">
+		<value>传真</value>
+	</data>
+	<data name="ID_cap_clsbinarea_zip">
+		<value>邮编</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_sku">
+		<value>仓位允许不同的产品</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_status">
+		<value>仓位允许不同的产品状态</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_owner">
+		<value>仓位允许不同的货主</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbins">
+		<value>货位管理</value>
+	</data>
+	<data name="ID_cap_clsbin">
+		<value>货位管理</value>
+	</data>
+	<data name="ID_cap_clsbin_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_code">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clsbin_description">
+		<value>货位描述</value>
+	</data>
+	<data name="ID_cap_clsbin_wh_code">
+		<value>仓库代码</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_area">
+		<value>货区</value>
+	</data>
+	<data name="ID_cap_clsbin_area">
+		<value>面积</value>
+	</data>
+	<data name="ID_cap_clsbin_palls">
+		<value>可存放仓板数</value>
+	</data>
+	<data name="ID_cap_clsbin_weight">
+		<value>高</value>
+	</data>
+	<data name="ID_cap_clsbin_volume">
+		<value>体积</value>
+	</data>
+	<data name="ID_cap_clsbin_canpick">
+		<value>此位置允许配货</value>
+	</data>
+	<data name="ID_cap_clsbin_isblocked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clsbin_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsbin_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsbin_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsbin_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsbin_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbinStatuses">
+		<value>库位状态</value>
+	</data>
+	<data name="ID_cap_clsbinStatus">
+		<value>库位状态</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_wh_code">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_id">
+		<value>类别编号</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_code">
+		<value>货位区域</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_locked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbinStatuses1">
+		<value>库位状态</value>
+	</data>
+	<data name="ID_cap_clsbinStatus1">
+		<value>库位状态</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_wh_code1">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_id1">
+		<value>类别编号</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_area">
+		<value>货位区域</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_code1">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dn_no1">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_type1">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_status_code1">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_close_auto1">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_by1">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_counter1">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_dtime1">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_locked1">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_by1">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_dtime1">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_start_dtime1">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_end_dtime1">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_timestamp1">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsDnBins">
+		<value>货位绑定</value>
+	</data>
+	<data name="ID_cap_clsDnBin">
+		<value>货位绑定</value>
+	</data>
+	<data name="ID_cap_clsDnBin_rowid">
+		<value>流水号</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dc_code">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bch_no">
+		<value>发货批次号</value>
+	</data>
+	<data name="ID_cap_clsDnBin_wh_code">
+		<value>发货仓库</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dn_no">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bin_area">
+		<value>货位区域</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bin_code">
+		<value>货位代码</value>
+	</data>
+	<data name="ID_cap_clsDnBin_sku_no">
+		<value>产品编码</value>
+	</data>
+	<data name="ID_cap_clsDnBin_qty">
+		<value>数量</value>
+	</data>
+	<data name="ID_cap_clsDnBin_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clsDnBin_status_code">
+		<value>状态代码</value>
+	</data>
+	<data name="ID_cap_clsDnBin_close_auto">
+		<value>自动关闭</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_by">
+		<value>打印人</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_counter">
+		<value>打印数量</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_dtime">
+		<value>打印时间</value>
+	</data>
+	<data name="ID_cap_clsDnBin_locked">
+		<value>锁定</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsDnBin_start_dtime">
+		<value>开始时间</value>
+	</data>
+	<data name="ID_cap_clsDnBin_end_dtime">
+		<value>结束时间</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsskuinfoes">
+		<value>产品信息</value>
+	</data>
+	<data name="ID_cap_clsskuinfo">
+		<value>产品信息</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_no">
+		<value>产品代码</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_wms">
+		<value>SAP-WMS产品代码</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_desc">
+		<value>型号规格</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_desc_eng">
+		<value>型号规格（英）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_model_no">
+		<value>产品名称</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_cost_type">
+		<value>计费方式</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_coutable">
+		<value>计数否</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_high_value">
+		<value> 贵重品</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_type">
+		<value> 产品类别</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_source">
+		<value>数据源</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_measured">
+		<value>测量状态</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_meas_date">
+		<value>测量日期</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_have_sno">
+		<value>机号检查</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_identity">
+		<value> 产品特性</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sno_len">
+		<value>机号长度</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_six_code">
+		<value>六位代码</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_vender">
+		<value>供应商代码</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_vender_name">
+		<value>供应商名称</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_unit">
+		<value>基本单位</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_gross_weight">
+		<value>毛重(公斤)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_net_weight">
+		<value>净重(公斤)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_volume">
+		<value>体积(立方)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_length">
+		<value> 单件长度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_width">
+		<value> 单件宽度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_height">
+		<value> 单件高度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_len">
+		<value>每箱长度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_width">
+		<value>每箱宽度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_height">
+		<value>每箱高度（米）</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_down_date">
+		<value>下载日期</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_category">
+		<value>产品组</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_department">
+		<value>业务部门</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_minqty_sales">
+		<value>最小销售单位</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_pack">
+		<value>每箱数量</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_len">
+		<value>数量(长)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_width">
+		<value>数量(宽)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_height">
+		<value>数量(高)</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_stuff">
+		<value> POP 材质</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_expired_day">
+		<value>POP 到期时间</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_price">
+		<value>price</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_first_opdate">
+		<value>first_opdate</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_last_opdate">
+		<value>last_opdate</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sap_sku">
+		<value>sap_sku</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsbarcodes">
+		<value>产品条码</value>
+	</data>
+	<data name="ID_cap_clsbarcode">
+		<value>产品条码</value>
+	</data>
+	<data name="ID_cap_clsbarcode_sku_no">
+		<value>产品代码</value>
+	</data>
+	<data name="ID_cap_clsbarcode_barcode">
+		<value>条码</value>
+	</data>
+	<data name="ID_cap_clsbarcode_bar_type">
+		<value>条码类型</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_by">
+		<value>操作人</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clstasklists1">
+		<value>clstasklists</value>
+	</data>
+	<data name="ID_cap_clstasklist1">
+		<value>tasklist</value>
+	</data>
+	<data name="ID_cap_clstasklist_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_wh_code1">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_task_id1">
+		<value>task_id</value>
+	</data>
+	<data name="ID_cap_clstasklist_bch_no1">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_dn_no1">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_assigned_opt1">
+		<value>assigned_opt</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_area1">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_code1">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_sku_no1">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_qty1">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clstasklist_type1">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clstasklist_status_code1">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_close_auto1">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_by1">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_counter1">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_dtime1">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_locked1">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_by1">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_dtime1">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_start_dtime1">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_end_dtime1">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_timestamp1">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_status_code_0">
+		<value>导入</value>
+	</data>
+	<data name="ID_status_code_1">
+		<value>初始状态</value>
+	</data>
+	<data name="ID_status_code_2">
+		<value>组批</value>
+	</data>
+	<data name="ID_status_code_3">
+		<value>货位绑定</value>
+	</data>
+	<data name="ID_status_code_4">
+		<value>任务分配</value>
+	</data>
+	<data name="ID_status_code_5">
+		<value>上架中</value>
+	</data>
+	<data name="ID_status_code_6">
+		<value>完成</value>
+	</data>
+	<data name="ID_status_code_7">
+		<value>锁定</value>
+	</data>
+	<data name="ID_status_code_8">
+		<value>解锁</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_sony_bch_no">
+		<value>Sony批次号</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_wh_code1">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dc_code1">
+		<value>物流中心</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dn_no1">
+		<value>发货单号</value>
+	</data>
+	<data name="ID_cap_DnStatusCode0">
+		<value>初始状态</value>
+	</data>
+	<data name="ID_cap_DnStatusCode1">
+		<value>组批中</value>
+	</data>
+	<data name="ID_cap_DnStatusCode2">
+		<value>货位绑定</value>
+	</data>
+	<data name="ID_cap_DnStatusCode3">
+		<value>任务分配</value>
+	</data>
+	<data name="ID_cap_DnStatusCode4">
+		<value>捡货中</value>
+	</data>
+	<data name="ID_cap_DnStatusCode5">
+		<value>已完成</value>
+	</data>
+	<data name="ID_cap_banchStatusCode0">
+		<value>初始状态</value>
+	</data>
+	<data name="ID_cap_banchStatusCode1">
+		<value>货位绑定</value>
+	</data>
+	<data name="ID_cap_banchStatusCode2">
+		<value>已分配</value>
+	</data>
+	<data name="ID_cap_banchStatusCode3">
+		<value>捡货中</value>
+	</data>
+	<data name="ID_cap_banchStatusCode4">
+		<value>已完成</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode0">
+		<value>初始状态</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode1">
+		<value>处理中</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode2">
+		<value>完成</value>
+	</data>
+	<data name="ID_cap_clsbin_length">
+		<value>长</value>
+	</data>
+	<data name="ID_cap_clsbin_width">
+		<value>宽</value>
+	</data>
+	<data name="ID_cap_clscityairports">
+		<value>城市对照表</value>
+	</data>
+	<data name="ID_cap_clscityairport">
+		<value>城市对照表</value>
+	</data>
+	<data name="ID_cap_clscityairport_id">
+		<value>序号</value>
+	</data>
+	<data name="ID_cap_clscityairport_destination">
+		<value>目的城市</value>
+	</data>
+	<data name="ID_cap_clscityairport_province">
+		<value>省份</value>
+	</data>
+	<data name="ID_cap_clscityairport_transit">
+		<value>中转城市</value>
+	</data>
+	<data name="ID_cap_clscityairport_type">
+		<value>类型</value>
+	</data>
+	<data name="ID_cap_clscityairport_opt_dtime">
+		<value>操作时间</value>
+	</data>
+	<data name="ID_cap_clscityairport_opt_timestamp">
+		<value>时间戳</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_doc_type1">
+		<value>单据类型</value>
+	</data>
+	<data name="ID_cap_doctype0">
+		<value>CEVA网销</value>
+	</data>
+	<data name="ID_cap_doctype1">
+		<value>CEVA经销商</value>
+	</data>
+	<data name="ID_cap_doctype2">
+		<value>CEVA普货</value>
+	</data>
+	<data name="ID_cap_doctype3">
+		<value>浦菱陆运</value>
+	</data>
+	<data name="ID_cap_doctype4">
+		<value>浦菱空运</value>
+	</data>
+	<data name="ID_cap_doctype5">
+		<value>菱华陆运</value>
+	</data>
+	<data name="ID_cap_doctype6">
+		<value>嘉里大通陆运</value>
+	</data>
+	<data name="ID_cap_doctype7">
+		<value>天地华宇</value>
+	</data>
+</root>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<define version="1.0.0.0" requireversion="1.0.0.2">
+	<process type="import">
+		<!--
+	type=export(runexport),import(runimport),convert(runconvert)
+	not used
+	-->
+		<source type="txtfile">
+			<!--
+			note: all word please use lower-case.
+			type="businessobject",dataset,txtfile,xlsfile,database
+			-->
+			<table type="column" name="SKU" coltype="name" firstrow="2">
+				<!--
+				columntype=name, position(column must have col property)
+				firstdata=1(only for text source)
+				delimiter=tab,comma(only for text file), or none(fix length)
+				sql= sql statement (only for database)
+				-->
+
+					<field name="sku_wms" caption="物料" datatype="string" position="1" length="20" pk="1" />
+					<field name="sku_no" caption="物料代码" datatype="string" position="2" length="20" pk="1" />
+					<field name="model_no" caption="产品名称" datatype="string" position="3" length="50" pk="0" />
+					<field name="gross_weight" caption="毛重 （公斤）" datatype="float" position="4" length="12" pk="0" />
+					<field name="volume" caption="体积（立方）" datatype="float" position="5" length="20" pk="0" />
+					<field name="sku_type" caption="产品类别" datatype="string" position="9" length="10" pk="0" />
+					<field name="measured" caption="测量状态" datatype="string" position="10" length="10" pk="0" />
+					<field name="have_sno" caption="机号检查" datatype="string" position="11" length="10" pk="0" />
+					<field name="sku_desc_eng" caption="型号规格（英）" datatype="string" position="12" length="50" pk="0" />
+					<field name="sku_desc" caption="型号规格（中）" datatype="string" position="13" length="50" pk="0" />
+					<field name="six_code" caption="六位代码" datatype="string" position="14" length="20" pk="0" />
+					<field name="unit" caption="基本单位" datatype="string" position="17" length="10" pk="0" />
+					<field name="net_weight" caption="净重（公斤）" datatype="float" position="18" length="12" pk="0" />
+					<field name="length" caption="长度（米）" datatype="float" position="19" length="12" pk="0" />
+					<field name="width" caption="宽度（米）" datatype="float" position="20" length="12" pk="0" />
+					<field name="height" caption="高度（米）" datatype="float" position="21" length="12" pk="0" />
+				</table>
+		</source>
+					<!--
+					<field name="cost_type" caption="计费方式" datatype="string" position="6" length="1" pk="0" />
+					<field name="coutable" caption="计数否" datatype="string" position="7" length="10" pk="0" />
+					<field name="high_value" caption="贵重品" datatype="string" position="8" length="10" pk="0" />
+					<field name="vender" caption="供应商代码" datatype="string" position="15" length="10" pk="0" />
+					<field name="vender_name" caption="供应商名称" datatype="string" position="16" length="50" pk="0" />
+					<field name="down_date" caption="下载日期" datatype="date" position="22" length="8" pk="0" />
+					<field name="category" caption="产品组" datatype="string" position="23" length="10" pk="0" />
+					<field name="department" caption="业务部门" datatype="string" position="24" length="10" pk="0" />
+					-->
+		<!--
+	type=xlsfile,txtfile,databases
+	method="excel",html,xml
+	template's file must store same with this file.
+	 -->
+		<target seq="1" type="database">
+			<table name="impskuinfo" type="data">
+				<body type="header"></body>
+				<body type="body" firstrow="2" maxrecords="-1" sql="stp_imp_SKU">
+					<paramerters>
+						<field name="@id" caption="id" datatype="long" length="20" pk="1" value="">
+							<data type="runtime" field="id" value="value"></data>
+						</field>
+					</paramerters>
+					<!--rows will repeat output-->
+						<cell name="id" col="1" format="text" datatype="long" length="20" pk="1">
+							<data type="runtime" field="id" value="value"></data>
+						</cell>
+						<cell name="sku_wms" col="2" format="text" datatype="string" length="20" pk="1">
+							<data type="source" table="SKU" field="sku_wms" value="value"></data>
+						</cell>
+						<cell name="sku_no" col="3" format="text" datatype="string" length="20" pk="1">
+							<data type="source" table="SKU" field="sku_no" value="value"></data>
+						</cell>
+						<cell name="model_no" col="4" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="SKU" field="model_no" value="value"></data>
+						</cell>
+						<cell name="gross_weight" col="5" format="text" datatype="float" length="13" pk="0">
+							<data type="source" table="SKU" field="gross_weight" value="value"></data>
+						</cell>
+						<cell name="volume" col="6" format="text" datatype="float" length="20" pk="0">
+							<data type="source" table="SKU" field="volume" value="value"></data>
+						</cell>
+						<cell name="sku_type" col="7" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="sku_type" value="value"></data>
+						</cell>
+						<cell name="measured" col="8" format="text" datatype="string" length="1" pk="0">
+							<data type="source" table="SKU" field="measured" value="value"></data>
+						</cell>
+						<cell name="have_sno" col="9" format="text" datatype="string" length="1" pk="0">
+							<data type="source" table="SKU" field="have_sno" value="value"></data>
+						</cell>
+						<cell name="sku_desc_eng" col="10" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="SKU" field="sku_desc_eng" value="value"></data>
+						</cell>
+						<cell name="sku_desc" col="11" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="SKU" field="sku_desc" value="value"></data>
+						</cell>
+						<cell name="six_code" col="12" format="text" datatype="string" length="20" pk="0">
+							<data type="source" table="SKU" field="six_code" value="value"></data>
+						</cell>
+						<cell name="unit" col="13" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="unit" value="value"></data>
+						</cell>
+						<cell name="net_weight" col="14" format="text" datatype="float" length="12" pk="0">
+							<data type="source" table="SKU" field="net_weight" value="value"></data>
+						</cell>
+						<cell name="length" col="15" format="text" datatype="float" length="12" pk="0">
+							<data type="source" table="SKU" field="length" value="value"></data>
+						</cell>
+						<cell name="width" col="16" format="text" datatype="float" length="12" pk="0">
+							<data type="source" table="SKU" field="width" value="value"></data>
+						</cell>
+						<cell name="height" col="17" format="text" datatype="float" length="12" pk="0">
+							<data type="source" table="SKU" field="height" value="value"></data>
+						</cell>
+				</body>
+						<!--
+						<cell name="cost_type" col="7" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="cost_type" value="value"></data>
+						</cell>
+						<cell name="coutable" col="8" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="coutable" value="value"></data>
+						</cell>
+						<cell name="high_value" col="9" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="high_value" value="value"></data>
+						</cell>
+						<cell name="vender" col="16" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="vender" value="value"></data>
+						</cell>
+						<cell name="vender_name" col="17" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="SKU" field="vender_name" value="value"></data>
+						</cell>
+						<cell name="down_date" col="23" format="text" datatype="string" length="8" pk="0">
+							<data type="source" table="SKU" field="down_date" value="value"></data>
+						</cell>
+						<cell name="category" col="24" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="category" value="value"></data>
+						</cell>
+						<cell name="department" col="25" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="SKU" field="department" value="value"></data>
+						</cell>
+						-->
+				<body type="footer">
+					<!--not supported--></body>
+			</table>
+			<table type="filter" columns="3"></table>
+		</target>
+	</process>
+</define>

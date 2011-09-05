@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsdataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ID_InvalidLookupValue">
+		<value>Invalid value for {0}</value>
+	</data>
+	<data name="ID_cap_clsOPERATORs">
+		<value>clsOPERATORs</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR">
+		<value>OPERATOR</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_user_code">
+		<value>user_code</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_user_name">
+		<value>user_name</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_password">
+		<value>password</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_STCD">
+		<value>STCD</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_allowlogin">
+		<value>allowlogin</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_isadmin">
+		<value>isadmin</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_title">
+		<value>title</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_tel">
+		<value>tel</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_fax">
+		<value>fax</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_mobile">
+		<value>mobile</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_email">
+		<value>email</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_create_date">
+		<value>create_date</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_update_date">
+		<value>update_date</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsOPERATOR_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsUserpermissions">
+		<value>clsUserpermissions</value>
+	</data>
+	<data name="ID_cap_clsUserpermission">
+		<value>Userpermission</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_user_code">
+		<value>user_code</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_right_no">
+		<value>right_no</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsUserpermission_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsUserroles">
+		<value>clsUserroles</value>
+	</data>
+	<data name="ID_cap_clsUserrole">
+		<value>Userrole</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code">
+		<value>user_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code">
+		<value>role_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsPermissions">
+		<value>clsPermissions</value>
+	</data>
+	<data name="ID_cap_clsPermission">
+		<value>Permission</value>
+	</data>
+	<data name="ID_cap_clsPermission_right_no">
+		<value>right_no</value>
+	</data>
+	<data name="ID_cap_clsPermission_description">
+		<value>description</value>
+	</data>
+	<data name="ID_cap_clsPermission_trans_type">
+		<value>trans_type</value>
+	</data>
+	<data name="ID_cap_clsPermission_doc_type">
+		<value>doc_type</value>
+	</data>
+	<data name="ID_cap_clsPermission_cmd_type">
+		<value>cmd_type</value>
+	</data>
+	<data name="ID_cap_clsPermission_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsPermission_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsRoles">
+		<value>clsRoles</value>
+	</data>
+	<data name="ID_cap_clsRole">
+		<value>Role</value>
+	</data>
+	<data name="ID_cap_clsRole_role_code">
+		<value>role_code</value>
+	</data>
+	<data name="ID_cap_clsRole_role_name">
+		<value>role_name</value>
+	</data>
+	<data name="ID_cap_clsRole_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsRole_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsRolepermissions">
+		<value>clsRolepermissions</value>
+	</data>
+	<data name="ID_cap_clsRolepermission">
+		<value>Rolepermission</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_role_code">
+		<value>role_code</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_right_no">
+		<value>right_no</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsRolepermission_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsUserroles1">
+		<value>clsUserroles</value>
+	</data>
+	<data name="ID_cap_clsUserrole1">
+		<value>Userrole</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code1">
+		<value>user_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code1">
+		<value>role_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark1">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by1">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime1">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp1">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsUserroles2">
+		<value>clsUserroles</value>
+	</data>
+	<data name="ID_cap_clsUserrole2">
+		<value>Userrole</value>
+	</data>
+	<data name="ID_cap_clsUserrole_user_code2">
+		<value>user_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_role_code2">
+		<value>role_code</value>
+	</data>
+	<data name="ID_cap_clsUserrole_remark2">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_by2">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_dtime2">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsUserrole_opt_timestamp2">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsTRLOGs">
+		<value>clsTRLOGs</value>
+	</data>
+	<data name="ID_cap_clsTRLOG">
+		<value>TRLOG</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_log_id">
+		<value>log_id</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_trans_type">
+		<value>trans_type</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_cmd_type">
+		<value>cmd_type</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_doc_no">
+		<value>doc_no</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_LINENUM">
+		<value>LINENUM</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_STCD">
+		<value>STCD</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_ITEMNO">
+		<value>ITEMNO</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_ITEM_DESC">
+		<value>ITEM_DESC</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_BANTCH">
+		<value>BANTCH</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_QTY">
+		<value>QTY</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_status">
+		<value>status</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_reason">
+		<value>reason</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_BY">
+		<value>OPT_BY</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_ADDR">
+		<value>OPT_ADDR</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_DATE">
+		<value>OPT_DATE</value>
+	</data>
+	<data name="ID_cap_clsTRLOG_OPT_TIMESTAMP">
+		<value>OPT_TIMESTAMP</value>
+	</data>
+	<data name="ID_TransTpye1">
+		<value>POP</value>
+	</data>
+	<data name="ID_TransTpye2">
+		<value>WOP</value>
+	</data>
+	<data name="ID_TransTpye3">
+		<value>SOP</value>
+	</data>
+	<data name="ID_TransTpye4">
+		<value>PRT</value>
+	</data>
+	<data name="ID_TransTpye5">
+		<value>ITF</value>
+	</data>
+	<data name="ID_TransTpye6">
+		<value>RIT</value>
+	</data>
+	<data name="ID_CmdType1">
+		<value>NEW</value>
+	</data>
+	<data name="ID_CmdType2">
+		<value>MOD</value>
+	</data>
+	<data name="ID_CmdType3">
+		<value>DEL</value>
+	</data>
+	<data name="ID_CmdType4">
+		<value>IFR</value>
+	</data>
+	<data name="ID_CmdType5">
+		<value>IMP</value>
+	</data>
+	<data name="ID_cap_clsbchhdrs">
+		<value>clsbchhdrs</value>
+	</data>
+	<data name="ID_cap_clsbchhdr">
+		<value>bchhdr</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_description">
+		<value>description</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_bch_type">
+		<value>bch_type</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbchlins">
+		<value>clsbchlins</value>
+	</data>
+	<data name="ID_cap_clsbchlin">
+		<value>bchlin</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbchlin_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clsbchlin_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsbchlin_bch_type">
+		<value>bch_type</value>
+	</data>
+	<data name="ID_cap_clsbchlin_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsbchlin_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsbchlin_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchlin_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchlin_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchlin_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsbchlin_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsdnhdrs">
+		<value>clsdnhdrs</value>
+	</data>
+	<data name="ID_cap_clsdnhdr">
+		<value>dnhdr</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_description">
+		<value>description</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_own_code">
+		<value>own_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_due_date">
+		<value>due_date</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_doc_type">
+		<value>doc_type</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_source">
+		<value>source</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_stat_type">
+		<value>stat_type</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_have_tag">
+		<value>have_tag</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_ref_no">
+		<value>ref_no</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_status_trk">
+		<value>status_trk</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_imp_dtime">
+		<value>imp_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_plant">
+		<value>plant</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_city_from">
+		<value>city_from</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_from">
+		<value>deal_from</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_city_to">
+		<value>city_to</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_to">
+		<value>bill_to</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_name">
+		<value>bill_name</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_person">
+		<value>bill_person</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_addr">
+		<value>bill_addr</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_bill_tel">
+		<value>bill_tel</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_to">
+		<value>deal_to</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_name">
+		<value>deal_name</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_person">
+		<value>deal_person</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_deal_tel">
+		<value>deal_tel</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_carr_code">
+		<value>carr_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_method">
+		<value>method</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_unloading_address">
+		<value>unloading_address</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_instruction">
+		<value>instruction</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_route">
+		<value>route</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_point">
+		<value>point</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_condition">
+		<value>condition</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_exp_status">
+		<value>exp_status</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_archived">
+		<value>archived</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_remark">
+		<value>remark</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsdnlins">
+		<value>clsdnlins</value>
+	</data>
+	<data name="ID_cap_clsdnlin">
+		<value>dnlin</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_row_id">
+		<value>row_id</value>
+	</data>
+	<data name="ID_cap_clsdnlin_own_code">
+		<value>own_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_status">
+		<value>sku_status</value>
+	</data>
+	<data name="ID_cap_clsdnlin_lot_no">
+		<value>lot_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_serialed">
+		<value>serialed</value>
+	</data>
+	<data name="ID_cap_clsdnlin_qty">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clsdnlin_act_qty">
+		<value>act_qty</value>
+	</data>
+	<data name="ID_cap_clsdnlin_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_sku_ref">
+		<value>sku_ref</value>
+	</data>
+	<data name="ID_cap_clsdnlin_tag_no">
+		<value>tag_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_tag_qty">
+		<value>tag_qty</value>
+	</data>
+	<data name="ID_cap_clsdnlin_req_id">
+		<value>req_id</value>
+	</data>
+	<data name="ID_cap_clsdnlin_to_no">
+		<value>to_no</value>
+	</data>
+	<data name="ID_cap_clsdnlin_to_row">
+		<value>to_row</value>
+	</data>
+	<data name="ID_cap_clsdnlin_exp_status">
+		<value>exp_status</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsdnlin_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clstaskhdrs">
+		<value>clstaskhdrs</value>
+	</data>
+	<data name="ID_cap_clstaskhdr">
+		<value>taskhdr</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_task_id">
+		<value>task_id</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clstasklins">
+		<value>clstasklins</value>
+	</data>
+	<data name="ID_cap_clstasklin">
+		<value>tasklin</value>
+	</data>
+	<data name="ID_cap_clstasklin_rowid">
+		<value>rowid</value>
+	</data>
+	<data name="ID_cap_clstasklin_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_task_id">
+		<value>task_id</value>
+	</data>
+	<data name="ID_cap_clstasklin_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clstasklin_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clstasklin_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clstasklin_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clstasklin_sno">
+		<value>sno</value>
+	</data>
+	<data name="ID_cap_clstasklin_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clstasklin_qty">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clstasklin_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clstasklin_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklin_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklin_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklin_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklin_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clstasklists">
+		<value>clstasklists</value>
+	</data>
+	<data name="ID_cap_clstasklist">
+		<value>tasklist</value>
+	</data>
+	<data name="ID_cap_clstasklist_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_task_id">
+		<value>task_id</value>
+	</data>
+	<data name="ID_cap_clstasklist_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_assigned_opt">
+		<value>assigned_opt</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_qty">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clstasklist_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clstasklist_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbinareas">
+		<value>clsbinareas</value>
+	</data>
+	<data name="ID_cap_clsbinarea">
+		<value>binarea</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbinarea_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clsbinarea_description">
+		<value>description</value>
+	</data>
+	<data name="ID_cap_clsbinarea_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbinarea_seq">
+		<value>seq</value>
+	</data>
+	<data name="ID_cap_clsbinarea_address">
+		<value>address</value>
+	</data>
+	<data name="ID_cap_clsbinarea_person">
+		<value>person</value>
+	</data>
+	<data name="ID_cap_clsbinarea_tel">
+		<value>tel</value>
+	</data>
+	<data name="ID_cap_clsbinarea_fax">
+		<value>fax</value>
+	</data>
+	<data name="ID_cap_clsbinarea_zip">
+		<value>zip</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_sku">
+		<value>dif_sku</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_status">
+		<value>dif_status</value>
+	</data>
+	<data name="ID_cap_clsbinarea_dif_owner">
+		<value>dif_owner</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsbinarea_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinarea_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbins">
+		<value>clsbins</value>
+	</data>
+	<data name="ID_cap_clsbin">
+		<value>bin</value>
+	</data>
+	<data name="ID_cap_clsbin_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clsbin_description">
+		<value>description</value>
+	</data>
+	<data name="ID_cap_clsbin_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_type">
+		<value>bin_type</value>
+	</data>
+	<data name="ID_cap_clsbin_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clsbin_area">
+		<value>area</value>
+	</data>
+	<data name="ID_cap_clsbin_palls">
+		<value>palls</value>
+	</data>
+	<data name="ID_cap_clsbin_weight">
+		<value>weight</value>
+	</data>
+	<data name="ID_cap_clsbin_volume">
+		<value>volume</value>
+	</data>
+	<data name="ID_cap_clsbin_canpick">
+		<value>canpick</value>
+	</data>
+	<data name="ID_cap_clsbin_isblocked">
+		<value>isblocked</value>
+	</data>
+	<data name="ID_cap_clsbin_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsbin_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsbin_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsbin_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsbin_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbin_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbinStatuses">
+		<value>clsbinStatuses</value>
+	</data>
+	<data name="ID_cap_clsbinStatus">
+		<value>binStatus</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_id">
+		<value>id</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbinStatuses1">
+		<value>clsbinStatuses</value>
+	</data>
+	<data name="ID_cap_clsbinStatus1">
+		<value>binStatus</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_wh_code1">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_id1">
+		<value>id</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_bin_code1">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_dn_no1">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_type1">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_status_code1">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_close_auto1">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_by1">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_counter1">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_print_dtime1">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_locked1">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_by1">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_dtime1">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_start_dtime1">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_end_dtime1">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsbinStatus_opt_timestamp1">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsDnBins">
+		<value>clsDnBins</value>
+	</data>
+	<data name="ID_cap_clsDnBin">
+		<value>DnBin</value>
+	</data>
+	<data name="ID_cap_clsDnBin_rowid">
+		<value>rowid</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dc_code">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bch_no">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clsDnBin_wh_code">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dn_no">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bin_area">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clsDnBin_bin_code">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clsDnBin_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clsDnBin_qty">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clsDnBin_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clsDnBin_status_code">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clsDnBin_close_auto">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_by">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_counter">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clsDnBin_print_dtime">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clsDnBin_locked">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsDnBin_start_dtime">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clsDnBin_end_dtime">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clsDnBin_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsskuinfoes">
+		<value>clsskuinfoes</value>
+	</data>
+	<data name="ID_cap_clsskuinfo">
+		<value>skuinfo</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_wms">
+		<value>sku_wms</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_desc">
+		<value>sku_desc</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_desc_eng">
+		<value>sku_desc_eng</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_model_no">
+		<value>model_no</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_cost_type">
+		<value>cost_type</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_coutable">
+		<value>coutable</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_high_value">
+		<value>high_value</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sku_type">
+		<value>sku_type</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_source">
+		<value>source</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_measured">
+		<value>measured</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_meas_date">
+		<value>meas_date</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_have_sno">
+		<value>have_sno</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_identity">
+		<value>identity</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sno_len">
+		<value>sno_len</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_six_code">
+		<value>six_code</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_vender">
+		<value>vender</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_vender_name">
+		<value>vender_name</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_unit">
+		<value>unit</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_gross_weight">
+		<value>gross_weight</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_net_weight">
+		<value>net_weight</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_volume">
+		<value>volume</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_length">
+		<value>length</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_width">
+		<value>width</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_height">
+		<value>height</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_len">
+		<value>pack_len</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_width">
+		<value>pack_width</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_pack_height">
+		<value>pack_height</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_down_date">
+		<value>down_date</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_category">
+		<value>category</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_department">
+		<value>department</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_minqty_sales">
+		<value>minqty_sales</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_pack">
+		<value>qty_pack</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_len">
+		<value>qty_len</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_width">
+		<value>qty_width</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_qty_height">
+		<value>qty_height</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_stuff">
+		<value>stuff</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_expired_day">
+		<value>expired_day</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define1">
+		<value>define1</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define2">
+		<value>define2</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define3">
+		<value>define3</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define4">
+		<value>define4</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_define5">
+		<value>define5</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_price">
+		<value>price</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_first_opdate">
+		<value>first_opdate</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_last_opdate">
+		<value>last_opdate</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_sap_sku">
+		<value>sap_sku</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsskuinfo_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsbarcodes">
+		<value>clsbarcodes</value>
+	</data>
+	<data name="ID_cap_clsbarcode">
+		<value>barcode</value>
+	</data>
+	<data name="ID_cap_clsbarcode_sku_no">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clsbarcode_barcode">
+		<value>barcode</value>
+	</data>
+	<data name="ID_cap_clsbarcode_bar_type">
+		<value>bar_type</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_by">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clsbarcode_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clstasklists1">
+		<value>clstasklists</value>
+	</data>
+	<data name="ID_cap_clstasklist1">
+		<value>tasklist</value>
+	</data>
+	<data name="ID_cap_clstasklist_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_wh_code1">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_task_id1">
+		<value>task_id</value>
+	</data>
+	<data name="ID_cap_clstasklist_bch_no1">
+		<value>bch_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_dn_no1">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_assigned_opt1">
+		<value>assigned_opt</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_area1">
+		<value>bin_area</value>
+	</data>
+	<data name="ID_cap_clstasklist_bin_code1">
+		<value>bin_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_sku_no1">
+		<value>sku_no</value>
+	</data>
+	<data name="ID_cap_clstasklist_qty1">
+		<value>qty</value>
+	</data>
+	<data name="ID_cap_clstasklist_type1">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clstasklist_status_code1">
+		<value>status_code</value>
+	</data>
+	<data name="ID_cap_clstasklist_close_auto1">
+		<value>close_auto</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_by1">
+		<value>print_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_counter1">
+		<value>print_counter</value>
+	</data>
+	<data name="ID_cap_clstasklist_print_dtime1">
+		<value>print_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_locked1">
+		<value>locked</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_by1">
+		<value>opt_by</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_dtime1">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_start_dtime1">
+		<value>start_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_end_dtime1">
+		<value>end_dtime</value>
+	</data>
+	<data name="ID_cap_clstasklist_opt_timestamp1">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_status_code_0">
+		<value>0</value>
+	</data>
+	<data name="ID_status_code_1">
+		<value>1</value>
+	</data>
+	<data name="ID_status_code_2">
+		<value>2</value>
+	</data>
+	<data name="ID_status_code_3">
+		<value>3</value>
+	</data>
+	<data name="ID_status_code_4">
+		<value>4</value>
+	</data>
+	<data name="ID_status_code_5">
+		<value>5</value>
+	</data>
+	<data name="ID_status_code_6">
+		<value>6</value>
+	</data>
+	<data name="ID_status_code_7">
+		<value>7</value>
+	</data>
+	<data name="ID_status_code_8">
+		<value>8</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_sony_bch_no">
+		<value>sony_bch_no</value>
+	</data>
+	<data name="ID_cap_clsbchhdr_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsbchlin_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsDnBin_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clstaskhdr_wh_code1">
+		<value>wh_code</value>
+	</data>
+	<data name="ID_cap_clstasklin_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dc_code1">
+		<value>dc_code</value>
+	</data>
+	<data name="ID_cap_clsdnlin_dn_no1">
+		<value>dn_no</value>
+	</data>
+	<data name="ID_cap_DnStatusCode0">
+		<value>0</value>
+	</data>
+	<data name="ID_cap_DnStatusCode1">
+		<value>1</value>
+	</data>
+	<data name="ID_cap_DnStatusCode2">
+		<value>2</value>
+	</data>
+	<data name="ID_cap_DnStatusCode3">
+		<value>3</value>
+	</data>
+	<data name="ID_cap_DnStatusCode4">
+		<value>4</value>
+	</data>
+	<data name="ID_cap_DnStatusCode5">
+		<value>5</value>
+	</data>
+	<data name="ID_cap_banchStatusCode0">
+		<value>0</value>
+	</data>
+	<data name="ID_cap_banchStatusCode1">
+		<value>1</value>
+	</data>
+	<data name="ID_cap_banchStatusCode2">
+		<value>2</value>
+	</data>
+	<data name="ID_cap_banchStatusCode3">
+		<value>3</value>
+	</data>
+	<data name="ID_cap_banchStatusCode4">
+		<value>4</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode0">
+		<value>0</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode1">
+		<value>1</value>
+	</data>
+	<data name="ID_cap_TaskStatusCode2">
+		<value>2</value>
+	</data>
+	<data name="ID_cap_clsbin_length">
+		<value>length</value>
+	</data>
+	<data name="ID_cap_clsbin_width">
+		<value>width</value>
+	</data>
+	<data name="ID_cap_clscityairports">
+		<value>clscityairports</value>
+	</data>
+	<data name="ID_cap_clscityairport">
+		<value>cityairport</value>
+	</data>
+	<data name="ID_cap_clscityairport_id">
+		<value>id</value>
+	</data>
+	<data name="ID_cap_clscityairport_destination">
+		<value>destination</value>
+	</data>
+	<data name="ID_cap_clscityairport_province">
+		<value>province</value>
+	</data>
+	<data name="ID_cap_clscityairport_transit">
+		<value>transit</value>
+	</data>
+	<data name="ID_cap_clscityairport_type">
+		<value>type</value>
+	</data>
+	<data name="ID_cap_clscityairport_opt_dtime">
+		<value>opt_dtime</value>
+	</data>
+	<data name="ID_cap_clscityairport_opt_timestamp">
+		<value>opt_timestamp</value>
+	</data>
+	<data name="ID_cap_clsdnhdr_doc_type1">
+		<value>doc_type</value>
+	</data>
+	<data name="ID_cap_doctype0">
+		<value>0</value>
+	</data>
+	<data name="ID_cap_doctype1">
+		<value>1</value>
+	</data>
+	<data name="ID_cap_doctype2">
+		<value>2</value>
+	</data>
+  <data name="ID_cap_doctype3">
+    <value>3</value>
+  </data>
+  <data name="ID_cap_doctype4">
+    <value>4</value>
+  </data>
+  <data name="ID_cap_doctype5">
+    <value>5</value>
+  </data>
+  <data name="ID_cap_doctype6">
+    <value>6</value>
+  </data>
+  <data name="ID_cap_doctype7">
+    <value>7</value>
+  </data>
+</root>

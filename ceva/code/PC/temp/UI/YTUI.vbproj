@@ -1,0 +1,137 @@
+<VisualStudioProject>
+	<VisualBasic ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{E8FA9E0E-0375-42F3-00F0146B2B5E4625}">
+		<Build>
+			<Settings ApplicationIcon="app.ico" AssemblyKeyContainerName="" AssemblyName="YT System" AssemblyOriginatorKeyFile="" AssemblyOriginatorKeyMode="None" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="False" OutputType="WinExe" OptionCompare="Binary" OptionExplicit="On" OptionStrict="Off" RootNamespace="YTUI" StartupObject="YTUI.frmMain">
+				<Config Name="Debug" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="" DefineDebug="True" DefineTrace="True" DebugSymbols="True" IncrementalBuild="True" Optimize="False" OutputPath="bin\" RegisterForComInterop="False" RemoveIntegerChecks="False" TreatWarningsAsErrors="False" WarningLevel="1"/>
+				<Config Name="Release" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="" DefineDebug="False" DefineTrace="True" DebugSymbols="False" IncrementalBuild="False" Optimize="True" OutputPath="bin\" RegisterForComInterop="False" RemoveIntegerChecks="False" TreatWarningsAsErrors="False" WarningLevel="1"/>
+			</Settings>
+			<References>
+				<Reference Name="System" AssemblyName="System"/>
+				<Reference Name="System.Data" AssemblyName="System.Data"/>
+				<Reference Name="System.Drawing" AssemblyName="System.Drawing"/>
+				<Reference Name="System.Windows.Forms" AssemblyName="System.Windows.Forms"/>
+				<Reference Name="System.XML" AssemblyName="System.Xml"/>
+				<Reference Name="YT" Project="{4EE2816F-071D-4ECA-920E-3919E4C278FA}" Package="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"/>
+				<Reference Name="Janus.Windows.Common" AssemblyName="Janus.Windows.Common" Private="True"/>
+				<Reference Name="Janus.Windows.GridEX" AssemblyName="Janus.Windows.GridEX" Private="True"/>
+				<Reference Name="System.Design" AssemblyName="System.Design" HintPath="C:\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Design.dll"/>
+				<Reference Name="COMExpress.Windows11" AssemblyName="COMExpress.Windows11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\COMExpress.Windows11.dll" Private="True"/>
+				<Reference Name="COMExpress.Configuration11" AssemblyName="COMExpress.Configuration11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\COMExpress.Configuration11.dll" Private="True"/>
+				<Reference Name="COMExpress.UserInterface.Layout11" AssemblyName="COMExpress.UserInterface.Layout11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\COMExpress.UserInterface.Layout11.dll" Private="True"/>
+				<Reference Name="COMExpress.BusinessObject11" AssemblyName="COMExpress.BusinessObject11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\COMExpress.BusinessObject11.dll" Private="True"/>
+				<Reference Name="CSLA.Core.Bindablebase11" AssemblyName="CSLA.Core.Bindablebase11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\CSLA.Core.Bindablebase11.dll" Private="True"/>
+				<Reference Name="CSLA11" AssemblyName="CSLA11" HintPath="C:\Program Files\Common Files\ComExpress\VBNet\1.3\CSLA11.dll"/>
+			</References>
+			<Imports>
+				<Import Namespace="Microsoft.VisualBasic"/>
+				<Import Namespace="System"/>
+				<Import Namespace="System.Collections"/>
+				<Import Namespace="System.Data"/>
+				<Import Namespace="System.Drawing"/>
+				<Import Namespace="System.Diagnostics"/>
+				<Import Namespace="System.Windows.Forms"/>
+			</Imports>
+		</Build>
+		<Files>
+			<Include>
+				<File RelPath="frmclsOPERATOR.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsOPERATOR.resx" DependentUpon="frmclsOPERATOR.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsOPERATORDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsUserpermission.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsUserpermission.resx" DependentUpon="frmclsUserpermission.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsUserpermissionDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsUserrole.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsUserrole.resx" DependentUpon="frmclsUserrole.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsUserroleDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsPermission.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsPermission.resx" DependentUpon="frmclsPermission.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsPermissionDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsRole.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsRole.resx" DependentUpon="frmclsRole.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsRoleDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsRolepermission.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsRolepermission.resx" DependentUpon="frmclsRolepermission.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsRolepermissionDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsTRLOG.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsTRLOG.resx" DependentUpon="frmclsTRLOG.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsTRLOGDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbchhdr.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbchhdr.resx" DependentUpon="frmclsbchhdr.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbchhdrDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbchlin.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbchlin.resx" DependentUpon="frmclsbchlin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbchlinDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsdnhdr.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsdnhdr.resx" DependentUpon="frmclsdnhdr.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsdnhdrDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsdnlin.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsdnlin.resx" DependentUpon="frmclsdnlin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsdnlinDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstaskhdr.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstaskhdr.resx" DependentUpon="frmclstaskhdr.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclstaskhdrDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstasklin.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstasklin.resx" DependentUpon="frmclstasklin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclstasklinDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstasklist.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclstasklist.resx" DependentUpon="frmclstasklist.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclstasklistDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbinarea.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbinarea.resx" DependentUpon="frmclsbinarea.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbinareaDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbin.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbin.resx" DependentUpon="frmclsbin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbinDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbinStatus.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbinStatus.resx" DependentUpon="frmclsbinStatus.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbinStatusDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsDnBin.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsDnBin.resx" DependentUpon="frmclsDnBin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsDnBinDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsskuinfo.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsskuinfo.resx" DependentUpon="frmclsskuinfo.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsskuinfoDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbarcode.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclsbarcode.resx" DependentUpon="frmclsbarcode.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclsbarcodeDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclscityairport.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmclscityairport.resx" DependentUpon="frmclscityairport.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmclscityairportDerived.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="AssemblyInfo.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="BmpImages.resx" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmMain.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmMain.resx" DependentUpon="frmMain.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="CXPropertyGrid.vb" SubType="Component" BuildAction="Compile"/>
+				<File RelPath="CXPropertyGrid.resx" DependentUpon="CXPropertyGrid.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmLogin.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmLogin.resx" DependentUpon="frmLogin.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmChangePwd.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmChangePwd.resx" DependentUpon="frmChangePwd.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmSplashScreen.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmSplashScreen.resx" DependentUpon="frmSplashScreen.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmSplashScreenDerived.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmSplashScreenDerived.resx" DependentUpon="frmSplashScreenDerived.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="IconImages.resx" BuildAction="EmbeddedResource"/>
+				<File RelPath="StringTable.resx" BuildAction="EmbeddedResource"/>
+				<File RelPath="StringTable.zh-CHS.resx" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmObjectList.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmObjectList.resx" DependentUpon="frmObjectList.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="frmObjectPropGrid.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmObjectPropGrid.resx" DependentUpon="frmObjectPropGrid.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="Switchboard.vb" SubType="Component" BuildAction="Compile"/>
+				<File RelPath="Switchboard.resx" DependentUpon="Switchboard.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="Menus.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="Statusbar.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="ToolbarEx.vb" SubType="Component" BuildAction="Compile"/>
+				<File RelPath="ToolbarEx.resx" DependentUpon="ToolbarEx.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="DataGrid.vb" SubType="UserControl" BuildAction="Compile"/>
+				<File RelPath="Global.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="mControlHelper.vb" SubType="Code" BuildAction="Compile"/>
+				<File RelPath="frmObjectModal.vb" SubType="Form" BuildAction="Compile"/>
+				<File RelPath="frmObjectModal.resx" DependentUpon="frmObjectModal.vb" BuildAction="EmbeddedResource"/>
+				<File RelPath="app.ico" BuildAction="Content"/>
+				<File RelPath="App.config" BuildAction="None"/>
+			</Include>
+		</Files>
+	</VisualBasic>
+</VisualStudioProject>

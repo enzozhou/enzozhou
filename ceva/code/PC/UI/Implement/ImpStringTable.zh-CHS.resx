@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ID_cap_frmChangePwd" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_btnCancel" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_btnLogin" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_lblConfirmPwd" xml:space="preserve">
+    <value>确认新密码</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_lblNewPwd" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_lblOldPwd" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="ID_cap_frmChangePwd_lblTip" xml:space="preserve">
+    <value>请输入旧密码新密码</value>
+  </data>
+  <data name="ID_cap_frmLogin" xml:space="preserve">
+    <value>系统登录</value>
+  </data>
+  <data name="ID_cap_frmLogin_btnCancel" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmLogin_btnLogin" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblLanguage" xml:space="preserve">
+    <value>语言:</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblPassword" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblTip" xml:space="preserve">
+    <value>请输入用户帐号和密码:</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblUserCode" xml:space="preserve">
+    <value>用户:</value>
+  </data>
+  <data name="ID_msg_err_Login_NoUser" xml:space="preserve">
+    <value>无此用户.</value>
+  </data>
+  <data name="ID_msg_err_Login_WrongPassword" xml:space="preserve">
+    <value>密码错.</value>
+  </data>
+  <data name="ID_qsn_msg_frmMain_ConfirmQuit" xml:space="preserve">
+    <value>请确认是否要退出系统?</value>
+  </data>
+  <data name="ID_cap_frmAbout_cmdOK" xml:space="preserve">
+    <value>确认&amp;O</value>
+  </data>
+  <data name="ID_cap_frmAbout_cmdSysInfo" xml:space="preserve">
+    <value>&amp;System Info...</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblAppTitle" xml:space="preserve">
+    <value> Schmidt RF-Picking System</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblCopyright" xml:space="preserve">
+    <value>版权所有 2008 － 兴华科仪有限公司.</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblForRegion" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblLicenseText" xml:space="preserve">
+    <value>许可给:</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblLicenseTo" xml:space="preserve">
+    <value>CEVA</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblProductName" xml:space="preserve">
+    <value>RF-Picking</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblVersion" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="ID_cap_frmAbout_lblWarning" xml:space="preserve">
+    <value>警告: 本计算机程序受著作权法和国际公约的保护，未经授权擅自复制或散布本程序的部分或全部，将承受严厉的民事和刑事处罚，对已知的违反者将给予法律范围内的全面制裁。</value>
+  </data>
+  <data name="ID_cap_frmAbout_Title" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="ID_msg_err_ChangePwd_Success" xml:space="preserve">
+    <value>更改密码成功</value>
+  </data>
+  <data name="ID_msg_err_ChangePwd_WrongConfirmPassword" xml:space="preserve">
+    <value>确认密码错</value>
+  </data>
+  <data name="ID_msg_err_ChangePwd_WrongOriginalPassword" xml:space="preserve">
+    <value>原始密码错</value>
+  </data>
+  <data name="ID_cap_DataGrid_Export" xml:space="preserve">
+    <value>导出当前表格</value>
+  </data>
+  <data name="ID_DataGrid_GroupBoxInformation" xml:space="preserve">
+    <value>拖动列题到此区域，按该列分组.</value>
+  </data>
+  <data name="ID_msg_PWDExpired" xml:space="preserve">
+    <value>密码已过期.</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound" xml:space="preserve">
+    <value>出货组批</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_btnMode" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblCarrier" xml:space="preserve">
+    <value>运输公司:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblCheckBatch" xml:space="preserve">
+    <value>批次号:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblMode" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblPlease" xml:space="preserve">
+    <value>请扫描或输入单号:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblSeq" xml:space="preserve">
+    <value>序号:</value>
+  </data>
+  <data name="ID_cap_Batch_Mode_Add" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_Batch_Mode_Remove" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ID_cap_Batch_Message_Added" xml:space="preserve">
+    <value>单已加入列表</value>
+  </data>
+  <data name="ID_cap_Batch_Message_NoDN" xml:space="preserve">
+    <value>无此出货单</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound" xml:space="preserve">
+    <value>收货点单</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_btnMode" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_lblMode" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_lblPlease" xml:space="preserve">
+    <value>请输入单号:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_lblSeq" xml:space="preserve">
+    <value>序号:</value>
+  </data>
+  <data name="ID_cap_Batch_Message_InOtherBatch" xml:space="preserve">
+    <value>此单据已点过单.</value>
+  </data>
+  <data name="ID_cap_Batch_Message_NoRO" xml:space="preserve">
+    <value>无此收货单据.</value>
+  </data>
+  <data name="ID_msg_VersionControl_BussinessVersionLow" xml:space="preserve">
+    <value>PTS动态库版本太低</value>
+  </data>
+  <data name="ID_msg_VersionControl_ClientVersionLow" xml:space="preserve">
+    <value>此程序版本太低</value>
+  </data>
+  <data name="ID_msg_VersionControl_ComExpressLow" xml:space="preserve">
+    <value>此程序运行的基础组件版本太低</value>
+  </data>
+  <data name="ID_msg_VersionControl_DBVersionLow" xml:space="preserve">
+    <value>数据库中的数据版本太低</value>
+  </data>
+  <data name="ID_msg_VersionControl_DBVersionLarge" xml:space="preserve">
+    <value>数据库中的数据版本太高</value>
+  </data>
+  <data name="ID_cap_frmLogin_version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking" xml:space="preserve">
+    <value>合并批产生配货清单</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_lblBatch" xml:space="preserve">
+    <value>未选批:</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_lblSelectedBatch" xml:space="preserve">
+    <value>已选批:</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_lblTip" xml:space="preserve">
+    <value>程序将把所选的批合并到一个新的配货清单中.</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_btnAdd" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_btnRefreshList" xml:space="preserve">
+    <value>刷新列表</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_btnRemove" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_chkByTrans" xml:space="preserve">
+    <value>根据事务过滤</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_lblPermission" xml:space="preserve">
+    <value>权限:</value>
+  </data>
+  <data name="ID_cap_frmPermissionSetting_Title" xml:space="preserve">
+    <value>选择权限</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_btnAdd" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_btnRefreshList" xml:space="preserve">
+    <value>刷新列表</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_btnRemove" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_chkByStores" xml:space="preserve">
+    <value>根据物流中心过滤</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_lblUser" xml:space="preserve">
+    <value>用户:</value>
+  </data>
+  <data name="ID_cap_frmUserSetting_Title" xml:space="preserve">
+    <value>选择用户</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin" xml:space="preserve">
+    <value>请选择货位</value>
+  </data>
+  <data name="ID_cap_frmGenDatatimeInfo" xml:space="preserve">
+    <value>日期生成 </value>
+  </data>
+  <data name="ID_cap_frmGenDatatimeInfo_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmGenDatatimeInfo_btnok" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmImport" xml:space="preserve">
+    <value>导入选项</value>
+  </data>
+  <data name="ID_cap_frmImport_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmImport_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmImport_lblFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ID_cap_frmImport_lblFileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="ID_cap_frmImport_lblPath" xml:space="preserve">
+    <value>文件路径:</value>
+  </data>
+  <data name="ID_cap_frmDNImport" xml:space="preserve">
+    <value>导入选项</value>
+  </data>
+  <data name="ID_cap_frmDNImport_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmDNImport_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmDNImport_lblFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ID_cap_frmDNImport_lblFileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="ID_cap_frmDNImport_lblPath" xml:space="preserve">
+    <value>文件路径:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_lblBatch" xml:space="preserve">
+    <value>批次:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_lblType" xml:space="preserve">
+    <value>类型:</value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin" xml:space="preserve">
+    <value>库内移货 </value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin_TabControl1_Tabbin" xml:space="preserve">
+    <value>库位</value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin_TabControl1_Tabbin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMoveboundByBin_TabControl1_Tabbin_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_frmclsskuinfo_ImportQuestion" xml:space="preserve">
+    <value>你是导入类型,选[是]将导入条码表,[否]将导入子母码</value>
+  </data>
+  <data name="ID_msg_VersionControl_CheckError" xml:space="preserve">
+    <value>版本检查错误.</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument" xml:space="preserve">
+    <value>单据管理</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_lblBoxNo" xml:space="preserve">
+    <value>箱号</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_lblDocNo" xml:space="preserve">
+    <value>单号 </value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_lblDocument" xml:space="preserve">
+    <value>未选单据:</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_lblSelected" xml:space="preserve">
+    <value>已选单据:</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_lblTip" xml:space="preserve">
+    <value>将已完成的单据归档</value>
+  </data>
+  <data name="ID_cap_frmChooseUser_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmChooseUser_btnOk" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmclsmessage_btnCompleted" xml:space="preserve">
+    <value>标为已跟进</value>
+  </data>
+  <data name="ID_cap_frmclsmessage_btnFollow" xml:space="preserve">
+    <value>跟进</value>
+  </data>
+  <data name="ID_cap_frmclsmessage_btnForward" xml:space="preserve">
+    <value>转发</value>
+  </data>
+  <data name="ID_cap_frmclsmessage_btnIgnore" xml:space="preserve">
+    <value>忽略</value>
+  </data>
+  <data name="ID_cap_frmclsoperatorBase_btnAddRemove" xml:space="preserve">
+    <value>添加/移除权限</value>
+  </data>
+  <data name="ID_cap_frmclsRole_btnAddRemovePermission" xml:space="preserve">
+    <value>添加/移除权限</value>
+  </data>
+  <data name="ID_cap_frmclsRole_btnAddRemoveUser" xml:space="preserve">
+    <value>添加/删除用户</value>
+  </data>
+  <data name="ID_cap_frmChooseUser" xml:space="preserve">
+    <value>请选择用户</value>
+  </data>
+  <data name="ID_cap_frmChooseUser_lblUser" xml:space="preserve">
+    <value>用户:</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin_btnOK" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin_lblBin" xml:space="preserve">
+    <value>货位:</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin_lblBinArea" xml:space="preserve">
+    <value>货区:</value>
+  </data>
+  <data name="ID_cap_frmDefaultBin_lblBufType" xml:space="preserve">
+    <value>缓存类型:</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblSystemType" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblVersion" xml:space="preserve">
+    <value>版本 1.0.0.0</value>
+  </data>
+  <data name="ID_cap_frmRptViewer_btnExport" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat" xml:space="preserve">
+    <value>单据号格式</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_lblDocName" xml:space="preserve">
+    <value>单据名称</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_lblInformation" xml:space="preserve">
+    <value>这里设定单据号生成格式,
+"前缀"是号码数字部分前面的格式,允许数字字母以及
+@DATE(即日期,格式为YMD),@Ex额外数据,如出货批的运输公司号.
+"数字格式"即为数字部分的长度,如'0000'表示从0000到9999的数字;
+后缀"即为数字与字母的文本.</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_lblNumFormat" xml:space="preserve">
+    <value>数字格式</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_lblPrefix" xml:space="preserve">
+    <value>前缀</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_lblSuffix" xml:space="preserve">
+    <value>后缀</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_FormatTooLong" xml:space="preserve">
+    <value>定义的格式太长.</value>
+  </data>
+  <data name="ID_cap_frmDocumentFormat_NumFormatEmpty" xml:space="preserve">
+    <value>数字格式不能为空</value>
+  </data>
+  <data name="IS_cap_frmOption_DocFormat_PrefixIsDuplicated" xml:space="preserve">
+    <value>前缀有重复的项</value>
+  </data>
+  <data name="ID_exp_SqlException_GenDocumentGetMaxError" xml:space="preserve">
+    <value>生成单号在取原最大数时出错</value>
+  </data>
+  <data name="ID_exp_SqlException_GenDocumentNoOption" xml:space="preserve">
+    <value>生成单号时发现单据格式未设定.</value>
+  </data>
+  <data name="ID_cap_Batch_Message_OrderIsBlocked" xml:space="preserve">
+    <value>此单被拦截</value>
+  </data>
+  <data name="ID_cap_Batch_Message_StockNotEnougn" xml:space="preserve">
+    <value>库存不足</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_batch" xml:space="preserve">
+    <value>批</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_From" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lblDescription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="ID_exp_SQLException_51000" xml:space="preserve">
+    <value>其它用户已经更改了记录,
+请刷新记录后再操作.</value>
+  </data>
+  <data name="ID_cap_Export_RecvlinDetail4Imp" xml:space="preserve">
+    <value>进口品收货记录</value>
+  </data>
+  <data name="ID_cap_frmCancelCdn" xml:space="preserve">
+    <value>出货取消任务</value>
+  </data>
+  <data name="ID_cap_frmCancelCdn_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmCancelCdn_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmCancelCdn_ChkRTAll" xml:space="preserve">
+    <value>是否整单收回 </value>
+  </data>
+  <data name="ID_cap_frmCancelCdn_lblDocument" xml:space="preserve">
+    <value>未处理的出货取消单:</value>
+  </data>
+  <data name="ID_cap_frmCancelCdn_lblSelected" xml:space="preserve">
+    <value>已选的出货取消单:</value>
+  </data>
+  <data name="ID_cap_frmImport_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_butDeselectAll" xml:space="preserve">
+    <value>移除所有</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_butSelectAll" xml:space="preserve">
+    <value>选择所有</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged" xml:space="preserve">
+    <value>库内转状态移货 </value>
+  </data>
+  <data name="ID_cap_ImportCaption_ImportOrders" xml:space="preserve">
+    <value>进口品单据(LDS)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_ReturnGoods" xml:space="preserve">
+    <value>退货单据(SAP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Rohdr" xml:space="preserve">
+    <value>采购品(SAP)导入</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_recvlin" xml:space="preserve">
+    <value>收货明细记录</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_recvsno" xml:space="preserve">
+    <value>收货机身号记录</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_rohdr" xml:space="preserve">
+    <value>收货单</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_sku_no" xml:space="preserve">
+    <value>产品主数据</value>
+  </data>
+  <data name="ID_cap_Export_RecvlinDetail" xml:space="preserve">
+    <value>收货记录</value>
+  </data>
+  <data name="ID_cap_Export_RecvSnoDetail" xml:space="preserve">
+    <value>收货机身号</value>
+  </data>
+  <data name="ID_cap_frmclskordhdr_btnGenDetail" xml:space="preserve">
+    <value>产生拣货明细</value>
+  </data>
+  <data name="ID_cap_frmclsrecvhdr_btnRecvLin" xml:space="preserve">
+    <value>收货记录</value>
+  </data>
+  <data name="ID_cap_frmclsrecvhdr_btnRecvSno" xml:space="preserve">
+    <value>收货机身号</value>
+  </data>
+  <data name="ID_cap_frmExport" xml:space="preserve">
+    <value>导出选项</value>
+  </data>
+  <data name="ID_cap_frmExport_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmExport_btnOK" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ID_cap_frmExport_lblFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ID_cap_frmExport_lblFileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="ID_cap_frmExport_lblPath" xml:space="preserve">
+    <value>路径:</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_btnAdd" xml:space="preserve">
+    <value>增加 -&gt;</value>
+  </data>
+  <data name="ID_cap_frmMergeBatchForPicking_btnRemove" xml:space="preserve">
+    <value>&lt;- 移除</value>
+  </data>
+  <data name="ID_cap_ImportCaption_DayDnhdr" xml:space="preserve">
+    <value>每日出货列表(SAP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_ReturnToPlant" xml:space="preserve">
+    <value>返厂(SAP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Shipment_WMS" xml:space="preserve">
+    <value>出货单据(SAP-WMS)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_TransferIn" xml:space="preserve">
+    <value>转库收货(SAP)导入</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_kreq" xml:space="preserve">
+    <value>加工需求</value>
+  </data>
+  <data name="ID_cap_Import_Result_Success" xml:space="preserve">
+    <value>导入成功</value>
+  </data>
+  <data name="ID_cap_frmclsskuinfo_btnGenMeasure" xml:space="preserve">
+    <value>测量</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Cdn" xml:space="preserve">
+    <value>取消单(SAP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Damaged" xml:space="preserve">
+    <value>物流破损(LDS)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_PFStock" xml:space="preserve">
+    <value>库存(PF)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_SapStock" xml:space="preserve">
+    <value>库存(SAP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Skuinfo_WMS" xml:space="preserve">
+    <value>产品清单(WMS)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Skuinfo_POP" xml:space="preserve">
+    <value>产品清单(POP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_stocksno" xml:space="preserve">
+    <value>不良品机号导入</value>
+  </data>
+  <data name="ID_exp_SqlException_GenMeasureSkuInMeasureAlready" xml:space="preserve">
+    <value>产品#1已经在测量.</value>
+  </data>
+  <data name="ID_exp_SqlException_ImProCodeError" xml:space="preserve">
+    <value>产品代码无效</value>
+  </data>
+  <data name="ID_exp_SqlException_Prodectcodewrong" xml:space="preserve">
+    <value>产品代码无效</value>
+  </data>
+  <data name="ID_msg_frmclsskuinfo_ConfirmGenMeasure" xml:space="preserve">
+    <value>是否要对本产品进行测量?</value>
+  </data>
+  <data name="ID_msg_frmclsskuinfo_ConfirmReGenMeasure" xml:space="preserve">
+    <value>是否要对本产品重新进行测量?</value>
+  </data>
+  <data name="ID_msg_frmclsskuinfo_GenMeasureSuccess" xml:space="preserve">
+    <value>产品测量需求数据已产生.</value>
+  </data>
+  <data name="ID_cap_DataGrid_Qty" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="ID_cap_DataGrid_RecordCount" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="ID_exp_SqlException_InvalidReceiveDealer" xml:space="preserve">
+    <value>收货经销商无效</value>
+  </data>
+  <data name="ID_cap_frmclsmvhdr_btnCompleted" xml:space="preserve">
+    <value>完成本单</value>
+  </data>
+  <data name="ID_cap_StatusBar_Ready" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="ID_cap_frmGenDatatimeInfo_Label1" xml:space="preserve">
+    <value>请选择年度</value>
+  </data>
+  <data name="ID_cap_ImportCaption_MasterSAP" xml:space="preserve">
+    <value>产品主表(SAP,ZMMR)导入</value>
+  </data>
+  <data name="ID_exp_SqlException_PrCodeWrong" xml:space="preserve">
+    <value>错误的产品代码#1.</value>
+  </data>
+  <data name="ID_cap_Export_ProductDetail" xml:space="preserve">
+    <value>产品清单</value>
+  </data>
+  <data name="ID_cap_Export_Result_Success" xml:space="preserve">
+    <value>导出成功</value>
+  </data>
+  <data name="ID_cap_Export_WMSDnhdrPfDetail" xml:space="preserve">
+    <value>WMS导出出货清单</value>
+  </data>
+  <data name="ID_cap_frmclsmessage_ConfirmMarkAsRead" xml:space="preserve">
+    <value>是否修改为已读状态？</value>
+  </data>
+  <data name="ID_cap_frmExport_groupOption_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmExport_groupOption_lblFilename" xml:space="preserve">
+    <value>文件名:</value>
+  </data>
+  <data name="ID_cap_frmExport_groupOption_lblFileType" xml:space="preserve">
+    <value>文件类型:</value>
+  </data>
+  <data name="ID_cap_frmExport_groupOption_lblPath" xml:space="preserve">
+    <value>路径:</value>
+  </data>
+  <data name="ID_cap_frmImport_groupOption_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmImport_groupOption_lblFilename" xml:space="preserve">
+    <value>文件名:</value>
+  </data>
+  <data name="ID_cap_frmImport_groupOption_lblFileType" xml:space="preserve">
+    <value>文件类型:</value>
+  </data>
+  <data name="ID_cap_frmImport_groupOption_lblPath" xml:space="preserve">
+    <value>路径:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lblFilename" xml:space="preserve">
+    <value>文件名:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lblFileType" xml:space="preserve">
+    <value>文件类型:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lblPath" xml:space="preserve">
+    <value>路径:</value>
+  </data>
+  <data name="ID_cap_frmDNImportCPSG" xml:space="preserve">
+    <value>导入选项</value>
+  </data>
+  <data name="ID_cap_frmDNImportCPSG_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmDNImportCPSG_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmDNImportCPSG_btnPreview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_lblFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_lblFileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_lblPath" xml:space="preserve">
+    <value>数径:</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_rBtnByCPSG" xml:space="preserve">
+    <value>CPSG</value>
+  </data>
+  <data name="ID_cap_frmDNImportDNCPSG_groupOption_rBtnDefault" xml:space="preserve">
+    <value>一般类型</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lblBatch" xml:space="preserve">
+    <value>批次:</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lblType" xml:space="preserve">
+    <value>类型:</value>
+  </data>
+  <data name="ID_cap_ImportCaption_City" xml:space="preserve">
+    <value>城市清单(ERP)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Dealer_WMS" xml:space="preserve">
+    <value>经销商(WMS)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_DealerText" xml:space="preserve">
+    <value>经销商代码表(SAP)导入</value>
+  </data>
+  <data name="ID_exp_SqlException_QuerySnoRangeShouldBeEmpty" xml:space="preserve">
+    <value>机身号范围必须为空.</value>
+  </data>
+  <data name="ID_cap_Batch_Message_StatusErr" xml:space="preserve">
+    <value>出货单的状态不允许加入到批</value>
+  </data>
+  <data name="ID_exp_SqlException_DamageDealerCantBeEmpty" xml:space="preserve">
+    <value>破损的经销商不能为空.</value>
+  </data>
+  <data name="ID_exp_SqlException_DamagePlantCantBeEmpty" xml:space="preserve">
+    <value>破损的工厂不能为空.</value>
+  </data>
+  <data name="ID_exp_SqlException_DamageSkuStatusError" xml:space="preserve">
+    <value>破损的SAP冻结位置有错.</value>
+  </data>
+  <data name="ID_exp_Exception_ImDealerCodeWrong" xml:space="preserve">
+    <value>经销商代码 #1 错误.</value>
+  </data>
+  <data name="ID_exp_SqlException_ImDealerCodeWrong" xml:space="preserve">
+    <value>经销商代码 #1 错误.</value>
+  </data>
+  <data name="ID_exp_SqlException_ImpProductCodeWrong" xml:space="preserve">
+    <value>产品代码 #1 错误.</value>
+  </data>
+  <data name="ID_exp_SqlException_StockIsLackforKit" xml:space="preserve">
+    <value>库存不足,产品代码=#1,产品状态=#2,数量=#3.</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBbox_lblBoxNo" xml:space="preserve">
+    <value>箱号</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBbox_lblDocNo" xml:space="preserve">
+    <value>单号 </value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_btnAdd" xml:space="preserve">
+    <value>增加 -&gt;</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_btnRemove" xml:space="preserve">
+    <value>&lt;- 移除</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_butDeselectAll" xml:space="preserve">
+    <value>移除所有</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_butSelectAll" xml:space="preserve">
+    <value>选择所有</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_lblDocument" xml:space="preserve">
+    <value>未选单据:</value>
+  </data>
+  <data name="ID_cap_frmArchiveDocument_GBdocno_lblSelected" xml:space="preserve">
+    <value>已选单据:</value>
+  </data>
+  <data name="ID_cap_frmclsskuinfo_PopMenu_ImportBarcode" xml:space="preserve">
+    <value>导入条码</value>
+  </data>
+  <data name="ID_cap_frmclsskuinfo_PopMenu_ImportSkuret" xml:space="preserve">
+    <value>导入返厂指定</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal" xml:space="preserve">
+    <value>库内一般移货 </value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin" xml:space="preserve">
+    <value>货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame1" xml:space="preserve">
+    <value>货位选择</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame1_btnAdd" xml:space="preserve">
+    <value>增加 -&gt;</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame1_btnRemove" xml:space="preserve">
+    <value>&lt;- 移除</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame1_butDeselectAll" xml:space="preserve">
+    <value>移除所有</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame1_butSelectAll" xml:space="preserve">
+    <value>选择所有</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame2" xml:space="preserve">
+    <value>货主及货品</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame2_BtnSchbin" xml:space="preserve">
+    <value>查找货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame2_Lblower" xml:space="preserve">
+    <value>货主</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame2_Lblsku" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame3" xml:space="preserve">
+    <value>货位范围</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame3_butGo" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Frame3_Label1" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_GroupBox1_Lblbinarea" xml:space="preserve">
+    <value>目标货区</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_GroupBox1_LblToBin" xml:space="preserve">
+    <value>目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_Tabbincode_Tabbin_Lbldoc_no" xml:space="preserve">
+    <value>移库单号</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin" xml:space="preserve">
+    <value>货位</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame1" xml:space="preserve">
+    <value>货位选择</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame1_btnAdd" xml:space="preserve">
+    <value>增加 -&gt;</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame1_btnRemove" xml:space="preserve">
+    <value>&lt;- 移除</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame1_butDeselectAll" xml:space="preserve">
+    <value>移除所有</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame1_butSelectAll" xml:space="preserve">
+    <value>选择所有</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame2" xml:space="preserve">
+    <value>货主及货品</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame2_BtnSchbin" xml:space="preserve">
+    <value>查找货位</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame2_Lblower" xml:space="preserve">
+    <value>货主</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame2_Lblsku" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame2_Lblsku_status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame3" xml:space="preserve">
+    <value>货位范围</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame3_butGo" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Frame3_Label1" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_GroupBox1_Lblskustatus" xml:space="preserve">
+    <value>货品转换状态</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_GroupBox1_LblToBin" xml:space="preserve">
+    <value>目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByStatusChanged_Tabbincode_Tabbin_Lbldoc_no" xml:space="preserve">
+    <value>移库单号</value>
+  </data>
+  <data name="ID_cap_Import_SkuRet" xml:space="preserve">
+    <value>返厂指定导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_transcost" xml:space="preserve">
+    <value>运输费导入</value>
+  </data>
+  <data name="ID_exp_SqlException_ErrorCarrnameboundBuffer" xml:space="preserve">
+    <value>运输公司名称错误</value>
+  </data>
+  <data name="ID_exp_SqlException_SkuRetInvalidDealer" xml:space="preserve">
+    <value>经销商代码 #1 错误.</value>
+  </data>
+  <data name="ID_cap_Batch_Message_OrderHaveUnMeasuredSku" xml:space="preserve">
+    <value>单据有未测量的产品.</value>
+  </data>
+  <data name="ID_cap_CheckOrder_QuestionDirty" xml:space="preserve">
+    <value>列表数据将丢弃,是否继续?</value>
+  </data>
+  <data name="ID_cap_CheckOrder_SaveError" xml:space="preserve">
+    <value>保存失败</value>
+  </data>
+  <data name="ID_cap_Export_DealerDetail" xml:space="preserve">
+    <value>经销商记录</value>
+  </data>
+  <data name="ID_cap_frmclsskuinfo_PopMenu_ImportChildMother" xml:space="preserve">
+    <value>导入子母码</value>
+  </data>
+  <data name="ID_cap_ImportCaption_Bins" xml:space="preserve">
+    <value>货位导入</value>
+  </data>
+  <data name="ID_DataGrid_RecordNavigatorTextRecord" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="ID_exp_SqlException_ImPrCodeNull" xml:space="preserve">
+    <value>产品代码为空.</value>
+  </data>
+  <data name="ID_exp_SqlException_ImPrCodeWrong" xml:space="preserve">
+    <value>产品代码 #1 在WMS中不存在.</value>
+  </data>
+  <data name="ID_exp_SQLException_Code" xml:space="preserve">
+    <value>代码:</value>
+  </data>
+  <data name="ID_exp_SQLException_Source" xml:space="preserve">
+    <value>来源:系统数据库</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_archhdr" xml:space="preserve">
+    <value>归档单据</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_bchhdr" xml:space="preserve">
+    <value>发货批次</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_pickhdr" xml:space="preserve">
+    <value>配货清单</value>
+  </data>
+  <data name="ID_msg_err_RptViewer_ExportSuccess" xml:space="preserve">
+    <value>导出成功</value>
+  </data>
+  <data name="ID_cap_Export_ReturnSapDnhdr" xml:space="preserve">
+    <value>WMS返回ERP的发货清单</value>
+  </data>
+  <data name="ID_cap_Export_HaveOddRemoveTxt" xml:space="preserve">
+    <value>有单移货记录</value>
+  </data>
+  <data name="ID_cap_frmDataPreview" xml:space="preserve">
+    <value>数据预览</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG" xml:space="preserve">
+    <value>导入选项</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_btnPreview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_btnBrowsePath" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_lblFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_lblFileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_lblPath" xml:space="preserve">
+    <value>数径:</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_rBtnByCPSG" xml:space="preserve">
+    <value>CPSG</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_rBtnDefault" xml:space="preserve">
+    <value>一般类型</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new" xml:space="preserve">
+    <value>库内一般移货</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin" xml:space="preserve">
+    <value>货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_btnSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_Frame2" xml:space="preserve">
+    <value>仓库及货品</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_Frame2_BtnSchbin" xml:space="preserve">
+    <value>查 找</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_Frame2_Lblower" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_Frame2_Lblsku" xml:space="preserve">
+    <value>货品</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_GroupBox6_ChkToBin_area" xml:space="preserve">
+    <value>指定目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_GroupBox6_Label10" xml:space="preserve">
+    <value>目标货区</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_GroupBox6_LblToBin" xml:space="preserve">
+    <value>目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_Tabbin_Label12" xml:space="preserve">
+    <value>移库单号</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu" xml:space="preserve">
+    <value>套装</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_btnskuClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_btnSkuSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox2" xml:space="preserve">
+    <value>仓库及套装</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox2_BtnSchbinKit" xml:space="preserve">
+    <value>查 找</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox2_Label2" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox2_LblKit" xml:space="preserve">
+    <value>套装代码</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox4_ChkToBin_areasku" xml:space="preserve">
+    <value>指定目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox4_Lblbinareasku" xml:space="preserve">
+    <value>目标货区</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_GroupBox4_LblToBinsku" xml:space="preserve">
+    <value>目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabDDu_Label8" xml:space="preserve">
+    <value>移库单号</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag" xml:space="preserve">
+    <value>箱</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_btnTagClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_btnTagSave" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox1_ChkToBin_areatag" xml:space="preserve">
+    <value>指定目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox1_Lblbinareatag" xml:space="preserve">
+    <value>目标货区</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox1_LblToBintag" xml:space="preserve">
+    <value>目标货位</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3" xml:space="preserve">
+    <value>仓库及箱</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3_BtnSchbinTag" xml:space="preserve">
+    <value>查 找</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3_Label1" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3_Label3" xml:space="preserve">
+    <value>箱号</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3_Label4" xml:space="preserve">
+    <value>库位范围</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_GroupBox3_Label5" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="ID_cap_frmMvByNormal_new_Tabbincode_TabTag_Lbldoc_no" xml:space="preserve">
+    <value>移库单号</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_recvhdrs" xml:space="preserve">
+    <value>收货任务</value>
+  </data>
+  <data name="ID_cap_frmLogin_region" xml:space="preserve">
+    <value>地区</value>
+  </data>
+  <data name="ID_cap_frmConfigSelect" xml:space="preserve">
+    <value>切换系统</value>
+  </data>
+  <data name="ID_cap_frmConfigSelect_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmConfigSelect_btnSelect" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="ID_cap_frmConfigSelect_lblSelectTip" xml:space="preserve">
+    <value>请选择使用的系统:</value>
+  </data>
+  <data name="ID_cap_frmLogin_lblDcCode" xml:space="preserve">
+    <value>物流中心:</value>
+  </data>
+  <data name="ID_cap_frmLogin_Switch" xml:space="preserve">
+    <value>切换</value>
+  </data>
+  <data name="ID_msg_frmLogin_PleaseSelectDC" xml:space="preserve">
+    <value>请选择物流中心。</value>
+  </data>
+  <data name="ID_cap_Export_DnhdrDateCarrier" xml:space="preserve">
+    <value>发货单据清单数据</value>
+  </data>
+  <data name="ID_cap_Export_ReturnSapDetail" xml:space="preserve">
+    <value>WMS返回ERP-WM出货数据</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderInbound_lbldc_code" xml:space="preserve">
+    <value>物流中心:</value>
+  </data>
+  <data name="ID_cap_frmclsrecvhdr_btnCompleted" xml:space="preserve">
+    <value>完成本单</value>
+  </data>
+  <data name="ID_cap_frmImportCPSG_groupOption_lbldc_code" xml:space="preserve">
+    <value>物流中心:</value>
+  </data>
+  <data name="ID_cap_frmSelectDc" xml:space="preserve">
+    <value>更改缺省的物流中心</value>
+  </data>
+  <data name="ID_cap_frmSelectDc_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmSelectDc_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmSelectDc_Label1" xml:space="preserve">
+    <value>请选择物流中心:</value>
+  </data>
+  <data name="ID_cap_ImportCaption_DealerTextDetail" xml:space="preserve">
+    <value>经销商代码表(SAP详细)导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_InboundPO" xml:space="preserve">
+    <value>采购品(SAP)导入</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_dnhdr" xml:space="preserve">
+    <value>出货单</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_putlinbyrecv" xml:space="preserve">
+    <value>收货上架记录</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_stock" xml:space="preserve">
+    <value>库存</value>
+  </data>
+  <data name="ID_msg_NoRight" xml:space="preserve">
+    <value>无此权限.</value>
+  </data>
+  <data name="ID_cap_frmclsoperatorBase_btnClearWorkStatus" xml:space="preserve">
+    <value>重置工作状态</value>
+  </data>
+  <data name="ID_cap_frmImport_btnPreview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="ID_cap_frmImport_groupOption_lbldc_name" xml:space="preserve">
+    <value>物流中心</value>
+  </data>
+  <data name="ID_cap_frmDNImport_btnPreview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="ID_cap_frmDNImport_groupOption_lbldc_name" xml:space="preserve">
+    <value>物流中心</value>
+  </data>
+  <data name="ID_cap_ImportCaption_InboundTakeback" xml:space="preserve">
+    <value>取回单导入</value>
+  </data>
+  <data name="ID_mnu_Relate_Caption_MovementDnCancel" xml:space="preserve">
+    <value>移货单据</value>
+  </data>
+  <data name="ID_cap_ImportCaption_InboundSample" xml:space="preserve">
+    <value>样机收货导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_OutboundSample" xml:space="preserve">
+    <value>样机出货导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_ScrapSample" xml:space="preserve">
+    <value>样机报废导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_InboundPOP" xml:space="preserve">
+    <value>POP收货导入</value>
+  </data>
+  <data name="ID_cap_ImportCaption_OutboundPOP" xml:space="preserve">
+    <value>POP出货导入</value>
+  </data>
+  <data name="ID_cap_frmOptionDC" xml:space="preserve">
+    <value>系统选项（物流中心）</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_btnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_Buffer_INB" xml:space="preserve">
+    <value>收货缓存区</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_Buffer_KIT" xml:space="preserve">
+    <value>加工区</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_Buffer_OUT" xml:space="preserve">
+    <value>出货缓存区</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_lbldc_name" xml:space="preserve">
+    <value>物流中心:</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_001" xml:space="preserve">
+    <value>暂存品出货单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_002" xml:space="preserve">
+    <value>暂存品收货单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_003" xml:space="preserve">
+    <value>配货清单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_004" xml:space="preserve">
+    <value>委托修理单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_005" xml:space="preserve">
+    <value>出货批次表</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_006" xml:space="preserve">
+    <value>正品物料测量</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_007" xml:space="preserve">
+    <value>借机单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_008" xml:space="preserve">
+    <value>退货收货单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_009" xml:space="preserve">
+    <value>出货取消单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_010" xml:space="preserve">
+    <value>加工配货单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_011" xml:space="preserve">
+    <value>(A)延长保修卡</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_012" xml:space="preserve">
+    <value>标签打印</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_013" xml:space="preserve">
+    <value>(B)套餐服务卡</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_PRN_020" xml:space="preserve">
+    <value>进口品收货单</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tbDefUrl" xml:space="preserve">
+    <value>默认路径</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tbDefUrl_btnBrowsePath" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tbDefUrl_lblExpUrl" xml:space="preserve">
+    <value>报表生成路径</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpDefBins" xml:space="preserve">
+    <value>缺省货位</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpDefBins_lblBuffer" xml:space="preserve">
+    <value>缓存区:</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpOther" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpOther_lblInterval" xml:space="preserve">
+    <value>作业看板刷新间隔(秒)</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpPrintSet" xml:space="preserve">
+    <value>打印机设置</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpPrintSet_grpBackend" xml:space="preserve">
+    <value>后台打印输出</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpPrintSet_grpLocal" xml:space="preserve">
+    <value>本地打印输出</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpPrintSet_grpLocal_lblContinous" xml:space="preserve">
+    <value>五张联打</value>
+  </data>
+  <data name="ID_cap_frmOptionDC_tcOption_tpPrintSet_grpLocal_lblNormal" xml:space="preserve">
+    <value>一般打印</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal" xml:space="preserve">
+    <value>系统选项（全局）</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_btnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_btnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Archive" xml:space="preserve">
+    <value>单据归档</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Batch" xml:space="preserve">
+    <value>批</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_CycleCount" xml:space="preserve">
+    <value>盘点</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Damage" xml:space="preserve">
+    <value>破损</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_DeliveryNote" xml:space="preserve">
+    <value>发货单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_InbSample" xml:space="preserve">
+    <value>样机收货</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_KitReq" xml:space="preserve">
+    <value>加工需求</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_KitTask" xml:space="preserve">
+    <value>加工任务</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Loan" xml:space="preserve">
+    <value>借记单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Movement" xml:space="preserve">
+    <value>移货</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_OutDWS" xml:space="preserve">
+    <value>DWS发货</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_OutSample" xml:space="preserve">
+    <value>样机发货</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_OutWOSample" xml:space="preserve">
+    <value>样机报废</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Picking" xml:space="preserve">
+    <value>配货清单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Putaway" xml:space="preserve">
+    <value>上货架</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_RecieveOrder" xml:space="preserve">
+    <value>收货单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_RecieveTask" xml:space="preserve">
+    <value>收货任务</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Repair" xml:space="preserve">
+    <value>维修单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Replace" xml:space="preserve">
+    <value>替代单</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_SkuMeasure" xml:space="preserve">
+    <value>产品测量</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Tag" xml:space="preserve">
+    <value>箱</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Temporarily" xml:space="preserve">
+    <value>暂存品</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_DocFormat_Tracking" xml:space="preserve">
+    <value>产品跟踪</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpDocFormat" xml:space="preserve">
+    <value>单据格式</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpDocFormat_lblDocumentNo" xml:space="preserve">
+    <value>单据格式:</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther_chkBatchCheckStock" xml:space="preserve">
+    <value>发货点单时检查库存</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther_chkPickCheckStock" xml:space="preserve">
+    <value>库存不足时不产生配货清单.</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther_lblDefaultTime" xml:space="preserve">
+    <value>缺省时间点:</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther_lblManyCode" xml:space="preserve">
+    <value>多单查询选中数</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpOther_lblTipTime" xml:space="preserve">
+    <value>时(0-23之间)</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem_lblDateFormat" xml:space="preserve">
+    <value>日期格式</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem_lblGeneral" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem_lblLanguage" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem_lblPasswordExpiry" xml:space="preserve">
+    <value>密码过期天数</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpSystem_lblSystemType" xml:space="preserve">
+    <value>系统名称</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField" xml:space="preserve">
+    <value>自定义字段</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_Field1" xml:space="preserve">
+    <value>自定义1</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_Field2" xml:space="preserve">
+    <value>自定义2</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_Field3" xml:space="preserve">
+    <value>自定义3</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_Field4" xml:space="preserve">
+    <value>自定义4</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_Field5" xml:space="preserve">
+    <value>自定义5</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_tcOption_tpUserField_dg_uf_UdField_ModuleName" xml:space="preserve">
+    <value>模块名</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Bin" xml:space="preserve">
+    <value>货位</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Bin_Area" xml:space="preserve">
+    <value>货区</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Carrier" xml:space="preserve">
+    <value>运输公司</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_City" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Operator" xml:space="preserve">
+    <value>操作人员</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Owner" xml:space="preserve">
+    <value>货主</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Sku" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Truck" xml:space="preserve">
+    <value>卡车</value>
+  </data>
+  <data name="ID_cap_frmOptionGlobal_UdField_Warehouse" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderOutbound_lbldc_name" xml:space="preserve">
+    <value>物流中心</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP" xml:space="preserve">
+    <value>运段组批</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_btnMode" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblCarrier" xml:space="preserve">
+    <value>运输公司:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblCheckBatch" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lbldc_name" xml:space="preserve">
+    <value>物流中心</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblDescription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblMode" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblPlease" xml:space="preserve">
+    <value>请扫描或输单号:</value>
+  </data>
+  <data name="ID_cap_frmCheckOrderoutboundPOP_lblSeq" xml:space="preserve">
+    <value>序号:</value>
+  </data>
+</root>

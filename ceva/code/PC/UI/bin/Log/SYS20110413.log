@@ -1,0 +1,20 @@
+
+2011-04-13 12:40:00 User: (P1910-11\User) 
+## Message:Could not find stored procedure 'stp_S_clsOPERATOR'.
+
+
+2011-04-13 12:41:52 User: (P1910-11\User) 
+## Message:Could not find stored procedure 'stp_S_clsOPERATOR'.
+
+
+2011-04-13 12:42:23 User: (P1910-11\User) 
+## Message:Could not find stored procedure 'stp_S_clsOPERATOR'.
+
+
+2011-04-13 12:44:36 User: (P1910-11\User) 
+## Message:A list of clsOPERATOR objects ( WHERE ( [operator].[user_code] = @operatoruser_code0 )) have been fetched.
+
+
+2011-04-13 12:44:37 User:admin (P1910-11\User) 
+## Message:Invalid object name 'client'.
+

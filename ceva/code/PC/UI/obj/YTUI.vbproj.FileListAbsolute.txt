@@ -1,0 +1,697 @@
+D:\schmidt\projects\YT\PC\UI\bin\YT System.exe.config
+D:\schmidt\projects\YT\PC\UI\bin\YT System.exe.manifest
+D:\schmidt\projects\YT\PC\UI\bin\YT System.application
+D:\schmidt\projects\YT\PC\UI\bin\YT System.exe
+D:\schmidt\projects\YT\PC\UI\bin\YT System.pdb
+D:\schmidt\projects\YT\PC\UI\bin\YT System.xml
+D:\schmidt\projects\YT\PC\UI\bin\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.BusinessObject11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Configuration11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.UserInterface.Layout11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Controls.DataGrid11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Controls.TabControl11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Resources11.dll
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.BatchQueue11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Core.Bindablebase11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Resources11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Server.DataPortal11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Server.ServicedDataPortal11.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA11.dll
+D:\schmidt\projects\YT\PC\UI\bin\ImportExport.dll
+D:\schmidt\projects\YT\PC\UI\bin\Janus.Windows.Common.dll
+D:\schmidt\projects\YT\PC\UI\bin\Janus.Windows.GridEX.dll
+D:\schmidt\projects\YT\PC\UI\bin\YT.dll
+D:\schmidt\projects\YT\PC\UI\bin\Interop.Excel.dll
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Server.ServicedDataPortal11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Configuration11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Resources11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\CSLA11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Core.Bindablebase11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\Janus.Windows.GridEX.xml
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Controls.TabControl11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.BusinessObject11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\YT.pdb
+D:\schmidt\projects\YT\PC\UI\bin\YT.xml
+D:\schmidt\projects\YT\PC\UI\bin\ImportExport.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.UserInterface.Layout11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Controls.DataGrid11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.Server.DataPortal11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\CSLA.BatchQueue11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\COMExpress.Windows.Resources11.pdb
+D:\schmidt\projects\YT\PC\UI\bin\es\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\nl\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\no\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\pt\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\pt-br\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\ru\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\zh-CHS\CSLA.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\zh-CHS\COMExpress.BusinessObject11.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\zh-CHS\YT.resources.dll
+D:\schmidt\projects\YT\PC\UI\bin\zh-CHS\COMExpress.Windows.Resources11.resources.dll
+D:\schmidt\projects\YT\PC\UI\obj\Debug\ResolveAssemblyReference.cache
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.BmpImages.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmConfigSelect.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.AutoCombobox.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.ControlsCombobox.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.FileSelection.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.CXPropertyGrid.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.DataGrid.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmDataPreview.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmExport.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmExportCon.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmImport.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmAbout.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmChangePwd.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsinboundBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclslogsBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsordhdrBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsordlinBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsordlinWithRawBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsoutboundBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclspreTreatmentBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsputWayBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclssheetMetalBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsusersBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmclsusers.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmLogin.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmMain.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmObjectList.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmObjectModal.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmObjectPropGrid.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmSplashScreenBase__.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.IconImages.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmDocumentFormat.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.ImpStringTable.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.frmMultiObjectList.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.StringTable.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.Switchboard.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.ToolBarButtonEx.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.vbproj.GenerateResource.Cache
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.ImpStringTable.zh-CHS.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YTUI.StringTable.zh-CHS.resources
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.exe.licenses
+D:\schmidt\projects\YT\PC\UI\obj\Debug\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.exe.manifest
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.application
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.exe
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.xml
+D:\schmidt\projects\YT\PC\UI\obj\Debug\YT System.pdb
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.exe.config
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.exe.manifest
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.application
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.exe
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.pdb
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT System.xml
+D:\schmidt\projects\Norgren\code\PC\UI\bin\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\ImportExport.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\Janus.Windows.Common.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\Janus.Windows.GridEX.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\Interop.Excel.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\Interop.Office.dll
+D:\schmidt\projects\Norgren\code\PC\UI\bin\Janus.Windows.GridEX.xml
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT.pdb
+D:\schmidt\projects\Norgren\code\PC\UI\bin\YT.xml
+D:\schmidt\projects\Norgren\code\PC\UI\bin\ImportExport.pdb
+D:\schmidt\projects\Norgren\code\PC\UI\bin\zh-CHS\YT.resources.dll
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\ResolveAssemblyReference.cache
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.Rpt_NonConformity.rpt
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.Rpt_PO_LabelPrint.rpt
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.LabelPrint.rpt
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.Rpt_LabelPrint.rpt
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.BmpImages.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmConfigSelect.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.AutoCombobox.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.ControlsCombobox.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.FileSelection.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.CXPropertyGrid.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.DataGrid.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmDataPreview.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmExport.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmExportCon.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmImport.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmAbout.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmChangePwd.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsICITEMBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsOPERATORBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsPermissionBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsPO_HDRBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsPO_LINBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsPO_REVBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsRoleBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsRolepermissionBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsSO_HDRBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsSO_LINBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsSO_OUTBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsSTOCKBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsTRLOGBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsT_MIMOMDBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsT_MIPODBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsT_OESHIDBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsT_SCRAPBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsUserpermissionBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsUserroleBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsWO_HDRBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsWO_LINBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsWO_OUTBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmclsWO_SCRAPBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmLogin.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmMain.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmObjectList.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmObjectModal.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmObjectPropGrid.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmSplashScreenBase__.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.IconImages.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmControlReport.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmGetOrder.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmAdditionWO.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmAdjustStock.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmDocumentFormat.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmPermissionSetting.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmScrap.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmUserSetting.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.ImpStringTable.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmFinishedReports.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmRawMaterialsReports.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmLabelPrint.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmRptViewer.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.frmMultiObjectList.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.StringTable.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.Switchboard.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.ToolBarButtonEx.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.vbproj.GenerateResource.Cache
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.ImpStringTable.zh-CHS.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YTUI.StringTable.zh-CHS.resources
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.exe.licenses
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.exe.manifest
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.application
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.exe
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.xml
+D:\schmidt\projects\Norgren\code\PC\UI\obj\Debug\YT System.pdb
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.exe.config
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.exe.manifest
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.application
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.exe
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.pdb
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT System.xml
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\ImportExport.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\Janus.Windows.Common.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\Janus.Windows.GridEX.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\Interop.Excel.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\Interop.Office.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\Janus.Windows.GridEX.xml
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT.pdb
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\YT.xml
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\ImportExport.pdb
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\bin\zh-CHS\YT.resources.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\ResolveAssemblyReference.cache
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.Rpt_NonConformity.rpt
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.Rpt_PO_LabelPrint.rpt
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.LabelPrint.rpt
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.Rpt_LabelPrint.rpt
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.BmpImages.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmConfigSelect.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.AutoCombobox.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.ControlsCombobox.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.FileSelection.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.CXPropertyGrid.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.DataGrid.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmDataPreview.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmExport.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmExportCon.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmImport.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmAbout.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmChangePwd.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbarcodeBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbchhdrBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbchlinBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbinBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbinareaBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsbinStatusBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsDnBinBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsdnhdrBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsdnlinBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsOPERATORBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsPermissionBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsRoleBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsRolepermissionBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclstaskhdrBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclstasklinBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclstasklistBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsTRLOGBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsUserpermissionBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsUserroleBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmLogin.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmMain.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmObjectList.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmObjectModal.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmObjectPropGrid.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmSplashScreenBase__.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.IconImages.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmPermissionSetting.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmUserSetting.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.ImpStringTable.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmRawMaterialsReports.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmLabelPrint.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmRptViewer.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmMultiObjectList.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmCarrierlook.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmCarrierSelect.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoselect.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmDealerLook.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmDealerSelect.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmDnhdrSearch.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.frmskuinfolook.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.StringTable.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.Switchboard.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.ToolBarButtonEx.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.vbproj.GenerateResource.Cache
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.ImpStringTable.zh-CHS.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YTUI.StringTable.zh-CHS.resources
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.exe.licenses
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\zh-CHS\YT System.resources.dll
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.exe.manifest
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.application
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.exe
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.xml
+D:\schmidt\projects\CEVA\SVN\code\PC\UI\obj\Debug\YT System.pdb
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe.config
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe.manifest
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.application
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.xml
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.CrystalReports.Design.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.Enterprise.Framework.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.Enterprise.InfoStore.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.ReportSource.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.Shared.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\CrystalDecisions.Windows.Forms.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\System.Data.SqlServerCe.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\YT.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\YT.xml
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.Windows.Forms.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\YT.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.Shared.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.ReportSource.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.CrystalReports.Engine.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_Batch.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.DNPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_NonConformity.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_PO_LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.BmpImages.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmConfigSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.AutoCombobox.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.ControlsCombobox.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.FileSelection.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.CXPropertyGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.DataGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmSKUBarcodeImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclscityairportBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.BanchDifferences.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmBatch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExportCityBin.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDNList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDataPreview.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExportCon.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDNImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAirPortImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmOperateStatus.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPerformance.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPrintSeriaNo.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAbout.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmChangePwd.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbarcodeBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbchhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbchlinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinareaBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinStatusBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsDnBinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsdnhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsdnlinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsOPERATORBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsPermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsRoleBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsRolepermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstaskhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstasklinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstasklistBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsTRLOGBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsUserpermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsUserroleBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmLogin.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmMain.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectModal.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectPropGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmSplashScreenBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.IconImages.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmListWhere.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAuthentication.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAssignTaskInBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmNormalDnBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAssignTask.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDnBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPermissionSetting.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmUserSetting.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.ImpStringTable.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmRawMaterialsReports.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmLabelPrint.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmRptViewer.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.SNPrint.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmMultiObjectList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmCarrierlook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmCarrierSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoselect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDealerLook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDealerSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDnhdrSearch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmskuinfolook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.StringTable.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.Switchboard.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.ToolBarButtonEx.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.vbproj.GenerateResource.Cache
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.ImpStringTable.zh-CHS.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\YTUI.StringTable.zh-CHS.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe.licenses
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe.manifest
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.application
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.xml
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.pdb
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\office.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\Microsoft.Vbe.Interop.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\Janus.Windows.GridEX.xml
+E:\项目\CEVA\ceva_picking\code\PC\UI\bin\ImportExport.pdb
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\ResolveAssemblyReference.cache
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_Batch.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.DNPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_NonConformity.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_PO_LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_LabelPrint.rpt
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.BmpImages.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmConfigSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.AutoCombobox.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.ControlsCombobox.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.FileSelection.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.CXPropertyGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.DataGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmSKUBarcodeImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclscityairportBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.BanchDifferences.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmBatch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExportCityBin.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDNList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDataPreview.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExportCon.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDNImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAirPortImport.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmOperateStatus.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPerformance.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPrintSeriaNo.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAbout.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmChangePwd.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbarcodeBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbchhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbchlinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinareaBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinStatusBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsDnBinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsdnhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsdnlinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsOPERATORBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsPermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsRoleBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsRolepermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsskuinfoBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstaskhdrBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstasklinBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstasklistBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsTRLOGBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsUserpermissionBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsUserroleBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmLogin.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmMain.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectModal.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectPropGrid.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmSplashScreenBase__.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.IconImages.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmListWhere.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAuthentication.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAssignTaskInBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmNormalDnBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAssignTask.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDnBanch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPermissionSetting.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmUserSetting.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.ImpStringTable.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmRawMaterialsReports.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmLabelPrint.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmRptViewer.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.SNPrint.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmMultiObjectList.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmCarrierlook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmCarrierSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsskuinfoselect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDealerLook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDealerSelect.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDnhdrSearch.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.frmskuinfolook.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.StringTable.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.Switchboard.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.ToolBarButtonEx.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.vbproj.GenerateResource.Cache
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.ImpStringTable.zh-CHS.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\YTUI.StringTable.zh-CHS.resources
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe.licenses
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe.manifest
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.application
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe
+E:\项目\CEVA\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.xml
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_Batch.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.DNPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_NonConformity.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_PO_LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.Rpt_LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.BmpImages.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmConfigSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.AutoCombobox.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.ControlsCombobox.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.FileSelection.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.CXPropertyGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.DataGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmSKUBarcodeImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclscityairportBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.BanchDifferences.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmBatch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExportCityBin.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDNList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDataPreview.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmExportCon.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDNImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAirPortImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmOperateStatus.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPerformance.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPrintSeriaNo.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAbout.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmChangePwd.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbarcodeBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbchhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbchlinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinareaBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsbinStatusBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsDnBinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsdnhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsdnlinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsOPERATORBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsPermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsRoleBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsRolepermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstaskhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstasklinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclstasklistBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsTRLOGBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsUserpermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsUserroleBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmLogin.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmMain.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectModal.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmObjectPropGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmSplashScreenBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.IconImages.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmListWhere.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAuthentication.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAssignTaskInBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmNormalDnBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmAssignTask.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDnBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmPermissionSetting.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmUserSetting.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.ImpStringTable.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmRawMaterialsReports.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmLabelPrint.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmRptViewer.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.SNPrint.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmMultiObjectList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmCarrierlook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmCarrierSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmclsskuinfoselect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDealerLook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDealerSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmDnhdrSearch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.frmskuinfolook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.StringTable.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.Switchboard.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.ToolBarButtonEx.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.vbproj.GenerateResource.Cache
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.ImpStringTable.zh-CHS.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\YTUI.StringTable.zh-CHS.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe.licenses
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe.manifest
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.application
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.exe
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.xml
+E:\项目\ceva_picking\code\PC\UI\obj\Debug\CEVA RF-Picking.pdb
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe.config
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe.manifest
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.application
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.exe
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.xml
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.CrystalReports.Design.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.Enterprise.Framework.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.Enterprise.InfoStore.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.ReportSource.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.Shared.dll
+E:\项目\ceva_picking\code\PC\UI\bin\CrystalDecisions.Windows.Forms.dll
+E:\项目\ceva_picking\code\PC\UI\bin\System.Data.SqlServerCe.dll
+E:\项目\ceva_picking\code\PC\UI\bin\YT.dll
+E:\项目\ceva_picking\code\PC\UI\bin\YT.xml
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.Windows.Forms.resources.dll
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\YT.resources.dll
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.Shared.resources.dll
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.ReportSource.resources.dll
+E:\项目\ceva_picking\code\PC\UI\bin\zh-CHS\CrystalDecisions.CrystalReports.Engine.resources.dll
+E:\项目\ceva_picking\code\PC\UI\obj\Release\ResolveAssemblyReference.cache
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_Batch.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.DNPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_NonConformity.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_PO_LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.Rpt_LabelPrint.rpt
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.BmpImages.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmConfigSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.AutoCombobox.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.ControlsCombobox.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.FileSelection.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.CXPropertyGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.DataGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmSKUBarcodeImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclscityairportBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.BanchDifferences.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmBatch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExportCityBin.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDNList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDataPreview.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmExportCon.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDNImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAirPortImport.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmOperateStatus.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPerformance.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPrintSeriaNo.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAbout.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmChangePwd.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbarcodeBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbchhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbchlinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinareaBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsbinStatusBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsDnBinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsdnhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsdnlinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsOPERATORBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsPermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsRoleBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsRolepermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsskuinfoBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstaskhdrBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstasklinBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclstasklistBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsTRLOGBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsUserpermissionBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsUserroleBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmLogin.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmMain.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectModal.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmObjectPropGrid.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmSplashScreenBase__.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.IconImages.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmListWhere.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAuthentication.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAssignTaskInBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmNormalDnBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmAssignTask.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDnBanch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmPermissionSetting.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmUserSetting.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.ImpStringTable.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmRawMaterialsReports.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmLabelPrint.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmRptViewer.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.SNPrint.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmMultiObjectList.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmCarrierlook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmCarrierSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmclsskuinfoselect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDealerLook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDealerSelect.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmDnhdrSearch.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.frmskuinfolook.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.StringTable.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.Switchboard.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.ToolBarButtonEx.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.vbproj.GenerateResource.Cache
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.ImpStringTable.zh-CHS.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\YTUI.StringTable.zh-CHS.resources
+E:\项目\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe.licenses
+E:\项目\ceva_picking\code\PC\UI\obj\Release\zh-CHS\CEVA RF-Picking.resources.dll
+E:\项目\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe.manifest
+E:\项目\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.application
+E:\项目\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.exe
+E:\项目\ceva_picking\code\PC\UI\obj\Release\CEVA RF-Picking.xml
+E:\项目\ceva_picking\code\PC\UI\bin\CEVA RF-Picking.pdb
+E:\项目\ceva_picking\code\PC\UI\bin\YT.pdb

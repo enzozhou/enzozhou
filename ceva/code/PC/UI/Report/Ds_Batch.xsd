@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Batch" targetNamespace="http://tempuri.org/Ds_Batch.xsd" xmlns:mstns="http://tempuri.org/Ds_Batch.xsd" xmlns="http://tempuri.org/Ds_Batch.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Batch" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_Batch" msprop:Generator_DataSetName="Ds_Batch">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dt_Batch" msprop:Generator_UserTableName="Dt_Batch" msprop:Generator_RowDeletedName="Dt_BatchRowDeleted" msprop:Generator_RowChangedName="Dt_BatchRowChanged" msprop:Generator_RowClassName="Dt_BatchRow" msprop:Generator_RowChangingName="Dt_BatchRowChanging" msprop:Generator_RowEvArgName="Dt_BatchRowChangeEvent" msprop:Generator_RowEvHandlerName="Dt_BatchRowChangeEventHandler" msprop:Generator_TableClassName="Dt_BatchDataTable" msprop:Generator_TableVarName="tableDt_Batch" msprop:Generator_RowDeletingName="Dt_BatchRowDeleting" msprop:Generator_TablePropName="Dt_Batch">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="opt_dtime" msprop:Generator_UserColumnName="opt_dtime" msprop:Generator_ColumnVarNameInTable="columnopt_dtime" msprop:Generator_ColumnPropNameInRow="opt_dtime" msprop:Generator_ColumnPropNameInTable="opt_dtimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dn_no" msprop:Generator_UserColumnName="dn_no" msprop:Generator_ColumnVarNameInTable="columndn_no" msprop:Generator_ColumnPropNameInRow="dn_no" msprop:Generator_ColumnPropNameInTable="dn_noColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sony_bch_no" msprop:Generator_UserColumnName="sony_bch_no" msprop:Generator_ColumnVarNameInTable="columnsony_bch_no" msprop:Generator_ColumnPropNameInRow="sony_bch_no" msprop:Generator_ColumnPropNameInTable="sony_bch_noColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bch_no" msprop:Generator_UserColumnName="bch_no" msprop:Generator_ColumnVarNameInTable="columnbch_no" msprop:Generator_ColumnPropNameInRow="bch_no" msprop:Generator_ColumnPropNameInTable="bch_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="volume" msprop:Generator_UserColumnName="volume" msprop:Generator_ColumnVarNameInTable="columnvolume" msprop:Generator_ColumnPropNameInRow="volume" msprop:Generator_ColumnPropNameInTable="volumeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="net_weight" msprop:Generator_UserColumnName="net_weight" msprop:Generator_ColumnVarNameInTable="columnnet_weight" msprop:Generator_ColumnPropNameInRow="net_weight" msprop:Generator_ColumnPropNameInTable="net_weightColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="A" msprop:Generator_UserColumnName="A" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInTable="AColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="B" msprop:Generator_UserColumnName="B" msprop:Generator_ColumnPropNameInRow="B" msprop:Generator_ColumnVarNameInTable="columnB" msprop:Generator_ColumnPropNameInTable="BColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="C" msprop:Generator_UserColumnName="C" msprop:Generator_ColumnPropNameInRow="C" msprop:Generator_ColumnVarNameInTable="columnC" msprop:Generator_ColumnPropNameInTable="CColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="D" msprop:Generator_UserColumnName="D" msprop:Generator_ColumnPropNameInRow="D" msprop:Generator_ColumnVarNameInTable="columnD" msprop:Generator_ColumnPropNameInTable="DColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="T" msprop:Generator_UserColumnName="T" msprop:Generator_ColumnPropNameInRow="T" msprop:Generator_ColumnVarNameInTable="columnT" msprop:Generator_ColumnPropNameInTable="TColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

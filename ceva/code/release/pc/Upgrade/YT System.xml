@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>
+YTSystem
+</name>
+  </assembly>
+  <members>
+    <member name="P:YTUI.BmpImages.ResourceManager">
+      <summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+    </member>
+    <member name="P:YTUI.BmpImages.Culture">
+      <summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+    </member>
+    <member name="T:YTUI.BmpImages">
+      <summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+    </member>
+    <member name="P:YTUI.IconImages.ResourceManager">
+      <summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+    </member>
+    <member name="P:YTUI.IconImages.Culture">
+      <summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+    </member>
+    <member name="T:YTUI.IconImages">
+      <summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+    </member>
+    <member name="T:YTUI.DataSet1.PictureDataTableDataTable">
+      <summary>
+Represents the strongly named DataTable class.
+</summary>
+    </member>
+    <member name="T:YTUI.DataSet1.PictureDataTableRow">
+      <summary>
+Represents strongly named DataRow class.
+</summary>
+    </member>
+    <member name="T:YTUI.DataSet1.PictureDataTableRowChangeEvent">
+      <summary>
+Row event argument class
+</summary>
+    </member>
+    <member name="T:YTUI.DataSet1">
+      <summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ResourceManager">
+      <summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.Culture">
+      <summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap__program_title_">
+      <summary>
+  Looks up a localized string similar to NewProject.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_BrowseMode">
+      <summary>
+  Looks up a localized string similar to (Browse Mode).
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_EditMode">
+      <summary>
+  Looks up a localized string similar to (Edit Mode).
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_item_scrap">
+      <summary>
+  Looks up a localized string similar to scrap.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_item_stock">
+      <summary>
+  Looks up a localized string similar to stock.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_Order">
+      <summary>
+  Looks up a localized string similar to Order.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_print_po">
+      <summary>
+  Looks up a localized string similar to PoLable.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_print_WO">
+      <summary>
+  Looks up a localized string similar to WO Lable.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_pritn">
+      <summary>
+  Looks up a localized string similar to print.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_Ready">
+      <summary>
+  Looks up a localized string similar to Ready.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_SearchMode">
+      <summary>
+  Looks up a localized string similar to (Search Mode).
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_securite">
+      <summary>
+  Looks up a localized string similar to securite.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_stock">
+      <summary>
+  Looks up a localized string similar to stock.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_Switchboard">
+      <summary>
+  Looks up a localized string similar to SwitchBoard.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_system">
+      <summary>
+  Looks up a localized string similar to system management.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_cap_Welcome">
+      <summary>
+  Looks up a localized string similar to Welcome To use %1....
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_Command">
+      <summary>
+  Looks up a localized string similar to &amp;Commands.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_File">
+      <summary>
+  Looks up a localized string similar to &amp;File.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileChangePwd">
+      <summary>
+  Looks up a localized string similar to Change Pass&amp;word.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileClose">
+      <summary>
+  Looks up a localized string similar to &amp;Close.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileCloseAll">
+      <summary>
+  Looks up a localized string similar to Close &amp;All.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileExit">
+      <summary>
+  Looks up a localized string similar to E&amp;xit.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileLogin">
+      <summary>
+  Looks up a localized string similar to &amp;Login.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileLogOff">
+      <summary>
+  Looks up a localized string similar to &amp;LogOff.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileNew">
+      <summary>
+  Looks up a localized string similar to &amp;New.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_FileOpen">
+      <summary>
+  Looks up a localized string similar to &amp;Open.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_Help">
+      <summary>
+  Looks up a localized string similar to &amp;Help.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_HelpAbout">
+      <summary>
+  Looks up a localized string similar to &amp;About .
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_HelpContents">
+      <summary>
+  Looks up a localized string similar to &amp;Contents.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_HelpSearchForHelpOn">
+      <summary>
+  Looks up a localized string similar to &amp;Search For Help On....
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_logs">
+      <summary>
+  Looks up a localized string similar to logs.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_Production">
+      <summary>
+  Looks up a localized string similar to Production.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_production1">
+      <summary>
+  Looks up a localized string similar to production.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_productionOrder">
+      <summary>
+  Looks up a localized string similar to Production order.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_System">
+      <summary>
+  Looks up a localized string similar to System.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_SystemOption">
+      <summary>
+  Looks up a localized string similar to SystemOption.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_systemOption1">
+      <summary>
+  Looks up a localized string similar to System Option.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_userMgr">
+      <summary>
+  Looks up a localized string similar to user management.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_users">
+      <summary>
+  Looks up a localized string similar to user.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_View">
+      <summary>
+  Looks up a localized string similar to &amp;View.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_ViewCmdTree">
+      <summary>
+  Looks up a localized string similar to Command List &amp;Tree.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_ViewStatusbar">
+      <summary>
+  Looks up a localized string similar to Status &amp;Bar.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_Window">
+      <summary>
+  Looks up a localized string similar to &amp;Window.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_WindowArrangeIcons">
+      <summary>
+  Looks up a localized string similar to &amp;Arrange Icons.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_WindowCascade">
+      <summary>
+  Looks up a localized string similar to &amp;Cascade.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_WindowTileHorizontal">
+      <summary>
+  Looks up a localized string similar to Tile &amp;Horizontal.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_menu_WindowTileVertical">
+      <summary>
+  Looks up a localized string similar to Tile &amp;Vertical.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_mnu_System">
+      <summary>
+  Looks up a localized string similar to system.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_mnu_users">
+      <summary>
+  Looks up a localized string similar to user.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_Busy">
+      <summary>
+  Looks up a localized string similar to Please wait....
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_ConfirmDeletion">
+      <summary>
+  Looks up a localized string similar to Are you sure you want to delete this record?.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_CustomError">
+      <summary>
+  Looks up a localized string similar to The application detected the following error:
+
+"{0}"
+ - {1}.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_Error">
+      <summary>
+  Looks up a localized string similar to An Error has occurred In Module ""{0}"".
+		
+Error Message: {1}
+Error Routine :{2}
+Error Source: {3}
+
+Please contact your system's administrator..
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_RecordChanged">
+      <summary>
+  Looks up a localized string similar to Record has been changed. Do you want To save it?.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_msg_ValidError">
+      <summary>
+  Looks up a localized string similar to An Error occured on %1:\r\n%2.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_reg_Setting">
+      <summary>
+  Looks up a localized string similar to Settings.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_reg_Setting_MainHeight">
+      <summary>
+  Looks up a localized string similar to MainHeight.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_reg_Setting_MainLeft">
+      <summary>
+  Looks up a localized string similar to MainLeft.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_reg_Setting_MainTop">
+      <summary>
+  Looks up a localized string similar to MainTop.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_reg_Setting_MainWidth">
+      <summary>
+  Looks up a localized string similar to MainWidth.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_AddRow">
+      <summary>
+  Looks up a localized string similar to Add Row.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Browse">
+      <summary>
+  Looks up a localized string similar to Browse.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Cancel">
+      <summary>
+  Looks up a localized string similar to Cancel.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Close">
+      <summary>
+  Looks up a localized string similar to Close.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_CloseAll">
+      <summary>
+  Looks up a localized string similar to CloseAll.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Delete">
+      <summary>
+  Looks up a localized string similar to Delete.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_DelRow">
+      <summary>
+  Looks up a localized string similar to Delete Row.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Edit">
+      <summary>
+  Looks up a localized string similar to Edit.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_EditRow">
+      <summary>
+  Looks up a localized string similar to Edit Row.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_EXEFind">
+      <summary>
+  Looks up a localized string similar to Find.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_First">
+      <summary>
+  Looks up a localized string similar to First.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Form">
+      <summary>
+  Looks up a localized string similar to Form.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Last">
+      <summary>
+  Looks up a localized string similar to Last.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Main">
+      <summary>
+  Looks up a localized string similar to Main.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_New">
+      <summary>
+  Looks up a localized string similar to New.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Next">
+      <summary>
+  Looks up a localized string similar to Next.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Open">
+      <summary>
+  Looks up a localized string similar to Open.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Previous">
+      <summary>
+  Looks up a localized string similar to Previous.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Print">
+      <summary>
+  Looks up a localized string similar to Print.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Quit">
+      <summary>
+  Looks up a localized string similar to Quit the application.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Refresh">
+      <summary>
+  Looks up a localized string similar to Refresh.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Save">
+      <summary>
+  Looks up a localized string similar to Save.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tb_Search">
+      <summary>
+  Looks up a localized string similar to Search.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_AddRow">
+      <summary>
+  Looks up a localized string similar to Add a row item.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Browse">
+      <summary>
+  Looks up a localized string similar to Enter Browse Mode.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Cancel">
+      <summary>
+  Looks up a localized string similar to Cancel changes.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Close">
+      <summary>
+  Looks up a localized string similar to Close.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_CloseAll">
+      <summary>
+  Looks up a localized string similar to Close All.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Delete">
+      <summary>
+  Looks up a localized string similar to Delete a record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_DelRow">
+      <summary>
+  Looks up a localized string similar to Delete a row item.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Edit">
+      <summary>
+  Looks up a localized string similar to Enter Edit Mode.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_EditRow">
+      <summary>
+  Looks up a localized string similar to Edit a row item.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_EXEFind">
+      <summary>
+  Looks up a localized string similar to Execute Search.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_First">
+      <summary>
+  Looks up a localized string similar to Go to the first record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Form">
+      <summary>
+  Looks up a localized string similar to Show In a Form View.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Last">
+      <summary>
+  Looks up a localized string similar to Go to the last record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Main">
+      <summary>
+  Looks up a localized string similar to Show switchboard.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_New">
+      <summary>
+  Looks up a localized string similar to Create new record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Next">
+      <summary>
+  Looks up a localized string similar to Go to the next record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Open">
+      <summary>
+  Looks up a localized string similar to Open.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Previous">
+      <summary>
+  Looks up a localized string similar to Go to the previous record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Print">
+      <summary>
+  Looks up a localized string similar to Print.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Quit">
+      <summary>
+  Looks up a localized string similar to Quit the application.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Refresh">
+      <summary>
+  Looks up a localized string similar to Refresh records.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Save">
+      <summary>
+  Looks up a localized string similar to Save a record.
+</summary>
+    </member>
+    <member name="P:YTUI.StringTable.ID_tbt_Search">
+      <summary>
+  Looks up a localized string similar to Enter Search Mode.
+</summary>
+    </member>
+    <member name="T:YTUI.StringTable">
+      <summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+    </member>
+  </members>
+</doc>

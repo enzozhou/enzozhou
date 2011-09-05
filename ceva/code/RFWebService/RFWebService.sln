@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\...\RFWebService\", "E:\项目\CEVA\ceva_picking\code\RFWebService\", "{373A7E86-CFE7-4D37-941C-71846352F234}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/RFWebService"
+		Debug.AspNetCompiler.PhysicalPath = "..\RFWebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RFWebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RFWebService"
+		Release.AspNetCompiler.PhysicalPath = "..\RFWebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RFWebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3185"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{373A7E86-CFE7-4D37-941C-71846352F234}.Debug|.NET.ActiveCfg = Debug|.NET
+		{373A7E86-CFE7-4D37-941C-71846352F234}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

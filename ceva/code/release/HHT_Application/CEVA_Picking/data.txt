@@ -1,0 +1,1 @@
+http://10.40.17.3/Autoupdate/Service1.asmx

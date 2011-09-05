@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C616BC8-C3B8-4ED2-B557-5FDB8B675736}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CEVA.Main</StartupObject>
+    <RootNamespace>CEVA</RootNamespace>
+    <AssemblyName>CEVA_Pick</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>cevapicking</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>CEVA.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <DeployDirPrefix>%25CSIDL_PROGRAM_FILES%25</DeployDirPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>CEVA_Pick.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>CEVA_Pick.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Symbol, Version=1.6.1.2, Culture=neutral, PublicKeyToken=68ec8db391f150ca">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Symbol.Audio, Version=1.6.1.2, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.Barcode, Version=1.6.1.3, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.BarcodeForms, Version=1.6.1.3, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.StandardForms, Version=1.6.1.3, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net.IrDA">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataGrid">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationFile.vb" />
+    <Compile Include="Encryption64.vb" />
+    <Compile Include="frmReg.Designer.vb">
+      <DependentUpon>frmReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alert2.Designer.vb">
+      <DependentUpon>frm_Alert2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alert2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Move.Designer.vb">
+      <DependentUpon>frm_Move.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Move.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_overView.Designer.vb">
+      <DependentUpon>frm_overView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_overView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_overviewmorebatch.Designer.vb">
+      <DependentUpon>frm_overviewmorebatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_overviewmorebatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Picklist.Designer.vb">
+      <DependentUpon>frm_Picklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Picklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Query.Designer.vb">
+      <DependentUpon>frm_Query.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SysSetting.Designer.vb">
+      <DependentUpon>frm_SysSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SysSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetAssemblyInfo.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PubModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PM.vb" />
+    <Compile Include="SymbolScancer.vb" />
+    <Compile Include="Sysinfo.vb" />
+    <Compile Include="Utility.vb" />
+    <Compile Include="Web References\RFWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmReg.resx">
+      <DependentUpon>frmReg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alert2.resx">
+      <DependentUpon>frm_Alert2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Move.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Move.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_overView.resx">
+      <DependentUpon>frm_overView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_overviewmorebatch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_overviewmorebatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Picklist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Picklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Query.resx">
+      <DependentUpon>frm_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SysSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_SysSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bmp\37.ico" />
+    <Content Include="bmp\Adidas_blue.ico" />
+    <Content Include="bmp\Adidas_green.ico" />
+    <Content Include="bmp\Adidas_red.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bmp\help.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bmp\s001.ico" />
+    <Content Include="bmp\Upload_Arrow.ico" />
+    <Content Include="CEVA.ico" />
+    <Content Include="CEVAHHT.ico" />
+    <Content Include="HelpFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SchmidtRegKey.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web References\RFWebService\RFWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CEVA_Picking.config">
+    </None>
+    <None Include="setup.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\RFWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\RFWebService\RFWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/RFWebService/RFWebService.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\RFWebService\</RelPath>
+      <UpdateFromURL>http://localhost/RFWebService/RFWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SPs\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+</Project>

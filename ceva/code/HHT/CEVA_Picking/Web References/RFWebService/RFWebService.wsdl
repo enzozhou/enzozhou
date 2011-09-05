@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="get_svr_datetime">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_svr_datetimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_svr_datetimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTxt_ModifyTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="getTxt_ModifyTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTxt_ModifyTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownLoadSingleFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_serr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownLoadSingleFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownLoadSingleFileResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_serr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownLoadFileLot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="al_off" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="al_len" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownLoadFileLotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownLoadFileLotResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadSingleFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileData" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_serr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadSingleFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpLoadSingleFileResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_serr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQL_DS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQL_DSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSQL_DSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQL_CNT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQL_CNTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSQL_CNTResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteScalar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteScalarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteScalarResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunProcedure_Str">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_proName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunProcedure_StrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RunProcedure_StrResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunProcedure_DS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_proName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunProcedure_DSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RunProcedure_DSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wf_sp_hht_getTaskList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sku_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_assigned_opt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wf_sp_hht_getTaskListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wf_sp_hht_getTaskListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="as_sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="get_svr_datetimeSoapIn">
+    <wsdl:part name="parameters" element="tns:get_svr_datetime" />
+  </wsdl:message>
+  <wsdl:message name="get_svr_datetimeSoapOut">
+    <wsdl:part name="parameters" element="tns:get_svr_datetimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTxt_ModifyTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:getTxt_ModifyTime" />
+  </wsdl:message>
+  <wsdl:message name="getTxt_ModifyTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:getTxt_ModifyTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadSingleFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownLoadSingleFile" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadSingleFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownLoadSingleFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadFileLotSoapIn">
+    <wsdl:part name="parameters" element="tns:DownLoadFileLot" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadFileLotSoapOut">
+    <wsdl:part name="parameters" element="tns:DownLoadFileLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadSingleFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpLoadSingleFile" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadSingleFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpLoadSingleFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQL_DSSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQL_DS" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQL_DSSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQL_DSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQL_CNTSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQL_CNT" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQL_CNTSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQL_CNTResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteScalarSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteScalarSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="RunProcedure_StrSoapIn">
+    <wsdl:part name="parameters" element="tns:RunProcedure_Str" />
+  </wsdl:message>
+  <wsdl:message name="RunProcedure_StrSoapOut">
+    <wsdl:part name="parameters" element="tns:RunProcedure_StrResponse" />
+  </wsdl:message>
+  <wsdl:message name="RunProcedure_DSSoapIn">
+    <wsdl:part name="parameters" element="tns:RunProcedure_DS" />
+  </wsdl:message>
+  <wsdl:message name="RunProcedure_DSSoapOut">
+    <wsdl:part name="parameters" element="tns:RunProcedure_DSResponse" />
+  </wsdl:message>
+  <wsdl:message name="wf_sp_hht_getTaskListSoapIn">
+    <wsdl:part name="parameters" element="tns:wf_sp_hht_getTaskList" />
+  </wsdl:message>
+  <wsdl:message name="wf_sp_hht_getTaskListSoapOut">
+    <wsdl:part name="parameters" element="tns:wf_sp_hht_getTaskListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="get_svr_datetime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回服务器时间,测试web service是否通讯成功</wsdl:documentation>
+      <wsdl:input message="tns:get_svr_datetimeSoapIn" />
+      <wsdl:output message="tns:get_svr_datetimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTxt_ModifyTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">测试方法:返回当前txt文件版本时间和内存数据流的版本时间.</wsdl:documentation>
+      <wsdl:input message="tns:getTxt_ModifyTimeSoapIn" />
+      <wsdl:output message="tns:getTxt_ModifyTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadSingleFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载名称 itemMaster_name.txt 文件：大小不超过2M</wsdl:documentation>
+      <wsdl:input message="tns:DownLoadSingleFileSoapIn" />
+      <wsdl:output message="tns:DownLoadSingleFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadFileLot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">分批下载 itemMaster_code.txt 文件</wsdl:documentation>
+      <wsdl:input message="tns:DownLoadFileLotSoapIn" />
+      <wsdl:output message="tns:DownLoadFileLotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadSingleFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传单个文件：传递指定的文件名称和文件字节数组()</wsdl:documentation>
+      <wsdl:input message="tns:UpLoadSingleFileSoapIn" />
+      <wsdl:output message="tns:UpLoadSingleFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_DS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定SQL,返回数据集</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQL_DSSoapIn" />
+      <wsdl:output message="tns:ExecuteSQL_DSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_CNT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定SQL,影响的数据行数</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQL_CNTSoapIn" />
+      <wsdl:output message="tns:ExecuteSQL_CNTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定SQL,返回单个结果</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteScalarSoapIn" />
+      <wsdl:output message="tns:ExecuteScalarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_Str">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定的存储过程,返回单个output参数序列值</wsdl:documentation>
+      <wsdl:input message="tns:RunProcedure_StrSoapIn" />
+      <wsdl:output message="tns:RunProcedure_StrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_DS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定存储过程,返回数据集</wsdl:documentation>
+      <wsdl:input message="tns:RunProcedure_DSSoapIn" />
+      <wsdl:output message="tns:RunProcedure_DSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wf_sp_hht_getTaskList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行指定存储过程 sp_hht_getTaskList_div ,返回数据集</wsdl:documentation>
+      <wsdl:input message="tns:wf_sp_hht_getTaskListSoapIn" />
+      <wsdl:output message="tns:wf_sp_hht_getTaskListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_svr_datetime">
+      <soap:operation soapAction="http://tempuri.org/get_svr_datetime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTxt_ModifyTime">
+      <soap:operation soapAction="http://tempuri.org/getTxt_ModifyTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadSingleFile">
+      <soap:operation soapAction="http://tempuri.org/DownLoadSingleFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadFileLot">
+      <soap:operation soapAction="http://tempuri.org/DownLoadFileLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadSingleFile">
+      <soap:operation soapAction="http://tempuri.org/UpLoadSingleFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_DS">
+      <soap:operation soapAction="http://tempuri.org/ExecuteSQL_DS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_CNT">
+      <soap:operation soapAction="http://tempuri.org/ExecuteSQL_CNT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap:operation soapAction="http://tempuri.org/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_Str">
+      <soap:operation soapAction="http://tempuri.org/RunProcedure_Str" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_DS">
+      <soap:operation soapAction="http://tempuri.org/RunProcedure_DS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wf_sp_hht_getTaskList">
+      <soap:operation soapAction="http://tempuri.org/wf_sp_hht_getTaskList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_svr_datetime">
+      <soap12:operation soapAction="http://tempuri.org/get_svr_datetime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTxt_ModifyTime">
+      <soap12:operation soapAction="http://tempuri.org/getTxt_ModifyTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadSingleFile">
+      <soap12:operation soapAction="http://tempuri.org/DownLoadSingleFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadFileLot">
+      <soap12:operation soapAction="http://tempuri.org/DownLoadFileLot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadSingleFile">
+      <soap12:operation soapAction="http://tempuri.org/UpLoadSingleFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_DS">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteSQL_DS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQL_CNT">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteSQL_CNT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_Str">
+      <soap12:operation soapAction="http://tempuri.org/RunProcedure_Str" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunProcedure_DS">
+      <soap12:operation soapAction="http://tempuri.org/RunProcedure_DS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wf_sp_hht_getTaskList">
+      <soap12:operation soapAction="http://tempuri.org/wf_sp_hht_getTaskList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://192.168.33.128/RF/RFWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://192.168.33.128/RF/RFWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

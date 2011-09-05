@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<define version="1.0.0.0" requireversion="1.0.0.2">
+	<process type="import">
+		<!--
+	type=export(runexport),import(runimport),convert(runconvert)
+	not used
+	-->
+		<source type="xlsfile">
+			<!--
+			note: all word please use lower-case.
+			type="businessobject",dataset,txtfile,xlsfile,database
+			-->
+			<table type="column" name="barcode" coltype="name" firstrow="2">
+				<!--
+				columntype=name, position(column must have col property)
+				firstdata=1(only for text source)
+				delimiter=tab,comma(only for text file), or none(fix length)
+				sql= sql statement (only for database)
+				-->
+
+				<field name="sku_no" caption="产品代码" datatype="string" position="1" length="50" pk="1" />
+				<field name="barcode" caption="条码" datatype="string" position="2" length="30" pk="1" />
+			</table>
+		</source>
+		<!--
+	type=xlsfile,txtfile,databases
+	method="excel",html,xml
+	template's file must store same with this file.
+	 -->
+		<target seq="1" type="database">
+			<table name="impbarcode" type="data">
+				<body type="header"></body>
+				<body type="body" firstrow="2" maxrecords="-1" sql="stp_imp_SKUBarcode">
+					<paramerters>
+						<field name="@id" caption="id" datatype="long" length="20" pk="1" value="">
+							<data type="runtime" field="id" value="value"></data>
+						</field>
+					</paramerters>
+					<!--rows will repeat output-->
+						<cell name="id" col="1" format="text" datatype="long" length="20" pk="1">
+							<data type="runtime" field="id" value="value"></data>
+						</cell>
+						<cell name="sku_no" col="2" format="text" datatype="string" length="50" pk="1">
+							<data type="source" table="barcode" field="sku_no" value="value"></data>
+						</cell>
+						<cell name="barcode" col="3" format="text" datatype="string" length="30" pk="1">
+							<data type="source" table="barcode" field="barcode" value="value"></data>
+						</cell>
+				</body>
+				<body type="footer">
+					<!--not supported--></body>
+			</table>
+			<table type="filter" columns="3"></table>
+		</target>
+	</process>
+</define>

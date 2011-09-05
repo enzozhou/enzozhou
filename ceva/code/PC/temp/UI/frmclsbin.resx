@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+            Microsoft ResX Schema 
+        
+            Version 1.3
+                
+            The primary goals of this Format is To allow a simple XML Format 
+            that is mostly human readable. The generation and parsing of the 
+            various Data types are done through the TypeConverter classes 
+            associated With the Data types.
+        
+            Example:
+        
+                ... ado.net/XML headers & schema ...
+                <resheader name="resmimetype">text/microsoft-resx</resheader>
+                <resheader name="version">1.3</resheader>
+                <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+                <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+                <Data name="Name1">this is my long string</Data>
+                <Data name="Color1" Type="System.Drawing.Color, System.Drawing">Blue</Data>
+                <Data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+                    [base64 mime encoded serialized .NET Framework object]
+                </Data>
+                <Data name="Icon1" Type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+                    [base64 mime encoded string representing a byte Array form of the .NET Framework object]
+                </Data>
+        
+            There are any number of "resheader" rows that contain simple 
+            name/value pairs.
+            
+            Each Data row contains a name, and value. The row also contains a 
+            Type or mimetype. Type corresponds To a .NET class that support 
+            text/value conversion through the TypeConverter architecture. 
+            Classes that don't support this are serialized and stored with the 
+            mimetype Set.
+                     
+            The mimetype is used For serialized objects, and tells the 
+            ResXResourceReader how To depersist the object. This is currently not 
+            extensible. For a given mimetype the value must be Set accordingly:
+        
+            Note - application/x-microsoft.net.object.binary.base64 is the Format 
+                   that the ResXResourceWriter will generate, however the reader can 
+                   Read any of the formats listed below.
+        
+            mimetype: application/x-microsoft.net.object.binary.base64
+            value   : The object must be serialized With 
+                    : System.Serialization.Formatters.Binary.BinaryFormatter
+                    : and Then encoded With base64 encoding.
+        
+            mimetype: application/x-microsoft.net.object.soap.base64
+            value   : The object must be serialized With 
+                    : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+                    : and Then encoded With base64 encoding.
+            mimetype: application/x-microsoft.net.object.bytearray.base64
+            value   : The object must be serialized into a byte Array 
+                    : using a System.ComponentModel.TypeConverter
+                    : and Then encoded With base64 encoding.
+        -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="True">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="Data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" Type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" Type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:Attribute name="name" Type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:Attribute name="Type" Type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:Attribute name="mimetype" Type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" Type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:Attribute name="name" Type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<Data name="lbldc_code.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtdc_code.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblbin_code.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtbin_code.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lbldescription.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtdescription.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblbin_area.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtbin_area.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lbllength.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtlength.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblwidth_.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtwidth_.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblweight.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtweight.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblvolume.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtvolume.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblopt_by.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="txtopt_by.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="lblopt_dtime.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="dtpopt_dtime.Modifiers" Type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>Assembly</value>
+	</Data>
+	<Data name="$this.Name">
+		<value>frmclsbin</value>
+	</Data>
+</root>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<define version="1.0.0.0" requireversion="1.0.0.2">
+	<process type="import">
+		<!--
+	type=export(RunExport),import(RunImport),convert(RunConvert)
+	Not Used
+	-->
+		<source type="txtfile">
+			<!--
+			note: all word please use lower-case.
+			type="businessobject",DataSet,txtfile,xlsfile,database
+			-->
+			<table type="column" name="zmmr" coltype="name" firstrow="2" delimiter="|" doublequotationmarks="data">
+				<!--
+			columntype=name, position(column must have col property)
+			firstdata=1(only for text source)
+			delimiter=tab,comma(only for text file), or none(fix length)
+			sql= sql statement (only for database)
+			doublequotationmarks = data, none
+			-->
+				<!--
+				01,物料				sku_wms			-*-OK
+				02,产品名称			model_no		-*-OK
+				03,型号规格			sku_desc_eng	-*-OK
+				04,型号规格（中）	sku_desc		-*-OK
+				05,六位代码			six_code		-*-OK
+				06,供应商代码		vender			-*-OK
+				07,供应商名称		vender_name		-*-OK
+				08,基本单位			unit			-*-OK
+				09,净重（公斤）		net_weight		-*-OK
+				10,毛重 （公斤）	gross_weight
+				11,体积（立方	
+				12,长度（米）	
+				13,宽度（米	
+				14,高度（米）	
+				15,物流毛重	
+				16,物流毛重单位	
+				17,物流体积	
+				18,物流体积单位	
+				19,物流长度	
+				20,物流宽度	
+				21,物流高度	
+				22,物流尺寸单位	
+				23,SN标志			have_sno		-*-OK
+				24,基本单位 /主包装箱	
+				25,净重（公斤）	  -*-单件
+				26,毛重 （公斤）		  -*-单件
+				27,体积（立方		  -*-单件
+				28,长度（米）		  -*-单件
+				29,宽度（米		  -*-单件
+				30,高度（米）		  -*-单件
+				31,基本单位 /次包装箱	
+				32,净重（公斤）	
+				33,毛重 （公斤）	
+				34,体积（立方	
+				35,长度（米）	
+				36,宽度（米	
+				37,高度（米）	
+				38,经销商价格		price		-*-OK
+				39,SRP	
+				40,始销日期	
+				41,停止日期	
+				42,下载日期			down_date	-*-OK
+				43,产品组			category	-*-OK
+				44,业务部门			department	-*-OK
+-->
+				<field name="sku_no" caption="产品号" datatype="string" position="2" length="20" pk="1" />
+				<field name="sku_wms" caption="物料码" datatype="string" position="1" length="20" pk="0" />
+				<field name="model_no" caption="产品名称" datatype="string" position="3" length="50" pk="0" />
+				<field name="sku_desc_eng" caption="型号规格" datatype="string" position="4" length="50" pk="0" />
+				<field name="sku_desc" caption="型号规格（中）" datatype="string" position="5" length="50" pk="0" />
+				<field name="six_code" caption="六位代码" datatype="string" position="7" length="6" pk="0" />
+				<field name="vender" caption="供应商代码" datatype="string" position="8" length="10" pk="0" />
+				<field name="vender_name" caption="供应商名称" datatype="string" position="9" length="50" pk="0" />
+				<field name="unit" caption="基本单位" datatype="string" position="10" length="10" pk="0" />
+				<field name="net_weight" caption="净重（公斤）" datatype="float" position="11" length="12,3" pk="0" />
+				<field name="gross_weight" caption="毛重 （公斤）" datatype="float" position="12" length="12,3" pk="0" />
+				<field name="volume" caption="体积(立方)" datatype="float" position="13" length="12,3" pk="0" />
+				<field name="length" caption="长" datatype="float" position="14" length="12,3" pk="0" />
+				<field name="width" caption="宽" datatype="float" position="15" length="12,3" pk="0" />
+				<field name="height" caption="高" datatype="float" position="16" length="12,3" pk="0" />
+				<field name="have_sno" caption="SN标志" datatype="string" position="25" length="20" pk="0" />
+				<!--
+			only for database, and must matched with SQL statement
+			<paramerters>
+				<field name="@doc_no" caption="Invoice no" datatype="string" length="20" pk="1" value="" />
+				<field name="@sku_no" caption="Invoice no" datatype="string" length="20" pk="1" value="" />
+			</paramerters>			
+			-->
+			</table>
+		</source>
+		<!--
+	type=xlsfile,txtfile,database
+	method="Excel",html,xml
+	template's file must store same with this file.
+	 stp_imp_skuinfo_zmmr-->
+		<target seq="1" type="database">
+			<table name="impskuinfo" type="data">
+				<body type="header"></body>
+				<body type="body" firstrow="2" maxrecords="-1" sql="stp_imp_SKU">
+					<paramerters>
+						<field name="@id" caption="seq id" datatype="long" length="20" pk="1" value="">
+							<data type="runtime" field="id" value="value"></data>
+						</field>
+					</paramerters>
+					<!--Rows will repeat output-->
+					<cell name="id" col="1" format="text" datatype="long" length="20" pk="1">
+						<data type="runtime" field="id" value="value"></data>
+					</cell>
+					<cell name="sku_no" col="2" format="text" datatype="string" length="20" pk="1">
+						<data type="source" table="zmmr" field="sku_no" value="value"></data>
+					</cell>
+					<cell name="sku_wms" col="3" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="sku_wms" value="value"></data>
+					</cell>
+					<cell name="model_no" col="4" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="model_no" value="value"></data>
+					</cell>
+					<cell name="sku_desc_eng" col="5" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="sku_desc_eng" value="value"></data>
+					</cell>
+					<cell name="sku_desc" col="6" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="sku_desc" value="value"></data>
+					</cell>
+					<cell name="six_code" col="7" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="six_code" value="value"></data>
+					</cell>
+					<cell name="vender" col="8" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="vender" value="value"></data>
+					</cell>
+					<cell name="vender_name" col="9" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="vender_name" value="value"></data>
+					</cell>
+					<cell name="unit" col="10" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="unit" value="value"></data>
+					</cell>
+					<cell name="net_weight" col="11" format="text" datatype="float" length="12,3" pk="0">
+						<data type="source" table="zmmr" field="net_weight" value="value"></data>
+					</cell>
+					<cell name="gross_weight" col="12" format="text" datatype="float" length="12,3" 
+						pk="0">
+						<data type="source" table="zmmr" field="gross_weight" value="value"></data>
+					</cell>
+					<cell name="volume" col="13" format="text" datatype="float" length="12,9" pk="0">
+						<data type="source" table="zmmr" field="volume" value="value"></data>
+					</cell>
+					<cell name="length" col="14" format="text" datatype="float" length="12,3" pk="0">
+						<data type="source" table="zmmr" field="length" value="value"></data>
+					</cell>
+					<cell name="width" col="15" format="text" datatype="float" length="12,3" pk="0">
+						<data type="source" table="zmmr" field="width" value="value"></data>
+					</cell>
+					<cell name="height" col="16" format="text" datatype="float" length="12,3" pk="0">
+						<data type="source" table="zmmr" field="height" value="value"></data>
+					</cell>
+					<cell name="have_sno" col="17" format="text" datatype="string" length="20" pk="0">
+						<data type="source" table="zmmr" field="have_sno" value="value"></data>
+					</cell>
+					<cell name="sku_type" col="18" format="text" datatype="string" length="20" pk="0">
+						<data type="value" value="SAP"></data>
+					</cell>
+				</body>
+				<body type="footer">
+					<!--Not supported--></body>
+			</table>
+			<table type="filter" columns="3">
+				<!--not supported for database-
+				<body type="header">
+					<cell name="user_code" col="1" row="1" format="text">
+						<data type="const" field="usercode" value="value"></data>
+					</cell>
+					<cell name="now" col="2" row="1" align="left" format="text">
+						<data type="const" field="now" value="value"></data>
+					</cell>
+				</body>
+				<body type="body" firstrow="3" maxrecords="-1">No define.</body>
+				<body type="footer"></body>
+				--></table>
+		</target>
+	</process>
+</define>

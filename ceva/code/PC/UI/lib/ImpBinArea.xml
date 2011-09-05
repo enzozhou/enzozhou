@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<define version="1.0.0.0" requireversion="1.0.0.2">
+	<process type="import">
+		<!--
+	type=export(runexport),import(runimport),convert(runconvert)
+	not used
+	-->
+		<source type="xlsfile">
+			<!--
+			note: all word please use lower-case.
+			type="businessobject",dataset,txtfile,xlsfile,database
+			-->
+			<table type="column" name="binarea" coltype="name" firstrow="2">
+				<!--
+				columntype=name, position(column must have col property)
+				firstdata=1(only for text source)
+				delimiter=tab,comma(only for text file), or none(fix length)
+				sql= sql statement (only for database)
+				-->
+
+
+				<field name="dc_code" caption="类别编号" datatype="string" position="1" length="10" pk="1" />
+				<field name="bin_area" caption="物流中心" datatype="string" position="2" length="10" pk="1" />
+				<field name="description" caption="货区代码" datatype="string" position="3" length="50" pk="0" />
+				<field name="wh_code" caption="货区描述" datatype="string" position="4" length="10" pk="0" />
+				<field name="seq" caption="配货优先顺序" datatype="string" position="5" length="3" pk="0" />
+				<field name="address" caption="地址" datatype="string" position="6" length="50" pk="0" />
+				<field name="person" caption="联系人" datatype="string" position="7" length="50" pk="0" />
+				<field name="tel" caption="电话" datatype="string" position="8" length="20" pk="0" />
+				<field name="fax" caption="传真" datatype="string" position="9" length="20" pk="0" />
+				<field name="zip" caption="邮编" datatype="string" position="10" length="6" pk="0" />	
+			</table>
+		</source>
+		<!--
+	type=xlsfile,txtfile,databases
+	method="excel",html,xml
+	template's file must store same with this file.
+	 -->
+		<target seq="1" type="database">
+			<table name="impbinarea" type="data">
+				<body type="header"></body>
+				<body type="body" firstrow="2" maxrecords="-1" sql="stp_imp_binarea">
+					<paramerters>
+						<field name="@id" caption="id" datatype="long" length="20" pk="1" value="">
+							<data type="runtime" field="id" value="value"></data>
+						</field>
+					</paramerters>
+					<!--rows will repeat output-->
+						<cell name="id" col="1" format="text" datatype="long" length="20" pk="1">
+							<data type="runtime" field="id" value="value"></data>
+						</cell>
+						<cell name="dc_code" col="2" format="text" datatype="string" length="10" pk="1">
+							<data type="source" table="binarea" field="dc_code" value="value"></data>
+						</cell>
+						<cell name="bin_area" col="3" format="text" datatype="string" length="10" pk="1">
+							<data type="source" table="binarea" field="bin_area" value="value"></data>
+						</cell>
+						<cell name="description" col="4" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="binarea" field="description" value="value"></data>
+						</cell>
+						<cell name="wh_code" col="5" format="text" datatype="string" length="10" pk="0">
+							<data type="source" table="binarea" field="wh_code" value="value"></data>
+						</cell>
+						<cell name="seq" col="6" format="text" datatype="string" length="3" pk="0">
+							<data type="source" table="binarea" field="seq" value="value"></data>
+						</cell>
+						<cell name="address" col="7" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="binarea" field="address" value="value"></data>
+						</cell>
+						<cell name="person" col="8" format="text" datatype="string" length="50" pk="0">
+							<data type="source" table="binarea" field="person" value="value"></data>
+						</cell>
+						<cell name="tel" col="9" format="text" datatype="string" length="20" pk="0">
+							<data type="source" table="binarea" field="tel" value="value"></data>
+						</cell>
+						<cell name="fax" col="10" format="text" datatype="string" length="20" pk="0">
+							<data type="source" table="binarea" field="fax" value="value"></data>
+						</cell>
+						<cell name="zip" col="11" format="text" datatype="string" length="6" pk="0">
+							<data type="source" table="binarea" field="zip" value="value"></data>
+						</cell>
+				</body>
+				<body type="footer">
+					<!--not supported--></body>
+			</table>
+			<table type="filter" columns="3"></table>
+		</target>
+	</process>
+</define>

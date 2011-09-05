@@ -1,0 +1,2031 @@
+
+2011-08-29 13:19:02 User: (ENZO1\Administrator) 
+## Message:用户 'sa' 登录失败。
+
+
+2011-08-29 13:19:33 User: (ENZO1\Administrator) 
+## Message:用户 'sa' 登录失败。
+
+
+2011-08-29 13:19:34 User: (ENZO1\Administrator) 
+## Message:用户 'sa' 登录失败。
+
+
+2011-08-29 13:19:56 User: (ENZO1\Administrator) 
+## Message:A list of clsOPERATOR objects ( WHERE ( [operator].[user_code] = @operatoruser_code0 )) have been fetched.
+
+
+2011-08-29 13:19:56 User:admin (ENZO1\Administrator) 
+## Message:对象名 'client' 无效。
+
+
+2011-08-29 13:48:38 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 14:01:56 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:01:58 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:01:59 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 14:02:57 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 14:03:33 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 14:03:48 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 14:06:09 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 14:08:33 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklist objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:08:33 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklin objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:08:43 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:43 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:43 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:08:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:08:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:08:56 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:08:56 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:56 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:08:56 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:09:16 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 14:09:18 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:09:18 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:09:21 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:09:21 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:09:21 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:10:17 User:admin (ENZO1\Administrator) 
+## Message:All clsDnBin objects have been fetched.
+
+
+2011-08-29 14:10:18 User:admin (ENZO1\Administrator) 
+## Message:All clsbinStatus objects have been fetched.
+
+
+2011-08-29 14:10:20 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 14:10:23 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklist objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:10:23 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklin objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:27:30 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:28:02 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:36:09 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 14:36:13 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 14:36:29 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in (0) ) )) have been fetched.
+
+
+2011-08-29 14:38:57 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 14:39:16 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 14:39:18 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 14:39:21 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:39:32 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:39:42 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in (0) ) )) have been fetched.
+
+
+2011-08-29 14:40:05 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:40:30 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:40:35 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:40:35 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:40:35 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:41:12 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 14:41:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:41:24 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:41:24 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:41:24 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:53:49 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:53:49 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:53:49 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:53:49 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:55:02 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklist objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:55:02 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklin objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:55:20 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:55:20 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:55:20 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 14:55:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 14:55:51 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:55:51 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 14:55:51 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:20:57 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:22:10 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in ('1    ','2    ','3    ','4    ') ) )) have been fetched.
+
+
+2011-08-29 15:23:34 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:23:34 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:23:34 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:23:34 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:23:57 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in (5) ) )) have been fetched.
+
+
+2011-08-29 15:25:10 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 15:25:15 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:25:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:25:21 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:25:28 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:25:28 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:25:28 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:25:36 User:admin (ENZO1\Administrator) 
+## Message:All clstaskhdr objects have been fetched.
+
+
+2011-08-29 15:25:40 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklist objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:25:40 User:admin (ENZO1\Administrator) 
+## Message:A list of clstasklin objects ( WHERE ( DataTable.[task_id] = @task_id0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:27:09 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:27:12 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:27:13 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:27:15 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:27:28 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:27:34 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:27:37 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:27:37 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:27:37 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:27:58 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:27:58 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:27:58 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:27:58 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:45:46 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 15:47:04 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:47:05 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:47:06 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:47:07 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:47:32 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:48:15 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:48:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:48:17 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:48:37 User: (ENZO1\Administrator) 
+## Message:A list of clsOPERATOR objects ( WHERE ( [operator].[user_code] = @operatoruser_code0 )) have been fetched.
+
+
+2011-08-29 15:48:38 User:admin (ENZO1\Administrator) 
+## Message:对象名 'client' 无效。
+
+
+2011-08-29 15:48:42 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:48:43 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:48:44 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:48:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:48:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:48:50 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:49:02 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:50:04 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 15:50:05 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in (0) ) )) have been fetched.
+
+
+2011-08-29 15:50:06 User:admin (ENZO1\Administrator) 
+## Message:A list of clsdnhdr objects ( WHERE ( ( [dbo].[dnhdr].[status_code] in ('1    ','2    ','3    ','4    ') ) )) have been fetched.
+
+
+2011-08-29 15:50:08 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:50:08 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:50:09 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:50:53 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:50:54 User:admin (ENZO1\Administrator) 
+## Message:All clsdnhdr objects have been fetched.
+
+
+2011-08-29 15:51:28 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:51:32 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:53:09 User: (ENZO1\Administrator) 
+## Message:A list of clsOPERATOR objects ( WHERE ( [operator].[user_code] = @operatoruser_code0 )) have been fetched.
+
+
+2011-08-29 15:53:09 User:admin (ENZO1\Administrator) 
+## Message:对象名 'client' 无效。
+
+
+2011-08-29 15:53:12 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:53:13 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:53:15 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:53:15 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:53:24 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:53:59 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:54:00 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 15:54:00 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 15:54:01 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
+
+2011-08-29 15:54:14 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:54:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:54:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:54:16 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 15:54:22 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 15:54:22 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:54:23 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 15:54:23 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9600268436; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831153; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831152; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831151; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831150; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831050; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831048; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831046; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831045; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831044; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831038; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831036; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831035; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831034; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831033; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831032; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831031; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831030; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831029; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831028; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831027; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831023; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831022; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831021; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831020; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831019; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831018; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830990; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830989; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830988; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830897; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830896; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830894; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830887; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830869; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830868; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830866; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830865; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830864; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830863; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830759; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830757; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830751; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830750; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830749; has been deleted.
+
+
+2011-08-29 18:36:18 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830746; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830745; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830744; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830743; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830742; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830719; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830718; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830717; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830715; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830714; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830713; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830549; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830542; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830541; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830499; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830490; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830472; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830448; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830447; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830446; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830433; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830432; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830431; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830425; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830424; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830366; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830365; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830364; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830363; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830362; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830361; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830360; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830359; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830358; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830356; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830355; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830346; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830338; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830314; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830302; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830292; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9600268436;bin_area-A;bin_code-A-A-060;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831153;bin_area-A;bin_code-A-A-040;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831152;bin_area-D;bin_code-D-A-041;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831151;bin_area-D;bin_code-D-A-040;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831150;bin_area-D;bin_code-D-A-039;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831050;bin_area-D;bin_code-D-A-029;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831048;bin_area-D;bin_code-D-A-031;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831046;bin_area-D;bin_code-D-A-052;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831045;bin_area-A;bin_code-A-A-049;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831044;bin_area-D;bin_code-D-A-051;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831038;bin_area-D;bin_code-D-A-050;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:19 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831036;bin_area-A;bin_code-A-A-048;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831035;bin_area-D;bin_code-D-A-049;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831034;bin_area-A;bin_code-A-A-047;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831033;bin_area-A;bin_code-A-A-046;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831032;bin_area-D;bin_code-D-A-048;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831031;bin_area-D;bin_code-D-A-047;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831030;bin_area-D;bin_code-D-A-046;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831029;bin_area-A;bin_code-A-A-045;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831028;bin_area-A;bin_code-A-A-044;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831027;bin_area-D;bin_code-D-A-045;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831023;bin_area-D;bin_code-D-A-044;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831022;bin_area-A;bin_code-A-A-043;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831021;bin_area-D;bin_code-D-A-043;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831020;bin_area-D;bin_code-D-A-042;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831019;bin_area-A;bin_code-A-A-042;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831018;bin_area-A;bin_code-A-A-041;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830990;bin_area-D;bin_code-D-A-023;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830989;bin_area-A;bin_code-A-A-053;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830988;bin_area-A;bin_code-A-A-052;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830897;bin_area-A;bin_code-A-A-029;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830896;bin_area-D;bin_code-D-A-054;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830894;bin_area-D;bin_code-D-A-053;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830887;bin_area-A;bin_code-A-A-031;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830869;bin_area-D;bin_code-D-A-059;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830868;bin_area-D;bin_code-D-A-058;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830866;bin_area-D;bin_code-D-A-057;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830865;bin_area-A;bin_code-A-A-055;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830864;bin_area-D;bin_code-D-A-056;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830863;bin_area-A;bin_code-A-A-054;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830759;bin_area-D;bin_code-D-A-032;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830757;bin_area-A;bin_code-A-A-028;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830751;bin_area-A;bin_code-A-A-027;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830750;bin_area-A;bin_code-A-A-026;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830749;bin_area-D;bin_code-D-A-026;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830746;bin_area-A;bin_code-A-A-034;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:20 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830745;bin_area-A;bin_code-A-A-033;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830744;bin_area-D;bin_code-D-A-028;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830743;bin_area-D;bin_code-D-A-033;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830742;bin_area-A;bin_code-A-A-032;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830719;bin_area-D;bin_code-D-A-061;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830718;bin_area-A;bin_code-A-A-018;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830717;bin_area-D;bin_code-D-A-022;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830715;bin_area-A;bin_code-A-A-062;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830714;bin_area-A;bin_code-A-A-059;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830713;bin_area-A;bin_code-A-A-058;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830549;bin_area-A;bin_code-A-A-030;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830542;bin_area-A;bin_code-A-A-056;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830541;bin_area-D;bin_code-D-A-060;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830499;bin_area-A;bin_code-A-A-035;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830490;bin_area-A;bin_code-A-A-019;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830472;bin_area-D;bin_code-D-A-034;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830448;bin_area-D;bin_code-D-A-027;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830447;bin_area-D;bin_code-D-A-030;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830446;bin_area-D;bin_code-D-A-035;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830433;bin_area-A;bin_code-A-A-057;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830432;bin_area-A;bin_code-A-A-020;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830431;bin_area-D;bin_code-D-A-024;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830425;bin_area-D;bin_code-D-A-021;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830424;bin_area-D;bin_code-D-A-063;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830366;bin_area-A;bin_code-A-A-051;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830365;bin_area-A;bin_code-A-A-036;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830364;bin_area-D;bin_code-D-A-025;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830363;bin_area-A;bin_code-A-A-023;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830362;bin_area-A;bin_code-A-A-022;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830361;bin_area-D;bin_code-D-A-038;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830360;bin_area-A;bin_code-A-A-021;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830359;bin_area-D;bin_code-D-A-055;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830358;bin_area-A;bin_code-A-A-050;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830356;bin_area-A;bin_code-A-A-025;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830355;bin_area-A;bin_code-A-A-024;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830346;bin_area-D;bin_code-D-A-037;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830338;bin_area-D;bin_code-D-A-036;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830314;bin_area-A;bin_code-A-A-039;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830302;bin_area-A;bin_code-A-A-038;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830292;bin_area-A;bin_code-A-A-037;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:36:21 User:admin (ENZO1\Administrator) 
+## Message:
+此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:38:21 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 18:38:22 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 18:38:25 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchlin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 18:38:25 User:admin (ENZO1\Administrator) 
+## Message:A list of clsDnBin objects ( WHERE ( DataTable.[dc_code] = @dc_code0 ) AND ( DataTable.[bch_no] = @bch_no0 )) have been fetched.
+
+
+2011-08-29 18:38:25 User:admin (ENZO1\Administrator) 
+## Message:A list of clstaskhdr objects ( WHERE ( DataTable.[bch_no] = @bch_no0 ) AND ( DataTable.[dc_code] = @dc_code0 )) have been fetched.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9600268436; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831153; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831152; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831151; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831150; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831050; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831048; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831046; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831045; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831044; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831038; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831036; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831035; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831034; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831033; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831032; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831031; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831030; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831029; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831028; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831027; has been deleted.
+
+
+2011-08-29 18:38:42 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831023; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831022; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831021; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831020; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831019; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204831018; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830990; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830989; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830988; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830897; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830896; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830894; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830887; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830869; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830868; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830866; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830865; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830864; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830863; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830759; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830757; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830751; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830750; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830749; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830746; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830745; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830744; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830743; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830742; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830719; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830718; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830717; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830715; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830714; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830713; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830549; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830542; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830541; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830499; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830490; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830472; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830448; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830447; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830446; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830433; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830432; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830431; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830425; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830424; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830366; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830365; has been deleted.
+
+
+2011-08-29 18:38:43 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830364; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830363; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830362; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830361; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830360; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830359; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830358; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830356; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830355; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830346; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830338; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830314; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830302; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsbchlin: dc_code-SHA;bch_no-CEVA1108290001;dn_no-9204830292; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9600268436;bin_area-A;bin_code-A-A-060;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831153;bin_area-A;bin_code-A-A-040;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831152;bin_area-D;bin_code-D-A-041;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831151;bin_area-D;bin_code-D-A-040;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831150;bin_area-D;bin_code-D-A-039;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831050;bin_area-D;bin_code-D-A-029;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831048;bin_area-D;bin_code-D-A-031;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831046;bin_area-D;bin_code-D-A-052;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831045;bin_area-A;bin_code-A-A-049;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831044;bin_area-D;bin_code-D-A-051;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831038;bin_area-D;bin_code-D-A-050;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831036;bin_area-A;bin_code-A-A-048;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831035;bin_area-D;bin_code-D-A-049;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831034;bin_area-A;bin_code-A-A-047;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831033;bin_area-A;bin_code-A-A-046;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831032;bin_area-D;bin_code-D-A-048;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831031;bin_area-D;bin_code-D-A-047;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831030;bin_area-D;bin_code-D-A-046;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831029;bin_area-A;bin_code-A-A-045;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831028;bin_area-A;bin_code-A-A-044;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831027;bin_area-D;bin_code-D-A-045;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831023;bin_area-D;bin_code-D-A-044;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831022;bin_area-A;bin_code-A-A-043;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:44 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831021;bin_area-D;bin_code-D-A-043;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831020;bin_area-D;bin_code-D-A-042;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831019;bin_area-A;bin_code-A-A-042;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204831018;bin_area-A;bin_code-A-A-041;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830990;bin_area-D;bin_code-D-A-023;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830989;bin_area-A;bin_code-A-A-053;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830988;bin_area-A;bin_code-A-A-052;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830897;bin_area-A;bin_code-A-A-029;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830896;bin_area-D;bin_code-D-A-054;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830894;bin_area-D;bin_code-D-A-053;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830887;bin_area-A;bin_code-A-A-031;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830869;bin_area-D;bin_code-D-A-059;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830868;bin_area-D;bin_code-D-A-058;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830866;bin_area-D;bin_code-D-A-057;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830865;bin_area-A;bin_code-A-A-055;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830864;bin_area-D;bin_code-D-A-056;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830863;bin_area-A;bin_code-A-A-054;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830759;bin_area-D;bin_code-D-A-032;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830757;bin_area-A;bin_code-A-A-028;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830751;bin_area-A;bin_code-A-A-027;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830750;bin_area-A;bin_code-A-A-026;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830749;bin_area-D;bin_code-D-A-026;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830746;bin_area-A;bin_code-A-A-034;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830745;bin_area-A;bin_code-A-A-033;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830744;bin_area-D;bin_code-D-A-028;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830743;bin_area-D;bin_code-D-A-033;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830742;bin_area-A;bin_code-A-A-032;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830719;bin_area-D;bin_code-D-A-061;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830718;bin_area-A;bin_code-A-A-018;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830717;bin_area-D;bin_code-D-A-022;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830715;bin_area-A;bin_code-A-A-062;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830714;bin_area-A;bin_code-A-A-059;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830713;bin_area-A;bin_code-A-A-058;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830549;bin_area-A;bin_code-A-A-030;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830542;bin_area-A;bin_code-A-A-056;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830541;bin_area-D;bin_code-D-A-060;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830499;bin_area-A;bin_code-A-A-035;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830490;bin_area-A;bin_code-A-A-019;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830472;bin_area-D;bin_code-D-A-034;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830448;bin_area-D;bin_code-D-A-027;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830447;bin_area-D;bin_code-D-A-030;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830446;bin_area-D;bin_code-D-A-035;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830433;bin_area-A;bin_code-A-A-057;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830432;bin_area-A;bin_code-A-A-020;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830431;bin_area-D;bin_code-D-A-024;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830425;bin_area-D;bin_code-D-A-021;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830424;bin_area-D;bin_code-D-A-063;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:45 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830366;bin_area-A;bin_code-A-A-051;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830365;bin_area-A;bin_code-A-A-036;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830364;bin_area-D;bin_code-D-A-025;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830363;bin_area-A;bin_code-A-A-023;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830362;bin_area-A;bin_code-A-A-022;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830361;bin_area-D;bin_code-D-A-038;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830360;bin_area-A;bin_code-A-A-021;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830359;bin_area-D;bin_code-D-A-055;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830358;bin_area-A;bin_code-A-A-050;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830356;bin_area-A;bin_code-A-A-025;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830355;bin_area-A;bin_code-A-A-024;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830346;bin_area-D;bin_code-D-A-037;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830338;bin_area-D;bin_code-D-A-036;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830314;bin_area-A;bin_code-A-A-039;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830302;bin_area-A;bin_code-A-A-038;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:clsDnBin: dc_code-SHA;dn_no-9204830292;bin_area-A;bin_code-A-A-037;bch_no-CEVA1108290001; has been deleted.
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:38:46 User:admin (ENZO1\Administrator) 
+## Message:
+此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:39:01 User:admin (ENZO1\Administrator) 
+## Message:此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:39:01 User:admin (ENZO1\Administrator) 
+## Message:
+此任务[TASK1108290106]已操作,不能删除！
+
+
+2011-08-29 18:39:03 User:admin (ENZO1\Administrator) 
+## Message:All clsbchhdr objects have been fetched.
+
+
+2011-08-29 18:39:04 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('0    ','1    ') ) )) have been fetched.
+
+
+2011-08-29 18:39:04 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in ('2    ','3    ') ) )) have been fetched.
+
+
+2011-08-29 18:39:05 User:admin (ENZO1\Administrator) 
+## Message:A list of clsbchhdr objects ( WHERE ( ( [dbo].[bchhdr].[status_code] in (4) ) )) have been fetched.
+
