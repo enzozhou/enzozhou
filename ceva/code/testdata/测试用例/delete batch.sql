@@ -1,9 +1,0 @@
-DELETE FROM dnlin 
-DELETE FROM dnhdr 
-DELETE FROM DnBin 
-DELETE FROM tasklist 
-DELETE FROM taskhdr
-DELETE FROM tasklin 
-DELETE FROM bchlin 
-DELETE FROM bchhdr 
-DELETE FROM  binStatus

@@ -1,1 +1,0 @@
-<%@ WebService Language="VB" CodeBehind="RFWebService.asmx.vb" Class="RFWebService.Service1" %>

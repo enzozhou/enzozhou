@@ -1,4 +1,0 @@
-<?xml version="1.0" standalone="yes"?>
-<Config>
-    <ERPServiceConStr>Data Source=localhost;Initial Catalog=MTS;User ID=sa;Password=gulishan2004;</ERPServiceConStr>
-</Config>
