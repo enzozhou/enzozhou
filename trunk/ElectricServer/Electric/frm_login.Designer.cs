@@ -104,8 +104,10 @@
             // 
             // frm_login
             // 
+            this.AcceptButton = this.btnlogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnexit;
             this.ClientSize = new System.Drawing.Size(315, 157);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -115,6 +117,8 @@
             this.Controls.Add(this.txtPWD);
             this.Controls.Add(this.txtUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_login";
             this.Text = "登录";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
