@@ -94,24 +94,24 @@ namespace Electric
 
         void test()
         {
-            //OutlookBar outlookBar1 = null;
-            // My shortcuts band
+            OutlookBar outlookBar1 = null;
+             //My shortcuts band
             
-            //OutlookBarBand.myShorcutsBand = new OutlookBarBand("My Shorcuts");
-            //myShorcutsBand.SmallImageList = myShortcutsSmallIcons;
-            //myShorcutsBand.LargeImageList = myShortcutsLargeIcons;
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Contacts", 0));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Music", 1));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Defragment", 2));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Games", 3));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Security", 4));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Users", 5));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Fonts", 6));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Speaker", 7));
-            //myShorcutsBand.Items.Add(new OutlookBarItem("Pictures", 8));
-            //myShorcutsBand.Background = SystemColors.AppWorkspace;
-            //myShorcutsBand.TextColor = Color.White;
-            //outlookBar1.Bands.Add(myShorcutsBand);
+            OutlookBarBand.myShorcutsBand = new OutlookBarBand("My Shorcuts");
+            myShorcutsBand.SmallImageList = myShortcutsSmallIcons;
+            myShorcutsBand.LargeImageList = myShortcutsLargeIcons;
+            myShorcutsBand.Items.Add(new OutlookBarItem("Contacts", 0));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Music", 1));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Defragment", 2));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Games", 3));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Security", 4));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Users", 5));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Fonts", 6));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Speaker", 7));
+            myShorcutsBand.Items.Add(new OutlookBarItem("Pictures", 8));
+            myShorcutsBand.Background = SystemColors.AppWorkspace;
+            myShorcutsBand.TextColor = Color.White;
+            outlookBar1.Bands.Add(myShorcutsBand);
         }
 
         private void tsmi_User_Click(object sender, EventArgs e)

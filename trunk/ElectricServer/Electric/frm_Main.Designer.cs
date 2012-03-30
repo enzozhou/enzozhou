@@ -71,11 +71,12 @@
             this.tsmi_buy = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_reports = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_sys = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_User = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_exit = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.tv = new System.Windows.Forms.TreeView();
-            this.tsmi_User = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -195,10 +196,17 @@
             this.tsmi_sys.Size = new System.Drawing.Size(81, 20);
             this.tsmi_sys.Text = "系统管理(&S)";
             // 
+            // tsmi_User
+            // 
+            this.tsmi_User.Name = "tsmi_User";
+            this.tsmi_User.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_User.Text = "用户管理";
+            this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
+            // 
             // tsmi_exit
             // 
             this.tsmi_exit.Name = "tsmi_exit";
-            this.tsmi_exit.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_exit.Size = new System.Drawing.Size(122, 22);
             this.tsmi_exit.Text = "退出";
             this.tsmi_exit.Click += new System.EventHandler(this.tsmi_exit_Click);
             // 
@@ -267,18 +275,20 @@
             this.tv.TabIndex = 4;
             this.tv.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tv_NodeMouseClick);
             // 
-            // tsmi_User
+            // panel1
             // 
-            this.tsmi_User.Name = "tsmi_User";
-            this.tsmi_User.Size = new System.Drawing.Size(152, 22);
-            this.tsmi_User.Text = "用户管理";
-            this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(157, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 377);
+            this.panel1.TabIndex = 6;
             // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 423);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tv);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -317,5 +327,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_Purchase;
         private System.Windows.Forms.ToolStripMenuItem tsmi_buy;
         private System.Windows.Forms.ToolStripMenuItem tsmi_User;
+        private System.Windows.Forms.Panel panel1;
     }
 }
