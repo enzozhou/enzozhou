@@ -20,3 +20,24 @@ D:\document\我的\电机参考资料\Application\ElectricServer\BLL\bin\Electri
 D:\document\我的\电机参考资料\Application\ElectricServer\BLL\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\document\我的\电机参考资料\Application\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.dll
 D:\document\我的\电机参考资料\Application\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.BLL.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.BLL.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.Common.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DAL.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.Model.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Excel.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\IBatisNet.DataMapper.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\OpenSmtp.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\IBatisNet.Common.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DBUtility.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\COM.Excel.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\office.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\MySql.Data.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Microsoft.Vbe.Interop.dll
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.Common.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DBUtility.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DAL.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.Model.pdb
+H:\My Projects\SHRIEA\Code\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.dll
