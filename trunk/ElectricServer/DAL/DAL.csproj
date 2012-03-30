@@ -156,6 +156,7 @@
     <Compile Include="BAS_Employess.cs" />
     <Compile Include="BAS_Organization.cs" />
     <Compile Include="BAS_Partner.cs" />
+    <Compile Include="SYS_User.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
