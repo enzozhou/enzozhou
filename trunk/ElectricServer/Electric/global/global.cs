@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Electric
 {
     static class global
     {
-        public static string Username = "admin";
-        public static int UserID = 613;
+        public static string Username = "";
+        public static int UserID = 0;
+        public static string IsAdmin = "";
         public static int pageSize = 20;
+        public static DataTable dtCodes = null;
+
         /// <summary>
         /// 设置窗体样式
         /// </summary>

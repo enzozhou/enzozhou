@@ -114,5 +114,10 @@ namespace Electric
             //outlookBar1.Bands.Add(myShorcutsBand);
         }
 
+        private void tsmi_User_Click(object sender, EventArgs e)
+        {
+            global.FormStyle(this, new frm_User_list(), "用户信息");
+        }
+
     }
 }
