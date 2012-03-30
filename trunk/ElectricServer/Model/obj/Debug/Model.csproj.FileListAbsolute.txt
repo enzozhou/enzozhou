@@ -1,0 +1,5 @@
+D:\document\我的\电机参考资料\Application\ElectricServer\Model\bin\Debug\Electric.Model.dll
+D:\document\我的\电机参考资料\Application\ElectricServer\Model\bin\Debug\Electric.Model.pdb
+D:\document\我的\电机参考资料\Application\ElectricServer\Model\obj\Debug\ResolveAssemblyReference.cache
+D:\document\我的\电机参考资料\Application\ElectricServer\Model\obj\Debug\Electric.Model.dll
+D:\document\我的\电机参考资料\Application\ElectricServer\Model\obj\Debug\Electric.Model.pdb
