@@ -37,9 +37,10 @@ namespace Electric
                     if (int.TryParse(item.Cells["ID"].Value.ToString(), out _id))
                     {
                         //_id = int.Parse(item.Cells["ID"].Value.ToString());
-                        _frm.ID = _id;
-                        _frm.isUpdate = true;
-                        global.FormDialog(_frm, "部门信息");
+                        //_frm.ID = _id;
+                        //_frm.isUpdate = true;
+                        //global.FormDialog(_frm, "部门信息");
+                        ShowDep(_id);
                     }
                     return;
                 }
