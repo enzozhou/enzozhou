@@ -121,6 +121,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_login";
             this.Text = "登录";
+            this.Activated += new System.EventHandler(this.frm_login_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
