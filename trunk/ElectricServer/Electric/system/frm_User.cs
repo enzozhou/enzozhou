@@ -185,6 +185,7 @@ namespace Electric
                     cmbIsAdmin.ValueMember = "Description";
                 }
             }
+            if(isUpdate)
             showUpdate();
         }
 
