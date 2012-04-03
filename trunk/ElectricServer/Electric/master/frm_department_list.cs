@@ -78,21 +78,7 @@ namespace Electric
         private int _pagesize = global.pageSize;
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            _pageStartIndex = 1;
-            _pageEndIndex = 1;
-            BLL.BAS_Department bll = new BLL.BAS_Department();
-
-            _sqlWhere = string.Format("OrgID like '%{0}%' and ", txtOrgID.Text.Trim());
-            _sqlWhere += string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
-            _sqlWhere += string.Format("name like '%{0}%'  ", txtName.Text.Trim());
-            _recordCount = bll.GetRecordCount(_sqlWhere);
-            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
-
-            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
-            dgv.DataSource = _ds;
-            dgv.DataMember = "ds";
-            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            setGridTitle();
+            QueryData();
         }
 
         private void btnUP_Click(object sender, EventArgs e)
@@ -144,11 +130,52 @@ namespace Electric
             //this.dgv.Columns["CreateTime"].HeaderText = "创建时间";
             //this.dgv.Columns["UpdateUserID"].HeaderText = "编辑人";
             //this.dgv.Columns["UpdateTime"].HeaderText = "编辑时间";
+
+            this.dgv.Columns["row"].Visible = false;
+            this.dgv.Columns["OrgID"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
             this.dgv.Columns["UpdateTime"].Visible = false;
 
+        }
+
+        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = 0;
+            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+
+            ShowDep(id);
+        }
+
+        private void ShowDep(int id)
+        {
+            frm_department _frm = new frm_department();
+
+            _frm.isUpdate = true;
+            //_id = int.Parse(item.Cells["ID"].Value.ToString());
+            _frm.ID = id;
+
+            global.FormDialog(_frm, "用户信息");
+            QueryData();
+        }
+
+        private void QueryData()
+        {
+            _pageStartIndex = 1;
+            _pageEndIndex = 1;
+            BLL.BAS_Department bll = new BLL.BAS_Department();
+
+            _sqlWhere = string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
+            _sqlWhere += string.Format("name like '%{0}%'  ", txtName.Text.Trim());
+            _recordCount = bll.GetRecordCount(_sqlWhere);
+            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
+
+            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
+            dgv.DataSource = _ds;
+            dgv.DataMember = "ds";
+            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
+            setGridTitle();
         }
     }
 }

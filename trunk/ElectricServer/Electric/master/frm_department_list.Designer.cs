@@ -41,8 +41,6 @@
             this.toolBtnClose = new System.Windows.Forms.ToolStripButton();
             this.label3 = new System.Windows.Forms.Label();
             this.btnUP = new System.Windows.Forms.Button();
-            this.txtOrgID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnDown = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv = new System.Windows.Forms.DataGridView();
@@ -63,15 +61,15 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(441, 27);
+            this.txtName.Location = new System.Drawing.Point(355, 27);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 21);
+            this.txtName.Size = new System.Drawing.Size(214, 21);
             this.txtName.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(382, 30);
+            this.label4.Location = new System.Drawing.Point(296, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 7;
@@ -79,9 +77,9 @@
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(254, 27);
+            this.txtCode.Location = new System.Drawing.Point(74, 27);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(100, 21);
+            this.txtCode.Size = new System.Drawing.Size(214, 21);
             this.txtCode.TabIndex = 5;
             // 
             // toolStrip1
@@ -104,7 +102,7 @@
             this.boolBtnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.boolBtnAdd.Name = "boolBtnAdd";
             this.boolBtnAdd.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.boolBtnAdd.Size = new System.Drawing.Size(72, 22);
+            this.boolBtnAdd.Size = new System.Drawing.Size(69, 22);
             this.boolBtnAdd.Text = "增加";
             this.boolBtnAdd.Click += new System.EventHandler(this.boolBtnAdd_Click);
             // 
@@ -114,7 +112,7 @@
             this.toolBtnModify.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnModify.Name = "toolBtnModify";
             this.toolBtnModify.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnModify.Size = new System.Drawing.Size(72, 22);
+            this.toolBtnModify.Size = new System.Drawing.Size(69, 22);
             this.toolBtnModify.Text = "修改";
             this.toolBtnModify.Click += new System.EventHandler(this.toolBtnModify_Click);
             // 
@@ -124,7 +122,7 @@
             this.toolBtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnSave.Name = "toolBtnSave";
             this.toolBtnSave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnSave.Size = new System.Drawing.Size(72, 22);
+            this.toolBtnSave.Size = new System.Drawing.Size(69, 22);
             this.toolBtnSave.Text = "保存";
             this.toolBtnSave.Visible = false;
             // 
@@ -134,7 +132,7 @@
             this.toolBtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnDelete.Name = "toolBtnDelete";
             this.toolBtnDelete.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnDelete.Size = new System.Drawing.Size(72, 22);
+            this.toolBtnDelete.Size = new System.Drawing.Size(69, 22);
             this.toolBtnDelete.Text = "删除";
             this.toolBtnDelete.Click += new System.EventHandler(this.toolBtnDelete_Click);
             // 
@@ -144,7 +142,7 @@
             this.toolBtnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnClose.Name = "toolBtnClose";
             this.toolBtnClose.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnClose.Size = new System.Drawing.Size(72, 22);
+            this.toolBtnClose.Size = new System.Drawing.Size(69, 22);
             this.toolBtnClose.Text = "关闭";
             this.toolBtnClose.ToolTipText = "关闭当前窗口";
             this.toolBtnClose.Click += new System.EventHandler(this.toolBtnClose_Click);
@@ -152,7 +150,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(195, 30);
+            this.label3.Location = new System.Drawing.Point(15, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 4;
@@ -168,22 +166,6 @@
             this.btnUP.Text = "上一页";
             this.btnUP.UseVisualStyleBackColor = true;
             this.btnUP.Click += new System.EventHandler(this.btnUP_Click);
-            // 
-            // txtOrgID
-            // 
-            this.txtOrgID.Location = new System.Drawing.Point(67, 27);
-            this.txtOrgID.Name = "txtOrgID";
-            this.txtOrgID.Size = new System.Drawing.Size(100, 21);
-            this.txtOrgID.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "公司ID";
             // 
             // btnDown
             // 
@@ -205,8 +187,6 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtCode);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtOrgID);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(973, 61);
@@ -224,8 +204,10 @@
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.RowTemplate.Height = 23;
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(973, 317);
             this.dgv.TabIndex = 13;
+            this.dgv.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentDoubleClick);
             // 
             // frm_department_list
             // 
@@ -263,8 +245,6 @@
         private System.Windows.Forms.ToolStripButton toolBtnClose;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnUP;
-        private System.Windows.Forms.TextBox txtOrgID;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgv;
