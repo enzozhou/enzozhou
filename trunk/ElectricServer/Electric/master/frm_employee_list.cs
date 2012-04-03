@@ -30,24 +30,7 @@ namespace Electric
         private int _pagesize = global.pageSize;
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            _pageStartIndex = 1;
-            _pageEndIndex = 1;
-
-            BLL.BAS_Employess bll = new BLL.BAS_Employess();
-
-            _sqlWhere = string.Format("orgId like '%{0}%' and ", txtOrgID.Text.Trim());
-            _sqlWhere += string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
-            _sqlWhere += string.Format("name like '%{0}%' and ", txtName.Text.Trim());
-            _sqlWhere += string.Format("deparment like '%{0}%' and ", txtDep.Text.Trim());
-            _sqlWhere += string.Format("Gender = {0} ", cmbGender.Text.Trim() == "男" ? 1 : 0);
-            _recordCount = bll.GetRecordCount(_sqlWhere);
-            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
-
-            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
-            dgv.DataSource = _ds;
-            dgv.DataMember = "ds";
-            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            setGridTitle();
+            QueryData();
         }
 
         private void btnUP_Click(object sender, EventArgs e)
@@ -96,7 +79,7 @@ namespace Electric
             this.dgv.Columns["Code"].DefaultCellStyle.Alignment
                 = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["Code"].HeaderText = "代码";
-            this.dgv.Columns["Name"].HeaderText = "名称";
+            this.dgv.Columns["Name"].HeaderText = "姓名";
             this.dgv.Columns["Gender"].HeaderText = "性别";
             this.dgv.Columns["Tel"].HeaderText = "联系电话";
             this.dgv.Columns["Email"].HeaderText = "邮箱";
@@ -108,6 +91,9 @@ namespace Electric
             //this.dgv.Columns["CreateTime"].HeaderText = "创建时间";
             //this.dgv.Columns["UpdateUserID"].HeaderText = "编辑人";
             //this.dgv.Columns["UpdateTime"].HeaderText = "编辑时间";
+
+            this.dgv.Columns["row"].Visible = false;
+            this.dgv.Columns["OrgID"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
@@ -132,9 +118,11 @@ namespace Electric
                     if (int.TryParse(item.Cells["ID"].Value.ToString(), out _id))
                     {
                         //_id = int.Parse(item.Cells["ID"].Value.ToString());
-                        _frm.ID = _id;
-                        _frm.isUpdate = true;
-                        global.FormDialog(_frm, "员工信息");
+                        //_frm.ID = _id;
+                        //_frm.isUpdate = true;
+                        //global.FormDialog(_frm, "员工信息");
+                        ShowEmp(_id);
+
                     }
                     return;
                 }
@@ -165,6 +153,49 @@ namespace Electric
                 }
             }
         }
+
+
+        private void QueryData()
+        {
+            _pageStartIndex = 1;
+            _pageEndIndex = 1;
+
+            BLL.BAS_Employess bll = new BLL.BAS_Employess();
+
+            _sqlWhere = string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
+            _sqlWhere += string.Format("name like '%{0}%' and ", txtName.Text.Trim());
+            _sqlWhere += string.Format("deparment like '%{0}%' and ", txtDep.Text.Trim());
+            _sqlWhere += string.Format("Gender = {0} ", cmbGender.Text.Trim() == "男" ? 1 : 0);
+            _recordCount = bll.GetRecordCount(_sqlWhere);
+            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
+
+            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
+            dgv.DataSource = _ds;
+            dgv.DataMember = "ds";
+            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
+            setGridTitle();
+        }
+
+        private void ShowEmp(int id)
+        {
+            frm_employee _frm = new frm_employee();
+
+            _frm.isUpdate = true;
+            //_id = int.Parse(item.Cells["ID"].Value.ToString());
+            _frm.ID = id;
+
+            global.FormDialog(_frm, "员工信息");
+            QueryData();
+        }
+
+        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = 0;
+            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+
+            ShowEmp(id);
+        }
+
 
     }
 }
