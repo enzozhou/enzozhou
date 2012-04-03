@@ -12,6 +12,7 @@ namespace Electric
         public static string Username = "";
         public static int UserID = 0;
         public static string IsAdmin = "";
+        public static int OrgID = 1;
         public static int pageSize = 20;
         public static DataTable dtCodes = null;
 
