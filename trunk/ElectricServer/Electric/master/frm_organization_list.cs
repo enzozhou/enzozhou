@@ -29,23 +29,7 @@ namespace Electric
         private int _pagesize = global.pageSize;
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            _pageStartIndex = 1;
-            _pageEndIndex = 1;
-
-            BLL.BAS_Organization bll = new BLL.BAS_Organization();
-
-            _sqlWhere = string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
-            _sqlWhere += string.Format("name like '%{0}%' and ", txtName.Text.Trim());
-            _sqlWhere += string.Format("Membership like '%{0}%' and ", cmbMembership.Text.Trim());
-            _sqlWhere += string.Format("EnterpriseNature like '%{0}%' ", txtEnterpriseNature.Text.Trim());
-            _recordCount = bll.GetRecordCount(_sqlWhere);
-            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
-
-            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
-            dgv.DataSource = _ds;
-            dgv.DataMember = "ds";
-            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            setGridTitle();
+            QueryData();
         }
 
         private void btnUP_Click(object sender, EventArgs e)
@@ -177,5 +161,44 @@ namespace Electric
 
         }
 
+        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = 0;
+            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+            ShowOrg(id);
+        }
+
+        private void QueryData()
+        {
+            _pageStartIndex = 1;
+            _pageEndIndex = 1;
+
+            BLL.BAS_Organization bll = new BLL.BAS_Organization();
+
+            _sqlWhere = string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
+            _sqlWhere += string.Format("name like '%{0}%' and ", txtName.Text.Trim());
+            _sqlWhere += string.Format("Membership like '%{0}%' and ", cmbMembership.Text.Trim());
+            _sqlWhere += string.Format("EnterpriseNature like '%{0}%' ", txtEnterpriseNature.Text.Trim());
+            _recordCount = bll.GetRecordCount(_sqlWhere);
+            if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
+
+            DataSet _ds = bll.GetListByPage(_sqlWhere, "ID", 1, _pagesize);
+            dgv.DataSource = _ds;
+            dgv.DataMember = "ds";
+            //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
+            setGridTitle();
+        }
+
+        private void ShowOrg(int id)
+        {
+            frm_organization _frm = new frm_organization();
+
+            _frm.isUpdate = true;
+            //_id = int.Parse(item.Cells["ID"].Value.ToString());
+            _frm.ID = id;
+
+            global.FormDialog(_frm, "用户信息");
+            QueryData();
+        }
     }
 }
