@@ -36,6 +36,7 @@ namespace Electric
         public bool isUpdate
         {
             set { _isUpdate = value; }
+            get { return _isUpdate; }
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -176,6 +177,21 @@ namespace Electric
             this.txtBankName.Text = model.BankName;
             this.txtBankClass.Text = model.BankClass;
             this.txtAccount.Text = model.Account;
+            ControlEnabled();
+        }
+
+        private void ControlEnabled()
+        {
+            if (isUpdate)
+            {
+                txtCode.Enabled = false;
+            }
+            else
+            {
+                txtCode.Enabled = true;
+            }
+
+
         }
 
     }
