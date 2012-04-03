@@ -53,7 +53,7 @@ namespace Electric
             }
             else
             {
-                MessageBox.Show("输入错误。");
+                MessageBox.Show("用户名或密码输入错误。");
             }
 
         }
@@ -81,6 +81,11 @@ namespace Electric
                 return true;
             }
             return false;
+        }
+
+        private void frm_login_Activated(object sender, EventArgs e)
+        {
+            txtUser.Focus();
         }
 
 
