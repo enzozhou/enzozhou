@@ -197,7 +197,7 @@ namespace Electric
             //_id = int.Parse(item.Cells["ID"].Value.ToString());
             _frm.ID = id;
 
-            global.FormDialog(_frm, "用户信息");
+            global.FormDialog(_frm, "公司信息");
             QueryData();
         }
     }
