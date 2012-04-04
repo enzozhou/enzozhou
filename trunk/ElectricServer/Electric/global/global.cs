@@ -133,7 +133,7 @@ namespace Electric
             }
         }
 
-        public static void BandComboBox(System.Windows.Forms.ComboBox box, System.Data.DataSet ds, string text, string value, string defaultValue)
+        public static void BandComboBox(System.Windows.Forms.ComboBox box, System.Data.DataTable dt, string text, string value, string defaultValue)
         {
             try
             {
@@ -142,14 +142,14 @@ namespace Electric
                 //{
                 //    box.Items.Add(item[text].ToString());                   
                 //}
-                //box.DataSource = ds;
-                //box.DisplayMember = text;
-                //box.ValueMember = value;
-                if (defaultValue != "")
-                {
-                    int index = box.FindString(defaultValue);
-                    box.SelectedIndex = index;
-                }
+                box.DataSource = dt;
+                box.DisplayMember = text;
+                box.ValueMember = value;
+                //if (defaultValue != "")
+                //{
+                //    int index = box.FindString(defaultValue);
+                //    box.SelectedIndex = index;
+                //}
             }
             catch (Exception)
             {
