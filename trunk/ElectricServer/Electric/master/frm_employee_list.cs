@@ -74,7 +74,7 @@ namespace Electric
 
             //设置对齐方式
             this.dgv.Columns["row"].HeaderText = "编号";
-             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
+            this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
 
             this.dgv.Columns["Code"].DefaultCellStyle.Alignment
                 = DataGridViewContentAlignment.MiddleRight;
@@ -93,7 +93,6 @@ namespace Electric
             //this.dgv.Columns["UpdateTime"].HeaderText = "编辑时间";
 
             this.dgv.Columns["row"].Visible = false;
-            this.dgv.Columns["OrgID"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
@@ -164,8 +163,11 @@ namespace Electric
 
             _sqlWhere = string.Format("code like '%{0}%' and ", txtCode.Text.Trim());
             _sqlWhere += string.Format("name like '%{0}%' and ", txtName.Text.Trim());
-            _sqlWhere += string.Format("deparment like '%{0}%' and ", txtDep.Text.Trim());
-            _sqlWhere += string.Format("Gender = {0} ", cmbGender.Text.Trim() == "男" ? 1 : 0);
+            _sqlWhere += string.Format("deparment like '%{0}%' ", txtDep.Text.Trim());
+            if (cmbGender.Text != "")
+            {
+                _sqlWhere += string.Format(" and Gender = {0} ", cmbGender.Text.Trim() == "男" ? 0 : 1);
+            }
             _recordCount = bll.GetRecordCount(_sqlWhere);
             if (_recordCount > _pagesize) _pageEndIndex = _pagesize;
 
@@ -188,12 +190,30 @@ namespace Electric
             QueryData();
         }
 
-        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = 0;
-            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+            if (e.RowIndex >= 0)
+            {
+                int id = 0;
+                int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+                ShowEmp(id);
+            }
+        }
 
-            ShowEmp(id);
+        private void dgv_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            //foreach (DataGridViewRow item in dgv.Rows)
+            //{
+            //    item.Cells["Gender"].ValueType = typeof(string);
+            //    if (global.ConvertObject(item.Cells["Gender"].Value) == "0")
+            //    {
+            //        item.Cells["Gender"].Value = "男";
+            //    }
+            //    else
+            //    {
+            //        item.Cells["Gender"].Value = "女";
+            //    }
+            //}
         }
 
 

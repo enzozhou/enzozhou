@@ -146,15 +146,6 @@ namespace Electric
             }
         }
 
-
-
-        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int id = 0;
-            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
-            ShowOrg(id);
-        }
-
         private void QueryData()
         {
             _pageStartIndex = 1;
@@ -190,9 +181,12 @@ namespace Electric
 
         private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = 0;
-            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
-            ShowOrg(id);
+            if (e.RowIndex >= 0)
+            {
+                int id = 0;
+                int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+                ShowOrg(id);
+            }
         }
     }
 }

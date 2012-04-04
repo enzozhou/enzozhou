@@ -98,7 +98,7 @@ namespace Electric
             _dgv.AllowUserToDeleteRows = false;
             _dgv.AutoSize = true;
             _dgv.ReadOnly = true;
-            _dgv.MultiSelect = false;
+            //_dgv.MultiSelect = false;
             _dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
@@ -122,16 +122,22 @@ namespace Electric
         {
             string value = "Code", name = "Description";
             DataSet ds = new Electric.BLL.BAS_Code().GetList(string.Format(" SelectCode = '{0}'", code));
-            _cmb.DataSource = ds.Tables[0].DefaultView;
-            _cmb.DisplayMember = name;
-            _cmb.ValueMember = value;
+
+            BandComboBox(_cmb, ds, value, name);
             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         public static void BandComboBox(ComboBox _cmb, DataSet _ds, string value, string name)
         {
-            _cmb.DataSource = _ds;
-            _cmb.DisplayMember = name;
-            _cmb.ValueMember = value;
+            if (_ds.Tables.Count > 0)
+            {
+                _cmb.DataSource = _ds.Tables[0].DefaultView;
+                _cmb.DisplayMember = name;
+                _cmb.ValueMember = value;
+            }
+            else
+            {
+                MessageBox.Show("主数据未维护。");
+            }
             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 

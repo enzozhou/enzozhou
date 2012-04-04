@@ -62,6 +62,7 @@
             this.txtTotalPurchasePrice = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTotalPowerRating = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
@@ -89,19 +90,18 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtOrg = new System.Windows.Forms.TextBox();
             this.OrgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldProtectionLev = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldProtectionLev = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.OldWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldSubsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OldSumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TerminalUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TerminalUnit = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NewPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -431,6 +431,14 @@
             this.panel1.Size = new System.Drawing.Size(998, 172);
             this.panel1.TabIndex = 16;
             // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(7, 30);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(123, 21);
+            this.txtOrg.TabIndex = 20;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -633,14 +641,6 @@
             this.dataGridViewTextBoxColumn22.HeaderText = "新电机生产编号";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
             // 
-            // txtOrg
-            // 
-            this.txtOrg.Location = new System.Drawing.Point(7, 30);
-            this.txtOrg.Name = "txtOrg";
-            this.txtOrg.ReadOnly = true;
-            this.txtOrg.Size = new System.Drawing.Size(123, 21);
-            this.txtOrg.TabIndex = 20;
-            // 
             // OrgID
             // 
             this.OrgID.HeaderText = "公司ID";
@@ -683,7 +683,13 @@
             // 
             this.OldProtectionLev.DataPropertyName = "OldProtectionLev";
             this.OldProtectionLev.HeaderText = "旧电机防护等级";
+            this.OldProtectionLev.Items.AddRange(new object[] {
+            "IP23",
+            "44",
+            "54"});
             this.OldProtectionLev.Name = "OldProtectionLev";
+            this.OldProtectionLev.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OldProtectionLev.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // OldWeight
             // 
@@ -713,7 +719,19 @@
             // 
             this.TerminalUnit.DataPropertyName = "TerminalUnit";
             this.TerminalUnit.HeaderText = "替换终端";
+            this.TerminalUnit.Items.AddRange(new object[] {
+            "风机",
+            "水泵",
+            "空压机",
+            "机床",
+            "传输",
+            "球磨机",
+            "粉碎机",
+            "起重机",
+            "其他设备"});
             this.TerminalUnit.Name = "TerminalUnit";
+            this.TerminalUnit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TerminalUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // TUNo
             // 
@@ -856,12 +874,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn OldPowerRating;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldSpeed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OldProtectionLev;
+        private System.Windows.Forms.DataGridViewComboBoxColumn OldProtectionLev;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldWeight;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldSubsidy;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldSumPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TerminalUnit;
+        private System.Windows.Forms.DataGridViewComboBoxColumn TerminalUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn TUNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn NewModel;
         private System.Windows.Forms.DataGridViewTextBoxColumn NewPowerRating;

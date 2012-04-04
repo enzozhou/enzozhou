@@ -68,35 +68,49 @@ namespace Electric
 
         private void dgvItem_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
+            decimal dclSubsidy = 20;
             dgvItem.Rows[e.RowIndex].ErrorText = "";
             string columnName = dgvItem.Columns[e.ColumnIndex].Name;
             //编辑的行为金额时候计算合计
             bool bl = false;
-            decimal dclSum = 0;
-            decimal dclRowValue = 0;
             string rowValue;
-            if (columnName == "UnitPrice" || columnName == "Price" || columnName == "Subsidy")
+            if (columnName == "Qty" || columnName == "UnitPrice" || columnName == "BuyPower")
             {
-                if (dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value != null)
+                decimal dclQty = 0, dclUnitPrice = 0, dclBuyPower = 0;
+                decimal dclPrice = 0, dclSumSubsidy = 0;
+                if (dgvItem.Rows[e.RowIndex].Cells["Qty"].Value != null &&
+                    dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value != null &&
+                        dgvItem.Rows[e.RowIndex].Cells["BuyPower"].Value != null)
                 {
+                    rowValue = dgvItem.Rows[e.RowIndex].Cells["Qty"].Value.ToString();
+                    bl = decimal.TryParse(rowValue, out dclQty);
                     rowValue = dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
+                    bl = decimal.TryParse(rowValue, out dclUnitPrice);
+                    rowValue = dgvItem.Rows[e.RowIndex].Cells["BuyPower"].Value.ToString();
+                    bl = decimal.TryParse(rowValue, out dclBuyPower);
+                    dclPrice = dclQty * dclUnitPrice;
+                    dgvItem.Rows[e.RowIndex].Cells["Price"].Value = dclPrice;
+                    dclSumSubsidy = dclQty * dclBuyPower * dclSubsidy;
+                    dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value = dclSumSubsidy;
+                    dgvItem.Rows[e.RowIndex].Cells["SumPrice"].Value = dclPrice + dclSumSubsidy;
                 }
-                if (dgvItem.Rows[e.RowIndex].Cells["Price"].Value != null)
-                {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["Price"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
-                }
-                if (dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value != null)
-                {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
-                }
-                dgvItem.Rows[e.RowIndex].Cells["SumPrice"].Value = dclSum.ToString();
+                CaclulateSub();
             }
+        }
+        /// <summary>
+        /// 计算item 合计到head
+        /// </summary>
+        private void CaclulateSub()
+        {
+            bool bl = false;
+            decimal dcl_TotalPrice = 0;
+            decimal dclRowValue = 0;
+            foreach (DataGridViewRow item in dgvItem.Rows)
+            {
+                bl = decimal.TryParse(global.ConvertObject(item.Cells["SumPrice"].Value), out dclRowValue);
+                dcl_TotalPrice += dclRowValue;
+            }
+            txtPrice.Text = dcl_TotalPrice.ToString();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -153,6 +167,7 @@ namespace Electric
             }
             else
             {
+                model.ID = _id;
                 model.ContractNo = _contractNo;
                 bll.Update(model);
             }
@@ -252,16 +267,17 @@ namespace Electric
             DataSet _ds = new Electric.BLL.BS_RecoveryContract_Details().GetList(string.Format("ContractNo='{0}'", _model.ContractNo));
             dgvItem.DataSource = _ds;
             dgvItem.DataMember = "ds";
+            this.dgvItem.Columns["Subsidy"].ReadOnly = true;
+            this.dgvItem.Columns["SumPrice"].ReadOnly = true;
 
-            //
-            this.dgvItem.Columns["Model"].HeaderText = "型号";
+            this.dgvItem.Columns["Model"].HeaderText = "型号(Type)";
             this.dgvItem.Columns["Qty"].HeaderText = "台数";
-            this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率";
-            this.dgvItem.Columns["UnitPrice"].HeaderText = "回收单价";
-            this.dgvItem.Columns["Price"].HeaderText = "回收金额";
-            this.dgvItem.Columns["BuyPower"].HeaderText = "购买电机功率";
-            this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
-            this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
+            this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率(kW)";
+            this.dgvItem.Columns["UnitPrice"].HeaderText = "旧电机回收单价(元/台)";
+            this.dgvItem.Columns["Price"].HeaderText = "回收资金小计(元)";
+            this.dgvItem.Columns["BuyPower"].HeaderText = "新购高效电机功率(含再制造高效电机)(kW)";
+            this.dgvItem.Columns["Subsidy"].HeaderText = "以旧换新补贴金额(元)";
+            this.dgvItem.Columns["SumPrice"].HeaderText = "合计";
             this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
 
@@ -282,6 +298,11 @@ namespace Electric
         {
             dgvItem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             txtOrg.Text = global.OrganizationName;
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+            txtWords.Text = Maticsoft.Common.Rmb.CmycurD(txtPrice.Text);
         }
     }
 }
