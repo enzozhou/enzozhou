@@ -43,18 +43,24 @@ namespace Electric
 
         private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //DialogResult result = MessageBox.Show("确认退出系统？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (result == DialogResult.Yes)
+            //{
+            //    //this.Close();
+            //    //Application.Exit();
+            //}
+
         }
 
         private void tsmi_company_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_organization_list(),"公司信息");
+            global.FormStyle(this, new frm_organization_list(), "公司信息");
         }
 
 
         private void tsmi_department_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_department_list(),"部门信息");
+            global.FormStyle(this, new frm_department_list(), "部门信息");
         }
 
         private void tsmi_employee_Click(object sender, EventArgs e)
@@ -69,12 +75,12 @@ namespace Electric
 
         private void tsmi_RecoveryContract_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_RecoveryContract_list(),"回收合同");
+            global.FormStyle(this, new frm_RecoveryContract_list(), "回收合同");
         }
 
         private void tsmi_NewForOld_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_NewForOld_list(),"以旧换新");
+            global.FormStyle(this, new frm_NewForOld_list(), "以旧换新");
         }
 
         private void tsmi_buy_Click(object sender, EventArgs e)
@@ -157,14 +163,7 @@ namespace Electric
             global.FormStyle(this, new frm_CodeProfire(), "基础数据管理");
         }
 
-        private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            DialogResult result = MessageBox.Show("确认退出系统？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
+
 
     }
 }

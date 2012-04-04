@@ -27,7 +27,6 @@ namespace Electric
                 if (value > 0)
                 {
                     _id = value;
-                    showUpdate();
                 }
             }
         }
@@ -169,6 +168,10 @@ namespace Electric
         private void frm_organization_Load(object sender, EventArgs e)
         {
             global.BandBaseCodeComboBox(cmbMembership, "BCP00001");
+            if (_isUpdate)
+            {
+                showUpdate();
+            }
         }
 
     }

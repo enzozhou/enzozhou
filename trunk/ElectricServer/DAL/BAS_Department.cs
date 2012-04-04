@@ -46,9 +46,9 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BAS_Department(");
-			strSql.Append("OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9)");
+			strSql.Append("OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgCode,@Code,@Name,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@Column_9)");
+			strSql.Append("@OrgCode,@Code,@Name,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
@@ -57,8 +57,7 @@ namespace Electric.DAL
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
 					new SqlParameter("@UpdateUserID", SqlDbType.Int,4),
-					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
-					new SqlParameter("@Column_9", SqlDbType.Char,10)};
+					new SqlParameter("@UpdateTime", SqlDbType.DateTime)};
 			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
@@ -66,7 +65,6 @@ namespace Electric.DAL
 			parameters[4].Value = model.CreateTime;
 			parameters[5].Value = model.UpdateUserID;
 			parameters[6].Value = model.UpdateTime;
-			parameters[7].Value = model.Column_9;
 
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -91,8 +89,7 @@ namespace Electric.DAL
 			strSql.Append("CreateUserID=@CreateUserID,");
 			strSql.Append("CreateTime=@CreateTime,");
 			strSql.Append("UpdateUserID=@UpdateUserID,");
-			strSql.Append("UpdateTime=@UpdateTime,");
-			strSql.Append("Column_9=@Column_9");
+			strSql.Append("UpdateTime=@UpdateTime");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
@@ -102,7 +99,6 @@ namespace Electric.DAL
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
 					new SqlParameter("@UpdateUserID", SqlDbType.Int,4),
 					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
-					new SqlParameter("@Column_9", SqlDbType.Char,10),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
 			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
@@ -111,7 +107,6 @@ namespace Electric.DAL
 			parameters[4].Value = model.CreateTime;
 			parameters[5].Value = model.UpdateUserID;
 			parameters[6].Value = model.UpdateTime;
-			parameters[7].Value = model.Column_9;
 			parameters[8].Value = model.ID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
@@ -176,7 +171,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 from BAS_Department ");
+			strSql.Append("select  top 1 ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime from BAS_Department ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -219,10 +214,6 @@ namespace Electric.DAL
 				{
 					model.UpdateTime=DateTime.Parse(ds.Tables[0].Rows[0]["UpdateTime"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["Column_9"]!=null && ds.Tables[0].Rows[0]["Column_9"].ToString()!="")
-				{
-					model.Column_9=ds.Tables[0].Rows[0]["Column_9"].ToString();
-				}
 				return model;
 			}
 			else
@@ -237,7 +228,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 ");
+			strSql.Append("select ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
 			strSql.Append(" FROM BAS_Department ");
 			if(strWhere.Trim()!="")
 			{
@@ -257,7 +248,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 ");
+			strSql.Append(" ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
 			strSql.Append(" FROM BAS_Department ");
 			if(strWhere.Trim()!="")
 			{

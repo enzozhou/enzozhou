@@ -303,5 +303,11 @@ namespace Electric
             this.Close();
         }
 
+        private void frm_BuyInfo_Load(object sender, EventArgs e)
+        {
+            global.BandBaseCodeComboBox(cmbBelongTo, "BCP00001");
+            global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
+        }
+
     }
 }

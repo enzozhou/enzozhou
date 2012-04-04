@@ -83,14 +83,6 @@ namespace Electric.Model
 			set{ _updatetime=value;}
 			get{return _updatetime;}
 		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string Column_9
-		{
-			set{ _column_9=value;}
-			get{return _column_9;}
-		}
 		#endregion Model
 
 	}

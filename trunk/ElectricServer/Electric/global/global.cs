@@ -121,13 +121,13 @@ namespace Electric
         public static void BandBaseCodeComboBox(ComboBox _cmb, string code)
         {
             string value = "Code", name = "Description";
-            DataSet ds = new Electric.BLL.BAS_CodeProfire().GetList(string.Format(" SelectCode = '{0}'", code));
-            _cmb.DataSource = ds;
+            DataSet ds = new Electric.BLL.BAS_Code().GetList(string.Format(" SelectCode = '{0}'", code));
+            _cmb.DataSource = ds.Tables[0].DefaultView;
             _cmb.DisplayMember = name;
             _cmb.ValueMember = value;
             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        public static void BandComboBox(ComboBox _cmb,DataSet _ds, string value, string name)
+        public static void BandComboBox(ComboBox _cmb, DataSet _ds, string value, string name)
         {
             _cmb.DataSource = _ds;
             _cmb.DisplayMember = name;
@@ -137,6 +137,7 @@ namespace Electric
 
         public static void SetComboBoxDefaultValue(ComboBox _cmb, string defaultValue)
         {
+            //_cmb.Items.Contains(defaultValue).
             if (defaultValue != "")
             {
                 _cmb.SelectedValue = defaultValue;
