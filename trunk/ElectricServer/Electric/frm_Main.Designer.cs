@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("查找");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("新增");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("公司信息", new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode36});
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("节点9");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("节点10");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("基本信息", new System.Windows.Forms.TreeNode[] {
-            treeNode37,
-            treeNode38,
-            treeNode39});
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("节点11");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("节点12");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("电机回收", new System.Windows.Forms.TreeNode[] {
-            treeNode41,
-            treeNode42});
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("节点13");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("节点14");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("电机再制造", new System.Windows.Forms.TreeNode[] {
-            treeNode44,
-            treeNode45});
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("节点15");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("节点16");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("报表", new System.Windows.Forms.TreeNode[] {
-            treeNode47,
-            treeNode48});
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("节点17");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode50});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("查找");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("新增");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("公司信息", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("节点9");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("节点10");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("基本信息", new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode4,
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("节点11");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("节点12");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("电机回收", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("节点13");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("节点14");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("电机再制造", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("节点15");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("节点16");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("报表", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14});
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("节点17");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode16});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmi_master = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_company = new System.Windows.Forms.ToolStripMenuItem();
@@ -240,46 +240,46 @@
             this.tv.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tv.Location = new System.Drawing.Point(0, 24);
             this.tv.Name = "tv";
-            treeNode35.Name = "t2_company_query";
-            treeNode35.Text = "查找";
-            treeNode36.Name = "t2_company_add";
-            treeNode36.Text = "新增";
-            treeNode37.Name = "t1_company";
-            treeNode37.Text = "公司信息";
-            treeNode38.Name = "节点9";
-            treeNode38.Text = "节点9";
-            treeNode39.Name = "节点10";
-            treeNode39.Text = "节点10";
-            treeNode40.Name = "tMaster";
-            treeNode40.Text = "基本信息";
-            treeNode41.Name = "节点11";
-            treeNode41.Text = "节点11";
-            treeNode42.Name = "节点12";
-            treeNode42.Text = "节点12";
-            treeNode43.Name = "tRecyle";
-            treeNode43.Text = "电机回收";
-            treeNode44.Name = "节点13";
-            treeNode44.Text = "节点13";
-            treeNode45.Name = "节点14";
-            treeNode45.Text = "节点14";
-            treeNode46.Name = "tManufacture";
-            treeNode46.Text = "电机再制造";
-            treeNode47.Name = "节点15";
-            treeNode47.Text = "节点15";
-            treeNode48.Name = "节点16";
-            treeNode48.Text = "节点16";
-            treeNode49.Name = "tReport";
-            treeNode49.Text = "报表";
-            treeNode50.Name = "节点17";
-            treeNode50.Text = "节点17";
-            treeNode51.Name = "tSystem";
-            treeNode51.Text = "系统";
+            treeNode1.Name = "t2_company_query";
+            treeNode1.Text = "查找";
+            treeNode2.Name = "t2_company_add";
+            treeNode2.Text = "新增";
+            treeNode3.Name = "t1_company";
+            treeNode3.Text = "公司信息";
+            treeNode4.Name = "节点9";
+            treeNode4.Text = "节点9";
+            treeNode5.Name = "节点10";
+            treeNode5.Text = "节点10";
+            treeNode6.Name = "tMaster";
+            treeNode6.Text = "基本信息";
+            treeNode7.Name = "节点11";
+            treeNode7.Text = "节点11";
+            treeNode8.Name = "节点12";
+            treeNode8.Text = "节点12";
+            treeNode9.Name = "tRecyle";
+            treeNode9.Text = "电机回收";
+            treeNode10.Name = "节点13";
+            treeNode10.Text = "节点13";
+            treeNode11.Name = "节点14";
+            treeNode11.Text = "节点14";
+            treeNode12.Name = "tManufacture";
+            treeNode12.Text = "电机再制造";
+            treeNode13.Name = "节点15";
+            treeNode13.Text = "节点15";
+            treeNode14.Name = "节点16";
+            treeNode14.Text = "节点16";
+            treeNode15.Name = "tReport";
+            treeNode15.Text = "报表";
+            treeNode16.Name = "节点17";
+            treeNode16.Text = "节点17";
+            treeNode17.Name = "tSystem";
+            treeNode17.Text = "系统";
             this.tv.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode40,
-            treeNode43,
-            treeNode46,
-            treeNode49,
-            treeNode51});
+            treeNode6,
+            treeNode9,
+            treeNode12,
+            treeNode15,
+            treeNode17});
             this.tv.Size = new System.Drawing.Size(157, 377);
             this.tv.TabIndex = 4;
             this.tv.Visible = false;
@@ -307,7 +307,7 @@
             this.ShowIcon = false;
             this.Text = "NEMS";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_Main_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Main_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

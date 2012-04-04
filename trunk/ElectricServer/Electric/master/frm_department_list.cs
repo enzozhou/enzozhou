@@ -133,7 +133,6 @@ namespace Electric
             //this.dgv.Columns["UpdateTime"].HeaderText = "编辑时间";
 
             this.dgv.Columns["row"].Visible = false;
-            this.dgv.Columns["OrgID"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
@@ -177,6 +176,14 @@ namespace Electric
             dgv.DataMember = "ds";
             //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
             setGridTitle();
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = 0;
+            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+
+            ShowDep(id);
         }
     }
 }

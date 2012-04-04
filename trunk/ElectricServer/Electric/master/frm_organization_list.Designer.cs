@@ -66,7 +66,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(997, 25);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // boolBtnAdd
             // 
@@ -74,7 +73,7 @@
             this.boolBtnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.boolBtnAdd.Name = "boolBtnAdd";
             this.boolBtnAdd.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.boolBtnAdd.Size = new System.Drawing.Size(69, 22);
+            this.boolBtnAdd.Size = new System.Drawing.Size(72, 22);
             this.boolBtnAdd.Text = "增加";
             this.boolBtnAdd.Click += new System.EventHandler(this.boolBtnAdd_Click);
             // 
@@ -84,7 +83,7 @@
             this.toolBtnModify.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnModify.Name = "toolBtnModify";
             this.toolBtnModify.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnModify.Size = new System.Drawing.Size(69, 22);
+            this.toolBtnModify.Size = new System.Drawing.Size(72, 22);
             this.toolBtnModify.Text = "修改";
             this.toolBtnModify.Click += new System.EventHandler(this.toolBtnModify_Click);
             // 
@@ -94,7 +93,7 @@
             this.toolBtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnSave.Name = "toolBtnSave";
             this.toolBtnSave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnSave.Size = new System.Drawing.Size(69, 22);
+            this.toolBtnSave.Size = new System.Drawing.Size(72, 22);
             this.toolBtnSave.Text = "保存";
             this.toolBtnSave.Visible = false;
             // 
@@ -104,7 +103,7 @@
             this.toolBtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnDelete.Name = "toolBtnDelete";
             this.toolBtnDelete.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnDelete.Size = new System.Drawing.Size(69, 22);
+            this.toolBtnDelete.Size = new System.Drawing.Size(72, 22);
             this.toolBtnDelete.Text = "删除";
             this.toolBtnDelete.Click += new System.EventHandler(this.toolBtnDelete_Click);
             // 
@@ -114,7 +113,7 @@
             this.toolBtnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolBtnClose.Name = "toolBtnClose";
             this.toolBtnClose.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.toolBtnClose.Size = new System.Drawing.Size(69, 22);
+            this.toolBtnClose.Size = new System.Drawing.Size(72, 22);
             this.toolBtnClose.Text = "关闭";
             this.toolBtnClose.ToolTipText = "关闭当前窗口";
             this.toolBtnClose.Click += new System.EventHandler(this.toolBtnClose_Click);
@@ -131,8 +130,8 @@
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(973, 312);
             this.dgv.TabIndex = 6;
+            this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellDoubleClick);
             this.dgv.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentDoubleClick);
-            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // groupBox1
             // 
@@ -153,7 +152,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "查询";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 

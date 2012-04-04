@@ -41,10 +41,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtPartnerName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cmbMembership = new System.Windows.Forms.ComboBox();
             this.txtPartnerCode = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDown = new System.Windows.Forms.Button();
@@ -167,10 +165,8 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtPartnerName);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cmbMembership);
             this.groupBox1.Controls.Add(this.txtPartnerCode);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtContractNo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 28);
@@ -206,15 +202,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "采购方名称";
             // 
-            // cmbMembership
-            // 
-            this.cmbMembership.FormattingEnabled = true;
-            this.cmbMembership.Location = new System.Drawing.Point(735, 33);
-            this.cmbMembership.Name = "cmbMembership";
-            this.cmbMembership.Size = new System.Drawing.Size(121, 20);
-            this.cmbMembership.TabIndex = 6;
-            this.cmbMembership.Visible = false;
-            // 
             // txtPartnerCode
             // 
             this.txtPartnerCode.Location = new System.Drawing.Point(242, 27);
@@ -230,16 +217,6 @@
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "采购方代码";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(652, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "所属集团区县";
-            this.label2.Visible = false;
             // 
             // txtContractNo
             // 
@@ -326,10 +303,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtPartnerName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbMembership;
         private System.Windows.Forms.TextBox txtPartnerCode;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtContractNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDown;

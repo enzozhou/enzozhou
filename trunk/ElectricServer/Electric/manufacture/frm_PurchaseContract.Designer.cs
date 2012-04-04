@@ -65,21 +65,12 @@
             this.txtPartnerName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbOrgID = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.dgvItem = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +79,15 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.txtOrg);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.txtPartnerCode);
@@ -133,7 +134,6 @@
             this.panel1.Controls.Add(this.txtPartnerName);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.cmbOrgID);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
@@ -434,14 +434,6 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "采购方地址";
             // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.Location = new System.Drawing.Point(8, 25);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(166, 20);
-            this.cmbOrgID.TabIndex = 19;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -508,54 +500,6 @@
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ContractNo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "合同编号";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Model";
-            this.dataGridViewTextBoxColumn2.HeaderText = "型号";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Qty";
-            this.dataGridViewTextBoxColumn3.HeaderText = "台数";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PowerRating";
-            this.dataGridViewTextBoxColumn4.HeaderText = "额定功率";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "UnitPrice";
-            this.dataGridViewTextBoxColumn5.HeaderText = "销售单价";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn6.HeaderText = "销售金额";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Subsidy";
-            this.dataGridViewTextBoxColumn7.HeaderText = "补贴";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "SumPrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "合计金额";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
             // ContractNo
             // 
             this.ContractNo.DataPropertyName = "ContractNo";
@@ -604,6 +548,62 @@
             this.SumPrice.HeaderText = "合计金额";
             this.SumPrice.Name = "SumPrice";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ContractNo";
+            this.dataGridViewTextBoxColumn1.HeaderText = "合同编号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Model";
+            this.dataGridViewTextBoxColumn2.HeaderText = "型号";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Qty";
+            this.dataGridViewTextBoxColumn3.HeaderText = "台数";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PowerRating";
+            this.dataGridViewTextBoxColumn4.HeaderText = "额定功率";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "UnitPrice";
+            this.dataGridViewTextBoxColumn5.HeaderText = "销售单价";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn6.HeaderText = "销售金额";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Subsidy";
+            this.dataGridViewTextBoxColumn7.HeaderText = "补贴";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "SumPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "合计金额";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(8, 24);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(166, 21);
+            this.txtOrg.TabIndex = 24;
+            // 
             // frm_PurchaseContract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -623,7 +623,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmbOrgID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtContractNo;
@@ -682,5 +681,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.TextBox txtOrg;
     }
 }

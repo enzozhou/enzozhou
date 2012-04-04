@@ -146,20 +146,7 @@ namespace Electric
             }
         }
 
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
 
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -199,6 +186,13 @@ namespace Electric
 
             global.FormDialog(_frm, "公司信息");
             QueryData();
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = 0;
+            int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
+            ShowOrg(id);
         }
     }
 }
