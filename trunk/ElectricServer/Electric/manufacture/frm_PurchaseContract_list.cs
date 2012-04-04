@@ -141,8 +141,8 @@ namespace Electric
             //设置对齐方式
             this.dgv.Columns["ID"].Visible = false;
             this.dgv.Columns["row"].HeaderText = "编号";
-             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
-             this.dgv.Columns["OrgCode"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
+            this.dgv.Columns["OrgCode"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgv.Columns["PartnerCode"].HeaderText = "采购方代码";
             this.dgv.Columns["PartnerName"].HeaderText = "采购方名称";
@@ -202,6 +202,19 @@ namespace Electric
         private void toolBtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                toolBtnModify_Click(null, null);
+            }
+        }
+
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
     }

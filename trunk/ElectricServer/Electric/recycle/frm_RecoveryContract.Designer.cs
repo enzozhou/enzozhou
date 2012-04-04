@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -67,6 +68,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtFPP = new System.Windows.Forms.TextBox();
             this.dgvItem = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,7 +84,6 @@
             this.BuyPower = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtOrg = new System.Windows.Forms.TextBox();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -137,9 +145,17 @@
             this.splitContainer1.SplitterDistance = 200;
             this.splitContainer1.TabIndex = 0;
             // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(5, 24);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(149, 21);
+            this.txtOrg.TabIndex = 39;
+            // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(809, 172);
+            this.btnClose.Location = new System.Drawing.Point(909, 172);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 38;
@@ -149,7 +165,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(695, 172);
+            this.btnSave.Location = new System.Drawing.Point(794, 172);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 37;
@@ -170,7 +186,7 @@
             // 
             this.txtLPR.Location = new System.Drawing.Point(500, 174);
             this.txtLPR.Name = "txtLPR";
-            this.txtLPR.Size = new System.Drawing.Size(189, 21);
+            this.txtLPR.Size = new System.Drawing.Size(249, 21);
             this.txtLPR.TabIndex = 35;
             // 
             // label17
@@ -218,7 +234,7 @@
             // 
             this.txtSPP.Location = new System.Drawing.Point(500, 137);
             this.txtSPP.Name = "txtSPP";
-            this.txtSPP.Size = new System.Drawing.Size(189, 21);
+            this.txtSPP.Size = new System.Drawing.Size(249, 21);
             this.txtSPP.TabIndex = 29;
             // 
             // label14
@@ -248,15 +264,16 @@
             // 
             // txtWords
             // 
-            this.txtWords.Location = new System.Drawing.Point(695, 101);
+            this.txtWords.Location = new System.Drawing.Point(762, 101);
             this.txtWords.Name = "txtWords";
-            this.txtWords.Size = new System.Drawing.Size(189, 21);
+            this.txtWords.ReadOnly = true;
+            this.txtWords.Size = new System.Drawing.Size(222, 21);
             this.txtWords.TabIndex = 25;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(693, 86);
+            this.label12.Location = new System.Drawing.Point(760, 86);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 12);
             this.label12.TabIndex = 24;
@@ -266,8 +283,10 @@
             // 
             this.txtPrice.Location = new System.Drawing.Point(412, 101);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(277, 21);
+            this.txtPrice.ReadOnly = true;
+            this.txtPrice.Size = new System.Drawing.Size(337, 21);
             this.txtPrice.TabIndex = 23;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // label11
             // 
@@ -312,15 +331,15 @@
             // 
             // txtPartnerAccount
             // 
-            this.txtPartnerAccount.Location = new System.Drawing.Point(695, 62);
+            this.txtPartnerAccount.Location = new System.Drawing.Point(762, 62);
             this.txtPartnerAccount.Name = "txtPartnerAccount";
-            this.txtPartnerAccount.Size = new System.Drawing.Size(189, 21);
+            this.txtPartnerAccount.Size = new System.Drawing.Size(222, 21);
             this.txtPartnerAccount.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(693, 47);
+            this.label8.Location = new System.Drawing.Point(760, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 12);
             this.label8.TabIndex = 16;
@@ -330,7 +349,7 @@
             // 
             this.txtPartnerBank.Location = new System.Drawing.Point(500, 62);
             this.txtPartnerBank.Name = "txtPartnerBank";
-            this.txtPartnerBank.Size = new System.Drawing.Size(189, 21);
+            this.txtPartnerBank.Size = new System.Drawing.Size(249, 21);
             this.txtPartnerBank.TabIndex = 15;
             // 
             // label7
@@ -344,15 +363,15 @@
             // 
             // txtPartnerTel
             // 
-            this.txtPartnerTel.Location = new System.Drawing.Point(695, 23);
+            this.txtPartnerTel.Location = new System.Drawing.Point(762, 23);
             this.txtPartnerTel.Name = "txtPartnerTel";
-            this.txtPartnerTel.Size = new System.Drawing.Size(189, 21);
+            this.txtPartnerTel.Size = new System.Drawing.Size(222, 21);
             this.txtPartnerTel.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(693, 8);
+            this.label6.Location = new System.Drawing.Point(760, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 12);
             this.label6.TabIndex = 12;
@@ -362,7 +381,7 @@
             // 
             this.txtPartnerContract.Location = new System.Drawing.Point(500, 23);
             this.txtPartnerContract.Name = "txtPartnerContract";
-            this.txtPartnerContract.Size = new System.Drawing.Size(189, 21);
+            this.txtPartnerContract.Size = new System.Drawing.Size(249, 21);
             this.txtPartnerContract.TabIndex = 11;
             // 
             // label5
@@ -440,8 +459,9 @@
             // 
             // dgvItem
             // 
-            this.dgvItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Model,
@@ -459,6 +479,54 @@
             this.dgvItem.TabIndex = 0;
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Model";
+            this.dataGridViewTextBoxColumn1.HeaderText = "型号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Qty";
+            this.dataGridViewTextBoxColumn2.HeaderText = "台数";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "PowerRating";
+            this.dataGridViewTextBoxColumn3.HeaderText = "额定功率";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "UnitPrice";
+            this.dataGridViewTextBoxColumn4.HeaderText = "回收单价";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn5.HeaderText = "回收金额";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "BuyPower";
+            this.dataGridViewTextBoxColumn6.HeaderText = "购买电机功率";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Subsidy";
+            this.dataGridViewTextBoxColumn7.HeaderText = "补贴";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "SumPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "合计金额";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // Model
             // 
@@ -507,14 +575,6 @@
             this.SumPrice.DataPropertyName = "SumPrice";
             this.SumPrice.HeaderText = "合计金额";
             this.SumPrice.Name = "SumPrice";
-            // 
-            // txtOrg
-            // 
-            this.txtOrg.Location = new System.Drawing.Point(5, 24);
-            this.txtOrg.Name = "txtOrg";
-            this.txtOrg.ReadOnly = true;
-            this.txtOrg.Size = new System.Drawing.Size(149, 21);
-            this.txtOrg.TabIndex = 39;
             // 
             // frm_RecoveryContract
             // 
@@ -584,6 +644,14 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtOrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
 
     }
 }

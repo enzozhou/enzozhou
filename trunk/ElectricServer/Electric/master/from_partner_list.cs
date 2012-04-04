@@ -82,6 +82,7 @@ namespace Electric
         {
             global.SetDataGridViewStyle(dgv);
             this.dgv.Columns["ID"].Visible = false;
+            this.dgv.Columns["OrgCodeSYS"].Visible = false;
             //this.dgvData.Columns["总计"].Width = 100;//Enzo 20111005
 
             //设置对齐方式
@@ -90,7 +91,7 @@ namespace Electric
                 = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["Code"].HeaderText = "代码";
             this.dgv.Columns["Name"].HeaderText = "企业名称";
-             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
+            this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgv.Columns["PartnerClass"].HeaderText = "伙伴类型";
             this.dgv.Columns["Address"].HeaderText = "企业地址";
             this.dgv.Columns["Corporate"].HeaderText = "企业法人代表";
@@ -175,6 +176,14 @@ namespace Electric
                     }
                     return;
                 }
+            }
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                toolBtnModify_Click(null, null);
             }
         }
     }

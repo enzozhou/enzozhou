@@ -154,13 +154,17 @@ namespace Electric
             this.dgv.Columns["BuyTime"].HeaderText = "回购时间";
             this.dgv.Columns["InvoiceNo"].HeaderText = "发票号码";
             this.dgv.Columns["TotalOldQty"].HeaderText = "旧电机总台数";
+            this.dgv.Columns["TotalNewPowerRating"].HeaderText = "新电机总功率";
+            this.dgv.Columns["TotalNewQty"].HeaderText = "新电机台数";
+            this.dgv.Columns["TotalPurchasePrice"].HeaderText = "新电机采购总金额";
+            this.dgv.Columns["TotalOldQty"].HeaderText = "旧电机总台数";
             this.dgv.Columns["TotalPowerRating"].HeaderText = "旧电机总额定功率";
             this.dgv.Columns["TotalOldPrice"].HeaderText = "旧电机总回购小计";
             this.dgv.Columns["TotalOldSubsidy"].HeaderText = "旧电机总补贴";
             this.dgv.Columns["TotalOldSumPrice"].HeaderText = "回购总计";
             this.dgv.Columns["TotalNewPowerRating"].HeaderText = "新电机总功率";
             this.dgv.Columns["TotalNewQty"].HeaderText = "新电机台数";
-            this.dgv.Columns["TotalPurchasePrice"].HeaderText = "新电机采购总金额";
+
 
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
@@ -175,44 +179,49 @@ namespace Electric
 
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string strContractNo = dgv.Rows[e.RowIndex].Cells["ContractNo"].Value.ToString();
-            DataSet dsItem = new Electric.BLL.BS_NewForOld_Details().GetList(string.Format("ContractNo = '{0}'", strContractNo));
-            dgvItem.DataSource = dsItem;
-            dgvItem.DataMember = "ds";
-            global.SetDataGridViewStyle(dgvItem);
-            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
-            this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
-            this.dgvItem.Columns["OldModel"].HeaderText = "旧电机型号";
-            this.dgvItem.Columns["OldPowerRating"].HeaderText = "旧电机额定功率";
-            this.dgvItem.Columns["OldQty"].HeaderText = "旧电机台数";
-            this.dgvItem.Columns["OldSpeed"].HeaderText = "旧电机额定转速";
-            this.dgvItem.Columns["OldProtectionLev"].HeaderText = "旧电机防护等级";
-            this.dgvItem.Columns["OldOutDate"].HeaderText = "旧电机出场年月";
-            this.dgvItem.Columns["OldWeight"].HeaderText = "旧电机重量";
-            this.dgvItem.Columns["OldPrice"].HeaderText = "旧电机回购小计";
-            this.dgvItem.Columns["OldSubsidy"].HeaderText = "回购补贴";
-            this.dgvItem.Columns["OldSumPrice"].HeaderText = "回购合计";
-            this.dgvItem.Columns["TerminalUnit"].HeaderText = "替换终端";
-            this.dgvItem.Columns["TUNo"].HeaderText = "替换终端编号";
-            this.dgvItem.Columns["NewModel"].HeaderText = "新电机型号";
-            this.dgvItem.Columns["NewPowerRating"].HeaderText = "新电机功率";
-            this.dgvItem.Columns["NewQty"].HeaderText = "新电机台数";
-            this.dgvItem.Columns["PurchasePrice"].HeaderText = "采购金额";
-            this.dgvItem.Columns["Reconstruction"].HeaderText = "再造电机";
-            this.dgvItem.Columns["NewInvoiceNo"].HeaderText = "新电机发票号码";
-            this.dgvItem.Columns["NewInvoiceDate"].HeaderText = "新电机发票日期";
-            this.dgvItem.Columns["NewMC"].HeaderText = "新电机制造企业";
-            this.dgvItem.Columns["NewSerialNum"].HeaderText = "新电机生产编号";
+            if (e.RowIndex >= 0)
+            {
+                string strContractNo = dgv.Rows[e.RowIndex].Cells["ContractNo"].Value.ToString();
+                DataSet dsItem = new Electric.BLL.BS_NewForOld_Details().GetList(string.Format("ContractNo = '{0}'", strContractNo));
+                dgvItem.DataSource = dsItem;
+                dgvItem.DataMember = "ds";
+                global.SetDataGridViewStyle(dgvItem);
+                this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
+                this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
+                this.dgvItem.Columns["OldQty"].HeaderText = "台数";
+                this.dgvItem.Columns["OldSpeed"].HeaderText = "额定转速(speed)(r/min)";
+                this.dgvItem.Columns["OldProtectionLev"].HeaderText = "防护等级(IP)";
+                this.dgvItem.Columns["OldOutDate"].HeaderText = "出厂年月";
+                this.dgvItem.Columns["OldWeight"].HeaderText = "重量(WT.)(kg)";
+                this.dgvItem.Columns["TerminalUnit"].HeaderText = "终端产品";
+                #region 必填
+                this.dgvItem.Columns["OldModel"].HeaderText = "旧电机型号";
+                this.dgvItem.Columns["OldPowerRating"].HeaderText = "额定功率(output)(kW)";
+                this.dgvItem.Columns["OldPrice"].HeaderText = "回购小计(元)";
+                this.dgvItem.Columns["OldSubsidy"].HeaderText = "兑付回购补贴金额(元)";
+                this.dgvItem.Columns["OldSumPrice"].HeaderText = "回购合计";
+                this.dgvItem.Columns["TUNo"].HeaderText = "设备唯一编号";
+                this.dgvItem.Columns["NewModel"].HeaderText = "新购高效电机型号";
+                this.dgvItem.Columns["NewPowerRating"].HeaderText = "新购高效电机功率(kW)";
+                this.dgvItem.Columns["NewQty"].HeaderText = "新购高效电机台数";
+                this.dgvItem.Columns["PurchasePrice"].HeaderText = "采购合计(元)";
+                this.dgvItem.Columns["Reconstruction"].HeaderText = "是否为再制造高效电机";
+                this.dgvItem.Columns["NewInvoiceNo"].HeaderText = "新购高效电机发票号码";
+                this.dgvItem.Columns["NewInvoiceDate"].HeaderText = "新购高效电机发票日期";
+                this.dgvItem.Columns["NewMC"].HeaderText = "新购高效电机生产企业";
+                this.dgvItem.Columns["NewSerialNum"].HeaderText = "新购高效电机生产编号";
 
-            this.dgvItem.Columns["ID"].Visible = false;
-            this.dgvItem.Columns["CreateUserID"].Visible = false;
-            this.dgvItem.Columns["CreateTime"].Visible = false;
-            this.dgvItem.Columns["UpdateUserID"].Visible = false;
-            this.dgvItem.Columns["UpdateTime"].Visible = false;
-            this.dgvItem.Columns["SubmitUserID"].Visible = false;
-            this.dgvItem.Columns["SubmitTime"].Visible = false;
-            this.dgvItem.Columns["ApproveUserID"].Visible = false;
-            this.dgvItem.Columns["ApproveTime"].Visible = false;
+                #endregion
+                this.dgvItem.Columns["ID"].Visible = false;
+                this.dgvItem.Columns["CreateUserID"].Visible = false;
+                this.dgvItem.Columns["CreateTime"].Visible = false;
+                this.dgvItem.Columns["UpdateUserID"].Visible = false;
+                this.dgvItem.Columns["UpdateTime"].Visible = false;
+                this.dgvItem.Columns["SubmitUserID"].Visible = false;
+                this.dgvItem.Columns["SubmitTime"].Visible = false;
+                this.dgvItem.Columns["ApproveUserID"].Visible = false;
+                this.dgvItem.Columns["ApproveTime"].Visible = false;
+            }
         }
 
         private void toolBtnClose_Click(object sender, EventArgs e)
@@ -220,6 +229,17 @@ namespace Electric
             this.Close();
         }
 
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                toolBtnModify_Click(null, null);
+            }
+        }
     }
 }

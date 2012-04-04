@@ -88,7 +88,7 @@
             this.txtOrg.Name = "txtOrg";
             this.txtOrg.ReadOnly = true;
             this.txtOrg.Size = new System.Drawing.Size(390, 21);
-            this.txtOrg.TabIndex = 32;
+            this.txtOrg.TabIndex = 1;
             // 
             // cmbGender
             // 
@@ -99,7 +99,7 @@
             this.cmbGender.Location = new System.Drawing.Point(21, 145);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(70, 20);
-            this.cmbGender.TabIndex = 31;
+            this.cmbGender.TabIndex = 5;
             // 
             // button2
             // 
@@ -116,7 +116,7 @@
             this.button1.Location = new System.Drawing.Point(21, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
+            this.button1.TabIndex = 10;
             this.button1.Text = "保 存";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.BtnSave_Click);
@@ -126,7 +126,7 @@
             this.txtMobile.Location = new System.Drawing.Point(429, 194);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(390, 21);
-            this.txtMobile.TabIndex = 28;
+            this.txtMobile.TabIndex = 9;
             // 
             // label10
             // 
@@ -142,7 +142,7 @@
             this.txtFax.Location = new System.Drawing.Point(21, 194);
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(390, 21);
-            this.txtFax.TabIndex = 26;
+            this.txtFax.TabIndex = 8;
             // 
             // label9
             // 
@@ -158,7 +158,7 @@
             this.txtEmail.Location = new System.Drawing.Point(429, 145);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(390, 21);
-            this.txtEmail.TabIndex = 24;
+            this.txtEmail.TabIndex = 7;
             // 
             // label8
             // 
@@ -174,7 +174,7 @@
             this.txtTel.Location = new System.Drawing.Point(105, 145);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(306, 21);
-            this.txtTel.TabIndex = 22;
+            this.txtTel.TabIndex = 6;
             // 
             // label7
             // 
@@ -208,7 +208,7 @@
             this.txtName.Location = new System.Drawing.Point(429, 94);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(390, 21);
-            this.txtName.TabIndex = 16;
+            this.txtName.TabIndex = 4;
             // 
             // label4
             // 
@@ -225,7 +225,7 @@
             this.cmbDep.Location = new System.Drawing.Point(429, 43);
             this.cmbDep.Name = "cmbDep";
             this.cmbDep.Size = new System.Drawing.Size(390, 20);
-            this.cmbDep.TabIndex = 14;
+            this.cmbDep.TabIndex = 2;
             // 
             // label2
             // 
@@ -250,7 +250,7 @@
             this.txtCode.Location = new System.Drawing.Point(21, 94);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(390, 21);
-            this.txtCode.TabIndex = 8;
+            this.txtCode.TabIndex = 3;
             // 
             // frm_employee
             // 

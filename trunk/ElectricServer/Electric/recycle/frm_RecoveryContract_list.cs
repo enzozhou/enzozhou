@@ -191,12 +191,12 @@ namespace Electric
             global.SetDataGridViewStyle(dgvItem);
             this.dgvItem.Columns["Model"].HeaderText = "型号";
             this.dgvItem.Columns["Qty"].HeaderText = "台数";
-            this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率";
-            this.dgvItem.Columns["UnitPrice"].HeaderText = "回收单价";
-            this.dgvItem.Columns["Price"].HeaderText = "回收金额";
-            this.dgvItem.Columns["BuyPower"].HeaderText = "购买电机功率";
-            this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
-            this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
+            this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率(kW)";
+            this.dgvItem.Columns["UnitPrice"].HeaderText = "旧电机回收单价(元/台)";
+            this.dgvItem.Columns["Price"].HeaderText = "回收资金小计(元)";
+            this.dgvItem.Columns["BuyPower"].HeaderText = "新购高效电机功率(含再制造高效电机)(kW)";
+            this.dgvItem.Columns["Subsidy"].HeaderText = "以旧换新补贴金额(元)";
+            this.dgvItem.Columns["SumPrice"].HeaderText = "合计";
             this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
 
@@ -210,6 +210,19 @@ namespace Electric
         private void toolBtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                toolBtnModify_Click(null, null);
+            }
+        }
+
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
     }

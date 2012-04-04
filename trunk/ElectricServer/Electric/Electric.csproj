@@ -73,6 +73,11 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -274,6 +279,14 @@
       <DependentUpon>frm_RecoveryContract_list.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\NewExchangeOld.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NewExchangeOld.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\RecycleContract.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RecycleContract.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="system\frm_User.resx">
       <DependentUpon>frm_User.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -319,6 +332,18 @@
     </Compile>
     <Compile Include="recycle\frm_RecoveryContract_list.Designer.cs">
       <DependentUpon>frm_RecoveryContract_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\NewExchangeOld.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewExchangeOld.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\RecycleContract.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecycleContract.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="system\frm_User.cs">
       <SubType>Form</SubType>
@@ -384,6 +409,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="上科电机.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

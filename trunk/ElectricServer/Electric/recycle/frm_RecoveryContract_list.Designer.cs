@@ -105,6 +105,7 @@
             this.dgv.RowTemplate.Height = 23;
             this.dgv.Size = new System.Drawing.Size(945, 163);
             this.dgv.TabIndex = 9;
+            this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellDoubleClick);
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
             // btnDown
@@ -299,6 +300,7 @@
             this.dgvItem.RowTemplate.Height = 23;
             this.dgvItem.Size = new System.Drawing.Size(951, 117);
             this.dgvItem.TabIndex = 10;
+            this.dgvItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellDoubleClick);
             // 
             // frm_RecoveryContract_list
             // 

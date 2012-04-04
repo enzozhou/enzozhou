@@ -18,7 +18,7 @@ namespace Electric
         private int _id = 0;
         public int ID
         {
-            set { _id = value; showUpdate(); }
+            set { _id = value; }
         }
         private bool _isUpdate = false;
         public bool isUpdate
@@ -31,10 +31,6 @@ namespace Electric
             try
             {
                 string strErr = "";
-                //if (!PageValidate.IsNumber(txtOrgID.Text))
-                //{
-                //    strErr += "OrgID格式错误.\n";
-                //}
                 if (this.txtCode.Text.Trim().Length == 0)
                 {
                     strErr += "代码不能为空.\n";
@@ -75,7 +71,7 @@ namespace Electric
                 string Name = this.txtName.Text;
                 int Gender = 0;
 
-                if (cmbGender.SelectedText == "男")
+                if (cmbGender.Text == "男")
                 {
                     Gender = 0;
                 }
@@ -172,20 +168,28 @@ namespace Electric
             this.txtTel.Text = modelChange.Tel;
             this.txtFax.Text = modelChange.Fax;
             this.txtEmail.Text = modelChange.Email;
-            cmbGender.SelectedText = modelChange.Gender == 0 ? "男" : "女";
-            global.SetComboBoxDefaultValue(cmbDep, modelChange.Code);
+            cmbGender.SelectedIndex = int.Parse(modelChange.Gender.ToString());
+            global.SetComboBoxDefaultValue(cmbDep, modelChange.ID.ToString());
         }
 
         void band()
         {
             DataSet _ds = new Electric.BLL.BAS_Department().GetList("");
-            global.BandComboBox(cmbDep, _ds, "Name", "ID");
+            global.BandComboBox(cmbDep, _ds, "ID", "Name");
         }
 
         private void frm_employee_Load(object sender, EventArgs e)
         {
             band();
             txtOrg.Text = global.OrganizationName;
+            if (_isUpdate)
+            {
+                showUpdate();
+            }
+            else
+            {
+                cmbGender.SelectedIndex = 0;
+            }
         }
 
     }

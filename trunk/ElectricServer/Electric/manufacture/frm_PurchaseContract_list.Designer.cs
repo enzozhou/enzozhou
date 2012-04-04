@@ -155,6 +155,7 @@
             this.dgv.RowTemplate.Height = 23;
             this.dgv.Size = new System.Drawing.Size(1174, 166);
             this.dgv.TabIndex = 11;
+            this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellDoubleClick);
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
             // groupBox1
@@ -267,6 +268,7 @@
             this.dgvItem.RowTemplate.Height = 23;
             this.dgvItem.Size = new System.Drawing.Size(1183, 136);
             this.dgvItem.TabIndex = 13;
+            this.dgvItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellDoubleClick);
             // 
             // frm_PurchaseContract_list
             // 
