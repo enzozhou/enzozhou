@@ -122,5 +122,20 @@ namespace Electric
             this.Close();
         }
 
+
+
+        private void frm_CodeProfire_AutoSizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            btnSave.Width = 75;
+            btnSave.Height = 23;
+            btnClose.Width = 75;
+            btnClose.Height = 23;
+        }
+
     }
 }

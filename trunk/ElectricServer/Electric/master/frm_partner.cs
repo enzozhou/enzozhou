@@ -35,6 +35,7 @@ namespace Electric
         public bool isUpdate
         {
             set { _isUpdate = value; }
+            get { return _isUpdate; }
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -223,7 +224,7 @@ namespace Electric
             this.txtMail.Text = model.Email;
             this.txtLicence.Text = model.Licence;
             this.txtFixedAssets.Text = model.FixedAssets.ToString();
-            this.lbl22.Text = model.ETC;
+            this.txtETC.Text = model.ETC;
             this.txtEnterpriseNum.Text = model.EnterpriseNum.ToString();
             this.txtCorporate.Text = model.Corporate;
             this.txtContract.Text = model.Contract;
@@ -234,13 +235,37 @@ namespace Electric
             global.SetComboBoxDefaultValue(cmbOwnership, model.Ownership);
             global.SetComboBoxDefaultValue(cmbPartnerClass, model.PartnerClass);
             global.SetComboBoxDefaultValue(cmbSupervisor, model.Supervisor);
-
+            ControlEnabled();
         }
 
         private void frm_partner_Load(object sender, EventArgs e)
         {
             txtOrg.Text = global.OrganizationName;
+            band();
+
 
         }
+
+        void band()
+        {
+            global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
+            global.BandBaseCodeComboBox(cmbPartnerClass, "BCP00004");
+            global.BandBaseCodeComboBox(cmbSupervisor, "BCP00005");
+        }
+
+        private void ControlEnabled()
+        {
+            if (isUpdate)
+            {
+                txtCode.Enabled = false;
+            }
+            else
+            {
+                txtCode.Enabled = true;
+            }
+        }
+
+
+
     }
 }

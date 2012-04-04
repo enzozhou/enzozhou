@@ -184,6 +184,7 @@ namespace Electric
             if (e.RowIndex >= 0)
             {
                 toolBtnModify_Click(null, null);
+                btnSearch_Click(null, null);
             }
         }
     }

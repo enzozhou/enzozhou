@@ -26,6 +26,7 @@ namespace Electric
         public bool isUpdate
         {
             set { _isUpdate = value; }
+            get { return _isUpdate; }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -100,12 +101,26 @@ namespace Electric
             _model = new Electric.BLL.BAS_Department().GetModel(_id);
             txtCode.Text = _model.Code;
             txtName.Text = _model.Name;
+
+            ControlEnabled();
         }
 
 
         private void frm_department_Load(object sender, EventArgs e)
         {
             txtOrg.Text = global.OrganizationName;
+        }
+
+        private void ControlEnabled()
+        {
+            if (isUpdate)
+            {
+                txtCode.Enabled = false;
+            }
+            else
+            {
+                txtCode.Enabled = true;
+            }
         }
     }
 }

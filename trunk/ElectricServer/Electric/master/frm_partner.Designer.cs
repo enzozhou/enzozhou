@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -76,7 +77,6 @@
             this.txtOrgCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtOrg = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,6 +137,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "合作伙伴";
+            // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(8, 34);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(366, 21);
+            this.txtOrg.TabIndex = 58;
             // 
             // txtMail
             // 
@@ -320,9 +328,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(6, 253);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 12);
+            this.label13.Size = new System.Drawing.Size(89, 12);
             this.label13.TabIndex = 35;
-            this.label13.Text = "固定资产";
+            this.label13.Text = "固定资产(万元)";
             // 
             // cmbSupervisor
             // 
@@ -508,9 +516,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(5, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(89, 12);
             this.label1.TabIndex = 2;
-            this.label1.Text = "注册资金";
+            this.label1.Text = "注册资金(万元)";
             // 
             // btnSave
             // 
@@ -521,14 +529,6 @@
             this.btnSave.Text = "保 存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
-            // txtOrg
-            // 
-            this.txtOrg.Location = new System.Drawing.Point(8, 34);
-            this.txtOrg.Name = "txtOrg";
-            this.txtOrg.ReadOnly = true;
-            this.txtOrg.Size = new System.Drawing.Size(366, 21);
-            this.txtOrg.TabIndex = 58;
             // 
             // frm_partner
             // 
