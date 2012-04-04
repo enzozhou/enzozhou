@@ -90,6 +90,7 @@ namespace Electric
             //this.dgv.Columns["CreateTime"].HeaderText = "创建时间";
             //this.dgv.Columns["UpdateUserID"].HeaderText = "编辑人";
             //this.dgv.Columns["UpdateTime"].HeaderText = "编辑时间";
+            
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
@@ -187,6 +188,12 @@ namespace Electric
                 int.TryParse(dgv.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out id);
                 ShowOrg(id);
             }
+        }
+
+        private void frm_organization_list_Load(object sender, EventArgs e)
+        {
+            global.BandBaseCodeComboBox(cmbMembership, "BCP00001");
+            cmbMembership.SelectedIndex = -1;
         }
     }
 }

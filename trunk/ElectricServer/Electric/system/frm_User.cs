@@ -167,8 +167,6 @@ namespace Electric
             {
                 txtCode.Enabled = true;
             }
-
-
         }
 
         private void frm_User_Load(object sender, EventArgs e)

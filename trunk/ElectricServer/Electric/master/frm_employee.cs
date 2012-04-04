@@ -24,6 +24,7 @@ namespace Electric
         public bool isUpdate
         {
             set { _isUpdate = value; }
+            get { return _isUpdate; }
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -170,6 +171,7 @@ namespace Electric
             this.txtEmail.Text = modelChange.Email;
             cmbGender.SelectedIndex = int.Parse(modelChange.Gender.ToString());
             global.SetComboBoxDefaultValue(cmbDep, modelChange.ID.ToString());
+            ControlEnabled();
         }
 
         void band()
@@ -189,6 +191,18 @@ namespace Electric
             else
             {
                 cmbGender.SelectedIndex = 0;
+            }
+        }
+
+        private void ControlEnabled()
+        {
+            if (isUpdate)
+            {
+                txtCode.Enabled = false;
+            }
+            else
+            {
+                txtCode.Enabled = true;
             }
         }
 
