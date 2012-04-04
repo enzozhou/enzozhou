@@ -46,9 +46,9 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BS_RecoveryContract_Details(");
-			strSql.Append("Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgID,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime)");
+			strSql.Append("Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgCode,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime)");
 			strSql.Append(" values (");
-			strSql.Append("@Model,@Qty,@PowerRating,@UnitPrice,@Price,@BuyPower,@Subsidy,@SumPrice,@OrgID,@ContractNo,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime)");
+			strSql.Append("@Model,@Qty,@PowerRating,@UnitPrice,@Price,@BuyPower,@Subsidy,@SumPrice,@OrgCode,@ContractNo,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@Model", SqlDbType.NVarChar,50),
@@ -59,7 +59,7 @@ namespace Electric.DAL
 					new SqlParameter("@BuyPower", SqlDbType.Decimal,9),
 					new SqlParameter("@Subsidy", SqlDbType.Decimal,9),
 					new SqlParameter("@SumPrice", SqlDbType.Decimal,9),
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@ContractNo", SqlDbType.NVarChar,50),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
@@ -73,7 +73,7 @@ namespace Electric.DAL
 			parameters[5].Value = model.BuyPower;
 			parameters[6].Value = model.Subsidy;
 			parameters[7].Value = model.SumPrice;
-			parameters[8].Value = model.OrgID;
+			parameters[8].Value = model.OrgCode;
 			parameters[9].Value = model.ContractNo;
 			parameters[10].Value = model.CreateUserID;
 			parameters[11].Value = model.CreateTime;
@@ -105,7 +105,7 @@ namespace Electric.DAL
 			strSql.Append("BuyPower=@BuyPower,");
 			strSql.Append("Subsidy=@Subsidy,");
 			strSql.Append("SumPrice=@SumPrice,");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCode=@OrgCode,");
 			strSql.Append("ContractNo=@ContractNo,");
 			strSql.Append("CreateUserID=@CreateUserID,");
 			strSql.Append("CreateTime=@CreateTime,");
@@ -121,7 +121,7 @@ namespace Electric.DAL
 					new SqlParameter("@BuyPower", SqlDbType.Decimal,9),
 					new SqlParameter("@Subsidy", SqlDbType.Decimal,9),
 					new SqlParameter("@SumPrice", SqlDbType.Decimal,9),
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@ContractNo", SqlDbType.NVarChar,50),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
@@ -136,7 +136,7 @@ namespace Electric.DAL
 			parameters[5].Value = model.BuyPower;
 			parameters[6].Value = model.Subsidy;
 			parameters[7].Value = model.SumPrice;
-			parameters[8].Value = model.OrgID;
+			parameters[8].Value = model.OrgCode;
 			parameters[9].Value = model.ContractNo;
 			parameters[10].Value = model.CreateUserID;
 			parameters[11].Value = model.CreateTime;
@@ -206,7 +206,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgID,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime from BS_RecoveryContract_Details ");
+			strSql.Append("select  top 1 ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgCode,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime from BS_RecoveryContract_Details ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -253,9 +253,9 @@ namespace Electric.DAL
 				{
 					model.SumPrice=decimal.Parse(ds.Tables[0].Rows[0]["SumPrice"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCode"]!=null && ds.Tables[0].Rows[0]["OrgCode"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCode=ds.Tables[0].Rows[0]["OrgCode"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["ContractNo"]!=null && ds.Tables[0].Rows[0]["ContractNo"].ToString()!="")
 				{
@@ -291,7 +291,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgID,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
+			strSql.Append("select ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgCode,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
 			strSql.Append(" FROM BS_RecoveryContract_Details ");
 			if(strWhere.Trim()!="")
 			{
@@ -311,7 +311,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgID,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
+			strSql.Append(" ID,Model,Qty,PowerRating,UnitPrice,Price,BuyPower,Subsidy,SumPrice,OrgCode,ContractNo,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
 			strSql.Append(" FROM BS_RecoveryContract_Details ");
 			if(strWhere.Trim()!="")
 			{

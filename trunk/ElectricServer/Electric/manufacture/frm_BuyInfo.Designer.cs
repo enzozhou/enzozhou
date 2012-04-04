@@ -58,21 +58,6 @@
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvItem = new System.Windows.Forms.DataGridView();
-            this.OrgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewVoltage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewProtectionLev = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TerminalUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,12 +73,30 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewVoltage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewProtectionLev = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TerminalUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.dtpBuyTime);
@@ -124,12 +127,12 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 163);
+            this.panel1.Size = new System.Drawing.Size(1114, 163);
             this.panel1.TabIndex = 0;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1142, 122);
+            this.btnClose.Location = new System.Drawing.Point(1025, 121);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 5;
@@ -139,7 +142,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1041, 122);
+            this.btnSave.Location = new System.Drawing.Point(926, 121);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 4;
@@ -180,7 +183,7 @@
             // 
             // txtPartnerContract
             // 
-            this.txtPartnerContract.Location = new System.Drawing.Point(1110, 35);
+            this.txtPartnerContract.Location = new System.Drawing.Point(1004, 35);
             this.txtPartnerContract.Name = "txtPartnerContract";
             this.txtPartnerContract.Size = new System.Drawing.Size(107, 21);
             this.txtPartnerContract.TabIndex = 1;
@@ -207,13 +210,13 @@
             // 
             this.txtPartnerAddress.Location = new System.Drawing.Point(610, 35);
             this.txtPartnerAddress.Name = "txtPartnerAddress";
-            this.txtPartnerAddress.Size = new System.Drawing.Size(494, 21);
+            this.txtPartnerAddress.Size = new System.Drawing.Size(388, 21);
             this.txtPartnerAddress.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1108, 20);
+            this.label7.Location = new System.Drawing.Point(1002, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 0;
@@ -365,6 +368,9 @@
             // 
             // dgvItem
             // 
+            this.dgvItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrgID,
@@ -385,101 +391,10 @@
             this.dgvItem.Location = new System.Drawing.Point(13, 182);
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.RowTemplate.Height = 23;
-            this.dgvItem.Size = new System.Drawing.Size(1229, 279);
+            this.dgvItem.Size = new System.Drawing.Size(1114, 279);
             this.dgvItem.TabIndex = 1;
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
-            // 
-            // OrgID
-            // 
-            this.OrgID.DataPropertyName = "OrgID";
-            this.OrgID.HeaderText = "公司ID";
-            this.OrgID.Name = "OrgID";
-            // 
-            // ContractNo
-            // 
-            this.ContractNo.DataPropertyName = "ContractNo";
-            this.ContractNo.HeaderText = "合同编号";
-            this.ContractNo.Name = "ContractNo";
-            this.ContractNo.ReadOnly = true;
-            // 
-            // InvoiceNo
-            // 
-            this.InvoiceNo.DataPropertyName = "InvoiceNo";
-            this.InvoiceNo.HeaderText = "发票号码";
-            this.InvoiceNo.Name = "InvoiceNo";
-            // 
-            // NewModel
-            // 
-            this.NewModel.DataPropertyName = "NewModel";
-            this.NewModel.HeaderText = "新电机型号";
-            this.NewModel.Name = "NewModel";
-            // 
-            // NewQty
-            // 
-            this.NewQty.DataPropertyName = "NewQty";
-            this.NewQty.HeaderText = "新电机台数";
-            this.NewQty.Name = "NewQty";
-            // 
-            // NewRating
-            // 
-            this.NewRating.DataPropertyName = "NewRating";
-            this.NewRating.HeaderText = "新电机功率";
-            this.NewRating.Name = "NewRating";
-            // 
-            // NewVoltage
-            // 
-            this.NewVoltage.DataPropertyName = "NewVoltage";
-            this.NewVoltage.HeaderText = "新电机电压";
-            this.NewVoltage.Name = "NewVoltage";
-            // 
-            // NewSpeed
-            // 
-            this.NewSpeed.DataPropertyName = "NewSpeed";
-            this.NewSpeed.HeaderText = "新电机额定转速";
-            this.NewSpeed.Name = "NewSpeed";
-            // 
-            // NewProtectionLev
-            // 
-            this.NewProtectionLev.DataPropertyName = "NewProtectionLev";
-            this.NewProtectionLev.HeaderText = "新电机防护等级";
-            this.NewProtectionLev.Name = "NewProtectionLev";
-            // 
-            // NewMC
-            // 
-            this.NewMC.DataPropertyName = "NewMC";
-            this.NewMC.HeaderText = "新电机制造企业";
-            this.NewMC.Name = "NewMC";
-            // 
-            // NewWeight
-            // 
-            this.NewWeight.DataPropertyName = "NewWeight";
-            this.NewWeight.HeaderText = "新电机重量";
-            this.NewWeight.Name = "NewWeight";
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "Price";
-            this.Price.HeaderText = "销售金额";
-            this.Price.Name = "Price";
-            // 
-            // TerminalUnit
-            // 
-            this.TerminalUnit.DataPropertyName = "TerminalUnit";
-            this.TerminalUnit.HeaderText = "终端产品";
-            this.TerminalUnit.Name = "TerminalUnit";
-            // 
-            // TUNo
-            // 
-            this.TUNo.DataPropertyName = "TUNo";
-            this.TUNo.HeaderText = "终端产品编号";
-            this.TUNo.Name = "TUNo";
-            // 
-            // NewSerialNum
-            // 
-            this.NewSerialNum.DataPropertyName = "NewSerialNum";
-            this.NewSerialNum.HeaderText = "新电机生产编号";
-            this.NewSerialNum.Name = "NewSerialNum";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -572,11 +487,102 @@
             this.dataGridViewTextBoxColumn15.HeaderText = "新电机生产编号";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
+            // OrgID
+            // 
+            this.OrgID.DataPropertyName = "OrgCode";
+            this.OrgID.HeaderText = "公司ID";
+            this.OrgID.Name = "OrgID";
+            // 
+            // ContractNo
+            // 
+            this.ContractNo.DataPropertyName = "ContractNo";
+            this.ContractNo.HeaderText = "合同编号";
+            this.ContractNo.Name = "ContractNo";
+            this.ContractNo.ReadOnly = true;
+            // 
+            // InvoiceNo
+            // 
+            this.InvoiceNo.DataPropertyName = "InvoiceNo";
+            this.InvoiceNo.HeaderText = "发票号码";
+            this.InvoiceNo.Name = "InvoiceNo";
+            // 
+            // NewModel
+            // 
+            this.NewModel.DataPropertyName = "NewModel";
+            this.NewModel.HeaderText = "新电机型号";
+            this.NewModel.Name = "NewModel";
+            // 
+            // NewQty
+            // 
+            this.NewQty.DataPropertyName = "NewQty";
+            this.NewQty.HeaderText = "新电机台数";
+            this.NewQty.Name = "NewQty";
+            // 
+            // NewRating
+            // 
+            this.NewRating.DataPropertyName = "NewRating";
+            this.NewRating.HeaderText = "新电机功率";
+            this.NewRating.Name = "NewRating";
+            // 
+            // NewVoltage
+            // 
+            this.NewVoltage.DataPropertyName = "NewVoltage";
+            this.NewVoltage.HeaderText = "新电机电压";
+            this.NewVoltage.Name = "NewVoltage";
+            // 
+            // NewSpeed
+            // 
+            this.NewSpeed.DataPropertyName = "NewSpeed";
+            this.NewSpeed.HeaderText = "新电机额定转速";
+            this.NewSpeed.Name = "NewSpeed";
+            // 
+            // NewProtectionLev
+            // 
+            this.NewProtectionLev.DataPropertyName = "NewProtectionLev";
+            this.NewProtectionLev.HeaderText = "新电机防护等级";
+            this.NewProtectionLev.Name = "NewProtectionLev";
+            // 
+            // NewMC
+            // 
+            this.NewMC.DataPropertyName = "NewMC";
+            this.NewMC.HeaderText = "新电机制造企业";
+            this.NewMC.Name = "NewMC";
+            // 
+            // NewWeight
+            // 
+            this.NewWeight.DataPropertyName = "NewWeight";
+            this.NewWeight.HeaderText = "新电机重量";
+            this.NewWeight.Name = "NewWeight";
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "Price";
+            this.Price.HeaderText = "销售金额";
+            this.Price.Name = "Price";
+            // 
+            // TerminalUnit
+            // 
+            this.TerminalUnit.DataPropertyName = "TerminalUnit";
+            this.TerminalUnit.HeaderText = "终端产品";
+            this.TerminalUnit.Name = "TerminalUnit";
+            // 
+            // TUNo
+            // 
+            this.TUNo.DataPropertyName = "TUNo";
+            this.TUNo.HeaderText = "终端产品编号";
+            this.TUNo.Name = "TUNo";
+            // 
+            // NewSerialNum
+            // 
+            this.NewSerialNum.DataPropertyName = "NewSerialNum";
+            this.NewSerialNum.HeaderText = "新电机生产编号";
+            this.NewSerialNum.Name = "NewSerialNum";
+            // 
             // frm_BuyInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 473);
+            this.ClientSize = new System.Drawing.Size(1139, 473);
             this.Controls.Add(this.dgvItem);
             this.Controls.Add(this.panel1);
             this.Name = "frm_BuyInfo";

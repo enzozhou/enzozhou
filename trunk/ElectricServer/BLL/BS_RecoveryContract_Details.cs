@@ -167,9 +167,9 @@ namespace Electric.BLL
 					{
 						model.SumPrice=decimal.Parse(dt.Rows[n]["SumPrice"].ToString());
 					}
-					if(dt.Rows[n]["OrgID"]!=null && dt.Rows[n]["OrgID"].ToString()!="")
+					if(dt.Rows[n]["OrgCode"]!=null && dt.Rows[n]["OrgCode"].ToString()!="")
 					{
-						model.OrgID=int.Parse(dt.Rows[n]["OrgID"].ToString());
+					model.OrgCode=dt.Rows[n]["OrgCode"].ToString();
 					}
 					if(dt.Rows[n]["ContractNo"]!=null && dt.Rows[n]["ContractNo"].ToString()!="")
 					{

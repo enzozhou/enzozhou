@@ -14,7 +14,6 @@ namespace Electric
         public frm_RecoveryContract()
         {
             InitializeComponent();
-            dgvItem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
@@ -105,11 +104,11 @@ namespace Electric
             string strErr = "";
             if (this.txtPartnerCode.Text.Trim().Length == 0)
             {
-                strErr += "PartnerCode不能为空.\n";
+                strErr += "交售方代码不能为空.\n";
             }
             if (this.txtPartnerName.Text.Trim().Length == 0)
             {
-                strErr += "PartnerName不能为空.\n";
+                strErr += "交售方名称不能为空.\n";
             }
             if (strErr != "")
             {
@@ -128,8 +127,7 @@ namespace Electric
             model.LPP = iTmp;
             int.TryParse(txtLPR.Text, out iTmp);
             model.LPR = iTmp;
-            int.TryParse(cmbOrgID.Text.ToString(), out iTmp);
-            model.OrgID = iTmp;
+            model.OrgCode = global.OrganizationCode;
             model.PartnerAccount = txtPartnerAccount.Text;
             model.PartnerAddress = txtPartnerAddress.Text;
             model.PartnerBank = txtPartnerBank.Text;
@@ -170,7 +168,7 @@ namespace Electric
                     {
                         modelDetail = new Electric.Model.BS_RecoveryContract_Details();
                         modelDetail.Model = global.ConvertObject(item.Cells["Model"].Value);
-                        modelDetail.OrgID = model.OrgID;
+                        modelDetail.OrgCode = model.OrgCode;
                         int.TryParse(global.ConvertObject(item.Cells["Qty"].Value), out iTmp);
                         modelDetail.Qty = iTmp;
                         decimal.TryParse(global.ConvertObject(item.Cells["Price"].Value), out dclTmp);
@@ -237,7 +235,6 @@ namespace Electric
             txtFPR.Text = _model.FPR.ToString();
             txtLPP.Text = _model.LPP.ToString();
             txtLPR.Text = _model.LPR.ToString();
-            cmbOrgID.SelectedValue = _model.OrgID.ToString();
             txtPartnerAccount.Text = _model.PartnerAccount;
             txtPartnerAddress.Text = _model.PartnerAddress;
             txtPartnerBank.Text = _model.PartnerBank;
@@ -265,7 +262,7 @@ namespace Electric
             this.dgvItem.Columns["BuyPower"].HeaderText = "购买电机功率";
             this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
             this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
-            this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
+            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
 
             this.dgvItem.Columns["ID"].Visible = false;
@@ -281,11 +278,10 @@ namespace Electric
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void frm_RecoveryContract_Load(object sender, EventArgs e)
         {
-
+            dgvItem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            txtOrg.Text = global.OrganizationName;
         }
-
-
     }
 }

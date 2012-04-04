@@ -11,7 +11,7 @@ namespace Electric.Model
 		{}
 		#region Model
 		private int _id;
-		private int? _orgid;
+		private string _orgcode;
 		private int? _contractno;
 		private string _invoiceno;
 		private DateTime? _invoicedate;
@@ -46,10 +46,10 @@ namespace Electric.Model
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? OrgID
+		public string OrgCode
 		{
-			set{ _orgid=value;}
-			get{return _orgid;}
+			set{ _orgcode=value;}
+			get{return _orgcode;}
 		}
 		/// <summary>
 		/// 

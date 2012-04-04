@@ -321,11 +321,13 @@
       <DependentUpon>frm_RecoveryContract_list.cs</DependentUpon>
     </Compile>
     <Compile Include="system\frm_User.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="system\frm_User.Designer.cs">
       <DependentUpon>frm_User.cs</DependentUpon>
     </Compile>
     <Compile Include="system\frm_User_list.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="system\frm_User_list.Designer.cs">
       <DependentUpon>frm_User_list.cs</DependentUpon>

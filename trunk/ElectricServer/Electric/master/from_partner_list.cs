@@ -90,7 +90,7 @@ namespace Electric
                 = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["Code"].HeaderText = "代码";
             this.dgv.Columns["Name"].HeaderText = "企业名称";
-            this.dgv.Columns["OrgID"].HeaderText = "公司ID";
+             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgv.Columns["PartnerClass"].HeaderText = "伙伴类型";
             this.dgv.Columns["Address"].HeaderText = "企业地址";
             this.dgv.Columns["Corporate"].HeaderText = "企业法人代表";

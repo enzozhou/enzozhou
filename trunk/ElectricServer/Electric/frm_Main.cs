@@ -18,6 +18,7 @@ namespace Electric
         public frm_Main()
         {
             InitializeComponent();
+            menuAdd();//添加leftmenu
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -47,37 +48,33 @@ namespace Electric
 
         private void tsmi_company_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_organization_list());
+            global.FormStyle(this, new frm_organization_list(),"公司信息");
         }
 
-        private void tv_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-
-        }
 
         private void tsmi_department_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_department_list());
+            global.FormStyle(this, new frm_department_list(),"部门信息");
         }
 
         private void tsmi_employee_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_employee_list());
+            global.FormStyle(this, new frm_employee_list(), "员工信息");
         }
 
         private void tsmi_partner_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new from_partner_list());
+            global.FormStyle(this, new from_partner_list(), "合作伙伴信息");
         }
 
         private void tsmi_RecoveryContract_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_RecoveryContract_list());
+            global.FormStyle(this, new frm_RecoveryContract_list(),"回收合同");
         }
 
         private void tsmi_NewForOld_Click(object sender, EventArgs e)
         {
-            global.FormStyle(this, new frm_NewForOld_list());
+            global.FormStyle(this, new frm_NewForOld_list(),"以旧换新");
         }
 
         private void tsmi_buy_Click(object sender, EventArgs e)
@@ -92,31 +89,81 @@ namespace Electric
 
 
 
-        void test()
+        void menuAdd()
         {
-            OutlookBar outlookBar1 = null;
-             //My shortcuts band
-            
-            OutlookBarBand.myShorcutsBand = new OutlookBarBand("My Shorcuts");
-            myShorcutsBand.SmallImageList = myShortcutsSmallIcons;
-            myShorcutsBand.LargeImageList = myShortcutsLargeIcons;
-            myShorcutsBand.Items.Add(new OutlookBarItem("Contacts", 0));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Music", 1));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Defragment", 2));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Games", 3));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Security", 4));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Users", 5));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Fonts", 6));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Speaker", 7));
-            myShorcutsBand.Items.Add(new OutlookBarItem("Pictures", 8));
-            myShorcutsBand.Background = SystemColors.AppWorkspace;
-            myShorcutsBand.TextColor = Color.White;
-            outlookBar1.Bands.Add(myShorcutsBand);
+            OutlookBar _outlookBar = new OutlookBar();
+            //My shortcuts band
+
+            OutlookBarBand mu_master = new OutlookBarBand("基本信息");
+            //mu_master.SmallImageList = myShortcutsSmallIcons;
+            //mu_master.LargeImageList = myShortcutsLargeIcons;
+            //mu_master.Items.Add(new OutlookBarItem("公司信息"));
+            mu_master.Items.Add(new OutlookBarItem());
+            //mu_master.Items.Add(new OutlookBarItem("部门信息"));
+            //mu_master.Items.Add(new OutlookBarItem("员工信息"));
+            //mu_master.Items.Add(new OutlookBarItem("合作伙伴"));
+
+            OutlookBarBand mu_recycle = new OutlookBarBand("电机回收");
+            mu_recycle.Items.Add(new OutlookBarItem("回收合同", 0));
+            mu_recycle.Items.Add(new OutlookBarItem("以旧换新", 1));
+
+            OutlookBarBand mu_manufacture = new OutlookBarBand("电机再制造");
+            mu_manufacture.Items.Add(new OutlookBarItem("采购合同", 0));
+            mu_manufacture.Items.Add(new OutlookBarItem("购买信息", 1));
+
+            OutlookBarBand mu_reports = new OutlookBarBand("报表");
+            mu_reports.Items.Add(new OutlookBarItem("采购合同", 0));
+            mu_reports.Items.Add(new OutlookBarItem("购买信息", 1));
+
+            OutlookBarBand mu_sys = new OutlookBarBand("系统管理");
+            mu_reports.Items.Add(new OutlookBarItem("用户管理", 0));
+            mu_reports.Items.Add(new OutlookBarItem("退出", 1));
+
+            //mu_reports.Background = SystemColors.AppWorkspace;
+            //mu_reports.TextColor = Color.White;
+            _outlookBar.Bands.Add(mu_master);
+            _outlookBar.Bands.Add(mu_recycle);
+            _outlookBar.Bands.Add(mu_manufacture);
+            _outlookBar.Bands.Add(mu_reports);
+            _outlookBar.Bands.Add(mu_sys);
+
+            _outlookBar.Dock = DockStyle.Fill;
+            _outlookBar.SetCurrentBand(1);
+            _outlookBar.ItemClicked += new OutlookBarItemClickedHandler(OnOutlookBarItemClicked);
+            _outlookBar.ItemDropped += new OutlookBarItemDroppedHandler(OnOutlookBarItemDropped);
+            plMenu.Controls.AddRange(new Control[] { _outlookBar });
         }
+
+        void OnOutlookBarItemClicked(OutlookBarBand band, OutlookBarItem item)
+        {
+            string message = "Item : " + item.Text + " was clicked...";
+            MessageBox.Show(message);
+        }
+
+        void OnOutlookBarItemDropped(OutlookBarBand band, OutlookBarItem item)
+        {
+            string message = "Item : " + item.Text + " was dropped...";
+            MessageBox.Show(message);
+        }
+
 
         private void tsmi_User_Click(object sender, EventArgs e)
         {
             global.FormStyle(this, new frm_User_list(), "用户信息");
+        }
+
+        private void tsmi_base_Click(object sender, EventArgs e)
+        {
+            global.FormStyle(this, new frm_CodeProfire(), "基础数据管理");
+        }
+
+        private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出系统？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
     }

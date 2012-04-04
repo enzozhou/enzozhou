@@ -52,9 +52,9 @@ namespace Electric.DAL
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
-					new SqlParameter("@Name", SqlDbType.NVarChar,200),
+					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@Pwd", SqlDbType.NVarChar,50),
-					new SqlParameter("@IsAdmin", SqlDbType.NVarChar,50),
+					new SqlParameter("@IsAdmin", SqlDbType.NVarChar,2),
 					new SqlParameter("@RowStatus", SqlDbType.Int,4),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
@@ -101,7 +101,7 @@ namespace Electric.DAL
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@Pwd", SqlDbType.NVarChar,50),
-					new SqlParameter("@IsAdmin", SqlDbType.NVarChar,1),
+					new SqlParameter("@IsAdmin", SqlDbType.NVarChar,2),
 					new SqlParameter("@RowStatus", SqlDbType.Int,4),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),

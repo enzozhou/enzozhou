@@ -46,12 +46,12 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BS_BuyInfo_Details(");
-			strSql.Append("OrgID,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
+			strSql.Append("OrgCode,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgID,@ContractNo,@InvoiceNo,@InvoiceDate,@NewModel,@NewQty,@NewRating,@NewVoltage,@NewSpeed,@NewProtectionLev,@NewMC,@NewWeight,@Price,@TerminalUnit,@TUNo,@NewSerialNum,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
+			strSql.Append("@OrgCode,@ContractNo,@InvoiceNo,@InvoiceDate,@NewModel,@NewQty,@NewRating,@NewVoltage,@NewSpeed,@NewProtectionLev,@NewMC,@NewWeight,@Price,@TerminalUnit,@TUNo,@NewSerialNum,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@ContractNo", SqlDbType.Int,4),
 					new SqlParameter("@InvoiceNo", SqlDbType.NVarChar,50),
 					new SqlParameter("@InvoiceDate", SqlDbType.DateTime),
@@ -75,7 +75,7 @@ namespace Electric.DAL
 					new SqlParameter("@SubmitTime", SqlDbType.DateTime),
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.ContractNo;
 			parameters[2].Value = model.InvoiceNo;
 			parameters[3].Value = model.InvoiceDate;
@@ -117,7 +117,7 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update BS_BuyInfo_Details set ");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCode=@OrgCode,");
 			strSql.Append("ContractNo=@ContractNo,");
 			strSql.Append("InvoiceNo=@InvoiceNo,");
 			strSql.Append("InvoiceDate=@InvoiceDate,");
@@ -143,7 +143,7 @@ namespace Electric.DAL
 			strSql.Append("ApproveTime=@ApproveTime");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@ContractNo", SqlDbType.Int,4),
 					new SqlParameter("@InvoiceNo", SqlDbType.NVarChar,50),
 					new SqlParameter("@InvoiceDate", SqlDbType.DateTime),
@@ -168,7 +168,7 @@ namespace Electric.DAL
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.ContractNo;
 			parameters[2].Value = model.InvoiceNo;
 			parameters[3].Value = model.InvoiceDate;
@@ -256,7 +256,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgID,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BS_BuyInfo_Details ");
+			strSql.Append("select  top 1 ID,OrgCode,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BS_BuyInfo_Details ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -271,9 +271,9 @@ namespace Electric.DAL
 				{
 					model.ID=int.Parse(ds.Tables[0].Rows[0]["ID"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCode"]!=null && ds.Tables[0].Rows[0]["OrgCode"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCode=ds.Tables[0].Rows[0]["OrgCode"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["ContractNo"]!=null && ds.Tables[0].Rows[0]["ContractNo"].ToString()!="")
 				{
@@ -381,7 +381,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgID,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append("select ID,OrgCode,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BS_BuyInfo_Details ");
 			if(strWhere.Trim()!="")
 			{
@@ -401,7 +401,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgID,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append(" ID,OrgCode,ContractNo,InvoiceNo,InvoiceDate,NewModel,NewQty,NewRating,NewVoltage,NewSpeed,NewProtectionLev,NewMC,NewWeight,Price,TerminalUnit,TUNo,NewSerialNum,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BS_BuyInfo_Details ");
 			if(strWhere.Trim()!="")
 			{

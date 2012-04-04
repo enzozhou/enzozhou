@@ -277,6 +277,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_organization";
             this.Text = "frm_company";
+            this.Load += new System.EventHandler(this.frm_organization_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

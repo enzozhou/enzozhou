@@ -123,7 +123,7 @@ namespace Electric
 
             //设置对齐方式
             this.dgv.Columns["row"].HeaderText = "编号";
-            this.dgv.Columns["OrgID"].HeaderText = "公司ID";
+             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgv.Columns["Code"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["Code"].HeaderText = "代码";
             this.dgv.Columns["Name"].HeaderText = "名称";

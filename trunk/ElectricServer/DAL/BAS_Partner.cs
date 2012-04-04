@@ -46,12 +46,12 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BAS_Partner(");
-			strSql.Append("OrgID,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
+			strSql.Append("OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgID,@Code,@Name,@PartnerClass,@Address,@Corporate,@OrgCode,@Licence,@TaxNo,@Ownership,@RegisteredCapital,@Supervisor,@FixedAssets,@EnterpriseNum,@Contract,@Tel,@Email,@ETC,@LYSV,@YBLSV,@BankName,@BankClass,@Account,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
+			strSql.Append("@OrgCodeSYS,@Code,@Name,@PartnerClass,@Address,@Corporate,@OrgCode,@Licence,@TaxNo,@Ownership,@RegisteredCapital,@Supervisor,@FixedAssets,@EnterpriseNum,@Contract,@Tel,@Email,@ETC,@LYSV,@YBLSV,@BankName,@BankClass,@Account,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCodeSYS", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,100),
 					new SqlParameter("@PartnerClass", SqlDbType.NVarChar,50),
@@ -82,7 +82,7 @@ namespace Electric.DAL
 					new SqlParameter("@SubmitTime", SqlDbType.DateTime),
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCodeSYS;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.PartnerClass;
@@ -131,7 +131,7 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update BAS_Partner set ");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCodeSYS=@OrgCodeSYS,");
 			strSql.Append("Code=@Code,");
 			strSql.Append("Name=@Name,");
 			strSql.Append("PartnerClass=@PartnerClass,");
@@ -164,7 +164,7 @@ namespace Electric.DAL
 			strSql.Append("ApproveTime=@ApproveTime");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCodeSYS", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,100),
 					new SqlParameter("@PartnerClass", SqlDbType.NVarChar,50),
@@ -196,7 +196,7 @@ namespace Electric.DAL
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCodeSYS;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.PartnerClass;
@@ -291,7 +291,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgID,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BAS_Partner ");
+			strSql.Append("select  top 1 ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BAS_Partner ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -306,9 +306,9 @@ namespace Electric.DAL
 				{
 					model.ID=int.Parse(ds.Tables[0].Rows[0]["ID"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCodeSYS"]!=null && ds.Tables[0].Rows[0]["OrgCodeSYS"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCodeSYS=ds.Tables[0].Rows[0]["OrgCodeSYS"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["Code"]!=null && ds.Tables[0].Rows[0]["Code"].ToString()!="")
 				{
@@ -444,7 +444,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgID,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append("select ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BAS_Partner ");
 			if(strWhere.Trim()!="")
 			{
@@ -464,7 +464,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgID,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append(" ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BAS_Partner ");
 			if(strWhere.Trim()!="")
 			{

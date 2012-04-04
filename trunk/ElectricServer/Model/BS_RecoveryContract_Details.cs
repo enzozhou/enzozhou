@@ -19,7 +19,7 @@ namespace Electric.Model
 		private decimal? _buypower;
 		private decimal? _subsidy;
 		private decimal? _sumprice;
-		private int? _orgid;
+		private string _orgcode;
 		private string _contractno;
 		private int? _createuserid;
 		private DateTime? _createtime;
@@ -100,10 +100,10 @@ namespace Electric.Model
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? OrgID
+		public string OrgCode
 		{
-			set{ _orgid=value;}
-			get{return _orgid;}
+			set{ _orgcode=value;}
+			get{return _orgcode;}
 		}
 		/// <summary>
 		/// 

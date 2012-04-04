@@ -43,6 +43,10 @@ namespace Electric
             txtTotalOldSubsidy.ReadOnly = true;
             txtTotalOldSumPrice.ReadOnly = true;
             txtTotalPurchasePrice.ReadOnly = true;
+
+            global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
+            global.BandBaseCodeComboBox(cmbBelongTo, "BCP00001");
+            txtOrg.Text = global.OrganizationName;
         }
 
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
@@ -246,10 +250,10 @@ namespace Electric
             Electric.BLL.BS_NewForOld bll = new Electric.BLL.BS_NewForOld();
             Electric.BLL.BS_NewForOld_Details bllDetail = new Electric.BLL.BS_NewForOld_Details();
             Electric.Model.BS_NewForOld model = new Electric.Model.BS_NewForOld();
-            model.BelongTo = cmbBelongTo.SelectedText;
+            model.BelongTo = cmbBelongTo.SelectedValue.ToString();
+            model.Ownership = cmbOwnership.SelectedValue.ToString();
             model.BuyTime = Convert.ToDateTime(dtpBuyTime.Text);
             model.InvoiceNo = txtInvoiceNo.Text;
-            model.Ownership = cmbOwnership.SelectedText;
             model.PartnerAddress = txtPartnerAddress.Text;
             model.PartnerCode = txtPartnerCode.Text;
             model.PartnerContract = txtPartnerContract.Text;
@@ -257,8 +261,7 @@ namespace Electric
             model.PartnerTel = txtPartnerTel.Text;
 
             int iTmp = 0;
-            int.TryParse(global.ConvertObject(cmbOrgID.SelectedValue), out iTmp);
-            model.OrgID = iTmp;
+            model.OrgCode = global.OrganizationCode;
             int.TryParse(txtTotalNewQty.Text, out  iTmp);
             model.TotalNewQty = iTmp;
             int.TryParse(txtTotalOldQty.Text, out iTmp);
@@ -277,7 +280,7 @@ namespace Electric
             decimal.TryParse(txtTotalPurchasePrice.Text, out dcl);
             model.TotalPurchasePrice = dcl;
             decimal.TryParse(txtTotalPowerRating.Text, out dcl);
-            model.TotalPowerRating = dcl;            
+            model.TotalPowerRating = dcl;
 
             //model.ApproveTime = DateTime.Now;
             //model.ApproveUserID = global.UserID;
@@ -309,7 +312,7 @@ namespace Electric
                     if (item.Cells["OldModel"].Value != null || item.Cells["OldPowerRating"].Value != null || item.Cells["OldQty"].Value != null || item.Cells["OldSpeed"].Value != null || item.Cells["OldProtectionLev"].Value != null || item.Cells["OldWeight"].Value != null || item.Cells["OldPrice"].Value != null || item.Cells["OldSubsidy"].Value != null || item.Cells["OldSumPrice"].Value != null || item.Cells["OldSumPrice"].Value != null)
                     {
                         modelDetail = new Electric.Model.BS_NewForOld_Details();
-                        modelDetail.OrgID = model.OrgID;
+                        modelDetail.OrgCode = model.OrgCode;
                         modelDetail.OldModel = global.ConvertObject(item.Cells["OldModel"].Value);
                         int.TryParse(global.ConvertObject(item.Cells["OldQty"].Value), out iTmp);
                         modelDetail.OldQty = iTmp;
@@ -335,9 +338,9 @@ namespace Electric
                         modelDetail.PurchasePrice = dcl;
                         modelDetail.OldProtectionLev = global.ConvertObject(item.Cells["OldProtectionLev"].Value);
                         modelDetail.ContractNo = model.ContractNo;
-                        modelDetail.OldOutDate=Convert.ToDateTime ( item.Cells["OldOutDate"].Value);
+                        modelDetail.OldOutDate = Convert.ToDateTime(item.Cells["OldOutDate"].Value);
                         modelDetail.NewInvoiceDate = Convert.ToDateTime(item.Cells["NewInvoiceDate"].Value);
-                         
+
 
                         if (modelDetail.OldQty > 0 || modelDetail.OldSubsidy > 0 || modelDetail.OldPrice > 0 || modelDetail.OldSumPrice > 0 || modelDetail.PurchasePrice > 0 || modelDetail.OldPowerRating > 0 || modelDetail.OldWeight > 0 || modelDetail.OldSpeed > 0 || modelDetail.OldProtectionLev != "" || modelDetail.OldModel.Trim() != "")
                         {
@@ -408,7 +411,7 @@ namespace Electric
             dgvItem.DataMember = "ds";
 
             //
-            this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
+            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgvItem.Columns["OldModel"].HeaderText = "旧电机型号";
             this.dgvItem.Columns["OldPowerRating"].HeaderText = "旧电机额定功率";

@@ -36,7 +36,6 @@ namespace Electric
         public bool isUpdate
         {
             set { _isUpdate = value; }
-            get { return _isUpdate; }
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -72,19 +71,6 @@ namespace Electric
                 {
                     strErr += "网址不能为空.\r";
                 }
-                //if (this.txtBankName.Text.Trim().Length == 0)
-                //{
-                //    strErr += "银行不能为空.\r";
-                //}
-                //if (this.txtBankClass.Text.Trim().Length == 0)
-                //{
-                //    strErr += "BankClass不能为空.\r";
-                //}
-                //if (this.txtAccount.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Account不能为空.\r";
-                //}
-
 
                 if (strErr != "")
                 {
@@ -93,7 +79,7 @@ namespace Electric
                 }
                 string Code = this.txtCode.Text;
                 string Name = this.txtName.Text;
-                string Membership = this.cmbMembership.Text;
+                string Membership = this.cmbMembership.SelectedValue.ToString();
                 string EnterpriseNature = this.txtEnterpriseNature.Text;
                 string TexNo = this.txtTaxNo.Text;
                 string Address = this.txtAddress.Text;
@@ -169,7 +155,8 @@ namespace Electric
             model = bll.GetModel(_id);
             this.txtCode.Text = model.Code;
             this.txtName.Text = model.Name;
-            this.cmbMembership.Text = model.Membership;
+            global.SetComboBoxDefaultValue(cmbMembership, model.Membership);
+            //this.cmbMembership.Text = model.Membership;
             this.txtEnterpriseNature.Text = model.EnterpriseNature;
             this.txtTaxNo.Text = model.TexNo;
             this.txtAddress.Text = model.Address;
@@ -177,21 +164,11 @@ namespace Electric
             this.txtBankName.Text = model.BankName;
             this.txtBankClass.Text = model.BankClass;
             this.txtAccount.Text = model.Account;
-            ControlEnabled();
         }
 
-        private void ControlEnabled()
+        private void frm_organization_Load(object sender, EventArgs e)
         {
-            if (isUpdate)
-            {
-                txtCode.Enabled = false;
-            }
-            else
-            {
-                txtCode.Enabled = true;
-            }
-
-
+            global.BandBaseCodeComboBox(cmbMembership, "BCP00001");
         }
 
     }

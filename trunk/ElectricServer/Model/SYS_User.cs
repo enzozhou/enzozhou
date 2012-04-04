@@ -49,16 +49,16 @@ namespace Electric.Model
 		/// </summary>
 		public string Pwd
 		{
-			set{ _pwd = value;}
-            get { return _pwd; }
+			set{ _pwd=value;}
+			get{return _pwd;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
 		public string IsAdmin
 		{
-			set{ _isadmin = value;}
-            get { return _isadmin; }
+			set{ _isadmin=value;}
+			get{return _isadmin;}
 		}
 		/// <summary>
 		/// 

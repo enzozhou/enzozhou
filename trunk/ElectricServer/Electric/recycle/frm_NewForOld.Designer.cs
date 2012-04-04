@@ -48,7 +48,6 @@
             this.txtTotalOldQty = new System.Windows.Forms.TextBox();
             this.dtpBuyTime = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
-            this.cmbOrgID = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtTotalOldPrice = new System.Windows.Forms.TextBox();
@@ -63,30 +62,11 @@
             this.txtTotalPurchasePrice = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTotalPowerRating = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvItem = new System.Windows.Forms.DataGridView();
-            this.OrgID = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldProtectionLev = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSubsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TerminalUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PurchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Reconstruction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewInvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,8 +89,28 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtTotalPowerRating = new System.Windows.Forms.TextBox();
+            this.txtOrg = new System.Windows.Forms.TextBox();
+            this.OrgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldProtectionLev = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSubsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TerminalUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PurchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reconstruction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewInvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
@@ -133,7 +133,7 @@
             // 
             // txtPartnerCode
             // 
-            this.txtPartnerCode.Location = new System.Drawing.Point(193, 32);
+            this.txtPartnerCode.Location = new System.Drawing.Point(145, 30);
             this.txtPartnerCode.Name = "txtPartnerCode";
             this.txtPartnerCode.Size = new System.Drawing.Size(123, 21);
             this.txtPartnerCode.TabIndex = 3;
@@ -141,7 +141,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 17);
+            this.label2.Location = new System.Drawing.Point(163, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 2;
@@ -149,7 +149,7 @@
             // 
             // txtPartnerName
             // 
-            this.txtPartnerName.Location = new System.Drawing.Point(335, 32);
+            this.txtPartnerName.Location = new System.Drawing.Point(280, 30);
             this.txtPartnerName.Name = "txtPartnerName";
             this.txtPartnerName.Size = new System.Drawing.Size(123, 21);
             this.txtPartnerName.TabIndex = 4;
@@ -157,7 +157,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(359, 17);
+            this.label3.Location = new System.Drawing.Point(304, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 5;
@@ -166,7 +166,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(495, 17);
+            this.label4.Location = new System.Drawing.Point(438, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 7;
@@ -175,7 +175,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(637, 17);
+            this.label5.Location = new System.Drawing.Point(581, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 9;
@@ -184,7 +184,7 @@
             // cmbBelongTo
             // 
             this.cmbBelongTo.FormattingEnabled = true;
-            this.cmbBelongTo.Location = new System.Drawing.Point(473, 33);
+            this.cmbBelongTo.Location = new System.Drawing.Point(417, 31);
             this.cmbBelongTo.Name = "cmbBelongTo";
             this.cmbBelongTo.Size = new System.Drawing.Size(121, 20);
             this.cmbBelongTo.TabIndex = 10;
@@ -192,7 +192,7 @@
             // cmbOwnership
             // 
             this.cmbOwnership.FormattingEnabled = true;
-            this.cmbOwnership.Location = new System.Drawing.Point(613, 32);
+            this.cmbOwnership.Location = new System.Drawing.Point(554, 30);
             this.cmbOwnership.Name = "cmbOwnership";
             this.cmbOwnership.Size = new System.Drawing.Size(121, 20);
             this.cmbOwnership.TabIndex = 11;
@@ -200,7 +200,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(842, 16);
+            this.label6.Location = new System.Drawing.Point(810, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 12;
@@ -217,9 +217,9 @@
             // 
             // txtPartnerAddress
             // 
-            this.txtPartnerAddress.Location = new System.Drawing.Point(748, 30);
+            this.txtPartnerAddress.Location = new System.Drawing.Point(688, 29);
             this.txtPartnerAddress.Name = "txtPartnerAddress";
-            this.txtPartnerAddress.Size = new System.Drawing.Size(243, 21);
+            this.txtPartnerAddress.Size = new System.Drawing.Size(303, 21);
             this.txtPartnerAddress.TabIndex = 1;
             // 
             // label9
@@ -277,14 +277,6 @@
             this.label11.Size = new System.Drawing.Size(53, 12);
             this.label11.TabIndex = 12;
             this.label11.Text = "发票号码";
-            // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.Location = new System.Drawing.Point(7, 31);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(166, 20);
-            this.cmbOrgID.TabIndex = 15;
             // 
             // label12
             // 
@@ -396,12 +388,12 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.txtOrg);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtTotalPowerRating);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.txtTotalNewQty);
-            this.panel1.Controls.Add(this.cmbOrgID);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dtpBuyTime);
             this.panel1.Controls.Add(this.txtInvoiceNo);
@@ -438,6 +430,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(998, 172);
             this.panel1.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(155, 113);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 12);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "旧电机总额定功率";
+            // 
+            // txtTotalPowerRating
+            // 
+            this.txtTotalPowerRating.Location = new System.Drawing.Point(145, 128);
+            this.txtTotalPowerRating.Name = "txtTotalPowerRating";
+            this.txtTotalPowerRating.Size = new System.Drawing.Size(123, 21);
+            this.txtTotalPowerRating.TabIndex = 18;
             // 
             // btnClose
             // 
@@ -494,131 +502,6 @@
             this.dgvItem.TabIndex = 17;
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
-            // 
-            // OrgID
-            // 
-            this.OrgID.HeaderText = "公司ID";
-            this.OrgID.Name = "OrgID";
-            // 
-            // ContractNo
-            // 
-            this.ContractNo.DataPropertyName = "ContractNo";
-            this.ContractNo.HeaderText = "合同编号";
-            this.ContractNo.Name = "ContractNo";
-            // 
-            // OldModel
-            // 
-            this.OldModel.DataPropertyName = "OldModel";
-            this.OldModel.HeaderText = "旧电机型号";
-            this.OldModel.Name = "OldModel";
-            // 
-            // OldPowerRating
-            // 
-            this.OldPowerRating.DataPropertyName = "OldPowerRating";
-            this.OldPowerRating.HeaderText = "旧电机额定功率";
-            this.OldPowerRating.Name = "OldPowerRating";
-            // 
-            // OldQty
-            // 
-            this.OldQty.DataPropertyName = "OldQty";
-            this.OldQty.HeaderText = "旧电机台数";
-            this.OldQty.Name = "OldQty";
-            // 
-            // OldSpeed
-            // 
-            this.OldSpeed.DataPropertyName = "OldSpeed";
-            this.OldSpeed.HeaderText = "旧电机额定转速";
-            this.OldSpeed.Name = "OldSpeed";
-            // 
-            // OldProtectionLev
-            // 
-            this.OldProtectionLev.DataPropertyName = "OldProtectionLev";
-            this.OldProtectionLev.HeaderText = "旧电机防护等级";
-            this.OldProtectionLev.Name = "OldProtectionLev";
-            // 
-            // OldWeight
-            // 
-            this.OldWeight.DataPropertyName = "OldWeight";
-            this.OldWeight.HeaderText = "旧电机重量";
-            this.OldWeight.Name = "OldWeight";
-            // 
-            // OldPrice
-            // 
-            this.OldPrice.DataPropertyName = "OldPrice";
-            this.OldPrice.HeaderText = "旧电机回购小计";
-            this.OldPrice.Name = "OldPrice";
-            // 
-            // OldSubsidy
-            // 
-            this.OldSubsidy.DataPropertyName = "OldSubsidy";
-            this.OldSubsidy.HeaderText = "回购补贴";
-            this.OldSubsidy.Name = "OldSubsidy";
-            // 
-            // OldSumPrice
-            // 
-            this.OldSumPrice.DataPropertyName = "OldSumPrice";
-            this.OldSumPrice.HeaderText = "回购合计";
-            this.OldSumPrice.Name = "OldSumPrice";
-            // 
-            // TerminalUnit
-            // 
-            this.TerminalUnit.DataPropertyName = "TerminalUnit";
-            this.TerminalUnit.HeaderText = "替换终端";
-            this.TerminalUnit.Name = "TerminalUnit";
-            // 
-            // TUNo
-            // 
-            this.TUNo.DataPropertyName = "TUNo";
-            this.TUNo.HeaderText = "替换终端编号";
-            this.TUNo.Name = "TUNo";
-            // 
-            // NewModel
-            // 
-            this.NewModel.DataPropertyName = "NewModel";
-            this.NewModel.HeaderText = "新电机型号";
-            this.NewModel.Name = "NewModel";
-            // 
-            // NewPowerRating
-            // 
-            this.NewPowerRating.DataPropertyName = "NewPowerRating";
-            this.NewPowerRating.HeaderText = "新电机功率";
-            this.NewPowerRating.Name = "NewPowerRating";
-            // 
-            // NewQty
-            // 
-            this.NewQty.DataPropertyName = "NewQty";
-            this.NewQty.HeaderText = "新电机台数";
-            this.NewQty.Name = "NewQty";
-            // 
-            // PurchasePrice
-            // 
-            this.PurchasePrice.DataPropertyName = "PurchasePrice";
-            this.PurchasePrice.HeaderText = "采购金额";
-            this.PurchasePrice.Name = "PurchasePrice";
-            // 
-            // Reconstruction
-            // 
-            this.Reconstruction.DataPropertyName = "Reconstruction";
-            this.Reconstruction.HeaderText = "再造电机";
-            this.Reconstruction.Name = "Reconstruction";
-            // 
-            // NewInvoiceNo
-            // 
-            this.NewInvoiceNo.DataPropertyName = "NewInvoiceNo";
-            this.NewInvoiceNo.HeaderText = "新电机发票号码";
-            this.NewInvoiceNo.Name = "NewInvoiceNo";
-            // 
-            // NewMC
-            // 
-            this.NewMC.DataPropertyName = "NewMC";
-            this.NewMC.HeaderText = "新电机制造企业";
-            this.NewMC.Name = "NewMC";
-            // 
-            // NewSerialNum
-            // 
-            this.NewSerialNum.DataPropertyName = "NewSerialNum";
-            this.NewSerialNum.HeaderText = "新电机生产编号";
-            this.NewSerialNum.Name = "NewSerialNum";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -750,21 +633,141 @@
             this.dataGridViewTextBoxColumn22.HeaderText = "新电机生产编号";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
             // 
-            // label8
+            // txtOrg
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(155, 113);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 12);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "旧电机总额定功率";
+            this.txtOrg.Location = new System.Drawing.Point(7, 30);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(123, 21);
+            this.txtOrg.TabIndex = 20;
             // 
-            // txtTotalPowerRating
+            // OrgID
             // 
-            this.txtTotalPowerRating.Location = new System.Drawing.Point(145, 128);
-            this.txtTotalPowerRating.Name = "txtTotalPowerRating";
-            this.txtTotalPowerRating.Size = new System.Drawing.Size(123, 21);
-            this.txtTotalPowerRating.TabIndex = 18;
+            this.OrgID.HeaderText = "公司ID";
+            this.OrgID.Name = "OrgID";
+            this.OrgID.ReadOnly = true;
+            this.OrgID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OrgID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ContractNo
+            // 
+            this.ContractNo.DataPropertyName = "ContractNo";
+            this.ContractNo.HeaderText = "合同编号";
+            this.ContractNo.Name = "ContractNo";
+            // 
+            // OldModel
+            // 
+            this.OldModel.DataPropertyName = "OldModel";
+            this.OldModel.HeaderText = "旧电机型号";
+            this.OldModel.Name = "OldModel";
+            // 
+            // OldPowerRating
+            // 
+            this.OldPowerRating.DataPropertyName = "OldPowerRating";
+            this.OldPowerRating.HeaderText = "旧电机额定功率";
+            this.OldPowerRating.Name = "OldPowerRating";
+            // 
+            // OldQty
+            // 
+            this.OldQty.DataPropertyName = "OldQty";
+            this.OldQty.HeaderText = "旧电机台数";
+            this.OldQty.Name = "OldQty";
+            // 
+            // OldSpeed
+            // 
+            this.OldSpeed.DataPropertyName = "OldSpeed";
+            this.OldSpeed.HeaderText = "旧电机额定转速";
+            this.OldSpeed.Name = "OldSpeed";
+            // 
+            // OldProtectionLev
+            // 
+            this.OldProtectionLev.DataPropertyName = "OldProtectionLev";
+            this.OldProtectionLev.HeaderText = "旧电机防护等级";
+            this.OldProtectionLev.Name = "OldProtectionLev";
+            // 
+            // OldWeight
+            // 
+            this.OldWeight.DataPropertyName = "OldWeight";
+            this.OldWeight.HeaderText = "旧电机重量";
+            this.OldWeight.Name = "OldWeight";
+            // 
+            // OldPrice
+            // 
+            this.OldPrice.DataPropertyName = "OldPrice";
+            this.OldPrice.HeaderText = "旧电机回购小计";
+            this.OldPrice.Name = "OldPrice";
+            // 
+            // OldSubsidy
+            // 
+            this.OldSubsidy.DataPropertyName = "OldSubsidy";
+            this.OldSubsidy.HeaderText = "回购补贴";
+            this.OldSubsidy.Name = "OldSubsidy";
+            // 
+            // OldSumPrice
+            // 
+            this.OldSumPrice.DataPropertyName = "OldSumPrice";
+            this.OldSumPrice.HeaderText = "回购合计";
+            this.OldSumPrice.Name = "OldSumPrice";
+            // 
+            // TerminalUnit
+            // 
+            this.TerminalUnit.DataPropertyName = "TerminalUnit";
+            this.TerminalUnit.HeaderText = "替换终端";
+            this.TerminalUnit.Name = "TerminalUnit";
+            // 
+            // TUNo
+            // 
+            this.TUNo.DataPropertyName = "TUNo";
+            this.TUNo.HeaderText = "替换终端编号";
+            this.TUNo.Name = "TUNo";
+            // 
+            // NewModel
+            // 
+            this.NewModel.DataPropertyName = "NewModel";
+            this.NewModel.HeaderText = "新电机型号";
+            this.NewModel.Name = "NewModel";
+            // 
+            // NewPowerRating
+            // 
+            this.NewPowerRating.DataPropertyName = "NewPowerRating";
+            this.NewPowerRating.HeaderText = "新电机功率";
+            this.NewPowerRating.Name = "NewPowerRating";
+            // 
+            // NewQty
+            // 
+            this.NewQty.DataPropertyName = "NewQty";
+            this.NewQty.HeaderText = "新电机台数";
+            this.NewQty.Name = "NewQty";
+            // 
+            // PurchasePrice
+            // 
+            this.PurchasePrice.DataPropertyName = "PurchasePrice";
+            this.PurchasePrice.HeaderText = "采购金额";
+            this.PurchasePrice.Name = "PurchasePrice";
+            // 
+            // Reconstruction
+            // 
+            this.Reconstruction.DataPropertyName = "Reconstruction";
+            this.Reconstruction.HeaderText = "再造电机";
+            this.Reconstruction.Name = "Reconstruction";
+            // 
+            // NewInvoiceNo
+            // 
+            this.NewInvoiceNo.DataPropertyName = "NewInvoiceNo";
+            this.NewInvoiceNo.HeaderText = "新电机发票号码";
+            this.NewInvoiceNo.Name = "NewInvoiceNo";
+            // 
+            // NewMC
+            // 
+            this.NewMC.DataPropertyName = "NewMC";
+            this.NewMC.HeaderText = "新电机制造企业";
+            this.NewMC.Name = "NewMC";
+            // 
+            // NewSerialNum
+            // 
+            this.NewSerialNum.DataPropertyName = "NewSerialNum";
+            this.NewSerialNum.HeaderText = "新电机生产编号";
+            this.NewSerialNum.Name = "NewSerialNum";
             // 
             // frm_NewForOld
             // 
@@ -805,7 +808,6 @@
         private System.Windows.Forms.TextBox txtTotalOldQty;
         private System.Windows.Forms.DateTimePicker dtpBuyTime;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cmbOrgID;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTotalOldPrice;
@@ -843,7 +845,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewComboBoxColumn OrgID;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtTotalPowerRating;
+        private System.Windows.Forms.TextBox txtOrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OrgID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContractNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldModel;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldPowerRating;
@@ -864,9 +871,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NewInvoiceNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn NewMC;
         private System.Windows.Forms.DataGridViewTextBoxColumn NewSerialNum;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTotalPowerRating;
     }
 }

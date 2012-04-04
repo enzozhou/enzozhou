@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("查找");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("新增");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("公司信息", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("节点9");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("节点10");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("基本信息", new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4,
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("节点11");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("节点12");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("电机回收", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("节点13");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("节点14");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("电机再制造", new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("节点15");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("节点16");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("报表", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("节点17");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode16});
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("查找");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("新增");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("公司信息", new System.Windows.Forms.TreeNode[] {
+            treeNode35,
+            treeNode36});
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("节点9");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("节点10");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("基本信息", new System.Windows.Forms.TreeNode[] {
+            treeNode37,
+            treeNode38,
+            treeNode39});
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("节点11");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("节点12");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("电机回收", new System.Windows.Forms.TreeNode[] {
+            treeNode41,
+            treeNode42});
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("节点13");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("节点14");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("电机再制造", new System.Windows.Forms.TreeNode[] {
+            treeNode44,
+            treeNode45});
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("节点15");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("节点16");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("报表", new System.Windows.Forms.TreeNode[] {
+            treeNode47,
+            treeNode48});
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("节点17");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode50});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmi_master = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_company = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,11 +72,12 @@
             this.tsmi_reports = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_sys = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_User = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_base = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_exit = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.tv = new System.Windows.Forms.TreeView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.plMenu = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -191,6 +192,7 @@
             // 
             this.tsmi_sys.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_User,
+            this.tsmi_base,
             this.tsmi_exit});
             this.tsmi_sys.Name = "tsmi_sys";
             this.tsmi_sys.Size = new System.Drawing.Size(81, 20);
@@ -199,14 +201,21 @@
             // tsmi_User
             // 
             this.tsmi_User.Name = "tsmi_User";
-            this.tsmi_User.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_User.Size = new System.Drawing.Size(146, 22);
             this.tsmi_User.Text = "用户管理";
             this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
+            // 
+            // tsmi_base
+            // 
+            this.tsmi_base.Name = "tsmi_base";
+            this.tsmi_base.Size = new System.Drawing.Size(146, 22);
+            this.tsmi_base.Text = "基础数据管理";
+            this.tsmi_base.Click += new System.EventHandler(this.tsmi_base_Click);
             // 
             // tsmi_exit
             // 
             this.tsmi_exit.Name = "tsmi_exit";
-            this.tsmi_exit.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_exit.Size = new System.Drawing.Size(146, 22);
             this.tsmi_exit.Text = "退出";
             this.tsmi_exit.Click += new System.EventHandler(this.tsmi_exit_Click);
             // 
@@ -231,72 +240,74 @@
             this.tv.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tv.Location = new System.Drawing.Point(0, 24);
             this.tv.Name = "tv";
-            treeNode1.Name = "t2_company_query";
-            treeNode1.Text = "查找";
-            treeNode2.Name = "t2_company_add";
-            treeNode2.Text = "新增";
-            treeNode3.Name = "t1_company";
-            treeNode3.Text = "公司信息";
-            treeNode4.Name = "节点9";
-            treeNode4.Text = "节点9";
-            treeNode5.Name = "节点10";
-            treeNode5.Text = "节点10";
-            treeNode6.Name = "tMaster";
-            treeNode6.Text = "基本信息";
-            treeNode7.Name = "节点11";
-            treeNode7.Text = "节点11";
-            treeNode8.Name = "节点12";
-            treeNode8.Text = "节点12";
-            treeNode9.Name = "tRecyle";
-            treeNode9.Text = "电机回收";
-            treeNode10.Name = "节点13";
-            treeNode10.Text = "节点13";
-            treeNode11.Name = "节点14";
-            treeNode11.Text = "节点14";
-            treeNode12.Name = "tManufacture";
-            treeNode12.Text = "电机再制造";
-            treeNode13.Name = "节点15";
-            treeNode13.Text = "节点15";
-            treeNode14.Name = "节点16";
-            treeNode14.Text = "节点16";
-            treeNode15.Name = "tReport";
-            treeNode15.Text = "报表";
-            treeNode16.Name = "节点17";
-            treeNode16.Text = "节点17";
-            treeNode17.Name = "tSystem";
-            treeNode17.Text = "系统";
+            treeNode35.Name = "t2_company_query";
+            treeNode35.Text = "查找";
+            treeNode36.Name = "t2_company_add";
+            treeNode36.Text = "新增";
+            treeNode37.Name = "t1_company";
+            treeNode37.Text = "公司信息";
+            treeNode38.Name = "节点9";
+            treeNode38.Text = "节点9";
+            treeNode39.Name = "节点10";
+            treeNode39.Text = "节点10";
+            treeNode40.Name = "tMaster";
+            treeNode40.Text = "基本信息";
+            treeNode41.Name = "节点11";
+            treeNode41.Text = "节点11";
+            treeNode42.Name = "节点12";
+            treeNode42.Text = "节点12";
+            treeNode43.Name = "tRecyle";
+            treeNode43.Text = "电机回收";
+            treeNode44.Name = "节点13";
+            treeNode44.Text = "节点13";
+            treeNode45.Name = "节点14";
+            treeNode45.Text = "节点14";
+            treeNode46.Name = "tManufacture";
+            treeNode46.Text = "电机再制造";
+            treeNode47.Name = "节点15";
+            treeNode47.Text = "节点15";
+            treeNode48.Name = "节点16";
+            treeNode48.Text = "节点16";
+            treeNode49.Name = "tReport";
+            treeNode49.Text = "报表";
+            treeNode50.Name = "节点17";
+            treeNode50.Text = "节点17";
+            treeNode51.Name = "tSystem";
+            treeNode51.Text = "系统";
             this.tv.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode9,
-            treeNode12,
-            treeNode15,
-            treeNode17});
+            treeNode40,
+            treeNode43,
+            treeNode46,
+            treeNode49,
+            treeNode51});
             this.tv.Size = new System.Drawing.Size(157, 377);
             this.tv.TabIndex = 4;
-            this.tv.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tv_NodeMouseClick);
+            this.tv.Visible = false;
             // 
-            // panel1
+            // plMenu
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(157, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 377);
-            this.panel1.TabIndex = 6;
+            this.plMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.plMenu.Location = new System.Drawing.Point(157, 24);
+            this.plMenu.Name = "plMenu";
+            this.plMenu.Size = new System.Drawing.Size(200, 377);
+            this.plMenu.TabIndex = 6;
             // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 423);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.plMenu);
             this.Controls.Add(this.tv);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Main";
-            this.Text = "Main";
+            this.ShowIcon = false;
+            this.Text = "NEMS";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_Main_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -327,6 +338,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_Purchase;
         private System.Windows.Forms.ToolStripMenuItem tsmi_buy;
         private System.Windows.Forms.ToolStripMenuItem tsmi_User;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel plMenu;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_base;
     }
 }

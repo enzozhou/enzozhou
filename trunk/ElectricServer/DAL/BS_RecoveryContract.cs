@@ -47,12 +47,12 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BS_RecoveryContract(");
-			strSql.Append("OrgID,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
+			strSql.Append("OrgCode,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgID,@ContractNo,@PartnerCode,@PartnerName,@PartnerAddress,@PartnerContract,@PartnerTel,@PartnerBank,@PartnerAccount,@PartnerTaxNo,@DeliveryTerm,@Price,@Words,@FPP,@FPR,@SPP,@SPR,@LPP,@LPR,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
+			strSql.Append("@OrgCode,@ContractNo,@PartnerCode,@PartnerName,@PartnerAddress,@PartnerContract,@PartnerTel,@PartnerBank,@PartnerAccount,@PartnerTaxNo,@DeliveryTerm,@Price,@Words,@FPP,@FPR,@SPP,@SPR,@LPP,@LPR,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@ContractNo", SqlDbType.NVarChar,50),
 					new SqlParameter("@PartnerCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@PartnerName", SqlDbType.NVarChar,100),
@@ -79,7 +79,7 @@ namespace Electric.DAL
 					new SqlParameter("@SubmitTime", SqlDbType.DateTime),
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.ContractNo;
 			parameters[2].Value = model.PartnerCode;
 			parameters[3].Value = model.PartnerName;
@@ -124,7 +124,7 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update BS_RecoveryContract set ");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCode=@OrgCode,");
 			strSql.Append("PartnerCode=@PartnerCode,");
 			strSql.Append("PartnerName=@PartnerName,");
 			strSql.Append("PartnerAddress=@PartnerAddress,");
@@ -152,7 +152,7 @@ namespace Electric.DAL
 			strSql.Append("ApproveTime=@ApproveTime");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@PartnerCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@PartnerName", SqlDbType.NVarChar,100),
 					new SqlParameter("@PartnerAddress", SqlDbType.NVarChar,100),
@@ -180,7 +180,7 @@ namespace Electric.DAL
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime),
 					new SqlParameter("@ID", SqlDbType.Int,4),
 					new SqlParameter("@ContractNo", SqlDbType.NVarChar,50)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.PartnerCode;
 			parameters[2].Value = model.PartnerName;
 			parameters[3].Value = model.PartnerAddress;
@@ -296,7 +296,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgID,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BS_RecoveryContract ");
+			strSql.Append("select  top 1 ID,OrgCode,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BS_RecoveryContract ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -311,9 +311,9 @@ namespace Electric.DAL
 				{
 					model.ID=int.Parse(ds.Tables[0].Rows[0]["ID"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCode"]!=null && ds.Tables[0].Rows[0]["OrgCode"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCode=ds.Tables[0].Rows[0]["OrgCode"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["ContractNo"]!=null && ds.Tables[0].Rows[0]["ContractNo"].ToString()!="")
 				{
@@ -433,7 +433,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgID,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append("select ID,OrgCode,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BS_RecoveryContract ");
 			if(strWhere.Trim()!="")
 			{
@@ -453,7 +453,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgID,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+			strSql.Append(" ID,OrgCode,ContractNo,PartnerCode,PartnerName,PartnerAddress,PartnerContract,PartnerTel,PartnerBank,PartnerAccount,PartnerTaxNo,DeliveryTerm,Price,Words,FPP,FPR,SPP,SPR,LPP,LPR,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
 			strSql.Append(" FROM BS_RecoveryContract ");
 			if(strWhere.Trim()!="")
 			{

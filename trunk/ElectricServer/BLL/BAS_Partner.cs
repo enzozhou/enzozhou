@@ -135,9 +135,9 @@ namespace Electric.BLL
 					{
 						model.ID=int.Parse(dt.Rows[n]["ID"].ToString());
 					}
-					if(dt.Rows[n]["OrgID"]!=null && dt.Rows[n]["OrgID"].ToString()!="")
+					if(dt.Rows[n]["OrgCodeSYS"]!=null && dt.Rows[n]["OrgCodeSYS"].ToString()!="")
 					{
-						model.OrgID=int.Parse(dt.Rows[n]["OrgID"].ToString());
+					model.OrgCodeSYS=dt.Rows[n]["OrgCodeSYS"].ToString();
 					}
 					if(dt.Rows[n]["Code"]!=null && dt.Rows[n]["Code"].ToString()!="")
 					{

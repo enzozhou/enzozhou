@@ -11,13 +11,14 @@ namespace Electric.Model
 		{}
 		#region Model
 		private int _id;
-		private int? _orgid;
+		private string _orgcode;
 		private string _code;
 		private string _name;
 		private int? _createuserid;
 		private DateTime? _createtime;
 		private int? _updateuserid;
 		private DateTime? _updatetime;
+		private string _column_9;
 		/// <summary>
 		/// 
 		/// </summary>
@@ -29,10 +30,10 @@ namespace Electric.Model
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? OrgID
+		public string OrgCode
 		{
-			set{ _orgid=value;}
-			get{return _orgid;}
+			set{ _orgcode=value;}
+			get{return _orgcode;}
 		}
 		/// <summary>
 		/// 
@@ -81,6 +82,14 @@ namespace Electric.Model
 		{
 			set{ _updatetime=value;}
 			get{return _updatetime;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string Column_9
+		{
+			set{ _column_9=value;}
+			get{return _column_9;}
 		}
 		#endregion Model
 

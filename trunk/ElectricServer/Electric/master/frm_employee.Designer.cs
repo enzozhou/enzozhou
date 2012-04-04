@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtOrg = new System.Windows.Forms.TextBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtMobile = new System.Windows.Forms.TextBox();
@@ -45,15 +47,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbDep = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbOrgID = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtOrg);
             this.groupBox1.Controls.Add(this.cmbGender);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
@@ -71,7 +72,6 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cmbDep);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cmbOrgID);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtCode);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -81,6 +81,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "员工信息";
+            // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(21, 43);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(390, 21);
+            this.txtOrg.TabIndex = 32;
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.cmbGender.Location = new System.Drawing.Point(21, 145);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(70, 20);
+            this.cmbGender.TabIndex = 31;
             // 
             // button2
             // 
@@ -217,14 +236,6 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "部门";
             // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.Location = new System.Drawing.Point(21, 43);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(390, 20);
-            this.cmbOrgID.TabIndex = 12;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -241,17 +252,6 @@
             this.txtCode.Size = new System.Drawing.Size(390, 21);
             this.txtCode.TabIndex = 8;
             // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.cmbGender.Location = new System.Drawing.Point(21, 145);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(70, 20);
-            this.cmbGender.TabIndex = 31;
-            // 
             // frm_employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -261,6 +261,7 @@
             this.Name = "frm_employee";
             this.ShowIcon = false;
             this.Text = "frm_employee";
+            this.Load += new System.EventHandler(this.frm_employee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -275,7 +276,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbDep;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbOrgID;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -290,5 +290,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.TextBox txtOrg;
     }
 }

@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtDamagesRate = new System.Windows.Forms.TextBox();
             this.txtLPR = new System.Windows.Forms.TextBox();
+            this.txtDeliveryTime = new System.Windows.Forms.TextBox();
             this.txtLPP = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtCheckedLimit = new System.Windows.Forms.TextBox();
@@ -71,6 +72,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.dgvItem = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,13 +88,15 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtDeliveryTime = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.txtPartnerCode);
@@ -130,12 +141,12 @@
             this.panel1.Controls.Add(this.txtContractNo);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1201, 184);
+            this.panel1.Size = new System.Drawing.Size(1107, 184);
             this.panel1.TabIndex = 0;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1114, 152);
+            this.btnClose.Location = new System.Drawing.Point(1010, 150);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 23;
@@ -145,7 +156,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1021, 152);
+            this.btnSave.Location = new System.Drawing.Point(912, 150);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 22;
@@ -164,14 +175,14 @@
             // 
             this.txtPartnerAddress.Location = new System.Drawing.Point(581, 24);
             this.txtPartnerAddress.Name = "txtPartnerAddress";
-            this.txtPartnerAddress.Size = new System.Drawing.Size(608, 21);
+            this.txtPartnerAddress.Size = new System.Drawing.Size(504, 21);
             this.txtPartnerAddress.TabIndex = 20;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(1030, 71);
+            this.txtPrice.Location = new System.Drawing.Point(880, 114);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(159, 21);
+            this.txtPrice.Size = new System.Drawing.Size(205, 21);
             this.txtPrice.TabIndex = 20;
             // 
             // txtPartnerTaxNo
@@ -191,7 +202,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1069, 54);
+            this.label12.Location = new System.Drawing.Point(947, 99);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 17;
@@ -200,7 +211,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(910, 54);
+            this.label11.Location = new System.Drawing.Point(959, 53);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 12);
             this.label11.TabIndex = 17;
@@ -256,16 +267,23 @@
             // 
             // txtLPR
             // 
-            this.txtLPR.Location = new System.Drawing.Point(1030, 114);
+            this.txtLPR.Location = new System.Drawing.Point(356, 152);
             this.txtLPR.Name = "txtLPR";
-            this.txtLPR.Size = new System.Drawing.Size(159, 21);
+            this.txtLPR.Size = new System.Drawing.Size(166, 21);
             this.txtLPR.TabIndex = 20;
+            // 
+            // txtDeliveryTime
+            // 
+            this.txtDeliveryTime.Location = new System.Drawing.Point(880, 71);
+            this.txtDeliveryTime.Name = "txtDeliveryTime";
+            this.txtDeliveryTime.Size = new System.Drawing.Size(205, 21);
+            this.txtDeliveryTime.TabIndex = 20;
             // 
             // txtLPP
             // 
-            this.txtLPP.Location = new System.Drawing.Point(880, 114);
+            this.txtLPP.Location = new System.Drawing.Point(180, 154);
             this.txtLPP.Name = "txtLPP";
-            this.txtLPP.Size = new System.Drawing.Size(144, 21);
+            this.txtLPP.Size = new System.Drawing.Size(166, 21);
             this.txtLPP.TabIndex = 20;
             // 
             // label20
@@ -287,7 +305,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1053, 99);
+            this.label19.Location = new System.Drawing.Point(402, 137);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(101, 12);
             this.label19.TabIndex = 17;
@@ -303,7 +321,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(887, 99);
+            this.label18.Location = new System.Drawing.Point(214, 138);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(101, 12);
             this.label18.TabIndex = 17;
@@ -410,7 +428,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(869, 9);
+            this.label5.Location = new System.Drawing.Point(787, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 17;
@@ -485,10 +503,58 @@
             this.dgvItem.Location = new System.Drawing.Point(12, 202);
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.RowTemplate.Height = 23;
-            this.dgvItem.Size = new System.Drawing.Size(1201, 266);
+            this.dgvItem.Size = new System.Drawing.Size(1107, 266);
             this.dgvItem.TabIndex = 1;
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ContractNo";
+            this.dataGridViewTextBoxColumn1.HeaderText = "合同编号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Model";
+            this.dataGridViewTextBoxColumn2.HeaderText = "型号";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Qty";
+            this.dataGridViewTextBoxColumn3.HeaderText = "台数";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PowerRating";
+            this.dataGridViewTextBoxColumn4.HeaderText = "额定功率";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "UnitPrice";
+            this.dataGridViewTextBoxColumn5.HeaderText = "销售单价";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn6.HeaderText = "销售金额";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Subsidy";
+            this.dataGridViewTextBoxColumn7.HeaderText = "补贴";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "SumPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "合计金额";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // ContractNo
             // 
@@ -538,18 +604,11 @@
             this.SumPrice.HeaderText = "合计金额";
             this.SumPrice.Name = "SumPrice";
             // 
-            // txtDeliveryTime
-            // 
-            this.txtDeliveryTime.Location = new System.Drawing.Point(880, 71);
-            this.txtDeliveryTime.Name = "txtDeliveryTime";
-            this.txtDeliveryTime.Size = new System.Drawing.Size(144, 21);
-            this.txtDeliveryTime.TabIndex = 20;
-            // 
             // frm_PurchaseContract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 472);
+            this.ClientSize = new System.Drawing.Size(1131, 472);
             this.Controls.Add(this.dgvItem);
             this.Controls.Add(this.panel1);
             this.Name = "frm_PurchaseContract";
@@ -615,5 +674,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Subsidy;
         private System.Windows.Forms.DataGridViewTextBoxColumn SumPrice;
         private System.Windows.Forms.TextBox txtDeliveryTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
