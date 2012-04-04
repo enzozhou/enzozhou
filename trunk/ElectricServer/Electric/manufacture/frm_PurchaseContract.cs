@@ -148,7 +148,7 @@ namespace Electric
             model.LPP = iTmp;
             decimal.TryParse(txtLPR.Text, out dcl);
             model.LPR = dcl;
-            model.OrgID = 1;
+            model.OrgCode = global.OrganizationCode;
             model.PartnerAccount = txtPartnerAccount.Text;
             model.PartnerAddress = txtPartnerAddress.Text;
             model.PartnerBank = txtPartnerBank.Text;
@@ -193,7 +193,7 @@ namespace Electric
                     if (item.Cells["Model"].Value != null || item.Cells["Qty"].Value != null || item.Cells["PowerRating"].Value != null || item.Cells["UnitPrice"].Value != null || item.Cells["Price"].Value != null || item.Cells["Subsidy"].Value != null || item.Cells["SumPrice"].Value != null)
                     {
                         modelDetail = new Electric.Model.BS_PurchaseContract_Details();
-                        modelDetail.OrgID = model.OrgID;
+                        modelDetail.OrgCode = model.OrgCode;
                         modelDetail.Model = global.ConvertObject(item.Cells["Model"].Value);
                         int.TryParse(global.ConvertObject(item.Cells["Qty"].Value), out iTmp);
                         modelDetail.Qty = iTmp;
@@ -285,7 +285,7 @@ namespace Electric
             dgvItem.DataMember = "ds";
 
             //
-            this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
+            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgvItem.Columns["Qty"].HeaderText = "台数";
             this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率";
@@ -294,7 +294,7 @@ namespace Electric
             this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
             this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
 
-            this.dgvItem.Columns["OrgID"].Visible = false;
+            this.dgvItem.Columns["OrgCode"].Visible = false;
             this.dgvItem.Columns["ID"].Visible = false;
             this.dgvItem.Columns["CreateUserID"].Visible = false;
             this.dgvItem.Columns["CreateTime"].Visible = false;

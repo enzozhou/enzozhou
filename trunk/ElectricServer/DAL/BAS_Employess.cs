@@ -46,12 +46,12 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BAS_Employess(");
-			strSql.Append("OrgID,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime)");
+			strSql.Append("OrgCode,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgID,@Code,@Name,@Gender,@Tel,@Email,@Fax,@Mobile,@Deparment,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@CancelUserID,@CancelTime)");
+			strSql.Append("@OrgCode,@Code,@Name,@Gender,@Tel,@Email,@Fax,@Mobile,@Deparment,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@CancelUserID,@CancelTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@Gender", SqlDbType.Int,4),
@@ -66,7 +66,7 @@ namespace Electric.DAL
 					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
 					new SqlParameter("@CancelUserID", SqlDbType.Int,4),
 					new SqlParameter("@CancelTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.Gender;
@@ -99,7 +99,7 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update BAS_Employess set ");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCode=@OrgCode,");
 			strSql.Append("Code=@Code,");
 			strSql.Append("Name=@Name,");
 			strSql.Append("Gender=@Gender,");
@@ -116,7 +116,7 @@ namespace Electric.DAL
 			strSql.Append("CancelTime=@CancelTime");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@Gender", SqlDbType.Int,4),
@@ -132,7 +132,7 @@ namespace Electric.DAL
 					new SqlParameter("@CancelUserID", SqlDbType.Int,4),
 					new SqlParameter("@CancelTime", SqlDbType.DateTime),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.Gender;
@@ -211,7 +211,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgID,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime from BAS_Employess ");
+			strSql.Append("select  top 1 ID,OrgCode,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime from BAS_Employess ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -226,9 +226,9 @@ namespace Electric.DAL
 				{
 					model.ID=int.Parse(ds.Tables[0].Rows[0]["ID"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCode"]!=null && ds.Tables[0].Rows[0]["OrgCode"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCode=ds.Tables[0].Rows[0]["OrgCode"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["Code"]!=null && ds.Tables[0].Rows[0]["Code"].ToString()!="")
 				{
@@ -300,7 +300,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgID,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime ");
+			strSql.Append("select ID,OrgCode,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime ");
 			strSql.Append(" FROM BAS_Employess ");
 			if(strWhere.Trim()!="")
 			{
@@ -320,7 +320,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgID,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime ");
+			strSql.Append(" ID,OrgCode,Code,Name,Gender,Tel,Email,Fax,Mobile,Deparment,CreateUserID,CreateTime,UpdateUserID,UpdateTime,CancelUserID,CancelTime ");
 			strSql.Append(" FROM BAS_Employess ");
 			if(strWhere.Trim()!="")
 			{

@@ -78,90 +78,7 @@ namespace Electric
                 {
                     strErr += "所有制形式不能为空.\n";
                 }
-                //if (!PageValidate.IsDecimal(txtRegisteredCapital.Text))
-                //{
-                //    strErr += "注册资金格式错误.\n";
-                //}
-                //if (this.txtSupervisor.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Supervisor不能为空.\n";
-                //}
-                //if (!PageValidate.IsDecimal(txtFixedAssets.Text))
-                //{
-                //    strErr += "FixedAssets格式错误.\n";
-                //}
-                //if (!PageValidate.IsNumber(txtEnterpriseNum.Text))
-                //{
-                //    strErr += "EnterpriseNum格式错误.\n";
-                //}
-                //if (this.txtContract.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Contract不能为空.\n";
-                //}
-                //if (this.txtTel.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Tel不能为空.\n";
-                //}
-                //if (this.txtEmail.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Email不能为空.\n";
-                //}
-                //if (this.txtETC.Text.Trim().Length == 0)
-                //{
-                //    strErr += "ETC不能为空.\n";
-                //}
-                //if (!PageValidate.IsDecimal(txtLYSV.Text))
-                //{
-                //    strErr += "LYSV格式错误.\n";
-                //}
-                //if (!PageValidate.IsDecimal(txtYBLSV.Text))
-                //{
-                //    strErr += "YBLSV格式错误.\n";
-                //}
-                //if (this.txtBankName.Text.Trim().Length == 0)
-                //{
-                //    strErr += "BankName不能为空.\n";
-                //}
-                //if (this.txtBankClass.Text.Trim().Length == 0)
-                //{
-                //    strErr += "BankClass不能为空.\n";
-                //}
-                //if (this.txtAccount.Text.Trim().Length == 0)
-                //{
-                //    strErr += "Account不能为空.\n";
-                //}
-                //if (!PageValidate.IsNumber(txtCreateUserID.Text))
-                //{
-                //    strErr += "CreateUserID格式错误.\n";
-                //}
-                //if (!PageValidate.IsDateTime(txtCreateTime.Text))
-                //{
-                //    strErr += "CreateTime格式错误.\n";
-                //}
-                //if (!PageValidate.IsNumber(txtUpdateUserID.Text))
-                //{
-                //    strErr += "UpdateUserID格式错误.\n";
-                //}
-                //if (!PageValidate.IsDateTime(txtUpdateTime.Text))
-                //{
-                //    strErr += "UpdateTime格式错误.\n";
-                //}
-                //if (!PageValidate.IsNumber(txtSubmitUserID.Text))
-                //{
-                //    strErr += "SubmitUserID格式错误.\n";
-                //}
-                //if (!PageValidate.IsDateTime(txtSubmitTime.Text))
-                //{
-                //    strErr += "SubmitTime格式错误.\n";
-                //}
-                //if (!PageValidate.IsNumber(txtApproveUserID.Text))
-                //{
-                //    strErr += "ApproveUserID格式错误.\n";
-                //}
-                //if (!PageValidate.IsDateTime(txtApproveTime.Text))
-                //{
-                //    strErr += "ApproveTime格式错误.\n";
-                //}
+
 
                 if (strErr != "")
                 {
@@ -179,15 +96,15 @@ namespace Electric
                 int OrgID = int.Parse(this.txtOrgCode.Text);
                 string Code = this.txtCode.Text;
                 string Name = this.txtName.Text;
-                string PartnerClass = this.cmbType.Text;
+                string PartnerClass = this.cmbPartnerClass.SelectedValue.ToString();
                 string Address = this.txtAddress.Text;
                 string Corporate = this.txtCorporate.Text;
                 string OrgCode = this.txtOrgCode.Text;
                 string Licence = this.txtLicence.Text;
                 string TaxNo = this.txtTaxNo.Text;
-                string Ownership = this.cmbOwnership.Text;
+                string Ownership = this.cmbOwnership.SelectedValue.ToString();
                 decimal RegisteredCapital = decimal.Parse(this.txtRegisteredCapital.Text);
-                string Supervisor = this.cmbSupervisor.Text;
+                string Supervisor = this.cmbSupervisor.SelectedValue.ToString();
                 decimal FixedAssets = decimal.Parse(this.txtFixedAssets.Text);
                 int EnterpriseNum = int.Parse(this.txtEnterpriseNum.Text);
                 string Contract = this.txtContract.Text;
@@ -209,7 +126,7 @@ namespace Electric
                 DateTime ApproveTime = DateTime.Now;
 
                 Electric.Model.BAS_Partner model = new Electric.Model.BAS_Partner();
-                model.OrgID = OrgID;
+                model.OrgCodeSYS = global.OrganizationCode;
                 model.Code = Code;
                 model.Name = Name;
                 model.PartnerClass = PartnerClass;
@@ -308,12 +225,16 @@ namespace Electric
             this.txtBankClass.Text = model.BankClass;
             this.txtAddress.Text = model.Address;
             this.txtAccount.Text = model.Account;
+            global.SetComboBoxDefaultValue(cmbOwnership, model.Ownership);
+            global.SetComboBoxDefaultValue(cmbPartnerClass, model.PartnerClass);
+            global.SetComboBoxDefaultValue(cmbSupervisor, model.Supervisor);
+
         }
 
-        void bind()
+        private void frm_partner_Load(object sender, EventArgs e)
         {
-            DataSet _ds = new Electric.BLL.BAS_Organization().GetList("");
-            global.BandComboBox(cmbOrgID, _ds, "Name", "ID", "");
+            txtOrg.Text = global.OrganizationName;
+
         }
     }
 }

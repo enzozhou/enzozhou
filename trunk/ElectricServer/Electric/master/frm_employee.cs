@@ -14,7 +14,6 @@ namespace Electric
         public frm_employee()
         {
             InitializeComponent();
-            band();
         }
         private int _id = 0;
         public int ID
@@ -72,13 +71,11 @@ namespace Electric
                     return;
                 }
 
-                int OrgID = 0;
-                int.TryParse(this.cmbOrgID.Text, out OrgID);
                 string Code = this.txtCode.Text;
                 string Name = this.txtName.Text;
                 int Gender = 0;
 
-               if (cmbGender.SelectedText == "男")
+                if (cmbGender.SelectedText == "男")
                 {
                     Gender = 0;
                 }
@@ -100,7 +97,7 @@ namespace Electric
 
 
                 Electric.Model.BAS_Employess model = new Electric.Model.BAS_Employess();
-                model.OrgID = OrgID;
+                model.OrgCode = global.OrganizationCode;
                 model.Code = Code;
                 model.Name = Name;
                 model.Gender = Gender;
@@ -171,31 +168,25 @@ namespace Electric
             modelChange = bll.GetModel(_id);
             this.txtCode.Text = modelChange.Code;
             this.txtName.Text = modelChange.Name;
-            //this.cmbDep.Text=
-            //this.cmbOrgID.Text=
             this.txtMobile.Text = modelChange.Mobile;
             this.txtTel.Text = modelChange.Tel;
             this.txtFax.Text = modelChange.Fax;
             this.txtEmail.Text = modelChange.Email;
-            cmbGender.SelectedText = modelChange.Gender == 0 ? "男" : "女"; 
-
-
-            //this.cmbMembership.Text = model.Membership;
-            //this.txtEnterpriseNature.Text = model.EnterpriseNature;
-            //this.txtTaxNo.Text = model.TexNo;
-            //this.txtAddress.Text = model.Address;
-            //this.txtWebSite.Text = model.WebSite;
-            //this.txtBankName.Text = model.BankName;
-            //this.txtBankClass.Text = model.BankClass;
-            //this.txtAccount.Text = model.Account;
+            cmbGender.SelectedText = modelChange.Gender == 0 ? "男" : "女";
+            global.SetComboBoxDefaultValue(cmbDep, modelChange.Code);
         }
 
         void band()
         {
-            DataSet _ds = new Electric.BLL.BAS_Organization().GetList("");
-            global.BandComboBox(cmbOrgID, _ds, "Name", "ID", "");
-            _ds = new Electric.BLL.BAS_Department().GetList("");
-            global.BandComboBox(cmbDep, _ds, "Name", "ID", "");
+            DataSet _ds = new Electric.BLL.BAS_Department().GetList("");
+            global.BandComboBox(cmbDep, _ds, "Name", "ID");
         }
+
+        private void frm_employee_Load(object sender, EventArgs e)
+        {
+            band();
+            txtOrg.Text = global.OrganizationName;
+        }
+
     }
 }

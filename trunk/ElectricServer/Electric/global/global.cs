@@ -11,8 +11,9 @@ namespace Electric
     {
         public static string Username = "";
         public static int UserID = 0;
+        public static string OrganizationCode = "";
+        public static string OrganizationName = "";
         public static string IsAdmin = "";
-        public static int OrgID = 1;
         public static int pageSize = 20;
         public static DataTable dtCodes = null;
 
@@ -101,24 +102,47 @@ namespace Electric
             _dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
+        public static string GenerateCode(int size, string suffix)
+        {
+            return suffix.PadLeft(size, '0');
+        }
         public static string GenerateCode(string suffix)
         {
-            return suffix.PadLeft(10, '0');
+            return GenerateCode(10, suffix);
         }
 
         /// <summary>
         /// ComboBox数据绑定
         /// </summary>
         /// <param name="_cmb"></param>
-        /// <param name="_ds"></param>
-        /// <param name="name"></param>
-        /// <param name="value"></param>
-        public static void BindComboBox(ComboBox _cmb, System.Data.DataSet _ds, string name, string value)
+        /// <param name="Code"></param>
+        /// <param name="defaultValue"></param>
+        /// BCP00001	所属企业区县 BCP00002	性别 BCP00003	所有制性质 BCP00004	伙伴性质 BCP00005	上级主管部门
+        public static void BandBaseCodeComboBox(ComboBox _cmb, string code)
+        {
+            string value = "Code", name = "Description";
+            DataSet ds = new Electric.BLL.BAS_CodeProfire().GetList(string.Format(" SelectCode = '{0}'", code));
+            _cmb.DataSource = ds;
+            _cmb.DisplayMember = name;
+            _cmb.ValueMember = value;
+            //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+        public static void BandComboBox(ComboBox _cmb,DataSet _ds, string value, string name)
         {
             _cmb.DataSource = _ds;
             _cmb.DisplayMember = name;
             _cmb.ValueMember = value;
-            _cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+            //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        public static void SetComboBoxDefaultValue(ComboBox _cmb, string defaultValue)
+        {
+            if (defaultValue != "")
+            {
+                _cmb.SelectedValue = defaultValue;
+                //int index = _cmb.FindString(defaultValue);
+                //box.SelectedIndex = index;
+            }
         }
 
         public static string ConvertObject(object obj)
@@ -130,30 +154,6 @@ namespace Electric
             else
             {
                 return obj.ToString();
-            }
-        }
-
-        public static void BandComboBox(System.Windows.Forms.ComboBox box, System.Data.DataTable dt, string text, string value, string defaultValue)
-        {
-            try
-            {
-                box.Items.Clear();
-                //foreach (System.Data.DataRow item in ds.Tables[0].Rows)
-                //{
-                //    box.Items.Add(item[text].ToString());                   
-                //}
-                box.DataSource = dt;
-                box.DisplayMember = text;
-                box.ValueMember = value;
-                //if (defaultValue != "")
-                //{
-                //    int index = box.FindString(defaultValue);
-                //    box.SelectedIndex = index;
-                //}
-            }
-            catch (Exception)
-            {
-
             }
         }
     }

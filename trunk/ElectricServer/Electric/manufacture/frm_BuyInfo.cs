@@ -144,7 +144,7 @@ namespace Electric
 
             model.BuyTime = Convert.ToDateTime(dtpBuyTime.Text);
             model.BelongTo = cmbBelongTo.Text;
-            model.OrgID = 1;
+            model.OrgCode = global.OrganizationCode;
             model.Ownership = cmbOwnership.Text;
             model.PartnerAddress = txtPartnerAddress.Text;
             model.PartnerCode = txtPartnerCode.Text;
@@ -193,7 +193,7 @@ namespace Electric
                     if (item.Cells["InvoiceNo"].Value != null || item.Cells["InvoiceDate"].Value != null || item.Cells["NewModel"].Value != null || item.Cells["NewQty"].Value != null || item.Cells["NewRating"].Value != null || item.Cells["NewVoltage"].Value != null || item.Cells["NewSpeed"].Value != null)
                     {
                         modelDetail = new Electric.Model.BS_BuyInfo_Details();
-                        modelDetail.OrgID = model.OrgID;
+                        modelDetail.OrgCode = model.OrgCode;
                         modelDetail.NewModel = global.ConvertObject(item.Cells["NewModel"].Value);
                         int.TryParse(global.ConvertObject(item.Cells["NewQty"].Value), out iTmp);
                         modelDetail.NewQty = iTmp;
@@ -285,17 +285,8 @@ namespace Electric
             dgvItem.DataSource = _ds;
             dgvItem.DataMember = "ds";
 
-            //
-            //this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
-            //this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
-            //this.dgvItem.Columns["Qty"].HeaderText = "台数";
-            //this.dgvItem.Columns["PowerRating"].HeaderText = "额定功率";
-            //this.dgvItem.Columns["UnitPrice"].HeaderText = "销售单价";
-            //this.dgvItem.Columns["Price"].HeaderText = "销售金额";
-            //this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
-            //this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
 
-            this.dgvItem.Columns["OrgID"].Visible = false;
+            this.dgvItem.Columns["OrgCode"].Visible = false;
             this.dgvItem.Columns["ID"].Visible = false;
             this.dgvItem.Columns["CreateUserID"].Visible = false;
             this.dgvItem.Columns["CreateTime"].Visible = false;
@@ -311,5 +302,6 @@ namespace Electric
         {
             this.Close();
         }
+
     }
 }

@@ -135,9 +135,9 @@ namespace Electric.BLL
 					{
 						model.ID=int.Parse(dt.Rows[n]["ID"].ToString());
 					}
-					if(dt.Rows[n]["OrgID"]!=null && dt.Rows[n]["OrgID"].ToString()!="")
+					if(dt.Rows[n]["OrgCode"]!=null && dt.Rows[n]["OrgCode"].ToString()!="")
 					{
-						model.OrgID=int.Parse(dt.Rows[n]["OrgID"].ToString());
+					model.OrgCode=dt.Rows[n]["OrgCode"].ToString();
 					}
 					if(dt.Rows[n]["Code"]!=null && dt.Rows[n]["Code"].ToString()!="")
 					{
@@ -162,6 +162,10 @@ namespace Electric.BLL
 					if(dt.Rows[n]["UpdateTime"]!=null && dt.Rows[n]["UpdateTime"].ToString()!="")
 					{
 						model.UpdateTime=DateTime.Parse(dt.Rows[n]["UpdateTime"].ToString());
+					}
+					if(dt.Rows[n]["Column_9"]!=null && dt.Rows[n]["Column_9"].ToString()!="")
+					{
+					model.Column_9=dt.Rows[n]["Column_9"].ToString();
 					}
 					modelList.Add(model);
 				}

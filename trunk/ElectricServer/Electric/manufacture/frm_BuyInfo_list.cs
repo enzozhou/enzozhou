@@ -141,8 +141,8 @@ namespace Electric
             //设置对齐方式
             this.dgv.Columns["ID"].Visible = false;
             this.dgv.Columns["row"].HeaderText = "编号";
-            this.dgv.Columns["OrgID"].HeaderText = "公司ID";
-            this.dgv.Columns["OrgID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+             this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
+             this.dgv.Columns["OrgCode"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgv.Columns["PartnerCode"].HeaderText = "采购方代码";
             this.dgv.Columns["PartnerName"].HeaderText = "采购方名称";
@@ -178,7 +178,7 @@ namespace Electric
             dgvItem.DataSource = dsItem;
             dgvItem.DataMember = "ds";
             global.SetDataGridViewStyle(dgvItem);
-            this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
+            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgvItem.Columns["ContractNo"].ReadOnly = true;
             this.dgvItem.Columns["InvoiceNo"].HeaderText = "发票号码";

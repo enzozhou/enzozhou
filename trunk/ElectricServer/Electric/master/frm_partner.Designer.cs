@@ -66,22 +66,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCorporate = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbType = new System.Windows.Forms.ComboBox();
+            this.cmbPartnerClass = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
-            this.cmbOrgID = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtOrgCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtOrg);
             this.groupBox1.Controls.Add(this.txtMail);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.btnClose);
@@ -119,12 +120,11 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtCorporate);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.cmbType);
+            this.groupBox1.Controls.Add(this.cmbPartnerClass);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtCode);
-            this.groupBox1.Controls.Add(this.cmbOrgID);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtOrgCode);
@@ -438,13 +438,13 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "企业地址";
             // 
-            // cmbType
+            // cmbPartnerClass
             // 
-            this.cmbType.FormattingEnabled = true;
-            this.cmbType.Location = new System.Drawing.Point(392, 74);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(390, 20);
-            this.cmbType.TabIndex = 20;
+            this.cmbPartnerClass.FormattingEnabled = true;
+            this.cmbPartnerClass.Location = new System.Drawing.Point(392, 74);
+            this.cmbPartnerClass.Name = "cmbPartnerClass";
+            this.cmbPartnerClass.Size = new System.Drawing.Size(390, 20);
+            this.cmbPartnerClass.TabIndex = 20;
             // 
             // label5
             // 
@@ -477,14 +477,6 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(390, 21);
             this.txtCode.TabIndex = 16;
-            // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.Location = new System.Drawing.Point(8, 35);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(367, 20);
-            this.cmbOrgID.TabIndex = 14;
             // 
             // label3
             // 
@@ -530,6 +522,14 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(8, 34);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(366, 21);
+            this.txtOrg.TabIndex = 58;
+            // 
             // frm_partner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -538,6 +538,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_partner";
             this.Text = "frm_partner";
+            this.Load += new System.EventHandler(this.frm_partner_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -551,13 +552,12 @@
         private System.Windows.Forms.TextBox txtOrgCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox cmbOrgID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCode;
-        private System.Windows.Forms.ComboBox cmbType;
+        private System.Windows.Forms.ComboBox cmbPartnerClass;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label7;
@@ -595,5 +595,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtOrg;
     }
 }

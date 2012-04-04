@@ -44,24 +44,26 @@
             this.txtUser.Location = new System.Drawing.Point(173, 37);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(125, 21);
-            this.txtUser.TabIndex = 1;
+            this.txtUser.TabIndex = 0;
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // btnlogin
             // 
             this.btnlogin.Location = new System.Drawing.Point(81, 122);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(60, 23);
-            this.btnlogin.TabIndex = 1;
+            this.btnlogin.TabIndex = 2;
             this.btnlogin.Text = "登 录";
             this.btnlogin.UseVisualStyleBackColor = true;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // btnexit
             // 
+            this.btnexit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnexit.Location = new System.Drawing.Point(173, 122);
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(60, 23);
-            this.btnexit.TabIndex = 1;
+            this.btnexit.TabIndex = 3;
             this.btnexit.Text = "关 闭";
             this.btnexit.UseVisualStyleBackColor = true;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
@@ -72,7 +74,8 @@
             this.txtPWD.Name = "txtPWD";
             this.txtPWD.PasswordChar = '#';
             this.txtPWD.Size = new System.Drawing.Size(125, 21);
-            this.txtPWD.TabIndex = 2;
+            this.txtPWD.TabIndex = 1;
+            this.txtPWD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPWD_KeyPress);
             // 
             // label1
             // 

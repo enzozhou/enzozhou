@@ -25,7 +25,7 @@ namespace Electric
         private void toolBtnModify_Click(object sender, EventArgs e)
         {
             int _id = 0;
-            frm_NewForOld _frm = new frm_NewForOld();
+            frm_RecoveryContract _frm = new frm_RecoveryContract();
             foreach (DataGridViewRow item in dgv.Rows)
             {
                 if (item.Selected)
@@ -35,7 +35,7 @@ namespace Electric
                         //_id = int.Parse(item.Cells["ID"].Value.ToString());
                         _frm.ID = _id;
                         _frm.isUpdate = true;
-                        global.FormStyle((frm_Main)this.MdiParent, _frm, "部门信息");
+                        global.FormStyle((frm_Main)this.MdiParent, _frm, "回收合同");
                     }
                     return;
                 }
@@ -102,6 +102,11 @@ namespace Electric
             dgv.DataMember = "ds";
             //this.dgv.RowsDefaultCellStyle.BackColor = Color.Bisque;
             setGridTitle();
+            if (_ds.Tables[0].Rows.Count > 0)
+            {
+                dgv.Rows[0].Selected = true;
+                //dgvHead_CellClick(null, null);
+            }
         }
 
         private void btnUP_Click(object sender, EventArgs e)
@@ -144,8 +149,8 @@ namespace Electric
             //设置对齐方式
             this.dgv.Columns["ID"].Visible = false;
             this.dgv.Columns["row"].HeaderText = "编号";
-            this.dgv.Columns["OrgID"].HeaderText = "公司ID";
-            this.dgv.Columns["OrgID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            this.dgv.Columns["OrgCode"].HeaderText = "公司ID";
+            this.dgv.Columns["OrgCode"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             this.dgv.Columns["ContractNo"].HeaderText = "合同编号";
             this.dgv.Columns["PartnerCode"].HeaderText = "交售方代码";
             this.dgv.Columns["PartnerName"].HeaderText = "交售方名称";
@@ -192,7 +197,7 @@ namespace Electric
             this.dgvItem.Columns["BuyPower"].HeaderText = "购买电机功率";
             this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
             this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
-            this.dgvItem.Columns["OrgID"].HeaderText = "公司ID";
+            this.dgvItem.Columns["OrgCode"].HeaderText = "公司ID";
             this.dgvItem.Columns["ContractNo"].HeaderText = "合同编号";
 
             this.dgvItem.Columns["ID"].Visible = false;

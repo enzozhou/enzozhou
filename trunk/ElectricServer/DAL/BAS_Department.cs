@@ -46,25 +46,27 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BAS_Department(");
-			strSql.Append("OrgID,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime)");
+			strSql.Append("OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgID,@Code,@Name,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime)");
+			strSql.Append("@OrgCode,@Code,@Name,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@Column_9)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
 					new SqlParameter("@UpdateUserID", SqlDbType.Int,4),
-					new SqlParameter("@UpdateTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.OrgID;
+					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
+					new SqlParameter("@Column_9", SqlDbType.Char,10)};
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.CreateUserID;
 			parameters[4].Value = model.CreateTime;
 			parameters[5].Value = model.UpdateUserID;
 			parameters[6].Value = model.UpdateTime;
+			parameters[7].Value = model.Column_9;
 
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -83,31 +85,34 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update BAS_Department set ");
-			strSql.Append("OrgID=@OrgID,");
+			strSql.Append("OrgCode=@OrgCode,");
 			strSql.Append("Code=@Code,");
 			strSql.Append("Name=@Name,");
 			strSql.Append("CreateUserID=@CreateUserID,");
 			strSql.Append("CreateTime=@CreateTime,");
 			strSql.Append("UpdateUserID=@UpdateUserID,");
-			strSql.Append("UpdateTime=@UpdateTime");
+			strSql.Append("UpdateTime=@UpdateTime,");
+			strSql.Append("Column_9=@Column_9");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@OrgID", SqlDbType.Int,4),
+					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
 					new SqlParameter("@Code", SqlDbType.NVarChar,50),
 					new SqlParameter("@Name", SqlDbType.NVarChar,50),
 					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
 					new SqlParameter("@UpdateUserID", SqlDbType.Int,4),
 					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
+					new SqlParameter("@Column_9", SqlDbType.Char,10),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
-			parameters[0].Value = model.OrgID;
+			parameters[0].Value = model.OrgCode;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
 			parameters[3].Value = model.CreateUserID;
 			parameters[4].Value = model.CreateTime;
 			parameters[5].Value = model.UpdateUserID;
 			parameters[6].Value = model.UpdateTime;
-			parameters[7].Value = model.ID;
+			parameters[7].Value = model.Column_9;
+			parameters[8].Value = model.ID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -171,7 +176,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgID,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime from BAS_Department ");
+			strSql.Append("select  top 1 ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 from BAS_Department ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -186,9 +191,9 @@ namespace Electric.DAL
 				{
 					model.ID=int.Parse(ds.Tables[0].Rows[0]["ID"].ToString());
 				}
-				if(ds.Tables[0].Rows[0]["OrgID"]!=null && ds.Tables[0].Rows[0]["OrgID"].ToString()!="")
+				if(ds.Tables[0].Rows[0]["OrgCode"]!=null && ds.Tables[0].Rows[0]["OrgCode"].ToString()!="")
 				{
-					model.OrgID=int.Parse(ds.Tables[0].Rows[0]["OrgID"].ToString());
+					model.OrgCode=ds.Tables[0].Rows[0]["OrgCode"].ToString();
 				}
 				if(ds.Tables[0].Rows[0]["Code"]!=null && ds.Tables[0].Rows[0]["Code"].ToString()!="")
 				{
@@ -214,6 +219,10 @@ namespace Electric.DAL
 				{
 					model.UpdateTime=DateTime.Parse(ds.Tables[0].Rows[0]["UpdateTime"].ToString());
 				}
+				if(ds.Tables[0].Rows[0]["Column_9"]!=null && ds.Tables[0].Rows[0]["Column_9"].ToString()!="")
+				{
+					model.Column_9=ds.Tables[0].Rows[0]["Column_9"].ToString();
+				}
 				return model;
 			}
 			else
@@ -228,7 +237,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgID,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
+			strSql.Append("select ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 ");
 			strSql.Append(" FROM BAS_Department ");
 			if(strWhere.Trim()!="")
 			{
@@ -248,7 +257,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgID,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime ");
+			strSql.Append(" ID,OrgCode,Code,Name,CreateUserID,CreateTime,UpdateUserID,UpdateTime,Column_9 ");
 			strSql.Append(" FROM BAS_Department ");
 			if(strWhere.Trim()!="")
 			{

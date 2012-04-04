@@ -59,7 +59,6 @@
             this.txtPartnerContract = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbOrgID = new System.Windows.Forms.ComboBox();
             this.txtPartnerCode = new System.Windows.Forms.TextBox();
             this.txtPartnerName = new System.Windows.Forms.TextBox();
             this.txtPartnerAddress = new System.Windows.Forms.TextBox();
@@ -76,6 +75,7 @@
             this.BuyPower = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtOrg = new System.Windows.Forms.TextBox();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -91,6 +91,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.txtOrg);
             this.splitContainer1.Panel1.Controls.Add(this.btnClose);
             this.splitContainer1.Panel1.Controls.Add(this.btnSave);
             this.splitContainer1.Panel1.Controls.Add(this.label16);
@@ -121,7 +122,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.txtPartnerContract);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
-            this.splitContainer1.Panel1.Controls.Add(this.cmbOrgID);
             this.splitContainer1.Panel1.Controls.Add(this.txtPartnerCode);
             this.splitContainer1.Panel1.Controls.Add(this.txtPartnerName);
             this.splitContainer1.Panel1.Controls.Add(this.txtPartnerAddress);
@@ -341,7 +341,6 @@
             this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 14;
             this.label7.Text = "交售方开户行";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtPartnerTel
             // 
@@ -383,17 +382,6 @@
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 9;
             this.label2.Text = "交售方代码";
-            // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbOrgID.Location = new System.Drawing.Point(3, 24);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(145, 20);
-            this.cmbOrgID.TabIndex = 8;
             // 
             // txtPartnerCode
             // 
@@ -520,6 +508,14 @@
             this.SumPrice.HeaderText = "合计金额";
             this.SumPrice.Name = "SumPrice";
             // 
+            // txtOrg
+            // 
+            this.txtOrg.Location = new System.Drawing.Point(5, 24);
+            this.txtOrg.Name = "txtOrg";
+            this.txtOrg.ReadOnly = true;
+            this.txtOrg.Size = new System.Drawing.Size(149, 21);
+            this.txtOrg.TabIndex = 39;
+            // 
             // frm_RecoveryContract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -528,6 +524,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "frm_RecoveryContract";
             this.Text = "frm_RecoveryContract";
+            this.Load += new System.EventHandler(this.frm_RecoveryContract_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -547,7 +544,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFPP;
-        private System.Windows.Forms.ComboBox cmbOrgID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPartnerAccount;
         private System.Windows.Forms.Label label8;
@@ -587,6 +583,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SumPrice;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtOrg;
 
     }
 }
