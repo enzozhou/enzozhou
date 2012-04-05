@@ -78,6 +78,7 @@
     <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -279,13 +280,13 @@
       <DependentUpon>frm_RecoveryContract_list.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\NewExchangeOld.rpt">
+    <EmbeddedResource Include="reports\rptRecycleContract.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>NewExchangeOld.cs</LastGenOutput>
+      <LastGenOutput>rptRecycleContract.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\RecycleContract.rpt">
+    <EmbeddedResource Include="reports\rptNewExchangeOld.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RecycleContract.cs</LastGenOutput>
+      <LastGenOutput>rptNewExchangeOld.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="system\frm_User.resx">
       <DependentUpon>frm_User.cs</DependentUpon>
@@ -333,17 +334,35 @@
     <Compile Include="recycle\frm_RecoveryContract_list.Designer.cs">
       <DependentUpon>frm_RecoveryContract_list.cs</DependentUpon>
     </Compile>
-    <Compile Include="reports\NewExchangeOld.cs">
+    <Compile Include="reports\rptRecycleContract.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NewExchangeOld.rpt</DependentUpon>
+      <DependentUpon>rptRecycleContract.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="reports\RecycleContract.cs">
+    <Compile Include="reports\rptNewExchangeOld.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RecycleContract.rpt</DependentUpon>
+      <DependentUpon>rptNewExchangeOld.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\xsdNewExchangeOld.cs">
+      <DependentUpon>xsdNewExchangeOld.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\xsdNewExchangeOld.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdNewExchangeOld.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reports\xsdRecycleContract.cs">
+      <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\xsdRecycleContract.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
     </Compile>
     <Compile Include="system\frm_User.cs">
       <SubType>Form</SubType>
@@ -405,7 +424,33 @@
     <None Include="Resources\ico.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="reports\xsdNewExchangeOld.xsc">
+      <DependentUpon>xsdNewExchangeOld.xsd</DependentUpon>
+    </None>
+    <None Include="reports\xsdNewExchangeOld.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdNewExchangeOld.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="reports\xsdNewExchangeOld.xss">
+      <DependentUpon>xsdNewExchangeOld.xsd</DependentUpon>
+    </None>
+    <None Include="reports\xsdRecycleContract.xsc">
+      <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
+    </None>
+    <None Include="reports\xsdRecycleContract.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdRecycleContract.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="reports\xsdRecycleContract.xss">
+      <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
+    </None>
     <None Include="Resources\logo.ico" />
+    <None Include="template\再制造高效电机推广信息明细表.xlt" />
+    <None Include="template\旧电机回收信息明细表.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="上科电机.ico" />
