@@ -163,10 +163,10 @@ namespace Electric.BLL
 					{
 						model.UpdateTime=DateTime.Parse(dt.Rows[n]["UpdateTime"].ToString());
 					}
-					if(dt.Rows[n]["Column_9"]!=null && dt.Rows[n]["Column_9"].ToString()!="")
-					{
-					model.Column_9=dt.Rows[n]["Column_9"].ToString();
-					}
+                    //if(dt.Rows[n]["Column_9"]!=null && dt.Rows[n]["Column_9"].ToString()!="")
+                    //{
+                    //model.Column_9=dt.Rows[n]["Column_9"].ToString();
+                    //}
 					modelList.Add(model);
 				}
 			}
