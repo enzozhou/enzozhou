@@ -21,6 +21,8 @@ namespace Electric
         {
             dgvItem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+            //OldProtectionLev
+
             int _displayindex = 0;
             CalendarColumn col = new CalendarColumn();
             _displayindex = this.dgvItem.Columns["OldProtectionLev"].DisplayIndex + 1;
@@ -46,7 +48,15 @@ namespace Electric
 
             global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
             global.BandBaseCodeComboBox(cmbBelongTo, "BCP00001");
+            global.BandBaseDgvCodeComboBox(OldProtectionLev, "ProtectionLev");
             txtOrg.Text = global.OrganizationName;
+
+            DataSet _ds = new Electric.BLL.V_BAS_PRC().GetList("");
+            DataTable dtPartner = _ds.Tables[0];
+            lstContractNo.DataSource = dtPartner;
+            lstContractNo.DisplayMember = "ContractNo";
+            lstContractNo.ValueMember = "ContractNo";
+            lstContractNo.Visible = false;
         }
 
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
@@ -241,6 +251,10 @@ namespace Electric
         private void btnSave_Click(object sender, EventArgs e)
         {
             string strErr = "";
+            if (this.txtContractNo.Text.Trim()== string.Empty)
+            {
+                strErr += "合同编号不能为空 \n";
+            }
             if (this.txtPartnerCode.Text.Trim().Length == 0)
             {
                 strErr += "交售方代码不能为空.\n";
@@ -249,6 +263,7 @@ namespace Electric
             {
                 strErr += "交售方名称不能为空.\n";
             }
+            
             if (strErr != "")
             {
                 MessageBox.Show(this, strErr);
@@ -268,6 +283,7 @@ namespace Electric
             model.PartnerTel = txtPartnerTel.Text;
 
             int iTmp = 0;
+            model.ContractNo = txtContractNo.Text;
             model.OrgCode = global.OrganizationCode;
             int.TryParse(txtTotalNewQty.Text, out  iTmp);
             model.TotalNewQty = iTmp;
@@ -298,7 +314,7 @@ namespace Electric
             {
                 model.CreateTime = DateTime.Now;
                 model.CreateUserID = global.UserID;
-                model.ContractNo = "NO" + global.GenerateCode(bll.GetMaxId().ToString());
+                //model.ContractNo = "NO" + global.GenerateCode(bll.GetMaxId().ToString());
                 bll.Add(model);
             }
             else
@@ -348,6 +364,7 @@ namespace Electric
                         modelDetail.ContractNo = model.ContractNo;
                         modelDetail.OldOutDate = Convert.ToDateTime(item.Cells["OldOutDate"].Value);
                         modelDetail.NewInvoiceDate = Convert.ToDateTime(item.Cells["NewInvoiceDate"].Value);
+                        //modelDetail.ContractNo = txtContractNo.Text;
 
 
                         if (modelDetail.OldQty > 0 || modelDetail.OldSubsidy > 0 || modelDetail.OldPrice > 0 || modelDetail.OldSumPrice > 0 || modelDetail.PurchasePrice > 0 || modelDetail.OldPowerRating > 0 || modelDetail.OldWeight > 0 || modelDetail.OldSpeed > 0 || modelDetail.OldProtectionLev != "" || modelDetail.OldModel.Trim() != "")
@@ -381,6 +398,8 @@ namespace Electric
             set
             {
                 _id = value;
+
+                global.BandBaseDgvCodeComboBox(OldProtectionLev, "ProtectionLev");
                 showUpdate();
             }
         }
@@ -398,6 +417,7 @@ namespace Electric
             Electric.Model.BS_NewForOld _model = new Electric.BLL.BS_NewForOld().GetModel(_id);
 
             _contractNo = _model.ContractNo;
+            txtContractNo.Text = _model.ContractNo;
             txtTotalPurchasePrice.Text = _model.TotalPurchasePrice.ToString();
             txtTotalPowerRating.Text = _model.TotalPowerRating.ToString();
             txtTotalOldSumPrice.Text = _model.TotalOldSumPrice.ToString();
@@ -448,6 +468,8 @@ namespace Electric
             #endregion
 
             this.dgvItem.Columns["ID"].Visible = false;
+            this.dgvItem.Columns["OrgCode"].Visible = false;
+            this.dgvItem.Columns["ContractNo"].Visible = false;
             this.dgvItem.Columns["CreateUserID"].Visible = false;
             this.dgvItem.Columns["CreateTime"].Visible = false;
             this.dgvItem.Columns["UpdateUserID"].Visible = false;
@@ -459,10 +481,80 @@ namespace Electric
 
         }
 
+
+        private DataTable QueryPartnerInfo(string code)
+        {
+            DataSet _ds = new Electric.BLL.V_BAS_PRC().GetList("ContractNo like '%" + code + "%'");
+            DataTable dtPartner = _ds.Tables[0];
+            return dtPartner;
+        }
+
+        /// <summary>
+        /// Load合作伙伴信息 FZ20120405
+        /// </summary>
+        /// <param name="row"></param>
+        private void LoadContractInfo(DataRow row)
+        {
+            if (row != null)
+            {
+                lstContractNo.Visible = false;
+                txtContractNo.Text = row["ContractNo"].ToString();
+                txtPartnerCode.Text = row["Code"].ToString();
+                txtPartnerName.Text = row["Name"].ToString();
+                txtPartnerContract.Text = row["Contract"].ToString();
+                txtPartnerTel.Text = row["Tel"].ToString();
+                cmbBelongTo.SelectedValue = row["Membership"].ToString();
+                cmbOwnership.SelectedValue = row["Ownership"].ToString();
+                txtPartnerAddress.Text = row["Address"].ToString();
+            }
+            else
+            {
+                lstContractNo.Visible = false;
+                txtPartnerCode.Text = "";
+                txtPartnerName.Text = "";
+                txtPartnerContract.Text = "";
+                txtPartnerTel.Text = "";
+                txtPartnerAddress.Text = "";
+            }
+        }
+
+ 
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+
+        private void txtContractNo_DoubleClick(object sender, EventArgs e)
+        {
+            DataTable dtContract = QueryPartnerInfo(txtContractNo.Text);
+            if (dtContract.Rows.Count == 1)
+            {
+                LoadContractInfo(dtContract.Rows[0]);
+            }
+            else if (dtContract.Rows.Count > 1)
+            {
+                lstContractNo.Visible = true;
+            }
+            else
+            {
+                LoadContractInfo(null);
+                if (txtPartnerCode.Text != string.Empty)
+                {
+                    txtPartnerCode.Focus();
+                }
+            }
+        }
+
+        private void lstContractNo_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            DataTable dtContract = QueryPartnerInfo(lstContractNo.SelectedValue.ToString());
+            if (dtContract.Rows.Count == 1)
+            {
+                LoadContractInfo(dtContract.Rows[0]);
+                lstContractNo.Visible = false;
+            }
+        }
     }
 }
