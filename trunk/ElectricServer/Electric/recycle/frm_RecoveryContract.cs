@@ -377,6 +377,27 @@ namespace Electric
             }
         }
 
+        private void txtPartnerCode_Validated(object sender, EventArgs e)
+        {
+            DataTable dtPartner = QueryPartnerInfo(txtPartnerCode.Text);
+            if (dtPartner.Rows.Count == 1)
+            {
+                LoadPartnerInfo(dtPartner.Rows[0]);
+            }
+            else if (dtPartner.Rows.Count > 1)
+            {
+                lstPartner.Visible = true;
+            }
+            else
+            {
+                LoadPartnerInfo(null);
+                if (txtPartnerCode.Text != string.Empty)
+                {
+                    txtPartnerCode.Focus();
+                }
+            }
+        }
+
         private void lstPartner_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DataTable dtPartner = QueryPartnerInfo(lstPartner.SelectedValue.ToString());

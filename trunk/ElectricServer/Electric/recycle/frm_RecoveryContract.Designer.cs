@@ -148,7 +148,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvItem);
             this.splitContainer1.Size = new System.Drawing.Size(987, 451);
-            this.splitContainer1.SplitterDistance = 200;
+            this.splitContainer1.SplitterDistance = 199;
             this.splitContainer1.TabIndex = 0;
             // 
             // lstPartner
@@ -443,6 +443,7 @@
             this.txtPartnerCode.Size = new System.Drawing.Size(95, 21);
             this.txtPartnerCode.TabIndex = 7;
             this.txtPartnerCode.DoubleClick += new System.EventHandler(this.txtPartnerCode_DoubleClick);
+            this.txtPartnerCode.Validated += new System.EventHandler(this.txtPartnerCode_Validated);
             // 
             // txtPartnerName
             // 
@@ -511,7 +512,7 @@
             this.dgvItem.Location = new System.Drawing.Point(3, 3);
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.RowTemplate.Height = 23;
-            this.dgvItem.Size = new System.Drawing.Size(981, 241);
+            this.dgvItem.Size = new System.Drawing.Size(981, 242);
             this.dgvItem.TabIndex = 0;
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
