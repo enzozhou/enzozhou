@@ -131,6 +131,7 @@ namespace Electric
                 DateTime SubmitTime = DateTime.Now;
                 int ApproveUserID = global.UserID;
                 DateTime ApproveTime = DateTime.Now;
+                string Membership = cmbMembership.SelectedValue.ToString();
 
                 Electric.Model.BAS_Partner model = new Electric.Model.BAS_Partner();
                 model.OrgCodeSYS = global.OrganizationCode;
@@ -164,6 +165,7 @@ namespace Electric
                 model.SubmitTime = SubmitTime;
                 model.ApproveUserID = ApproveUserID;
                 model.ApproveTime = ApproveTime;
+                model.Membership = Membership;
 
                 Electric.BLL.BAS_Partner bll = new Electric.BLL.BAS_Partner();
 
@@ -235,6 +237,7 @@ namespace Electric
             global.SetComboBoxDefaultValue(cmbOwnership, model.Ownership);
             global.SetComboBoxDefaultValue(cmbPartnerClass, model.PartnerClass);
             global.SetComboBoxDefaultValue(cmbSupervisor, model.Supervisor);
+            global.SetComboBoxDefaultValue(cmbMembership, model.Membership);
             ControlEnabled();
         }
 
@@ -251,6 +254,7 @@ namespace Electric
             global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
             global.BandBaseCodeComboBox(cmbPartnerClass, "BCP00004");
             global.BandBaseCodeComboBox(cmbSupervisor, "BCP00005");
+            global.BandBaseCodeComboBox(cmbMembership, "BCP00001");
         }
 
         private void ControlEnabled()

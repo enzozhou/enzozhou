@@ -77,11 +77,15 @@
             this.txtOrgCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cmbMembership = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbMembership);
+            this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.txtOrg);
             this.groupBox1.Controls.Add(this.txtMail);
             this.groupBox1.Controls.Add(this.label22);
@@ -530,6 +534,23 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
+            // cmbMembership
+            // 
+            this.cmbMembership.FormattingEnabled = true;
+            this.cmbMembership.Location = new System.Drawing.Point(392, 464);
+            this.cmbMembership.Name = "cmbMembership";
+            this.cmbMembership.Size = new System.Drawing.Size(390, 20);
+            this.cmbMembership.TabIndex = 60;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(390, 448);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 12);
+            this.label23.TabIndex = 59;
+            this.label23.Text = "所属集团区县";
+            // 
             // frm_partner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -596,5 +617,7 @@
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtOrg;
+        private System.Windows.Forms.ComboBox cmbMembership;
+        private System.Windows.Forms.Label label23;
     }
 }
