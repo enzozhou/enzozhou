@@ -46,42 +46,44 @@ namespace Electric.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into BAS_Partner(");
-			strSql.Append("OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime)");
+            strSql.Append("OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime,Membership)");
 			strSql.Append(" values (");
-			strSql.Append("@OrgCodeSYS,@Code,@Name,@PartnerClass,@Address,@Corporate,@OrgCode,@Licence,@TaxNo,@Ownership,@RegisteredCapital,@Supervisor,@FixedAssets,@EnterpriseNum,@Contract,@Tel,@Email,@ETC,@LYSV,@YBLSV,@BankName,@BankClass,@Account,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime)");
+            strSql.Append("@OrgCodeSYS,@Code,@Name,@PartnerClass,@Address,@Corporate,@OrgCode,@Licence,@TaxNo,@Ownership,@RegisteredCapital,@Supervisor,@FixedAssets,@EnterpriseNum,@Contract,@Tel,@Email,@ETC,@LYSV,@YBLSV,@BankName,@BankClass,@Account,@CreateUserID,@CreateTime,@UpdateUserID,@UpdateTime,@SubmitUserID,@SubmitTime,@ApproveUserID,@ApproveTime,@Membership)");
 			strSql.Append(";select @@IDENTITY");
-			SqlParameter[] parameters = {
-					new SqlParameter("@OrgCodeSYS", SqlDbType.NVarChar,50),
-					new SqlParameter("@Code", SqlDbType.NVarChar,50),
-					new SqlParameter("@Name", SqlDbType.NVarChar,100),
-					new SqlParameter("@PartnerClass", SqlDbType.NVarChar,50),
-					new SqlParameter("@Address", SqlDbType.NVarChar,100),
-					new SqlParameter("@Corporate", SqlDbType.NVarChar,50),
-					new SqlParameter("@OrgCode", SqlDbType.NVarChar,50),
-					new SqlParameter("@Licence", SqlDbType.NVarChar,50),
-					new SqlParameter("@TaxNo", SqlDbType.NVarChar,50),
-					new SqlParameter("@Ownership", SqlDbType.NVarChar,50),
-					new SqlParameter("@RegisteredCapital", SqlDbType.Decimal,9),
-					new SqlParameter("@Supervisor", SqlDbType.NVarChar,50),
-					new SqlParameter("@FixedAssets", SqlDbType.Decimal,9),
-					new SqlParameter("@EnterpriseNum", SqlDbType.Int,4),
-					new SqlParameter("@Contract", SqlDbType.NVarChar,50),
-					new SqlParameter("@Tel", SqlDbType.NVarChar,50),
-					new SqlParameter("@Email", SqlDbType.NVarChar,100),
-					new SqlParameter("@ETC", SqlDbType.NVarChar,50),
-					new SqlParameter("@LYSV", SqlDbType.Decimal,9),
-					new SqlParameter("@YBLSV", SqlDbType.Decimal,9),
-					new SqlParameter("@BankName", SqlDbType.NVarChar,50),
-					new SqlParameter("@BankClass", SqlDbType.NVarChar,50),
-					new SqlParameter("@Account", SqlDbType.NVarChar,50),
-					new SqlParameter("@CreateUserID", SqlDbType.Int,4),
-					new SqlParameter("@CreateTime", SqlDbType.DateTime),
-					new SqlParameter("@UpdateUserID", SqlDbType.Int,4),
-					new SqlParameter("@UpdateTime", SqlDbType.DateTime),
-					new SqlParameter("@SubmitUserID", SqlDbType.Int,4),
-					new SqlParameter("@SubmitTime", SqlDbType.DateTime),
-					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
-					new SqlParameter("@ApproveTime", SqlDbType.DateTime)};
+		    SqlParameter[] parameters = {
+		                                    new SqlParameter("@OrgCodeSYS", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Code", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Name", SqlDbType.NVarChar, 100),
+		                                    new SqlParameter("@PartnerClass", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Address", SqlDbType.NVarChar, 100),
+		                                    new SqlParameter("@Corporate", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@OrgCode", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Licence", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@TaxNo", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Ownership", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@RegisteredCapital", SqlDbType.Decimal, 9),
+		                                    new SqlParameter("@Supervisor", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@FixedAssets", SqlDbType.Decimal, 9),
+		                                    new SqlParameter("@EnterpriseNum", SqlDbType.Int, 4),
+		                                    new SqlParameter("@Contract", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Tel", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Email", SqlDbType.NVarChar, 100),
+		                                    new SqlParameter("@ETC", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@LYSV", SqlDbType.Decimal, 9),
+		                                    new SqlParameter("@YBLSV", SqlDbType.Decimal, 9),
+		                                    new SqlParameter("@BankName", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@BankClass", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@Account", SqlDbType.NVarChar, 50),
+		                                    new SqlParameter("@CreateUserID", SqlDbType.Int, 4),
+		                                    new SqlParameter("@CreateTime", SqlDbType.DateTime),
+		                                    new SqlParameter("@UpdateUserID", SqlDbType.Int, 4),
+		                                    new SqlParameter("@UpdateTime", SqlDbType.DateTime),
+		                                    new SqlParameter("@SubmitUserID", SqlDbType.Int, 4),
+		                                    new SqlParameter("@SubmitTime", SqlDbType.DateTime),
+		                                    new SqlParameter("@ApproveUserID", SqlDbType.Int, 4),
+		                                    new SqlParameter("@ApproveTime", SqlDbType.DateTime),
+		                                    new SqlParameter("@Membership", SqlDbType.NVarChar, 50)
+		                                };
 			parameters[0].Value = model.OrgCodeSYS;
 			parameters[1].Value = model.Code;
 			parameters[2].Value = model.Name;
@@ -113,7 +115,7 @@ namespace Electric.DAL
 			parameters[28].Value = model.SubmitTime;
 			parameters[29].Value = model.ApproveUserID;
 			parameters[30].Value = model.ApproveTime;
-
+		    parameters[31].Value = model.Membership;
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
 			{
@@ -161,7 +163,8 @@ namespace Electric.DAL
 			strSql.Append("SubmitUserID=@SubmitUserID,");
 			strSql.Append("SubmitTime=@SubmitTime,");
 			strSql.Append("ApproveUserID=@ApproveUserID,");
-			strSql.Append("ApproveTime=@ApproveTime");
+			strSql.Append("ApproveTime=@ApproveTime,");
+		    strSql.Append("Membership=@Membership");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@OrgCodeSYS", SqlDbType.NVarChar,50),
@@ -195,6 +198,7 @@ namespace Electric.DAL
 					new SqlParameter("@SubmitTime", SqlDbType.DateTime),
 					new SqlParameter("@ApproveUserID", SqlDbType.Int,4),
 					new SqlParameter("@ApproveTime", SqlDbType.DateTime),
+                    new SqlParameter("@Membership",SqlDbType.NVarChar,50), 
 					new SqlParameter("@ID", SqlDbType.Int,4)};
 			parameters[0].Value = model.OrgCodeSYS;
 			parameters[1].Value = model.Code;
@@ -227,7 +231,8 @@ namespace Electric.DAL
 			parameters[28].Value = model.SubmitTime;
 			parameters[29].Value = model.ApproveUserID;
 			parameters[30].Value = model.ApproveTime;
-			parameters[31].Value = model.ID;
+            parameters[31].Value = model.Membership;
+			parameters[32].Value = model.ID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -291,7 +296,7 @@ namespace Electric.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime from BAS_Partner ");
+            strSql.Append("select  top 1 ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime,Membership from BAS_Partner ");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)
@@ -429,7 +434,11 @@ namespace Electric.DAL
 				if(ds.Tables[0].Rows[0]["ApproveTime"]!=null && ds.Tables[0].Rows[0]["ApproveTime"].ToString()!="")
 				{
 					model.ApproveTime=DateTime.Parse(ds.Tables[0].Rows[0]["ApproveTime"].ToString());
-				}
+                }
+                if (ds.Tables[0].Rows[0]["Membership"] != null && ds.Tables[0].Rows[0]["Membership"].ToString() != "")
+                {
+                    model.Email = ds.Tables[0].Rows[0]["Membership"].ToString();
+                }
 				return model;
 			}
 			else
@@ -444,7 +453,7 @@ namespace Electric.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+            strSql.Append("select ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime,Membership ");
 			strSql.Append(" FROM BAS_Partner ");
 			if(strWhere.Trim()!="")
 			{
@@ -464,7 +473,7 @@ namespace Electric.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime ");
+            strSql.Append(" ID,OrgCodeSYS,Code,Name,PartnerClass,Address,Corporate,OrgCode,Licence,TaxNo,Ownership,RegisteredCapital,Supervisor,FixedAssets,EnterpriseNum,Contract,Tel,Email,ETC,LYSV,YBLSV,BankName,BankClass,Account,CreateUserID,CreateTime,UpdateUserID,UpdateTime,SubmitUserID,SubmitTime,ApproveUserID,ApproveTime,Membership ");
 			strSql.Append(" FROM BAS_Partner ");
 			if(strWhere.Trim()!="")
 			{
