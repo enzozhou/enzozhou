@@ -152,6 +152,24 @@ namespace Electric
             }
         }
 
+         public static void BandBaseDgvCodeComboBox(DataGridViewComboBoxColumn _cmb, string code)
+        {
+            string value = "Code", name = "Description";
+            DataSet ds = new Electric.BLL.BAS_Code().GetList(string.Format(" SelectCode = '{0}'", code));
+
+            if (ds.Tables.Count > 0)
+            {
+                _cmb.DataSource = ds.Tables[0].DefaultView;
+                _cmb.DisplayMember = name;
+                _cmb.ValueMember = value;
+            }
+            else
+            {
+                MessageBox.Show("主数据未维护。");
+            }
+            //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
         public static string ConvertObject(object obj)
         {
             if (obj == null)
