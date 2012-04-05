@@ -54,6 +54,11 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.66.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
@@ -70,14 +75,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="306688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\CrystalDecisions.CrystalReports.Engine.resources.dll" size="13312">
+      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine.resources" version="10.5.3700.0" publicKeyToken="692FBEA5521E1304" language="zh-chs" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5E3W+KDwudLW+zkGlb8MT5LY78Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\CrystalDecisions.ReportSource.resources.dll" size="6144">
+      <assemblyIdentity name="CrystalDecisions.ReportSource.resources" version="10.5.3700.0" publicKeyToken="692FBEA5521E1304" language="zh-chs" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NFwdJPvst5mg0QraLe6QpVJm6NU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\CrystalDecisions.Shared.resources.dll" size="11264">
+      <assemblyIdentity name="CrystalDecisions.Shared.resources" version="10.5.3700.0" publicKeyToken="692FBEA5521E1304" language="zh-chs" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8q2vgVPbHJQq3C0eDDybRUTOv3Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="388608">
       <assemblyIdentity name="Electric" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EzQb/+djh3SNgRRcnEE7O893OZQ=</dsig:DigestValue>
+        <dsig:DigestValue>GqMCbso+4KrGnwmQJF18EiaMg5o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -89,7 +130,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/NQxTG5vVgS5YrPjChB1cNdbdis=</dsig:DigestValue>
+        <dsig:DigestValue>ADEFaqzlewz33Pr0eA90I8sBZlw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -113,19 +154,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+Q7jJMBMmHyjQrAqZaQj7/d7qkc=</dsig:DigestValue>
+        <dsig:DigestValue>dClVUjpejWqEVq75jg+pMmtvUcQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.DBUtility.dll" size="65536">
-      <assemblyIdentity name="Electric.DBUtility" version="3.5.0.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="Electric.DBUtility" version="3.5.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pslaBmJG266fUz/rZuWFyC4N8rI=</dsig:DigestValue>
+        <dsig:DigestValue>5s4iQqtG5zuzeNL9tBwn+vko2Fw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -137,7 +178,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>z6V2xOqj5Gcgvbx5pNfFI7rlj8k=</dsig:DigestValue>
+        <dsig:DigestValue>V6I0VrfkDrUjb7OuWUhxpNau8zU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -202,6 +243,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NPOI.dll" size="1254912">
+      <assemblyIdentity name="NPOI" version="1.2.3.0" publicKeyToken="0DF73EC7942B34E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JAAmbijlXJilBxiOErVxoXZB3W8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="office.dll" size="223800">
       <assemblyIdentity name="office" version="11.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
       <hash>
@@ -243,7 +296,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ROHfzUs7mVUVP6OokhVqU3lU3bQ=</dsig:DigestValue>
+      <dsig:DigestValue>qbrsEiYU+gBlWEdy3n0uPYeH1xs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="上科电机.ico" size="9662">
