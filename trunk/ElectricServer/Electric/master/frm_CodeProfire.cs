@@ -17,7 +17,7 @@ namespace Electric
 
         void DataBanding()
         {
-            DataSet _ds = new Electric.BLL.BAS_CodeProfire().GetList("");
+            DataSet _ds = new Electric.BLL.BAS_CodeProfire().GetList("CodeType ='CUS'");
             //DataSet _ds = new Electric.BLL.BAS_CodeProfire().GetList("");
             dgvHead.DataSource = _ds;
             dgvHead.DataMember = "ds";
