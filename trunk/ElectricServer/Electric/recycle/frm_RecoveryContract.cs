@@ -82,7 +82,7 @@ namespace Electric
                 decimal dcTotalPR = 0;
                 decimal dclUnitPrice = 0, dclBuyPower = 0;
                 decimal dclPrice = 0, dclSumSubsidy = 0;
-                if (dgvItem.Rows[e.RowIndex].Cells["Qty"].Value != null )
+                if (dgvItem.Rows[e.RowIndex].Cells["Qty"].Value != null)
                 {
                     rowValue = dgvItem.Rows[e.RowIndex].Cells["Qty"].Value.ToString();
                     bl = decimal.TryParse(rowValue, out dclQty);
@@ -94,14 +94,14 @@ namespace Electric
                         dclPrice = dclQty * dclUnitPrice;
                         dgvItem.Rows[e.RowIndex].Cells["Price"].Value = dclPrice;
                     }
-                    if(dgvItem.Rows[e.RowIndex].Cells["BuyPower"].Value != null)
+                    if (dgvItem.Rows[e.RowIndex].Cells["BuyPower"].Value != null)
                     {
                         rowValue = dgvItem.Rows[e.RowIndex].Cells["BuyPower"].Value.ToString();
                         bl = decimal.TryParse(rowValue, out dclBuyPower);
                         dclSumSubsidy = dclQty * dclBuyPower * dclSubsidy;
                         dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value = dclSumSubsidy;
                     }
-                    
+
                     dgvItem.Rows[e.RowIndex].Cells["SumPrice"].Value = dclPrice + dclSumSubsidy;
 
                     //if (dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value != null &&
@@ -344,10 +344,10 @@ namespace Electric
 
             DataView dvCode = global.dtCodes.DefaultView;
             dvCode.RowFilter = "SelectCode='BCP00006'";
-            if (dvCode.Count >0)
+            if (dvCode.Count > 0)
             {
                 bool bl = decimal.TryParse(dvCode[dvCode.Count - 1]["Description"].ToString(), out dclSubsidy);
-                
+
             }
         }
 
@@ -359,11 +359,11 @@ namespace Electric
         private void txtPartnerCode_DoubleClick(object sender, EventArgs e)
         {
             DataTable dtPartner = QueryPartnerInfo(txtPartnerCode.Text);
-            if (dtPartner.Rows.Count ==1)
+            if (dtPartner.Rows.Count == 1)
             {
                 LoadPartnerInfo(dtPartner.Rows[0]);
             }
-            else if (dtPartner.Rows.Count >1)
+            else if (dtPartner.Rows.Count > 1)
             {
                 lstPartner.Visible = true;
             }
@@ -401,14 +401,14 @@ namespace Electric
         private void lstPartner_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DataTable dtPartner = QueryPartnerInfo(lstPartner.SelectedValue.ToString());
-            if (dtPartner.Rows.Count ==1)
+            if (dtPartner.Rows.Count == 1)
             {
                 LoadPartnerInfo(dtPartner.Rows[0]);
                 lstPartner.Visible = false;
             }
         }
 
-        private DataTable  QueryPartnerInfo(string code)
+        private DataTable QueryPartnerInfo(string code)
         {
             DataSet _ds = new Electric.BLL.BAS_Partner().GetList("Code like '%" + code + "%'");
             DataTable dtPartner = _ds.Tables[0];
@@ -444,6 +444,24 @@ namespace Electric
                 txtPartnerBank.Text = "";
                 txtPartnerAccount.Text = "";
                 txtPartnerAddress.Text = "";
+            }
+        }
+
+        private void dgvItem_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int _id = 0;
+                if (int.TryParse(dgvItem.Rows[e.RowIndex].Cells["ID"].Value.ToString(), out _id))
+                {
+                    frm_RecoveryContract_DetailView _frm = new frm_RecoveryContract_DetailView();
+                    _frm.ID = _id;
+                    _frm.ShowDialog();
+                }
+
+                //_id = int.Parse(item.Cells["ID"].Value.ToString());
+
+
             }
         }
     }
