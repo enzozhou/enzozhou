@@ -19,6 +19,7 @@ namespace Electric.Model
 		private decimal? _oldspeed;
 		private string _oldprotectionlev;
 		private DateTime? _oldoutdate;
+	    private string _oldpe;
 		private decimal? _oldweight;
 		private decimal? _oldprice;
 		private decimal? _oldsubsidy;
@@ -42,6 +43,8 @@ namespace Electric.Model
 		private DateTime? _submittime;
 		private int? _approveuserid;
 		private DateTime? _approvetime;
+	    private decimal? _oldunitprice;
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -113,7 +116,15 @@ namespace Electric.Model
 		{
 			set{ _oldoutdate=value;}
 			get{return _oldoutdate;}
-		}
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string OldPE
+        {
+            set { _oldpe = value; }
+            get { return _oldpe; }
+        }
 		/// <summary>
 		/// 
 		/// </summary>
@@ -297,7 +308,15 @@ namespace Electric.Model
 		{
 			set{ _approvetime=value;}
 			get{return _approvetime;}
-		}
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public decimal? OldUnitPrice
+        {
+            set { _oldunitprice = value; }
+            get { return _oldunitprice; }
+        }
 		#endregion Model
 
 	}
