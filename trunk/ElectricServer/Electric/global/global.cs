@@ -144,7 +144,7 @@ namespace Electric
         public static void SetComboBoxDefaultValue(ComboBox _cmb, string defaultValue)
         {
             //_cmb.Items.Contains(defaultValue).
-            if (defaultValue != "")
+            if (defaultValue !=null &&  defaultValue != "" )
             {
                 _cmb.SelectedValue = defaultValue;
                 //int index = _cmb.FindString(defaultValue);

@@ -11,6 +11,7 @@ namespace Electric
 {
     public partial class frm_NewForOld : Form
     {
+        private DataTable dtContractDetails = null;
         public frm_NewForOld()
         {
             InitializeComponent();
@@ -24,19 +25,19 @@ namespace Electric
             //OldProtectionLev
 
             int _displayindex = 0;
-            CalendarColumn col = new CalendarColumn();
-            _displayindex = this.dgvItem.Columns["OldProtectionLev"].DisplayIndex + 1;
-            this.dgvItem.Columns.Insert(_displayindex, col);
-            this.dgvItem.Columns[_displayindex].Name = "OldOutDate";
-            this.dgvItem.Columns[_displayindex].DataPropertyName = "OldOutDate";
-            this.dgvItem.Columns[_displayindex].HeaderText = "出厂年月";
+            //CalendarColumn col = new CalendarColumn();
+            //_displayindex = this.dgvItem.Columns["OldProtectionLev"].DisplayIndex + 1;
+            //this.dgvItem.Columns.Insert(_displayindex, col);
+            //this.dgvItem.Columns[_displayindex].Name = "OldOutDate";
+            //this.dgvItem.Columns[_displayindex].DataPropertyName = "OldOutDate";
+            //this.dgvItem.Columns[_displayindex].HeaderText = "出厂年月";
 
-            col = new CalendarColumn();
-            _displayindex = this.dgvItem.Columns["NewInvoiceNo"].DisplayIndex + 1;
-            this.dgvItem.Columns.Insert(_displayindex, col);
-            this.dgvItem.Columns[_displayindex].Name = "NewInvoiceDate";
-            this.dgvItem.Columns[_displayindex].DataPropertyName = "NewInvoiceDate";
-            this.dgvItem.Columns[_displayindex].HeaderText = "新电机发票日期";
+            //col = new CalendarColumn();
+            //_displayindex = this.dgvItem.Columns["NewInvoiceNo"].DisplayIndex + 1;
+            //this.dgvItem.Columns.Insert(_displayindex, col);
+            //this.dgvItem.Columns[_displayindex].Name = "NewInvoiceDate";
+            //this.dgvItem.Columns[_displayindex].DataPropertyName = "NewInvoiceDate";
+            //this.dgvItem.Columns[_displayindex].HeaderText = "新电机发票日期";
 
             txtTotalOldQty.ReadOnly = true;
             txtTotalNewQty.ReadOnly = true;
@@ -49,6 +50,7 @@ namespace Electric
             global.BandBaseCodeComboBox(cmbOwnership, "BCP00003");
             global.BandBaseCodeComboBox(cmbBelongTo, "BCP00001");
             global.BandBaseDgvCodeComboBox(OldProtectionLev, "ProtectionLev");
+            global.BandBaseDgvCodeComboBox(Reconstruction, "TrueOrFalse");
             txtOrg.Text = global.OrganizationName;
 
             DataSet _ds = new Electric.BLL.V_BAS_PRC().GetList("");
@@ -126,6 +128,26 @@ namespace Electric
                     dgvItem.Rows[e.RowIndex].ErrorText = "采购金额数据格式错误";
                 }
             }
+            if (columnName == "OldOutDate")
+            {
+                DateTime dtValue = DateTime.Parse("1900-1-1");
+                if (e.FormattedValue.ToString() != "" && !DateTime.TryParse(e.FormattedValue.ToString(), out dtValue))
+                {
+
+                    e.Cancel = true;
+                    dgvItem.Rows[e.RowIndex].ErrorText = "出厂日期格式错误";
+                }
+            }
+            if (columnName == "NewInvoiceDate")
+            {
+                DateTime dtValue = DateTime.Parse("1900-1-1");
+                if (e.FormattedValue.ToString() != "" && !DateTime.TryParse(e.FormattedValue.ToString(), out dtValue))
+                {
+
+                    e.Cancel = true;
+                    dgvItem.Rows[e.RowIndex].ErrorText = "新电机发票日期格式错误";
+                }
+            }
             //编辑的行为金额时候计算合计
             bool bl = false;
             string rowValue;
@@ -172,30 +194,56 @@ namespace Electric
             decimal dclSum = 0;
             decimal dclRowValue = 0;
             string rowValue;
-            if (columnName == "OldQty" || columnName == "OldPowerRating" || columnName == "OldSubsidy" || columnName == "OldSubsidy"
-                || columnName == "OldSubsidy" || columnName == "OldSubsidy" || columnName == "OldSubsidy" || columnName == "OldSubsidy"
-                || columnName == "OldSubsidy" || columnName == "OldSubsidy")
+            if (columnName == "OldModel")
             {
+
             }
 
-
-            if (columnName == "OldPrice" || columnName == "OldSubsidy")
+            if (columnName == "OldQty" || columnName == "OldUnitPrice" || columnName == "OldPowerRating" || columnName == "OldSubsidy"
+                || columnName == "OldPrice" || columnName == "OldPowerRating" || columnName == "OldSubsidy" || columnName == "OldSubsidy"
+                || columnName == "OldSubsidy" || columnName == "OldSubsidy" || columnName == "OldSubsidy")
             {
-                if (dgvItem.Rows[e.RowIndex].Cells["OldPrice"].Value != null)
+                int oldQty = 0;
+                if (dgvItem.Rows[e.RowIndex].Cells["OldQty"].Value != DBNull.Value)
                 {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["OldPrice"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
+                    bl = int.TryParse(dgvItem.Rows[e.RowIndex].Cells["OldQty"].Value.ToString(), out oldQty);
                 }
+                decimal oldUnitPrice = 0;
+                if (dgvItem.Rows[e.RowIndex].Cells["OldUnitPrice"].Value != null)
+                {
+                    bl = decimal.TryParse(dgvItem.Rows[e.RowIndex].Cells["OldUnitPrice"].Value.ToString(), out oldUnitPrice);
+                }
+                decimal oldPrice = oldQty * oldUnitPrice;
+                dgvItem.Rows[e.RowIndex].Cells["OldPrice"].Value = oldUnitPrice.ToString();
+                decimal oldSubsidy = 0;
                 if (dgvItem.Rows[e.RowIndex].Cells["OldSubsidy"].Value != null)
                 {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["OldSubsidy"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
+                    bl = decimal.TryParse(dgvItem.Rows[e.RowIndex].Cells["OldSubsidy"].Value.ToString(), out oldSubsidy);
                 }
+                dclSum = oldPrice + oldSubsidy;
                 dgvItem.Rows[e.RowIndex].Cells["OldSumPrice"].Value = dclSum.ToString();
+
                 CaclulateSub();
             }
+
+
+            //if (columnName == "OldPrice" || columnName == "OldSubsidy")
+            //{
+            //    if (dgvItem.Rows[e.RowIndex].Cells["OldPrice"].Value != null)
+            //    {
+            //        rowValue = dgvItem.Rows[e.RowIndex].Cells["OldPrice"].Value.ToString();
+            //        bl = decimal.TryParse(rowValue, out dclRowValue);
+            //        dclSum += dclRowValue;
+            //    }
+            //    if (dgvItem.Rows[e.RowIndex].Cells["OldSubsidy"].Value != null)
+            //    {
+            //        rowValue = dgvItem.Rows[e.RowIndex].Cells["OldSubsidy"].Value.ToString();
+            //        bl = decimal.TryParse(rowValue, out dclRowValue);
+            //        dclSum += dclRowValue;
+            //    }
+            //    dgvItem.Rows[e.RowIndex].Cells["OldSumPrice"].Value = dclSum.ToString();
+            //    CaclulateSub();
+            //}
         }
 
         /// <summary>
@@ -245,151 +293,153 @@ namespace Electric
             txtTotalOldSubsidy.Text = dcl_TotalOldSubsidy.ToString();
             txtTotalOldSumPrice.Text = dcl_TotalOldSumPrice.ToString();
             txtTotalPurchasePrice.Text = dcl_TotalPurchasePrice.ToString();
+            txtTotalPowerRating.Text = dcl_TotalPowerRating.ToString();
 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string strErr = "";
-            if (this.txtContractNo.Text.Trim()== string.Empty)
-            {
-                strErr += "合同编号不能为空 \n";
-            }
-            if (this.txtPartnerCode.Text.Trim().Length == 0)
-            {
-                strErr += "交售方代码不能为空.\n";
-            }
-            if (this.txtPartnerName.Text.Trim().Length == 0)
-            {
-                strErr += "交售方名称不能为空.\n";
-            }
-            
-            if (strErr != "")
-            {
-                MessageBox.Show(this, strErr);
-                return;
-            }
-            Electric.BLL.BS_NewForOld bll = new Electric.BLL.BS_NewForOld();
-            Electric.BLL.BS_NewForOld_Details bllDetail = new Electric.BLL.BS_NewForOld_Details();
-            Electric.Model.BS_NewForOld model = new Electric.Model.BS_NewForOld();
-            model.BelongTo = cmbBelongTo.SelectedValue.ToString();
-            model.Ownership = cmbOwnership.SelectedValue.ToString();
-            model.BuyTime = Convert.ToDateTime(dtpBuyTime.Text);
-            model.InvoiceNo = txtInvoiceNo.Text;
-            model.PartnerAddress = txtPartnerAddress.Text;
-            model.PartnerCode = txtPartnerCode.Text;
-            model.PartnerContract = txtPartnerContract.Text;
-            model.PartnerName = txtPartnerName.Text;
-            model.PartnerTel = txtPartnerTel.Text;
 
-            int iTmp = 0;
-            model.ContractNo = txtContractNo.Text;
-            model.OrgCode = global.OrganizationCode;
-            int.TryParse(txtTotalNewQty.Text, out  iTmp);
-            model.TotalNewQty = iTmp;
-            int.TryParse(txtTotalOldQty.Text, out iTmp);
-            model.TotalOldQty = iTmp;
-            decimal dcl = 0;
-            decimal.TryParse(txtTotalNewPowerRating.Text, out dcl);
-            model.TotalNewPowerRating = dcl;
-            decimal.TryParse(txtTotalNewQty.Text, out dcl);
-            model.TotalNewPowerRating = dcl;
-            decimal.TryParse(txtTotalOldPrice.Text, out dcl);
-            model.TotalOldPrice = dcl;
-            decimal.TryParse(txtTotalOldSubsidy.Text, out dcl);
-            model.TotalOldSubsidy = dcl;
-            decimal.TryParse(txtTotalOldSumPrice.Text, out dcl);
-            model.TotalOldSumPrice = dcl;
-            decimal.TryParse(txtTotalPurchasePrice.Text, out dcl);
-            model.TotalPurchasePrice = dcl;
-            decimal.TryParse(txtTotalPowerRating.Text, out dcl);
-            model.TotalPowerRating = dcl;
-
-            //model.ApproveTime = DateTime.Now;
-            //model.ApproveUserID = global.UserID;
-            //model.SubmitTime = DateTime.Now();
-            //model.SubmitUserID = global.UserID;
-
-            if (!_isupdate)
+            if (CheckedValue())
             {
-                model.CreateTime = DateTime.Now;
-                model.CreateUserID = global.UserID;
-                //model.ContractNo = "NO" + global.GenerateCode(bll.GetMaxId().ToString());
-                bll.Add(model);
-            }
-            else
-            {
-                model.UpdateTime = DateTime.Now;
-                model.UpdateUserID = global.UserID;
-                model.ContractNo = _contractNo;
-                model.ID = _id;
-                bll.Update(model);
-            }
+                Electric.BLL.BS_NewForOld bll = new Electric.BLL.BS_NewForOld();
+                Electric.BLL.BS_NewForOld_Details bllDetail = new Electric.BLL.BS_NewForOld_Details();
+                Electric.Model.BS_NewForOld model = new Electric.Model.BS_NewForOld();
+                model.BelongTo = cmbBelongTo.SelectedValue.ToString();
+                model.Ownership = cmbOwnership.SelectedValue.ToString();
+                model.BuyTime = Convert.ToDateTime(dtpBuyTime.Text);
+                model.InvoiceNo = txtInvoiceNo.Text;
+                model.PartnerAddress = txtPartnerAddress.Text;
+                model.PartnerCode = txtPartnerCode.Text;
+                model.PartnerContract = txtPartnerContract.Text;
+                model.PartnerName = txtPartnerName.Text;
+                model.PartnerTel = txtPartnerTel.Text;
 
-            //保存Item
-            Electric.Model.BS_NewForOld_Details modelDetail;
-            bool bl = dgvItem.Columns.Contains("ID");//判断是要新增还是修改
-            foreach (DataGridViewRow item in dgvItem.Rows)
-            {
-                if (!item.IsNewRow)
+                int iTmp = 0;
+                model.ContractNo = txtContractNo.Text;
+                model.OrgCode = global.OrganizationCode;
+                int.TryParse(txtTotalNewQty.Text, out iTmp);
+                model.TotalNewQty = iTmp;
+                int.TryParse(txtTotalOldQty.Text, out iTmp);
+                model.TotalOldQty = iTmp;
+                decimal dcl = 0;
+                decimal.TryParse(txtTotalNewPowerRating.Text, out dcl);
+                model.TotalNewPowerRating = dcl;
+                decimal.TryParse(txtTotalNewQty.Text, out dcl);
+                model.TotalNewPowerRating = dcl;
+                decimal.TryParse(txtTotalOldPrice.Text, out dcl);
+                model.TotalOldPrice = dcl;
+                decimal.TryParse(txtTotalOldSubsidy.Text, out dcl);
+                model.TotalOldSubsidy = dcl;
+                decimal.TryParse(txtTotalOldSumPrice.Text, out dcl);
+                model.TotalOldSumPrice = dcl;
+                decimal.TryParse(txtTotalPurchasePrice.Text, out dcl);
+                model.TotalPurchasePrice = dcl;
+                decimal.TryParse(txtTotalPowerRating.Text, out dcl);
+                model.TotalPowerRating = dcl;
+
+                //model.ApproveTime = DateTime.Now;
+                //model.ApproveUserID = global.UserID;
+                //model.SubmitTime = DateTime.Now();
+                //model.SubmitUserID = global.UserID;
+
+                if (!_isupdate)
                 {
-                    if (item.Cells["OldModel"].Value != null || item.Cells["OldPowerRating"].Value != null || item.Cells["OldQty"].Value != null || item.Cells["OldSpeed"].Value != null || item.Cells["OldProtectionLev"].Value != null || item.Cells["OldWeight"].Value != null || item.Cells["OldPrice"].Value != null || item.Cells["OldSubsidy"].Value != null || item.Cells["OldSumPrice"].Value != null || item.Cells["OldSumPrice"].Value != null)
+                    model.CreateTime = DateTime.Now;
+                    model.CreateUserID = global.UserID;
+                    //model.ContractNo = "NO" + global.GenerateCode(bll.GetMaxId().ToString());
+                    bll.Add(model);
+                }
+                else
+                {
+                    model.UpdateTime = DateTime.Now;
+                    model.UpdateUserID = global.UserID;
+                    model.ContractNo = _contractNo;
+                    model.ID = _id;
+                    bll.Update(model);
+                }
+
+                //保存Item
+                Electric.Model.BS_NewForOld_Details modelDetail;
+                bool bl = dgvItem.Columns.Contains("ID"); //判断是要新增还是修改
+                foreach (DataGridViewRow item in dgvItem.Rows)
+                {
+                    if (!item.IsNewRow)
                     {
-                        modelDetail = new Electric.Model.BS_NewForOld_Details();
-                        modelDetail.OrgCode = model.OrgCode;
-                        modelDetail.OldModel = global.ConvertObject(item.Cells["OldModel"].Value);
-                        int.TryParse(global.ConvertObject(item.Cells["OldQty"].Value), out iTmp);
-                        modelDetail.OldQty = iTmp;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldPrice"].Value), out dcl);
-                        modelDetail.OldPrice = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldPowerRating"].Value), out dcl);
-                        modelDetail.OldPowerRating = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldSubsidy"].Value), out dcl);
-                        modelDetail.OldSubsidy = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldSumPrice"].Value), out dcl);
-                        modelDetail.OldSumPrice = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldSpeed"].Value), out dcl);
-                        modelDetail.OldSpeed = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldWeight"].Value), out dcl);
-                        modelDetail.OldWeight = dcl;
-                        int.TryParse(global.ConvertObject(item.Cells["NewQty"].Value), out iTmp);
-                        modelDetail.NewQty = iTmp;
-                        decimal.TryParse(global.ConvertObject(item.Cells["OldPrice"].Value), out dcl);
-                        modelDetail.OldPrice = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["NewPowerRating"].Value), out dcl);
-                        modelDetail.NewPowerRating = dcl;
-                        decimal.TryParse(global.ConvertObject(item.Cells["PurchasePrice"].Value), out dcl);
-                        modelDetail.PurchasePrice = dcl;
-                        modelDetail.OldProtectionLev = global.ConvertObject(item.Cells["OldProtectionLev"].Value);
-                        modelDetail.ContractNo = model.ContractNo;
-                        modelDetail.OldOutDate = Convert.ToDateTime(item.Cells["OldOutDate"].Value);
-                        modelDetail.NewInvoiceDate = Convert.ToDateTime(item.Cells["NewInvoiceDate"].Value);
-                        //modelDetail.ContractNo = txtContractNo.Text;
-
-
-                        if (modelDetail.OldQty > 0 || modelDetail.OldSubsidy > 0 || modelDetail.OldPrice > 0 || modelDetail.OldSumPrice > 0 || modelDetail.PurchasePrice > 0 || modelDetail.OldPowerRating > 0 || modelDetail.OldWeight > 0 || modelDetail.OldSpeed > 0 || modelDetail.OldProtectionLev != "" || modelDetail.OldModel.Trim() != "")
+                        if (item.Cells["OldModel"].Value != null || item.Cells["OldPowerRating"].Value != null ||
+                            item.Cells["OldQty"].Value != null || item.Cells["OldSpeed"].Value != null ||
+                            item.Cells["OldProtectionLev"].Value != null || item.Cells["OldWeight"].Value != null ||
+                            item.Cells["OldPrice"].Value != null || item.Cells["OldSubsidy"].Value != null ||
+                            item.Cells["OldSumPrice"].Value != null || item.Cells["OldSumPrice"].Value != null)
                         {
-                            if (!bl)
+                            modelDetail = new Electric.Model.BS_NewForOld_Details();
+                            modelDetail.OrgCode = model.OrgCode;
+                            modelDetail.ContractNo = model.ContractNo;
+                            modelDetail.OldModel = global.ConvertObject(item.Cells["OldModel"].Value);
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldPowerRating"].Value), out dcl);
+                            modelDetail.OldPowerRating = dcl;
+                            int.TryParse(global.ConvertObject(item.Cells["OldQty"].Value), out iTmp);
+                            modelDetail.OldQty = iTmp;
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldUnitPrice"].Value), out dcl);
+                            modelDetail.OldUnitPrice = dcl;
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldSpeed"].Value), out dcl);
+                            modelDetail.OldSpeed = dcl;
+                            modelDetail.OldProtectionLev = global.ConvertObject(item.Cells["OldProtectionLev"].Value);
+                            modelDetail.OldOutDate = Convert.ToDateTime(item.Cells["OldOutDate"].Value);
+                            modelDetail.OldPE = global.ConvertObject(item.Cells["OldPE"].Value);
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldWeight"].Value), out dcl);
+                            modelDetail.OldWeight = dcl;
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldPrice"].Value), out dcl);
+                            modelDetail.OldPrice = dcl;
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldSubsidy"].Value), out dcl);
+                            modelDetail.OldSubsidy = dcl;
+                            decimal.TryParse(global.ConvertObject(item.Cells["OldSumPrice"].Value), out dcl);
+                            modelDetail.OldSumPrice = dcl;
+                            modelDetail.TerminalUnit = global.ConvertObject(item.Cells["TerminalUnit"].Value);
+                            modelDetail.TUNo = global.ConvertObject(item.Cells["TUNo"].Value);
+                            modelDetail.NewModel = global.ConvertObject(item.Cells["NewModel"].Value);
+                            decimal.TryParse(global.ConvertObject(item.Cells["NewPowerRating"].Value), out dcl);
+                            modelDetail.NewPowerRating = dcl;
+                            int.TryParse(global.ConvertObject(item.Cells["NewQty"].Value), out iTmp);
+                            modelDetail.NewQty = iTmp;
+                            decimal.TryParse(global.ConvertObject(item.Cells["PurchasePrice"].Value), out dcl);
+                            modelDetail.PurchasePrice = dcl;
+                            modelDetail.Reconstruction = global.ConvertObject(item.Cells["Reconstruction"].Value);
+                            modelDetail.NewInvoiceNo = global.ConvertObject(item.Cells["NewInvoiceNo"].Value);
+                            modelDetail.NewInvoiceDate = Convert.ToDateTime(item.Cells["NewInvoiceDate"].Value);
+                            modelDetail.NewMC = global.ConvertObject(item.Cells["NewMC"].Value);
+                            modelDetail.NewSerialNum = global.ConvertObject(item.Cells["NewSerialNum"].Value);
+
+                            //modelDetail.ContractNo = txtContractNo.Text;
+
+
+                            if (modelDetail.OldQty > 0 || modelDetail.OldSubsidy > 0 || modelDetail.OldPrice > 0 ||
+                                modelDetail.OldSumPrice > 0 || modelDetail.PurchasePrice > 0 ||
+                                modelDetail.OldPowerRating > 0 || modelDetail.OldWeight > 0 || modelDetail.OldSpeed > 0 ||
+                                modelDetail.OldProtectionLev != "" || modelDetail.OldModel.Trim() != "")
                             {
-                                bllDetail.Add(modelDetail);
+                                if (!bl)
+                                {
+                                    bllDetail.Add(modelDetail);
+                                }
+                                else
+                                {
+                                    int.TryParse(item.Cells["ID"].Value.ToString(), out iTmp);
+                                    modelDetail.ID = iTmp;
+                                    bllDetail.Delete(iTmp);
+                                    bllDetail.Add(modelDetail);
+                                }
                             }
                             else
                             {
                                 int.TryParse(item.Cells["ID"].Value.ToString(), out iTmp);
-                                modelDetail.ID = iTmp;
                                 bllDetail.Delete(iTmp);
-                                bllDetail.Add(modelDetail);
                             }
-                        }
-                        else
-                        {
-                            int.TryParse(item.Cells["ID"].Value.ToString(), out iTmp);
-                            bllDetail.Delete(iTmp);
                         }
                     }
                 }
+                MessageBox.Show("保存成功.");
             }
-            MessageBox.Show("保存成功.");
         }
 
         private int _id = 0;
@@ -400,6 +450,9 @@ namespace Electric
                 _id = value;
 
                 global.BandBaseDgvCodeComboBox(OldProtectionLev, "ProtectionLev");
+                global.BandBaseDgvCodeComboBox(TerminalUnit, "TerminalUnit");
+                global.BandBaseDgvCodeComboBox(Reconstruction, "TrueOrFalse");
+                //TerminalUnit
                 showUpdate();
             }
         }
@@ -446,6 +499,7 @@ namespace Electric
             this.dgvItem.Columns["OldSpeed"].HeaderText = "额定转速(speed)(r/min)";
             this.dgvItem.Columns["OldProtectionLev"].HeaderText = "防护等级(IP)";
             this.dgvItem.Columns["OldOutDate"].HeaderText = "出厂年月";
+            this.dgvItem.Columns["OldPE"].HeaderText = "生产企业";
             this.dgvItem.Columns["OldWeight"].HeaderText = "重量(WT.)(kg)";
             this.dgvItem.Columns["TerminalUnit"].HeaderText = "终端产品";
             #region 必填
@@ -506,6 +560,15 @@ namespace Electric
                 cmbBelongTo.SelectedValue = row["Membership"].ToString();
                 cmbOwnership.SelectedValue = row["Ownership"].ToString();
                 txtPartnerAddress.Text = row["Address"].ToString();
+
+                DataSet _dsdetails =
+                    new Electric.BLL.BS_RecoveryContract_Details().GetList("ContractNo ='" + txtContractNo.Text + "'");
+                if (_dsdetails.Tables.Count > 0)
+                {
+                    dtContractDetails = _dsdetails.Tables[0];
+                    LoadContractDetaails(dtContractDetails);
+                }
+
             }
             else
             {
@@ -518,7 +581,7 @@ namespace Electric
             }
         }
 
- 
+
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -554,6 +617,52 @@ namespace Electric
             {
                 LoadContractInfo(dtContract.Rows[0]);
                 lstContractNo.Visible = false;
+            }
+        }
+
+        private bool CheckedValue()
+        {
+            string strErr = "";
+            if (this.txtContractNo.Text.Trim() == string.Empty)
+            {
+                strErr += "合同编号不能为空 \n";
+            }
+            if (this.txtPartnerCode.Text.Trim().Length == 0)
+            {
+                strErr += "交售方代码不能为空.\n";
+            }
+            if (this.txtPartnerName.Text.Trim().Length == 0)
+            {
+                strErr += "交售方名称不能为空.\n";
+            }
+
+            if (strErr != "")
+            {
+                MessageBox.Show(this, strErr);
+                return false;
+            }
+            return true;
+        }
+
+        private void LoadContractDetaails(DataTable dtDetails)
+        {
+            if (dtDetails.Rows.Count > 0)
+            {
+                dgvItem.Rows.Clear();
+                dgvItem.Rows.Add(dtDetails.Rows.Count);
+                for (int rowCount = 0; rowCount < dtDetails.Rows.Count; rowCount++)
+                {
+                    //DataGridViewRowCollection dvRow = dgvItem.Rows;
+                    dgvItem.Rows[rowCount].Cells["OldModel"].Value = dtDetails.Rows[rowCount]["Model"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldQty"].Value = dtDetails.Rows[rowCount]["Qty"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldUnitPrice"].Value = dtDetails.Rows[rowCount]["UnitPrice"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldPrice"].Value = dtDetails.Rows[rowCount]["Price"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldPowerRating"].Value = dtDetails.Rows[rowCount]["PowerRating"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldSubsidy"].Value = dtDetails.Rows[rowCount]["Subsidy"].ToString();
+                    dgvItem.Rows[rowCount].Cells["OldSumPrice"].Value = dtDetails.Rows[rowCount]["SumPrice"].ToString();
+
+                }
+                CaclulateSub();
             }
         }
     }

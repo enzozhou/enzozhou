@@ -137,7 +137,11 @@ namespace Electric
         void setGridTitle()
         {
             global.SetDataGridViewStyle(dgv);
-            dgv.Rows[1].Selected = true;
+            if (dgv.Rows.Count > 0)
+            {
+                dgv.Rows[0].Selected = true;
+            }
+
             //设置对齐方式
             this.dgv.Columns["ID"].Visible = false;
             this.dgv.Columns["row"].HeaderText = "编号";
@@ -164,6 +168,9 @@ namespace Electric
             this.dgv.Columns["LPR"].HeaderText = "最后一次预付比率";
             this.dgv.Columns["DamagesRate"].HeaderText = "违约金比例";
 
+
+            this.dgv.Columns["row"].Visible = false;
+            this.dgv.Columns["OrgCode"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
