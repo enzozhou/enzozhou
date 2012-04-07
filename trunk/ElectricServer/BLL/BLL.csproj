@@ -159,6 +159,7 @@
     <Compile Include="BAS_Partner.cs" />
     <Compile Include="SYS_User.cs" />
     <Compile Include="self_BAS_Code.cs" />
+    <Compile Include="V_BAS_PRC.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
