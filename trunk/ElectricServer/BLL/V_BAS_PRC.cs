@@ -6,12 +6,12 @@ using Electric.Model;
 namespace Electric.BLL
 {
     /// <summary>
-    /// BS_NewForOld_Details
+    /// V_BAS_PRC
     /// </summary>
-    public partial class BS_NewForOld_Details
+    public partial class V_BAS_PRC
     {
-        private readonly Electric.DAL.BS_NewForOld_Details dal = new Electric.DAL.BS_NewForOld_Details();
-        public BS_NewForOld_Details()
+        private readonly Electric.DAL.V_BAS_PRC dal = new Electric.DAL.V_BAS_PRC();
+        public V_BAS_PRC()
         { }
         #region  Method
 
@@ -34,7 +34,7 @@ namespace Electric.BLL
         /// <summary>
         /// 增加一条数据
         /// </summary>
-        public int Add(Electric.Model.BS_NewForOld_Details model)
+        public int Add(Electric.Model.V_BAS_PRC model)
         {
             return dal.Add(model);
         }
@@ -42,7 +42,7 @@ namespace Electric.BLL
         /// <summary>
         /// 更新一条数据
         /// </summary>
-        public bool Update(Electric.Model.BS_NewForOld_Details model)
+        public bool Update(Electric.Model.V_BAS_PRC model)
         {
             return dal.Update(model);
         }
@@ -66,7 +66,7 @@ namespace Electric.BLL
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public Electric.Model.BS_NewForOld_Details GetModel(int ID)
+        public Electric.Model.V_BAS_PRC GetModel(int ID)
         {
 
             return dal.GetModel(ID);
@@ -75,10 +75,10 @@ namespace Electric.BLL
         /// <summary>
         /// 得到一个对象实体，从缓存中
         /// </summary>
-        public Electric.Model.BS_NewForOld_Details GetModelByCache(int ID)
+        public Electric.Model.V_BAS_PRC GetModelByCache(int ID)
         {
 
-            string CacheKey = "BS_NewForOld_DetailsModel-" + ID;
+            string CacheKey = "V_BAS_PRCModel-" + ID;
             object objModel = Maticsoft.Common.DataCache.GetCache(CacheKey);
             if (objModel == null)
             {
@@ -93,7 +93,7 @@ namespace Electric.BLL
                 }
                 catch { }
             }
-            return (Electric.Model.BS_NewForOld_Details)objModel;
+            return (Electric.Model.V_BAS_PRC)objModel;
         }
 
         /// <summary>
@@ -113,7 +113,7 @@ namespace Electric.BLL
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        public List<Electric.Model.BS_NewForOld_Details> GetModelList(string strWhere)
+        public List<Electric.Model.V_BAS_PRC> GetModelList(string strWhere)
         {
             DataSet ds = dal.GetList(strWhere);
             return DataTableToList(ds.Tables[0]);
@@ -121,115 +121,111 @@ namespace Electric.BLL
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        public List<Electric.Model.BS_NewForOld_Details> DataTableToList(DataTable dt)
+        public List<Electric.Model.V_BAS_PRC> DataTableToList(DataTable dt)
         {
-            List<Electric.Model.BS_NewForOld_Details> modelList = new List<Electric.Model.BS_NewForOld_Details>();
+            List<Electric.Model.V_BAS_PRC> modelList = new List<Electric.Model.V_BAS_PRC>();
             int rowsCount = dt.Rows.Count;
             if (rowsCount > 0)
             {
-                Electric.Model.BS_NewForOld_Details model;
+                Electric.Model.V_BAS_PRC model;
                 for (int n = 0; n < rowsCount; n++)
                 {
-                    model = new Electric.Model.BS_NewForOld_Details();
+                    model = new Electric.Model.V_BAS_PRC();
                     if (dt.Rows[n]["ID"] != null && dt.Rows[n]["ID"].ToString() != "")
                     {
                         model.ID = int.Parse(dt.Rows[n]["ID"].ToString());
+                    }
+                    if (dt.Rows[n]["OrgCodeSYS"] != null && dt.Rows[n]["OrgCodeSYS"].ToString() != "")
+                    {
+                        model.OrgCodeSYS = dt.Rows[n]["OrgCodeSYS"].ToString();
+                    }
+                    if (dt.Rows[n]["Code"] != null && dt.Rows[n]["Code"].ToString() != "")
+                    {
+                        model.Code = dt.Rows[n]["Code"].ToString();
+                    }
+                    if (dt.Rows[n]["Name"] != null && dt.Rows[n]["Name"].ToString() != "")
+                    {
+                        model.Name = dt.Rows[n]["Name"].ToString();
+                    }
+                    if (dt.Rows[n]["PartnerClass"] != null && dt.Rows[n]["PartnerClass"].ToString() != "")
+                    {
+                        model.PartnerClass = dt.Rows[n]["PartnerClass"].ToString();
+                    }
+                    if (dt.Rows[n]["Address"] != null && dt.Rows[n]["Address"].ToString() != "")
+                    {
+                        model.Address = dt.Rows[n]["Address"].ToString();
+                    }
+                    if (dt.Rows[n]["Corporate"] != null && dt.Rows[n]["Corporate"].ToString() != "")
+                    {
+                        model.Corporate = dt.Rows[n]["Corporate"].ToString();
                     }
                     if (dt.Rows[n]["OrgCode"] != null && dt.Rows[n]["OrgCode"].ToString() != "")
                     {
                         model.OrgCode = dt.Rows[n]["OrgCode"].ToString();
                     }
-                    if (dt.Rows[n]["ContractNo"] != null && dt.Rows[n]["ContractNo"].ToString() != "")
+                    if (dt.Rows[n]["Licence"] != null && dt.Rows[n]["Licence"].ToString() != "")
                     {
-                        model.ContractNo = dt.Rows[n]["ContractNo"].ToString();
+                        model.Licence = dt.Rows[n]["Licence"].ToString();
                     }
-                    if (dt.Rows[n]["OldModel"] != null && dt.Rows[n]["OldModel"].ToString() != "")
+                    if (dt.Rows[n]["TaxNo"] != null && dt.Rows[n]["TaxNo"].ToString() != "")
                     {
-                        model.OldModel = dt.Rows[n]["OldModel"].ToString();
+                        model.TaxNo = dt.Rows[n]["TaxNo"].ToString();
                     }
-                    if (dt.Rows[n]["OldPowerRating"] != null && dt.Rows[n]["OldPowerRating"].ToString() != "")
+                    if (dt.Rows[n]["Ownership"] != null && dt.Rows[n]["Ownership"].ToString() != "")
                     {
-                        model.OldPowerRating = decimal.Parse(dt.Rows[n]["OldPowerRating"].ToString());
+                        model.Ownership = dt.Rows[n]["Ownership"].ToString();
                     }
-                    if (dt.Rows[n]["OldQty"] != null && dt.Rows[n]["OldQty"].ToString() != "")
+                    if (dt.Rows[n]["RegisteredCapital"] != null && dt.Rows[n]["RegisteredCapital"].ToString() != "")
                     {
-                        model.OldQty = int.Parse(dt.Rows[n]["OldQty"].ToString());
+                        model.RegisteredCapital = decimal.Parse(dt.Rows[n]["RegisteredCapital"].ToString());
                     }
-                    if (dt.Rows[n]["OldSpeed"] != null && dt.Rows[n]["OldSpeed"].ToString() != "")
+                    if (dt.Rows[n]["Supervisor"] != null && dt.Rows[n]["Supervisor"].ToString() != "")
                     {
-                        model.OldSpeed = decimal.Parse(dt.Rows[n]["OldSpeed"].ToString());
+                        model.Supervisor = dt.Rows[n]["Supervisor"].ToString();
                     }
-                    if (dt.Rows[n]["OldProtectionLev"] != null && dt.Rows[n]["OldProtectionLev"].ToString() != "")
+                    if (dt.Rows[n]["FixedAssets"] != null && dt.Rows[n]["FixedAssets"].ToString() != "")
                     {
-                        model.OldProtectionLev = dt.Rows[n]["OldProtectionLev"].ToString();
+                        model.FixedAssets = decimal.Parse(dt.Rows[n]["FixedAssets"].ToString());
                     }
-                    if (dt.Rows[n]["OldOutDate"] != null && dt.Rows[n]["OldOutDate"].ToString() != "")
+                    if (dt.Rows[n]["EnterpriseNum"] != null && dt.Rows[n]["EnterpriseNum"].ToString() != "")
                     {
-                        model.OldOutDate = DateTime.Parse(dt.Rows[n]["OldOutDate"].ToString());
+                        model.EnterpriseNum = int.Parse(dt.Rows[n]["EnterpriseNum"].ToString());
                     }
-                    if (dt.Rows[n]["OldPE"] != null && dt.Rows[n]["OldPE"].ToString() != "")
+                    if (dt.Rows[n]["Contract"] != null && dt.Rows[n]["Contract"].ToString() != "")
                     {
-                        model.OldModel = dt.Rows[n]["OldPE"].ToString();
+                        model.Contract = dt.Rows[n]["Contract"].ToString();
                     }
-                    if (dt.Rows[n]["OldWeight"] != null && dt.Rows[n]["OldWeight"].ToString() != "")
+                    if (dt.Rows[n]["Tel"] != null && dt.Rows[n]["Tel"].ToString() != "")
                     {
-                        model.OldWeight = decimal.Parse(dt.Rows[n]["OldWeight"].ToString());
+                        model.Tel = dt.Rows[n]["Tel"].ToString();
                     }
-                    if (dt.Rows[n]["OldPrice"] != null && dt.Rows[n]["OldPrice"].ToString() != "")
+                    if (dt.Rows[n]["Email"] != null && dt.Rows[n]["Email"].ToString() != "")
                     {
-                        model.OldPrice = decimal.Parse(dt.Rows[n]["OldPrice"].ToString());
+                        model.Email = dt.Rows[n]["Email"].ToString();
                     }
-                    if (dt.Rows[n]["OldSubsidy"] != null && dt.Rows[n]["OldSubsidy"].ToString() != "")
+                    if (dt.Rows[n]["ETC"] != null && dt.Rows[n]["ETC"].ToString() != "")
                     {
-                        model.OldSubsidy = decimal.Parse(dt.Rows[n]["OldSubsidy"].ToString());
+                        model.ETC = dt.Rows[n]["ETC"].ToString();
                     }
-                    if (dt.Rows[n]["OldSumPrice"] != null && dt.Rows[n]["OldSumPrice"].ToString() != "")
+                    if (dt.Rows[n]["LYSV"] != null && dt.Rows[n]["LYSV"].ToString() != "")
                     {
-                        model.OldSumPrice = decimal.Parse(dt.Rows[n]["OldSumPrice"].ToString());
+                        model.LYSV = decimal.Parse(dt.Rows[n]["LYSV"].ToString());
                     }
-                    if (dt.Rows[n]["TerminalUnit"] != null && dt.Rows[n]["TerminalUnit"].ToString() != "")
+                    if (dt.Rows[n]["YBLSV"] != null && dt.Rows[n]["YBLSV"].ToString() != "")
                     {
-                        model.TerminalUnit = dt.Rows[n]["TerminalUnit"].ToString();
+                        model.YBLSV = decimal.Parse(dt.Rows[n]["YBLSV"].ToString());
                     }
-                    if (dt.Rows[n]["TUNo"] != null && dt.Rows[n]["TUNo"].ToString() != "")
+                    if (dt.Rows[n]["BankName"] != null && dt.Rows[n]["BankName"].ToString() != "")
                     {
-                        model.TUNo = dt.Rows[n]["TUNo"].ToString();
+                        model.BankName = dt.Rows[n]["BankName"].ToString();
                     }
-                    if (dt.Rows[n]["NewModel"] != null && dt.Rows[n]["NewModel"].ToString() != "")
+                    if (dt.Rows[n]["BankClass"] != null && dt.Rows[n]["BankClass"].ToString() != "")
                     {
-                        model.NewModel = dt.Rows[n]["NewModel"].ToString();
+                        model.BankClass = dt.Rows[n]["BankClass"].ToString();
                     }
-                    if (dt.Rows[n]["NewPowerRating"] != null && dt.Rows[n]["NewPowerRating"].ToString() != "")
+                    if (dt.Rows[n]["Account"] != null && dt.Rows[n]["Account"].ToString() != "")
                     {
-                        model.NewPowerRating = decimal.Parse(dt.Rows[n]["NewPowerRating"].ToString());
-                    }
-                    if (dt.Rows[n]["NewQty"] != null && dt.Rows[n]["NewQty"].ToString() != "")
-                    {
-                        model.NewQty = int.Parse(dt.Rows[n]["NewQty"].ToString());
-                    }
-                    if (dt.Rows[n]["PurchasePrice"] != null && dt.Rows[n]["PurchasePrice"].ToString() != "")
-                    {
-                        model.PurchasePrice = decimal.Parse(dt.Rows[n]["PurchasePrice"].ToString());
-                    }
-                    if (dt.Rows[n]["Reconstruction"] != null && dt.Rows[n]["Reconstruction"].ToString() != "")
-                    {
-                        model.Reconstruction = dt.Rows[n]["Reconstruction"].ToString();
-                    }
-                    if (dt.Rows[n]["NewInvoiceNo"] != null && dt.Rows[n]["NewInvoiceNo"].ToString() != "")
-                    {
-                        model.NewInvoiceNo = dt.Rows[n]["NewInvoiceNo"].ToString();
-                    }
-                    if (dt.Rows[n]["NewInvoiceDate"] != null && dt.Rows[n]["NewInvoiceDate"].ToString() != "")
-                    {
-                        model.NewInvoiceDate = DateTime.Parse(dt.Rows[n]["NewInvoiceDate"].ToString());
-                    }
-                    if (dt.Rows[n]["NewMC"] != null && dt.Rows[n]["NewMC"].ToString() != "")
-                    {
-                        model.NewMC = dt.Rows[n]["NewMC"].ToString();
-                    }
-                    if (dt.Rows[n]["NewSerialNum"] != null && dt.Rows[n]["NewSerialNum"].ToString() != "")
-                    {
-                        model.NewSerialNum = dt.Rows[n]["NewSerialNum"].ToString();
+                        model.Account = dt.Rows[n]["Account"].ToString();
                     }
                     if (dt.Rows[n]["CreateUserID"] != null && dt.Rows[n]["CreateUserID"].ToString() != "")
                     {
@@ -263,9 +259,13 @@ namespace Electric.BLL
                     {
                         model.ApproveTime = DateTime.Parse(dt.Rows[n]["ApproveTime"].ToString());
                     }
-                    if (dt.Rows[n]["OldUnitPrice"] != null && dt.Rows[n]["OldUnitPrice"].ToString() != "")
+                    if (dt.Rows[n]["ContractNo"] != null && dt.Rows[n]["ContractNo"].ToString() != "")
                     {
-                        model.NewPowerRating = decimal.Parse(dt.Rows[n]["OldUnitPrice"].ToString());
+                        model.BankName = dt.Rows[n]["ContractNo"].ToString();
+                    }
+                    if (dt.Rows[n]["Membership"] != null && dt.Rows[n]["Membership"].ToString() != "")
+                    {
+                        model.BankName = dt.Rows[n]["Membership"].ToString();
                     }
                     modelList.Add(model);
                 }
