@@ -57,6 +57,7 @@
             System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("节点17");
             System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
             treeNode16});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmi_master = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_company = new System.Windows.Forms.ToolStripMenuItem();
@@ -142,20 +143,20 @@
             this.tsmi_RecoveryContract,
             this.tsmi_NewForOld});
             this.tsmi_recycle.Name = "tsmi_recycle";
-            this.tsmi_recycle.Size = new System.Drawing.Size(82, 20);
-            this.tsmi_recycle.Text = "电机回收(&R)";
+            this.tsmi_recycle.Size = new System.Drawing.Size(94, 20);
+            this.tsmi_recycle.Text = "旧电机回收(&R)";
             // 
             // tsmi_RecoveryContract
             // 
             this.tsmi_RecoveryContract.Name = "tsmi_RecoveryContract";
-            this.tsmi_RecoveryContract.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_RecoveryContract.Size = new System.Drawing.Size(152, 22);
             this.tsmi_RecoveryContract.Text = "回收合同";
             this.tsmi_RecoveryContract.Click += new System.EventHandler(this.tsmi_RecoveryContract_Click);
             // 
             // tsmi_NewForOld
             // 
             this.tsmi_NewForOld.Name = "tsmi_NewForOld";
-            this.tsmi_NewForOld.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_NewForOld.Size = new System.Drawing.Size(152, 22);
             this.tsmi_NewForOld.Text = "以旧换新";
             this.tsmi_NewForOld.Click += new System.EventHandler(this.tsmi_NewForOld_Click);
             // 
@@ -165,20 +166,20 @@
             this.tsmi_Purchase,
             this.tsmi_buy});
             this.tsmi_manufacture.Name = "tsmi_manufacture";
-            this.tsmi_manufacture.Size = new System.Drawing.Size(98, 20);
-            this.tsmi_manufacture.Text = "电机再制造(&M)";
+            this.tsmi_manufacture.Size = new System.Drawing.Size(122, 20);
+            this.tsmi_manufacture.Text = "再制造高效电机(&M)";
             // 
             // tsmi_Purchase
             // 
             this.tsmi_Purchase.Name = "tsmi_Purchase";
-            this.tsmi_Purchase.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_Purchase.Size = new System.Drawing.Size(152, 22);
             this.tsmi_Purchase.Text = "采购合同";
             this.tsmi_Purchase.Click += new System.EventHandler(this.tsmi_Purchase_Click);
             // 
             // tsmi_buy
             // 
             this.tsmi_buy.Name = "tsmi_buy";
-            this.tsmi_buy.Size = new System.Drawing.Size(122, 22);
+            this.tsmi_buy.Size = new System.Drawing.Size(152, 22);
             this.tsmi_buy.Text = "购买信息";
             this.tsmi_buy.Click += new System.EventHandler(this.tsmi_buy_Click);
             // 
@@ -301,6 +302,7 @@
             this.Controls.Add(this.tv);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Main";

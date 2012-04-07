@@ -26,7 +26,7 @@ namespace Electric
                 if (value > 0)
                 {
                     _id = value;
-                    showUpdate();
+                    
                 }
             }
         }
@@ -245,7 +245,8 @@ namespace Electric
         {
             txtOrg.Text = global.OrganizationName;
             band();
-
+            if(isUpdate)
+            showUpdate();
 
         }
 

@@ -16,6 +16,66 @@ namespace Electric
             InitializeComponent();
         }
 
+
+
+        private void FillLst()
+        {
+            DataTable dtPartner = QueryPartnerInfo(txtPartnerName.Text);
+            if (dtPartner.Rows.Count == 1)
+            {
+                LoadPartnerInfo(dtPartner.Rows[0]);
+            }
+            else if (dtPartner.Rows.Count > 1)
+            {
+                lstPartner.Visible = true;
+            }
+            else
+            {
+                LoadPartnerInfo(null);
+
+            }
+        }
+
+        private DataTable QueryPartnerInfo(string code)
+        {
+            DataSet _ds = new Electric.BLL.BAS_Partner().GetList("Code = '" + code + "' or Name like '%" + code + "%'");
+            DataTable dtPartner = _ds.Tables[0];
+            return dtPartner;
+        }
+
+        /// <summary>
+        /// Load合作伙伴信息 FZ20120405
+        /// </summary>
+        /// <param name="row"></param>
+        private void LoadPartnerInfo(DataRow row)
+        {
+            if (row != null)
+            {
+                lstPartner.Visible = false;
+                txtPartnerCode.Text = row["Code"].ToString();
+                txtPartnerName.Text = row["Name"].ToString();
+                txtPartnerContract.Text = row["Contract"].ToString();
+                txtPartnerTel.Text = row["Tel"].ToString();
+                txtPartnerTaxNo.Text = row["TaxNo"].ToString();
+                txtPartnerBank.Text = row["BankName"].ToString();
+                txtPartnerAccount.Text = row["Account"].ToString();
+                txtPartnerAddress.Text = row["Address"].ToString();
+            }
+            else
+            {
+                lstPartner.Visible = false;
+                txtPartnerCode.Text = "";
+                txtPartnerName.Text = "";
+                txtPartnerContract.Text = "";
+                txtPartnerTel.Text = "";
+                txtPartnerTaxNo.Text = "";
+                txtPartnerBank.Text = "";
+                txtPartnerAccount.Text = "";
+                txtPartnerAddress.Text = "";
+            }
+        }
+
+
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
             string columnName = dgvItem.Columns[e.ColumnIndex].Name;
@@ -306,6 +366,46 @@ namespace Electric
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPartnerCode_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+            DataTable dtPartner = QueryPartnerInfo(txtPartnerCode.Text);
+            if (dtPartner.Rows.Count == 1)
+            {
+                LoadPartnerInfo(dtPartner.Rows[0]);
+            }
+            //else if (dtPartner.Rows.Count > 1)
+            //{
+            //    lstPartner.Visible = true;
+            //}
+            else
+            {
+                LoadPartnerInfo(null);
+                if (txtPartnerCode.Text != string.Empty)
+                {
+                    txtPartnerCode.Focus();
+                }
+            }
+        }
+
+        private void txtPartnerName_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            FillLst();
+            if (txtPartnerName.Text != string.Empty)
+            {
+                txtPartnerCode.Focus();
+            }
+        }
+
+        private void txtPartnerName_Validated(object sender, EventArgs e)
+        {
+            FillLst();
+            if (txtPartnerName.Text != string.Empty)
+            {
+                txtPartnerCode.Focus();
+            }
         }
 
 

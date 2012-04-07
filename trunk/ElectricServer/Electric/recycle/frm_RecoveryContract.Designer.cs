@@ -155,7 +155,7 @@
             // 
             this.lstPartner.FormattingEnabled = true;
             this.lstPartner.ItemHeight = 12;
-            this.lstPartner.Location = new System.Drawing.Point(160, 47);
+            this.lstPartner.Location = new System.Drawing.Point(261, 47);
             this.lstPartner.Name = "lstPartner";
             this.lstPartner.Size = new System.Drawing.Size(329, 88);
             this.lstPartner.TabIndex = 42;
@@ -451,6 +451,8 @@
             this.txtPartnerName.Name = "txtPartnerName";
             this.txtPartnerName.Size = new System.Drawing.Size(228, 21);
             this.txtPartnerName.TabIndex = 6;
+            this.txtPartnerName.DoubleClick += new System.EventHandler(this.txtPartnerName_DoubleClick);
+            this.txtPartnerName.Validated += new System.EventHandler(this.txtPartnerName_Validated);
             // 
             // txtPartnerAddress
             // 
