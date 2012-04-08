@@ -126,6 +126,8 @@ namespace Electric
             BandComboBox(_cmb, ds, value, name);
             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
+
         public static void BandComboBox(ComboBox _cmb, DataSet _ds, string value, string name)
         {
             if (_ds.Tables.Count > 0)
@@ -169,6 +171,23 @@ namespace Electric
             }
             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
+         public static void BandDgvCodeComboBox(DataGridViewComboBoxColumn _cmb, DataTable dtBand,string value,string name)
+         {
+            
+             if (dtBand.Rows.Count > 0)
+             {
+                 _cmb.DataSource = dtBand.DefaultView;
+                 _cmb.DisplayMember = name;
+                 _cmb.ValueMember = value;
+             }
+             else
+             {
+                 MessageBox.Show("主数据未维护。");
+             }
+             //_cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+         }
+
 
         public static string ConvertObject(object obj)
         {
