@@ -12,7 +12,7 @@ namespace Electric.Model
 		#region Model
 		private int _id;
 		private string _orgcode;
-		private int? _contractno;
+		private string _contractno;
 		private string _invoiceno;
 		private DateTime? _invoicedate;
 		private string _newmodel;
@@ -35,6 +35,9 @@ namespace Electric.Model
 		private DateTime? _submittime;
 		private int? _approveuserid;
 		private DateTime? _approvetime;
+	    private decimal? _unitprice;
+	    private decimal? _subsidy;
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -54,7 +57,7 @@ namespace Electric.Model
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? ContractNo
+		public string ContractNo
 		{
 			set{ _contractno=value;}
 			get{return _contractno;}
@@ -234,7 +237,23 @@ namespace Electric.Model
 		{
 			set{ _approvetime=value;}
 			get{return _approvetime;}
-		}
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public decimal? UnitPrice
+        {
+            set { _unitprice = value; }
+            get { return _unitprice; }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public decimal? Subsidy
+        {
+            set { _subsidy = value; }
+            get { return _subsidy; }
+        }
 		#endregion Model
 
 	}
