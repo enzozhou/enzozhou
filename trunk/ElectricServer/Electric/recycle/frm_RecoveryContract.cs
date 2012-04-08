@@ -75,6 +75,36 @@ namespace Electric
             }
         }
 
+        private void SumPrepaidRatio(string sentClase)
+        {
+            decimal fpr = 0;
+            decimal spr = 0;
+            decimal lpr = 0;
+
+            bool bl = false;
+
+            bl = decimal.TryParse(txtFPR.Text.Trim(), out fpr);
+            bl = decimal.TryParse(txtSPR.Text.Trim(), out spr);
+            bl = decimal.TryParse(txtLPR.Text.Trim(), out lpr);
+
+            if (sentClase == "FPR")
+            {
+                fpr = 100 - spr - lpr;
+                txtFPR.Text = fpr.ToString();
+            }
+            else if (sentClase == "SPR")
+            {
+                spr = 100 - fpr - lpr;
+                txtSPR.Text = spr.ToString();
+            }
+            else if (sentClase == "LPR")
+            {
+                lpr = 100 - fpr - spr;
+                txtLPR.Text = lpr.ToString();
+            }
+        }
+
+
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
             string columnName = dgvItem.Columns[e.ColumnIndex].Name;
@@ -485,6 +515,21 @@ namespace Electric
             {
                 txtPartnerCode.Focus();
             }
+        }
+
+        private void txtFPR_Validated(object sender, EventArgs e)
+        {
+            SumPrepaidRatio("LPR");
+        }
+
+        private void txtSPR_Validated(object sender, EventArgs e)
+        {
+            SumPrepaidRatio("LPR");
+        }
+
+        private void txtLPR_Validated(object sender, EventArgs e)
+        {
+            //SumPrepaidRatio("LPR");
         }
     }
 }

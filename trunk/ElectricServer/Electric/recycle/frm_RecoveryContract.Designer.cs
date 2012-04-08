@@ -219,9 +219,11 @@
             // txtLPR
             // 
             this.txtLPR.Location = new System.Drawing.Point(329, 174);
+            this.txtLPR.MaxLength = 2;
             this.txtLPR.Name = "txtLPR";
             this.txtLPR.Size = new System.Drawing.Size(160, 21);
             this.txtLPR.TabIndex = 35;
+            this.txtLPR.Validated += new System.EventHandler(this.txtLPR_Validated);
             // 
             // label17
             // 
@@ -251,9 +253,11 @@
             // txtSPR
             // 
             this.txtSPR.Location = new System.Drawing.Point(5, 174);
+            this.txtSPR.MaxLength = 2;
             this.txtSPR.Name = "txtSPR";
             this.txtSPR.Size = new System.Drawing.Size(149, 21);
             this.txtSPR.TabIndex = 31;
+            this.txtSPR.Validated += new System.EventHandler(this.txtSPR_Validated);
             // 
             // label15
             // 
@@ -283,9 +287,11 @@
             // txtFPR
             // 
             this.txtFPR.Location = new System.Drawing.Point(160, 137);
+            this.txtFPR.MaxLength = 2;
             this.txtFPR.Name = "txtFPR";
             this.txtFPR.Size = new System.Drawing.Size(163, 21);
             this.txtFPR.TabIndex = 27;
+            this.txtFPR.Validated += new System.EventHandler(this.txtFPR_Validated);
             // 
             // label13
             // 
