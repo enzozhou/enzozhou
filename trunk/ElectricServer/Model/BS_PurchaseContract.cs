@@ -39,6 +39,8 @@ namespace Electric.Model
 		private DateTime? _submittime;
 		private int? _approveuserid;
 		private DateTime? _approvetime;
+	    private string _bearcost;
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -270,7 +272,15 @@ namespace Electric.Model
 		{
 			set{ _approvetime=value;}
 			get{return _approvetime;}
-		}
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string BearCost
+        {
+            set { _bearcost = value; }
+            get { return _bearcost; }
+        }
 		#endregion Model
 
 	}
