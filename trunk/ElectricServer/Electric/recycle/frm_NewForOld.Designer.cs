@@ -71,31 +71,6 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvItem = new System.Windows.Forms.DataGridView();
-            this.OrgCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldProtectionLev = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.OldOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldPE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSubsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OldSumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TerminalUnit = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PurchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Reconstruction = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.NewInvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NewInvoiceDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,6 +94,31 @@
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrgCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ContractNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldProtectionLev = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.OldOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldPE = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.OldWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSubsidy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OldSumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TerminalUnit = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.TUNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewPowerRating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PurchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewMC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewSerialNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reconstruction = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.NewInvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NewInvoiceDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
@@ -556,184 +556,6 @@
             this.dgvItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvItem_CellValidating);
             this.dgvItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellEndEdit);
             // 
-            // OrgCode
-            // 
-            this.OrgCode.DataPropertyName = "OrgCode";
-            this.OrgCode.HeaderText = "公司ID";
-            this.OrgCode.Name = "OrgCode";
-            this.OrgCode.ReadOnly = true;
-            this.OrgCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OrgCode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.OrgCode.Visible = false;
-            // 
-            // ContractNo
-            // 
-            this.ContractNo.DataPropertyName = "ContractNo";
-            this.ContractNo.HeaderText = "合同编号";
-            this.ContractNo.Name = "ContractNo";
-            this.ContractNo.Visible = false;
-            // 
-            // OldModel
-            // 
-            this.OldModel.DataPropertyName = "OldModel";
-            this.OldModel.HeaderText = "型号(Type)";
-            this.OldModel.Name = "OldModel";
-            // 
-            // OldQty
-            // 
-            this.OldQty.DataPropertyName = "OldQty";
-            this.OldQty.HeaderText = "台数";
-            this.OldQty.Name = "OldQty";
-            // 
-            // OldUnitPrice
-            // 
-            this.OldUnitPrice.DataPropertyName = "OldUnitPrice";
-            this.OldUnitPrice.HeaderText = "旧电机收购单价";
-            this.OldUnitPrice.Name = "OldUnitPrice";
-            // 
-            // OldPowerRating
-            // 
-            this.OldPowerRating.DataPropertyName = "OldPowerRating";
-            this.OldPowerRating.HeaderText = "额定功率(output)(kW)";
-            this.OldPowerRating.Name = "OldPowerRating";
-            // 
-            // OldSpeed
-            // 
-            this.OldSpeed.DataPropertyName = "OldSpeed";
-            this.OldSpeed.HeaderText = "额定转速(speed)(r/min)";
-            this.OldSpeed.Name = "OldSpeed";
-            // 
-            // OldProtectionLev
-            // 
-            this.OldProtectionLev.DataPropertyName = "OldProtectionLev";
-            this.OldProtectionLev.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.OldProtectionLev.HeaderText = "防护等级(IP)";
-            this.OldProtectionLev.Items.AddRange(new object[] {
-            "IP23",
-            "44",
-            "54"});
-            this.OldProtectionLev.Name = "OldProtectionLev";
-            this.OldProtectionLev.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OldProtectionLev.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // OldOutDate
-            // 
-            this.OldOutDate.DataPropertyName = "OldOutDate";
-            this.OldOutDate.HeaderText = "出厂年月(Date)";
-            this.OldOutDate.Name = "OldOutDate";
-            // 
-            // OldPE
-            // 
-            this.OldPE.DataPropertyName = "OldPE";
-            this.OldPE.HeaderText = "生产企业";
-            this.OldPE.Name = "OldPE";
-            // 
-            // OldWeight
-            // 
-            this.OldWeight.DataPropertyName = "OldWeight";
-            this.OldWeight.HeaderText = "重量(WT.)(kg)";
-            this.OldWeight.Name = "OldWeight";
-            // 
-            // OldPrice
-            // 
-            this.OldPrice.DataPropertyName = "OldPrice";
-            this.OldPrice.HeaderText = "回购小计(元)";
-            this.OldPrice.Name = "OldPrice";
-            // 
-            // OldSubsidy
-            // 
-            this.OldSubsidy.DataPropertyName = "OldSubsidy";
-            this.OldSubsidy.HeaderText = "兑付回购补贴金额(元)";
-            this.OldSubsidy.Name = "OldSubsidy";
-            // 
-            // OldSumPrice
-            // 
-            this.OldSumPrice.DataPropertyName = "OldSumPrice";
-            this.OldSumPrice.HeaderText = "回购合计(元)";
-            this.OldSumPrice.Name = "OldSumPrice";
-            // 
-            // TerminalUnit
-            // 
-            this.TerminalUnit.DataPropertyName = "TerminalUnit";
-            this.TerminalUnit.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.TerminalUnit.HeaderText = "终端产品";
-            this.TerminalUnit.Items.AddRange(new object[] {
-            "风机",
-            "水泵",
-            "空压机",
-            "机床",
-            "传输",
-            "球磨机",
-            "粉碎机",
-            "起重机",
-            "其他设备"});
-            this.TerminalUnit.Name = "TerminalUnit";
-            this.TerminalUnit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.TerminalUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // TUNo
-            // 
-            this.TUNo.DataPropertyName = "TUNo";
-            this.TUNo.HeaderText = "设备唯一编号";
-            this.TUNo.Name = "TUNo";
-            // 
-            // NewModel
-            // 
-            this.NewModel.DataPropertyName = "NewModel";
-            this.NewModel.HeaderText = "新购高效电机型号(含再制造高效电机)";
-            this.NewModel.Name = "NewModel";
-            // 
-            // NewPowerRating
-            // 
-            this.NewPowerRating.DataPropertyName = "NewPowerRating";
-            this.NewPowerRating.HeaderText = "新购高效电机功率(kW)";
-            this.NewPowerRating.Name = "NewPowerRating";
-            // 
-            // NewQty
-            // 
-            this.NewQty.DataPropertyName = "NewQty";
-            this.NewQty.HeaderText = "新购高效电机台数新购高效电机台数";
-            this.NewQty.Name = "NewQty";
-            // 
-            // PurchasePrice
-            // 
-            this.PurchasePrice.DataPropertyName = "PurchasePrice";
-            this.PurchasePrice.HeaderText = "采购合计(元)";
-            this.PurchasePrice.Name = "PurchasePrice";
-            // 
-            // NewMC
-            // 
-            this.NewMC.DataPropertyName = "NewMC";
-            this.NewMC.HeaderText = "新购高效电机(含再制造高效电机)生产企业";
-            this.NewMC.Name = "NewMC";
-            // 
-            // NewSerialNum
-            // 
-            this.NewSerialNum.DataPropertyName = "NewSerialNum";
-            this.NewSerialNum.HeaderText = "新购高效电机(含再制造高效电机)生产编号";
-            this.NewSerialNum.Name = "NewSerialNum";
-            // 
-            // Reconstruction
-            // 
-            this.Reconstruction.DataPropertyName = "Reconstruction";
-            this.Reconstruction.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.Reconstruction.HeaderText = "是否为再制造高效电机";
-            this.Reconstruction.Name = "Reconstruction";
-            this.Reconstruction.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Reconstruction.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // NewInvoiceNo
-            // 
-            this.NewInvoiceNo.DataPropertyName = "NewInvoiceNo";
-            this.NewInvoiceNo.HeaderText = "新购高效电机(含再制造高效电机)发票号码";
-            this.NewInvoiceNo.Name = "NewInvoiceNo";
-            // 
-            // NewInvoiceDate
-            // 
-            this.NewInvoiceDate.DataPropertyName = "NewInvoiceDate";
-            this.NewInvoiceDate.HeaderText = "新购高效电机(含再制造高效电机)发票日期";
-            this.NewInvoiceDate.Name = "NewInvoiceDate";
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ContractNo";
@@ -877,6 +699,187 @@
             this.dataGridViewTextBoxColumn23.HeaderText = "新购高效电机(含再制造高效电机)发票日期";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             // 
+            // OrgCode
+            // 
+            this.OrgCode.DataPropertyName = "OrgCode";
+            this.OrgCode.HeaderText = "公司ID";
+            this.OrgCode.Name = "OrgCode";
+            this.OrgCode.ReadOnly = true;
+            this.OrgCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OrgCode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.OrgCode.Visible = false;
+            // 
+            // ContractNo
+            // 
+            this.ContractNo.DataPropertyName = "ContractNo";
+            this.ContractNo.HeaderText = "合同编号";
+            this.ContractNo.Name = "ContractNo";
+            this.ContractNo.Visible = false;
+            // 
+            // OldModel
+            // 
+            this.OldModel.DataPropertyName = "OldModel";
+            this.OldModel.HeaderText = "型号(Type)";
+            this.OldModel.Name = "OldModel";
+            // 
+            // OldQty
+            // 
+            this.OldQty.DataPropertyName = "OldQty";
+            this.OldQty.HeaderText = "台数";
+            this.OldQty.Name = "OldQty";
+            // 
+            // OldUnitPrice
+            // 
+            this.OldUnitPrice.DataPropertyName = "OldUnitPrice";
+            this.OldUnitPrice.HeaderText = "旧电机收购单价";
+            this.OldUnitPrice.Name = "OldUnitPrice";
+            // 
+            // OldPowerRating
+            // 
+            this.OldPowerRating.DataPropertyName = "OldPowerRating";
+            this.OldPowerRating.HeaderText = "额定功率(output)(kW)";
+            this.OldPowerRating.Name = "OldPowerRating";
+            // 
+            // OldSpeed
+            // 
+            this.OldSpeed.DataPropertyName = "OldSpeed";
+            this.OldSpeed.HeaderText = "额定转速(speed)(r/min)";
+            this.OldSpeed.Name = "OldSpeed";
+            // 
+            // OldProtectionLev
+            // 
+            this.OldProtectionLev.DataPropertyName = "OldProtectionLev";
+            this.OldProtectionLev.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.OldProtectionLev.HeaderText = "防护等级(IP)";
+            this.OldProtectionLev.Items.AddRange(new object[] {
+            "IP23",
+            "44",
+            "54"});
+            this.OldProtectionLev.Name = "OldProtectionLev";
+            this.OldProtectionLev.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OldProtectionLev.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // OldOutDate
+            // 
+            this.OldOutDate.DataPropertyName = "OldOutDate";
+            this.OldOutDate.HeaderText = "出厂年月(Date)";
+            this.OldOutDate.Name = "OldOutDate";
+            // 
+            // OldPE
+            // 
+            this.OldPE.DataPropertyName = "OldPE";
+            this.OldPE.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.OldPE.HeaderText = "生产企业";
+            this.OldPE.Name = "OldPE";
+            this.OldPE.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OldPE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // OldWeight
+            // 
+            this.OldWeight.DataPropertyName = "OldWeight";
+            this.OldWeight.HeaderText = "重量(WT.)(kg)";
+            this.OldWeight.Name = "OldWeight";
+            // 
+            // OldPrice
+            // 
+            this.OldPrice.DataPropertyName = "OldPrice";
+            this.OldPrice.HeaderText = "回购小计(元)";
+            this.OldPrice.Name = "OldPrice";
+            // 
+            // OldSubsidy
+            // 
+            this.OldSubsidy.DataPropertyName = "OldSubsidy";
+            this.OldSubsidy.HeaderText = "兑付回购补贴金额(元)";
+            this.OldSubsidy.Name = "OldSubsidy";
+            // 
+            // OldSumPrice
+            // 
+            this.OldSumPrice.DataPropertyName = "OldSumPrice";
+            this.OldSumPrice.HeaderText = "回购合计(元)";
+            this.OldSumPrice.Name = "OldSumPrice";
+            // 
+            // TerminalUnit
+            // 
+            this.TerminalUnit.DataPropertyName = "TerminalUnit";
+            this.TerminalUnit.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.TerminalUnit.HeaderText = "终端产品";
+            this.TerminalUnit.Items.AddRange(new object[] {
+            "风机",
+            "水泵",
+            "空压机",
+            "机床",
+            "传输",
+            "球磨机",
+            "粉碎机",
+            "起重机",
+            "其他设备"});
+            this.TerminalUnit.Name = "TerminalUnit";
+            this.TerminalUnit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TerminalUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // TUNo
+            // 
+            this.TUNo.DataPropertyName = "TUNo";
+            this.TUNo.HeaderText = "设备唯一编号";
+            this.TUNo.Name = "TUNo";
+            // 
+            // NewModel
+            // 
+            this.NewModel.DataPropertyName = "NewModel";
+            this.NewModel.HeaderText = "新购高效电机型号(含再制造高效电机)";
+            this.NewModel.Name = "NewModel";
+            // 
+            // NewPowerRating
+            // 
+            this.NewPowerRating.DataPropertyName = "NewPowerRating";
+            this.NewPowerRating.HeaderText = "新购高效电机功率(kW)";
+            this.NewPowerRating.Name = "NewPowerRating";
+            // 
+            // NewQty
+            // 
+            this.NewQty.DataPropertyName = "NewQty";
+            this.NewQty.HeaderText = "新购高效电机台数新购高效电机台数";
+            this.NewQty.Name = "NewQty";
+            // 
+            // PurchasePrice
+            // 
+            this.PurchasePrice.DataPropertyName = "PurchasePrice";
+            this.PurchasePrice.HeaderText = "采购合计(元)";
+            this.PurchasePrice.Name = "PurchasePrice";
+            // 
+            // NewMC
+            // 
+            this.NewMC.DataPropertyName = "NewMC";
+            this.NewMC.HeaderText = "新购高效电机(含再制造高效电机)生产企业";
+            this.NewMC.Name = "NewMC";
+            // 
+            // NewSerialNum
+            // 
+            this.NewSerialNum.DataPropertyName = "NewSerialNum";
+            this.NewSerialNum.HeaderText = "新购高效电机(含再制造高效电机)生产编号";
+            this.NewSerialNum.Name = "NewSerialNum";
+            // 
+            // Reconstruction
+            // 
+            this.Reconstruction.DataPropertyName = "Reconstruction";
+            this.Reconstruction.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Reconstruction.HeaderText = "是否为再制造高效电机";
+            this.Reconstruction.Name = "Reconstruction";
+            this.Reconstruction.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Reconstruction.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // NewInvoiceNo
+            // 
+            this.NewInvoiceNo.DataPropertyName = "NewInvoiceNo";
+            this.NewInvoiceNo.HeaderText = "新购高效电机(含再制造高效电机)发票号码";
+            this.NewInvoiceNo.Name = "NewInvoiceNo";
+            // 
+            // NewInvoiceDate
+            // 
+            this.NewInvoiceDate.DataPropertyName = "NewInvoiceDate";
+            this.NewInvoiceDate.HeaderText = "新购高效电机(含再制造高效电机)发票日期";
+            this.NewInvoiceDate.Name = "NewInvoiceDate";
+            // 
             // frm_NewForOld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -971,7 +974,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn OldSpeed;
         private System.Windows.Forms.DataGridViewComboBoxColumn OldProtectionLev;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldOutDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OldPE;
+        private System.Windows.Forms.DataGridViewComboBoxColumn OldPE;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldWeight;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn OldSubsidy;
