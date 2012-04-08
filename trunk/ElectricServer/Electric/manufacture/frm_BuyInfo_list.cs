@@ -247,7 +247,7 @@ namespace Electric
         {
             try
             {
-                ExportNewForOld();
+                ExportSummary();
             }
             catch (Exception ex)
             {
@@ -256,7 +256,152 @@ namespace Electric
         }
 
         #region NPOI
-        void ExportNewForOld()
+
+        //导出汇总 Enzo 2012-04-08
+        void ExportSummary()
+        {
+            List<Electric.Model.BAS_Organization> listModel = new BLL.BAS_Organization().GetModelList(string.Format(" Code='{0}'", "NCMS"));
+            Electric.Model.BAS_Organization modelOrg = null;
+            if (listModel.Count > 0)
+            {
+                modelOrg = (Electric.Model.BAS_Organization)listModel[0];
+            }
+
+            InitializeWorkbook();
+            //单元格读取行和列都是从0开始
+            Sheet sheet1 = hssfworkbook.GetSheet("Sheet1");
+            //create cell on rows, since rows do already exist,it's not necessary to create rows again.
+            if (modelOrg != null)
+            {
+                sheet1.GetRow(2).GetCell(2).SetCellValue("");
+                sheet1.GetRow(2).GetCell(6).SetCellValue(string.Format("{0} 年第 {1} 季度", DateTime.Now.Year, 2));
+                sheet1.GetRow(2).GetCell(9).SetCellValue("");
+                sheet1.GetRow(3).GetCell(2).SetCellValue("");//联系人
+                sheet1.GetRow(3).GetCell(6).SetCellValue("");//地址
+                sheet1.GetRow(4).GetCell(3).SetCellValue("");//开户行名称
+                sheet1.GetRow(5).GetCell(3).SetCellValue("");//联系人
+                sheet1.GetRow(6).GetCell(3).SetCellValue("");
+            }
+
+            DataSet ds = new Electric.BLL.BS_BuyInfo_Details().GetSummaryList("");
+            if (ds.Tables.Count > 0)
+            {
+                int i = 0;
+                double dblTmp = 0;
+                double dblOldQty = 0, dblOldPowerRating = 0, dblOldSumPrice = 0,
+                    dblNewQty = 0, dblNewPowerRating = 0, dblOldSubsidy = 0;
+                Row row = null;
+                HSSFCellStyle style = (NPOI.HSSF.UserModel.HSSFCellStyle)hssfworkbook.CreateCellStyle();
+                style.BorderBottom = CellBorderType.THIN;
+                style.BorderLeft = CellBorderType.THIN;
+                style.BorderRight = CellBorderType.THIN;
+                foreach (DataRow item in ds.Tables[0].Rows)
+                {
+                    row = sheet1.CreateRow(9 + i);
+                    //row = sheet1.GetRow(9 + i);
+                    row.CreateCell(0).SetCellValue((i + 1));
+                    row.CreateCell(1).SetCellValue(global.ConvertObject(item["PartnerName"]));
+                    row.CreateCell(2).SetCellValue(global.ConvertObject(item["BelongTo"]));
+                    double.TryParse(global.ConvertObject(item["OldQty"]), out dblTmp);
+                    dblOldQty += dblTmp;
+                    row.CreateCell(3).SetCellValue(dblTmp);
+                    double.TryParse(global.ConvertObject(item["OldPowerRating"]), out dblTmp);
+                    dblOldPowerRating += dblTmp;
+                    row.CreateCell(5).SetCellValue(dblTmp);
+                    double.TryParse(global.ConvertObject(item["NewQty"]), out dblTmp);
+                    dblNewQty += dblTmp;
+
+                    row.CreateCell(7).SetCellValue(dblTmp);
+                    row.CreateCell(8).SetCellValue(dblTmp);
+                    row.CreateCell(9).SetCellValue(dblTmp);
+
+                    row.GetCell(0).CellStyle = style;
+                    row.GetCell(1).CellStyle = style;
+                    row.GetCell(2).CellStyle = style;
+                    row.GetCell(3).CellStyle = style;
+                    row.GetCell(5).CellStyle = style;
+                    row.GetCell(7).CellStyle = style;
+                    row.GetCell(8).CellStyle = style;
+                    row.GetCell(9).CellStyle = style;
+                    row.CreateCell(4);
+                    row.GetCell(4).CellStyle = style;
+                    row.CreateCell(6);
+                    row.GetCell(6).CellStyle = style;
+                    sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(9 + i, 9 + i, 3, 4));
+                    sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(9 + i, 9 + i, 5, 6));
+
+                    i++;
+                }
+                #region 合计
+                row = sheet1.CreateRow(9 + i);
+                row.CreateCell(0).SetCellValue("合计");
+                row.CreateCell(1);
+                row.CreateCell(2);
+                row.CreateCell(3).SetCellValue(dblOldQty);
+                row.CreateCell(5).SetCellValue(dblOldPowerRating);
+                row.CreateCell(7).SetCellValue(dblOldSumPrice);
+                row.CreateCell(8).SetCellValue(dblNewPowerRating);
+                row.CreateCell(9).SetCellValue(dblOldSubsidy);
+                row.GetCell(0).CellStyle = style;
+                row.GetCell(1).CellStyle = style;
+                row.GetCell(2).CellStyle = style;
+                row.GetCell(3).CellStyle = style;
+                row.GetCell(5).CellStyle = style;
+                row.GetCell(7).CellStyle = style;
+                row.GetCell(8).CellStyle = style;
+                row.GetCell(9).CellStyle = style;
+                row.CreateCell(4);
+                row.GetCell(4).CellStyle = style;
+                row.CreateCell(6);
+                row.GetCell(6).CellStyle = style;
+
+                sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(9 + i, 9 + i, 3, 4));
+                sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(9 + i, 9 + i, 5, 6));
+                #endregion
+
+
+                int lastRow = 9 + i + 1;
+                row = sheet1.CreateRow(lastRow);
+                row.Height = 900 * 2;
+                row.CreateCell(0).SetCellValue("生产企业\n（盖章处）");
+                row.CreateCell(1);
+                row.CreateCell(2);
+                row.CreateCell(3);
+                row.CreateCell(4);
+                row.CreateCell(5).SetCellValue("上海市高效电机推广办公室\n（盖章处）");
+                row.CreateCell(6);
+                row.CreateCell(7);
+                row.CreateCell(8);
+                row.CreateCell(9);
+                style = (NPOI.HSSF.UserModel.HSSFCellStyle)hssfworkbook.CreateCellStyle();
+                style.Alignment = NPOI.SS.UserModel.HorizontalAlignment.CENTER;
+                style.BorderRight = CellBorderType.THIN;
+                style.BorderBottom = CellBorderType.THIN;
+                style.BorderLeft = CellBorderType.THIN;
+                style.WrapText = true;
+
+                row.GetCell(0).CellStyle = style;
+                row.GetCell(1).CellStyle = style;
+                row.GetCell(2).CellStyle = style;
+                row.GetCell(3).CellStyle = style;
+                row.GetCell(4).CellStyle = style;
+                row.GetCell(5).CellStyle = style;
+                row.GetCell(6).CellStyle = style;
+                row.GetCell(7).CellStyle = style;
+                row.GetCell(8).CellStyle = style;
+                row.GetCell(9).CellStyle = style;
+                sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(lastRow, lastRow, 0, 4));
+                sheet1.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(lastRow, lastRow, 5, 9));
+            }
+
+            //Force excel to recalculate all the formula while open
+            sheet1.ForceFormulaRecalculation = true;
+
+            WriteToFile();
+        }
+
+        //导出明细 现已经停用 重新修改模板文件路径即可以 Enzo 2012-04-08
+        void ExportNewForOldDetail()
         {
             int id = 0; //取当前选中的行ID
             bool bl = false;
@@ -278,8 +423,6 @@ namespace Electric
             //单元格读取行和列都是从0开始
             Sheet sheet1 = hssfworkbook.GetSheet("Sheet1");
             //create cell on rows, since rows do already exist,it's not necessary to create rows again.
-            sheet1.GetRow(12).GetCell(3).SetCellValue(180123);
-            sheet1.GetRow(13).GetCell(3).SetCellValue(150);
 
             #region head
             Electric.Model.BS_BuyInfo model = new Electric.BLL.BS_BuyInfo().GetModel(id);
@@ -354,7 +497,7 @@ namespace Electric
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.RestoreDirectory = true;
-            sfd.FileName = "再制造高效电机推广信息明细表";
+            sfd.FileName = "再制造高效电机补贴信息汇总表";
             sfd.Filter = "微软Excel表格文件 (*.xls) | *.xls";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
@@ -369,7 +512,7 @@ namespace Electric
         {
             //read the template via FileStream, it is suggested to use FileAccess.Read to prevent file lock.
             //book1.xls is an Excel-2007-generated file, so some new unknown BIFF records are added. 
-            System.IO.FileStream file = new System.IO.FileStream(@"template/再制造高效电机推广信息明细表.xlt", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+            System.IO.FileStream file = new System.IO.FileStream(@"template/再制造高效电机补贴信息汇总表.xlt", System.IO.FileMode.Open, System.IO.FileAccess.Read);
 
             hssfworkbook = new HSSFWorkbook(file);
 

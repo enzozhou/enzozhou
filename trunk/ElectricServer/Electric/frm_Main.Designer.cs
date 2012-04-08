@@ -149,14 +149,14 @@
             // tsmi_RecoveryContract
             // 
             this.tsmi_RecoveryContract.Name = "tsmi_RecoveryContract";
-            this.tsmi_RecoveryContract.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_RecoveryContract.Size = new System.Drawing.Size(122, 22);
             this.tsmi_RecoveryContract.Text = "回收合同";
             this.tsmi_RecoveryContract.Click += new System.EventHandler(this.tsmi_RecoveryContract_Click);
             // 
             // tsmi_NewForOld
             // 
             this.tsmi_NewForOld.Name = "tsmi_NewForOld";
-            this.tsmi_NewForOld.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_NewForOld.Size = new System.Drawing.Size(122, 22);
             this.tsmi_NewForOld.Text = "以旧换新";
             this.tsmi_NewForOld.Click += new System.EventHandler(this.tsmi_NewForOld_Click);
             // 
@@ -172,14 +172,14 @@
             // tsmi_Purchase
             // 
             this.tsmi_Purchase.Name = "tsmi_Purchase";
-            this.tsmi_Purchase.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_Purchase.Size = new System.Drawing.Size(122, 22);
             this.tsmi_Purchase.Text = "采购合同";
             this.tsmi_Purchase.Click += new System.EventHandler(this.tsmi_Purchase_Click);
             // 
             // tsmi_buy
             // 
             this.tsmi_buy.Name = "tsmi_buy";
-            this.tsmi_buy.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_buy.Size = new System.Drawing.Size(122, 22);
             this.tsmi_buy.Text = "购买信息";
             this.tsmi_buy.Click += new System.EventHandler(this.tsmi_buy_Click);
             // 
@@ -306,7 +306,6 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Main";
-            this.ShowIcon = false;
             this.Text = "NEMS";
             this.Load += new System.EventHandler(this.Main_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Main_FormClosing);

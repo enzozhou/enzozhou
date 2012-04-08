@@ -94,7 +94,7 @@ namespace Electric
                     {
                         if (global.ConvertObject(item.Cells["Code"].Value) == "")
                         {
-                            modelDetail.Code = "BS" + global.GenerateCode(5, bll.GetMaxId(strSelectCode).ToString());
+                            modelDetail.Code = "BS" + global.GenerateCode(5, bll.GetMaxId().ToString());
                             bll.Add(modelDetail);
                         }
                         else

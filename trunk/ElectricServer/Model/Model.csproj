@@ -138,6 +138,7 @@
     <Compile Include="BAS_Organization.cs" />
     <Compile Include="BAS_Partner.cs" />
     <Compile Include="SYS_User.cs" />
+    <Compile Include="View\V_BAS_Employess.cs" />
     <Compile Include="V_BAS_PRC.cs" />
     <Compile Include="V_BAS_PPC.cs" />
   </ItemGroup>

@@ -457,10 +457,16 @@
       <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
     </None>
     <None Include="Resources\logo.ico" />
-    <None Include="template\再制造高效电机推广信息明细表.xlt" />
-    <None Include="template\旧电机回收信息明细表.xlt">
+    <Content Include="template\再制造高效电机推广信息明细表.xlt" />
+    <Content Include="template\再制造高效电机补贴信息汇总表.xlt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="template\旧电机回收信息明细表.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="template\旧电机回收补贴信息汇总申报表.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="上科电机.ico" />

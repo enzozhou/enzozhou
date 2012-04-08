@@ -149,6 +149,8 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="self_BS_BuyInfo_Details.cs" />
+    <Compile Include="self_BS_NewForOld_Details.cs" />
     <Compile Include="SysManage.cs" />
     <Compile Include="BAS_Code.cs" />
     <Compile Include="BAS_CodeProfire.cs" />
@@ -157,7 +159,7 @@
     <Compile Include="BAS_Organization.cs" />
     <Compile Include="BAS_Partner.cs" />
     <Compile Include="SYS_User.cs" />
-    <Compile Include="self_BAS_Code.cs" />
+    <Compile Include="V_BAS_Employess.cs" />
     <Compile Include="V_BAS_PRC.cs" />
     <Compile Include="V_BAS_PPC.cs" />
   </ItemGroup>
