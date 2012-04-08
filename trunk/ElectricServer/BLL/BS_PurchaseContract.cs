@@ -254,7 +254,11 @@ namespace Electric.BLL
 					if(dt.Rows[n]["ApproveTime"]!=null && dt.Rows[n]["ApproveTime"].ToString()!="")
 					{
 						model.ApproveTime=DateTime.Parse(dt.Rows[n]["ApproveTime"].ToString());
-					}
+                    }
+                    if (dt.Rows[n]["BearCost"] != null && dt.Rows[n]["BearCost"].ToString() != "")
+                    {
+                        model.PartnerAddress = dt.Rows[n]["BearCost"].ToString();
+                    }
 					modelList.Add(model);
 				}
 			}

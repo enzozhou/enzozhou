@@ -141,7 +141,7 @@ namespace Electric.BLL
 					}
 					if(dt.Rows[n]["ContractNo"]!=null && dt.Rows[n]["ContractNo"].ToString()!="")
 					{
-						model.ContractNo=int.Parse(dt.Rows[n]["ContractNo"].ToString());
+						model.ContractNo=dt.Rows[n]["ContractNo"].ToString();
 					}
 					if(dt.Rows[n]["InvoiceNo"]!=null && dt.Rows[n]["InvoiceNo"].ToString()!="")
 					{
@@ -230,7 +230,15 @@ namespace Electric.BLL
 					if(dt.Rows[n]["ApproveTime"]!=null && dt.Rows[n]["ApproveTime"].ToString()!="")
 					{
 						model.ApproveTime=DateTime.Parse(dt.Rows[n]["ApproveTime"].ToString());
-					}
+                    }
+                    if (dt.Rows[n]["UnitPrice"] != null && dt.Rows[n]["UnitPrice"].ToString() != "")
+                    {
+                        model.Price = decimal.Parse(dt.Rows[n]["UnitPrice"].ToString());
+                    }
+                    if (dt.Rows[n]["Subsidy"] != null && dt.Rows[n]["Subsidy"].ToString() != "")
+                    {
+                        model.Price = decimal.Parse(dt.Rows[n]["Subsidy"].ToString());
+                    }
 					modelList.Add(model);
 				}
 			}
