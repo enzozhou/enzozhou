@@ -9,6 +9,7 @@ using UtilityLibrary.WinControls;
 using UtilityLibrary.CommandBars;
 using UtilityLibrary.Menus;
 using UtilityLibrary.General;
+using System.Reflection;
 
 
 namespace Electric
@@ -97,6 +98,10 @@ namespace Electric
 
         void menuAdd()
         {
+            //Assembly thisAssembly = Assembly.GetAssembly(Type.GetType(this.Text));
+            //System.Resources.ResourceManager rmListImages = new System.Resources.ResourceManager("IconImages", thisAssembly);
+            //rmBitmaps = new ResourceManager("Menus", thisAssembly);
+
             OutlookBar _outlookBar = new OutlookBar();
             //My shortcuts band
 

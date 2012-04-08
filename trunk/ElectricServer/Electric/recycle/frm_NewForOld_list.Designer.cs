@@ -37,6 +37,7 @@
             this.toolBtnClose = new System.Windows.Forms.ToolStripButton();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExport = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPartnerName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.btnUP = new System.Windows.Forms.Button();
             this.dgvItem = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btnExport = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -156,6 +156,16 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "查询";
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(878, 25);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 10;
+            this.btnExport.Text = "导出汇总";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // button1
             // 
@@ -271,16 +281,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(1003, 494);
             this.splitContainer1.SplitterDistance = 325;
             this.splitContainer1.TabIndex = 18;
-            // 
-            // btnExport
-            // 
-            this.btnExport.Location = new System.Drawing.Point(878, 25);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 23);
-            this.btnExport.TabIndex = 10;
-            this.btnExport.Text = "导出明细";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // frm_NewForOld_list
             // 
