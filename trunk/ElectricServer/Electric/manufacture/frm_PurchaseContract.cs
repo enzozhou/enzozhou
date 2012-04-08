@@ -75,6 +75,35 @@ namespace Electric
             }
         }
 
+        private void SumPrepaidRatio(string sentClase)
+        {
+            decimal fpr = 0;
+            decimal spr = 0;
+            decimal lpr = 0;
+
+            bool bl = false;
+
+            bl = decimal.TryParse(txtFPR.Text.Trim(), out fpr);
+            bl = decimal.TryParse(txtSPR.Text.Trim(), out spr);
+            bl = decimal.TryParse(txtLPR.Text.Trim(), out lpr);
+
+            if (sentClase == "FPR")
+            {
+                fpr = 100 - spr - lpr;
+                txtFPR.Text = fpr.ToString();
+            }
+            else if (sentClase == "SPR")
+            {
+                spr = 100 - fpr - lpr;
+                txtSPR.Text = spr.ToString();
+            }
+            else if (sentClase == "LPR")
+            {
+                lpr = 100 - fpr - spr;
+                txtLPR.Text = lpr.ToString();
+            }
+        }
+
 
         private void dgvItem_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
@@ -143,29 +172,45 @@ namespace Electric
             string columnName = dgvItem.Columns[e.ColumnIndex].Name;
             //编辑的行为金额时候计算合计
             bool bl = false;
+            int qty = 0;
+            decimal unitPrice = 0;
+            decimal price = 0;
+            decimal powerRating = 0;
+            decimal subSidy = 0;
             decimal dclSum = 0;
             decimal dclRowValue = 0;
             string rowValue;
-            if (columnName == "UnitPrice" || columnName == "Price" || columnName == "Subsidy")
+            if (columnName == "UnitPrice" || columnName == "Price" || columnName == "PowerRating" || columnName == "qty")
             {
+                if (dgvItem.Rows[e.RowIndex].Cells["qty"].Value != null)
+                {
+                    rowValue = dgvItem.Rows[e.RowIndex].Cells["qty"].Value.ToString();
+                    bl = int.TryParse(rowValue, out qty);
+                    
+                }
                 if (dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value != null)
                 {
                     rowValue = dgvItem.Rows[e.RowIndex].Cells["UnitPrice"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
+                    bl = decimal.TryParse(rowValue, out unitPrice);
+                    
                 }
-                if (dgvItem.Rows[e.RowIndex].Cells["Price"].Value != null)
+                //if (dgvItem.Rows[e.RowIndex].Cells["Price"].Value != null)
+                //{
+                //    rowValue = dgvItem.Rows[e.RowIndex].Cells["Price"].Value.ToString();
+                //    bl = decimal.TryParse(rowValue, out dclRowValue);
+                //    dclSum += dclRowValue;
+                //}
+                if (dgvItem.Rows[e.RowIndex].Cells["PowerRating"].Value != null)
                 {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["Price"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
+                    rowValue = dgvItem.Rows[e.RowIndex].Cells["PowerRating"].Value.ToString();
+                    bl = decimal.TryParse(rowValue, out powerRating);
+                    
                 }
-                if (dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value != null)
-                {
-                    rowValue = dgvItem.Rows[e.RowIndex].Cells["Subsidy"].Value.ToString();
-                    bl = decimal.TryParse(rowValue, out dclRowValue);
-                    dclSum += dclRowValue;
-                }
+                price = qty*unitPrice;
+                dgvItem.Rows[e.RowIndex].Cells["Price"].Value = price;
+                subSidy = powerRating*45;
+                dgvItem.Rows[e.RowIndex].Cells["SubSidy"].Value = subSidy;
+                dclSum = price + subSidy;
                 dgvItem.Rows[e.RowIndex].Cells["SumPrice"].Value = dclSum.ToString();
             }
         }
@@ -174,6 +219,10 @@ namespace Electric
         private void btnSave_Click(object sender, EventArgs e)
         {
             string strErr = "";
+            if (this.txtContractNo.Text.Trim().Length == 0)
+            {
+                strErr += "合同编号不能为空.\n";
+            }
             if (this.txtPartnerCode.Text.Trim().Length == 0)
             {
                 strErr += "采购方代码不能为空.\n";
@@ -222,6 +271,8 @@ namespace Electric
             decimal.TryParse(txtSPR.Text, out dcl);
             model.SPR = dcl;
             model.Words = txtWords.Text;
+            model.BearCost = txtBearCost.Text;
+            model.ContractNo = txtContractNo.Text;
 
             //model.ApproveTime = DateTime.Now;
             //model.ApproveUserID = global.UserID;
@@ -232,7 +283,7 @@ namespace Electric
             {
                 model.CreateTime = DateTime.Now;
                 model.CreateUserID = global.UserID;
-                model.ContractNo = "PC" + global.GenerateCode(bll.GetMaxId().ToString());
+                //model.ContractNo = "PC" + global.GenerateCode(bll.GetMaxId().ToString());
                 bll.Add(model);
             }
             else
@@ -338,6 +389,7 @@ namespace Electric
             txtContractNo.Text = _model.ContractNo;
             txtContractNo.ReadOnly = true;
             txtCheckedLimit.Text = _model.CheckedLimit.ToString();
+            txtBearCost.Text = _model.BearCost;
 
             //Detail
             DataSet _ds = new Electric.BLL.BS_PurchaseContract_Details().GetList(string.Format("ContractNo='{0}'", _model.ContractNo));
@@ -354,6 +406,7 @@ namespace Electric
             this.dgvItem.Columns["Subsidy"].HeaderText = "补贴";
             this.dgvItem.Columns["SumPrice"].HeaderText = "合计金额";
 
+            this.dgvItem.Columns["ContractNo"].Visible = false;
             this.dgvItem.Columns["OrgCode"].Visible = false;
             this.dgvItem.Columns["ID"].Visible = false;
             this.dgvItem.Columns["CreateUserID"].Visible = false;
@@ -408,6 +461,55 @@ namespace Electric
             }
         }
 
+        private void frm_PurchaseContract_Load(object sender, EventArgs e)
+        {
+            DataSet _ds = new Electric.BLL.BAS_Partner().GetList("");
+            DataTable dtPartner = _ds.Tables[0];
+            lstPartner.DataSource = dtPartner;
+            lstPartner.DisplayMember = "Name";
+            lstPartner.ValueMember = "Code";
+            lstPartner.Visible = false;
+
+            dgvItem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            txtOrg.Text = global.OrganizationName;
+        }
+
+        private void lstPartner_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            DataTable dtPartner = QueryPartnerInfo(lstPartner.SelectedValue.ToString());
+            if (dtPartner.Rows.Count == 1)
+            {
+                LoadPartnerInfo(dtPartner.Rows[0]);
+                lstPartner.Visible = false;
+            }
+        }
+
+        private void dgvItem_RowValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            decimal sumPrice = 0;
+            decimal price = 0;
+            bool bl = false;
+            if (dgvItem.Rows.Count>0)
+            {
+                for(int i=0;i<dgvItem.Rows.Count-1 ;i++)
+                {
+                    bl = decimal.TryParse(dgvItem.Rows[i].Cells["SumPrice"].Value.ToString(), out price);
+                    sumPrice = sumPrice + price;
+                }
+            }
+            txtPrice.Text = sumPrice.ToString("f2");
+            txtWords.Text = Maticsoft.Common.Rmb.CmycurD(txtPrice.Text);
+        }
+
+        private void txtFPR_Validated(object sender, EventArgs e)
+        {
+            SumPrepaidRatio("LPR");
+        }
+
+        private void txtSPR_Validated(object sender, EventArgs e)
+        {
+            SumPrepaidRatio("LPR");
+        }
 
     }
 }

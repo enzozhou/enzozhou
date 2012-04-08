@@ -29,7 +29,7 @@ namespace Electric
         private void toolBtnModify_Click(object sender, EventArgs e)
         {
             int _id = 0;
-            frm_PurchaseContract _frm = new frm_PurchaseContract();
+            frm_BuyInfo _frm = new frm_BuyInfo();
             foreach (DataGridViewRow item in dgv.Rows)
             {
                 if (item.Selected)
@@ -142,7 +142,10 @@ namespace Electric
         void setGridTitle()
         {
             global.SetDataGridViewStyle(dgv);
-            dgv.Rows[1].Selected = true;
+            if (dgv.Rows.Count > 0)
+            {
+                dgv.Rows[0].Selected = true;
+            }
             //设置对齐方式
             this.dgv.Columns["ID"].Visible = false;
             this.dgv.Columns["row"].HeaderText = "编号";
@@ -165,6 +168,9 @@ namespace Electric
             this.dgv.Columns["TotalWeight"].HeaderText = "新电机总重量";
             this.dgv.Columns["TotalPurchasePrice"].HeaderText = "新电机采购总金额";
 
+            this.dgv.Columns["ID"].Visible = false;
+            this.dgv.Columns["row"].Visible = false;
+            this.dgv.Columns["OrgCode"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
@@ -179,7 +185,7 @@ namespace Electric
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string strContractNo = dgv.Rows[e.RowIndex].Cells["ContractNo"].Value.ToString();
-            DataSet dsItem = new Electric.BLL.BS_PurchaseContract_Details().GetList(string.Format("ContractNo = '{0}'", strContractNo));
+            DataSet dsItem = new Electric.BLL.BS_BuyInfo_Details().GetList(string.Format("ContractNo = '{0}'", strContractNo));
             dgvItem.DataSource = dsItem;
             dgvItem.DataMember = "ds";
             global.SetDataGridViewStyle(dgvItem);
@@ -202,6 +208,8 @@ namespace Electric
             this.dgvItem.Columns["NewSerialNum"].HeaderText = "新电机生产编号";
 
             this.dgvItem.Columns["ID"].Visible = false;
+            this.dgvItem.Columns["OrgCode"].Visible =  false;
+            this.dgvItem.Columns["ContractNo"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
             this.dgv.Columns["UpdateUserID"].Visible = false;
