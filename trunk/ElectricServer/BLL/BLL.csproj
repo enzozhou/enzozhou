@@ -160,6 +160,7 @@
     <Compile Include="SYS_User.cs" />
     <Compile Include="self_BAS_Code.cs" />
     <Compile Include="V_BAS_PRC.cs" />
+    <Compile Include="V_BAS_PPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
