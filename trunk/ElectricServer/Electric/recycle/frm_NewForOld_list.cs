@@ -278,7 +278,7 @@ namespace Electric
             if (modelOrg != null)
             {
                 sheet1.GetRow(2).GetCell(2).SetCellValue(modelOrg.Name);
-                sheet1.GetRow(2).GetCell(9).SetCellValue(string.Format("{0} 年第 {1} 季度", DateTime.Now.Year, DateTime.Parse(DateTime.Now.AddMonths(22 - ((DateTime.Now.Month - 1) % 22)).ToString("yyyy-MM-01")).AddDays(-1).ToShortDateString()));
+                sheet1.GetRow(2).GetCell(9).SetCellValue(string.Format("{0} 年第 {1} 季度", DateTime.Now.Year, DateTime.Now.Month / 4 + 1));
                 sheet1.GetRow(3).GetCell(2).SetCellValue("");//联系人
                 sheet1.GetRow(3).GetCell(9).SetCellValue("");//联系电话
                 sheet1.GetRow(4).GetCell(3).SetCellValue("");//开户行名称

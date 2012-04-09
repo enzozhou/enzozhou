@@ -163,6 +163,7 @@
     <Compile Include="V_BAS_Employess.cs" />
     <Compile Include="V_BAS_PRC.cs" />
     <Compile Include="V_BAS_PPC.cs" />
+    <Compile Include="self_BS_RecoveryContract.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">

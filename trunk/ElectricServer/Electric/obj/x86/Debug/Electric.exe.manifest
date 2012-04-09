@@ -111,26 +111,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="388608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\CrystalDecisions.Windows.Forms.resources.dll" size="36864">
+      <assemblyIdentity name="CrystalDecisions.Windows.Forms.resources" version="10.5.3700.0" publicKeyToken="692FBEA5521E1304" language="zh-chs" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xshxIkIrleD1zDmM1/aK70s8wbA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="432128">
       <assemblyIdentity name="Electric" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GqMCbso+4KrGnwmQJF18EiaMg5o=</dsig:DigestValue>
+        <dsig:DigestValue>majrWwJTYx5fx/EKHajRejU4zoU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.BLL.dll" size="77824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.BLL.dll" size="94208">
       <assemblyIdentity name="Electric.BLL" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ADEFaqzlewz33Pr0eA90I8sBZlw=</dsig:DigestValue>
+        <dsig:DigestValue>X5X8WnA9H71mep+hp3qW5EAu+rY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -147,14 +159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.DAL.dll" size="172032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.DAL.dll" size="208896">
       <assemblyIdentity name="Electric.DAL" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>dClVUjpejWqEVq75jg+pMmtvUcQ=</dsig:DigestValue>
+        <dsig:DigestValue>agR5JF68CsRUcBsMUmYbtiefcwI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -171,14 +183,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.Model.dll" size="53248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.Model.dll" size="61440">
       <assemblyIdentity name="Electric.Model" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V6I0VrfkDrUjb7OuWUhxpNau8zU=</dsig:DigestValue>
+        <dsig:DigestValue>qIZrDn7+BFhkuYhe2C8Hi0ROQG0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -290,13 +302,49 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Electric.exe.config" size="742">
+  <file name="Electric.exe.config" size="1583">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qbrsEiYU+gBlWEdy3n0uPYeH1xs=</dsig:DigestValue>
+      <dsig:DigestValue>OqFTHcZOOlh8RCn/mgZn3ZD4gzw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="template\再制造高效电机推广信息明细表.xlt" size="28672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c1H264IJGbQxbdzyIkMJ0lzMbhw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="template\再制造高效电机补贴信息汇总表.xlt" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>C3JGeydWSxvdoHkx58XH4WcbTcY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="template\旧电机回收信息明细表.xlt" size="32768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hrUWj+kNwLu0IEpc18IdSCjkjO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="template\旧电机回收补贴信息汇总申报表.xlt" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pL4yd7koOuhOw2yNhZRzt+OzVpA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="上科电机.ico" size="9662">

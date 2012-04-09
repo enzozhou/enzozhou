@@ -49,7 +49,6 @@ D:\document\我的\Project\电机参考资料\Application\ElectricServer\Electri
 D:\document\我的\Project\电机参考资料\Application\ElectricServer\Electric\obj\x86\Debug\Electric.application
 D:\document\我的\Project\电机参考资料\Application\ElectricServer\Electric\obj\x86\Debug\Electric.exe
 D:\document\我的\Project\电机参考资料\Application\ElectricServer\Electric\obj\x86\Debug\Electric.pdb
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.exe.config
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_login.resources
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_Main.resources
@@ -74,6 +73,11 @@ D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\Electri
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_User.resources
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_User_list.resources
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.csproj.GenerateResource.Cache
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.exe.config
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.exe
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.pdb
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_RecoveryContract_DetailView.resources
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\template\旧电机回收信息明细表.xlt
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.exe.manifest
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.application
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.exe
@@ -98,7 +102,8 @@ D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\Electri
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\Electric.BLL.pdb
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.exe.manifest
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.application
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.exe
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.pdb
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\template\旧电机回收信息明细表.xlt
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\UtilityLibrary.pdb
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\template\再制造高效电机补贴信息汇总表.xlt
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\template\旧电机回收补贴信息汇总申报表.xlt
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_RecoveryContract_report.resources
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\reports\rptRecycleContract.rpt
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\reports\rptRecycleContract.cs
