@@ -123,14 +123,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="432128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="432640">
       <assemblyIdentity name="Electric" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>majrWwJTYx5fx/EKHajRejU4zoU=</dsig:DigestValue>
+        <dsig:DigestValue>LgKz8ffEpydMQOu1T+BVrV6o4jg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -142,7 +142,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>X5X8WnA9H71mep+hp3qW5EAu+rY=</dsig:DigestValue>
+        <dsig:DigestValue>ZM1YWRIEr6kfx+xAdo3RAO2pwaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
