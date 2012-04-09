@@ -225,5 +225,23 @@ namespace Electric
 
         }
 
+        private void btnPrintContract_Click(object sender, EventArgs e)
+        {
+            int _id = 0;
+            frm_RecoveryContract_report _frm = new frm_RecoveryContract_report();
+            global.FormStyle((frm_Main)this.MdiParent, _frm, "回收合同打印");
+            foreach (DataGridViewRow item in dgv.Rows)
+            {
+                if (item.Selected)
+                {
+                    if (int.TryParse(item.Cells["ID"].Value.ToString(), out _id))
+                    {
+                        _frm.id = _id;
+                    }
+                    return;
+                }
+            }
+        }
+
     }
 }

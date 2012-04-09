@@ -274,7 +274,7 @@ namespace Electric
             if (modelOrg != null)
             {
                 sheet1.GetRow(2).GetCell(2).SetCellValue("");
-                sheet1.GetRow(2).GetCell(6).SetCellValue(string.Format("{0} 年第 {1} 季度", DateTime.Now.Year, 2));
+                sheet1.GetRow(2).GetCell(6).SetCellValue(string.Format("{0} 年第 {1} 季度", DateTime.Now.Year, DateTime.Now.Month / 4 + 1));
                 sheet1.GetRow(2).GetCell(9).SetCellValue("");
                 sheet1.GetRow(3).GetCell(2).SetCellValue("");//联系人
                 sheet1.GetRow(3).GetCell(6).SetCellValue("");//地址

@@ -41,6 +41,7 @@ H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DBUtility.pdb
 H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.DAL.pdb
 H:\My Projects\SHRIEA\Code\ElectricServer\BLL\bin\Electric.Model.pdb
 H:\My Projects\SHRIEA\Code\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.dll
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.BLL.dll
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.BLL.pdb
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.Common.dll
@@ -59,6 +60,5 @@ D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\Electri
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.DBUtility.pdb
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.DAL.pdb
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\bin\Electric.Model.pdb
-D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.dll
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\BLL\obj\x86\Debug\Electric.BLL.pdb
