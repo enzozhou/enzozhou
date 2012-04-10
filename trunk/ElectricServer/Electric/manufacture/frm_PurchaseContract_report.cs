@@ -6,14 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CrystalDecisions.Shared;
 using Electric.reports;
 
 namespace Electric
 {
-    public partial class frm_RecoveryContract_report : Form
+    public partial class frm_PurchaseContract_report : Form
     {
-        public frm_RecoveryContract_report()
+        public frm_PurchaseContract_report()
         {
             InitializeComponent();
         }
@@ -27,10 +26,10 @@ namespace Electric
         //绑定报表数据
         private void frm_RecoveryContract_report_Load(object sender, EventArgs e)
         {
-            DataSet ds = new Electric.BLL.BS_RecoveryContract().GetContractDetailList(string.Format(" a.ID={0}", _id));
+            DataSet ds = new Electric.BLL.BS_PurchaseContract().GetContractDetailList(string.Format(" a.ID={0}", _id));
 
-            xsdRecycleContract _xsdRecycleContract = new xsdRecycleContract();
-            xsdRecycleContract.dtRecycleContractItemRow dr = null;
+            xsdPurchaseContract _xsdPurchaseContract = new xsdPurchaseContract();
+            xsdPurchaseContract.dtPurchaseContractRow dr = null;
             decimal dclTotalPrice = 0, dclTmp = 0;
             object sumObject;
             sumObject = ds.Tables[0].Compute("sum(SumPrice)", "true");
@@ -38,7 +37,7 @@ namespace Electric
             string strTotalPriceWords = Maticsoft.Common.Rmb.CmycurD(dclTotalPrice);
             foreach (DataRow item in ds.Tables[0].Rows)
             {
-                dr = _xsdRecycleContract.dtRecycleContractItem.NewdtRecycleContractItemRow();
+                dr = _xsdPurchaseContract.dtPurchaseContract.NewdtPurchaseContractRow();
                 dr["OrganizationName"] = item["Name"];
                 dr["OrganizationAddress"] = item["Address"];
                 dr["PartnerName"] = item["PartnerName"];
@@ -53,15 +52,14 @@ namespace Electric
 
                 //decimal.TryParse(global.ConvertObject(item["SumPrice"]), dclTmp);
                 //dclTotalPrice += dclTmp;
-                _xsdRecycleContract.dtRecycleContractItem.AdddtRecycleContractItemRow(dr);
+                _xsdPurchaseContract.dtPurchaseContract.AdddtPurchaseContractRow(dr);
             }
 
             CrystalDecisions.CrystalReports.Engine.ReportDocument rpt = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
-            rpt.Load(string.Format("reports/{0}", new rptRecycleContract().ResourceName));
-            rpt.SetDataSource(_xsdRecycleContract);
+            rpt.Load(string.Format("reports/{0}", new rptPurchaseContract().ResourceName));
+            rpt.SetDataSource(_xsdPurchaseContract);
 
-            //rpt.ReportOptions = "回收合同明细";
-            crv.ReportSource = rpt;
+            CRV.ReportSource = rpt;
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace Electric.manufacture
+﻿namespace Electric
 {
-    partial class frm_BuyInfo_report
+    partial class frm_PurchaseContract_report
     {
         /// <summary>
         /// Required designer variable.

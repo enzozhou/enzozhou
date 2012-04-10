@@ -1,4 +1,4 @@
-﻿namespace Electric
+﻿namespace Electric.reports
 {
     
     

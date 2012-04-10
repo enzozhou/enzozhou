@@ -48,6 +48,7 @@
             this.btnDown = new System.Windows.Forms.Button();
             this.btnUP = new System.Windows.Forms.Button();
             this.dgvItem = new System.Windows.Forms.DataGridView();
+            this.btnPrintContract = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -163,6 +164,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btnPrintContract);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtPartnerName);
             this.groupBox1.Controls.Add(this.label4);
@@ -172,7 +174,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1068, 71);
+            this.groupBox1.Size = new System.Drawing.Size(1174, 71);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "查询";
@@ -270,6 +272,16 @@
             this.dgvItem.TabIndex = 13;
             this.dgvItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellDoubleClick);
             // 
+            // btnPrintContract
+            // 
+            this.btnPrintContract.Location = new System.Drawing.Point(1051, 23);
+            this.btnPrintContract.Name = "btnPrintContract";
+            this.btnPrintContract.Size = new System.Drawing.Size(75, 23);
+            this.btnPrintContract.TabIndex = 18;
+            this.btnPrintContract.Text = "合同打印";
+            this.btnPrintContract.UseVisualStyleBackColor = true;
+            this.btnPrintContract.Click += new System.EventHandler(this.btnPrintContract_Click);
+            // 
             // frm_PurchaseContract_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -312,5 +324,6 @@
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnUP;
         private System.Windows.Forms.DataGridView dgvItem;
+        private System.Windows.Forms.Button btnPrintContract;
     }
 }

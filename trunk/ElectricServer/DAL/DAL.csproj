@@ -163,6 +163,7 @@
     <Compile Include="V_BAS_PRC.cs" />
     <Compile Include="V_BAS_PPC.cs" />
     <Compile Include="self_BS_RecoveryContract.cs" />
+    <Compile Include="self_BS_PurchaseContract.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
