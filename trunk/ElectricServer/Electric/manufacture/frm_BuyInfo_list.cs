@@ -208,7 +208,7 @@ namespace Electric
             this.dgvItem.Columns["NewSerialNum"].HeaderText = "新电机生产编号";
 
             this.dgvItem.Columns["ID"].Visible = false;
-            this.dgvItem.Columns["OrgCode"].Visible =  false;
+            this.dgvItem.Columns["OrgCode"].Visible = false;
             this.dgvItem.Columns["ContractNo"].Visible = false;
             this.dgv.Columns["CreateUserID"].Visible = false;
             this.dgv.Columns["CreateTime"].Visible = false;
@@ -288,8 +288,7 @@ namespace Electric
             {
                 int i = 0;
                 double dblTmp = 0;
-                double dblOldQty = 0, dblOldPowerRating = 0, dblOldSumPrice = 0,
-                    dblNewQty = 0, dblNewPowerRating = 0, dblOldSubsidy = 0;
+                double dblNewQty = 0, dblNewRating = 0, dblNewSubsidy = 0;
                 Row row = null;
                 HSSFCellStyle style = (NPOI.HSSF.UserModel.HSSFCellStyle)hssfworkbook.CreateCellStyle();
                 style.BorderBottom = CellBorderType.THIN;
@@ -302,18 +301,17 @@ namespace Electric
                     row.CreateCell(0).SetCellValue((i + 1));
                     row.CreateCell(1).SetCellValue(global.ConvertObject(item["PartnerName"]));
                     row.CreateCell(2).SetCellValue(global.ConvertObject(item["BelongTo"]));
-                    double.TryParse(global.ConvertObject(item["OldQty"]), out dblTmp);
-                    dblOldQty += dblTmp;
-                    row.CreateCell(3).SetCellValue(dblTmp);
-                    double.TryParse(global.ConvertObject(item["OldPowerRating"]), out dblTmp);
-                    dblOldPowerRating += dblTmp;
-                    row.CreateCell(5).SetCellValue(dblTmp);
                     double.TryParse(global.ConvertObject(item["NewQty"]), out dblTmp);
                     dblNewQty += dblTmp;
+                    row.CreateCell(3).SetCellValue(dblTmp);
+                    double.TryParse(global.ConvertObject(item["NewRating"]), out dblTmp);
+                    dblNewRating += dblTmp;
+                    dblNewSubsidy += dblTmp * 45;
+                    row.CreateCell(5).SetCellValue(dblTmp);
 
-                    row.CreateCell(7).SetCellValue(dblTmp);
-                    row.CreateCell(8).SetCellValue(dblTmp);
-                    row.CreateCell(9).SetCellValue(dblTmp);
+                    row.CreateCell(7).SetCellValue(dblTmp * 45);
+                    row.CreateCell(8).SetCellValue(dblTmp * 45);
+                    row.CreateCell(9).SetCellValue(dblTmp * 45);
 
                     row.GetCell(0).CellStyle = style;
                     row.GetCell(1).CellStyle = style;
@@ -337,11 +335,11 @@ namespace Electric
                 row.CreateCell(0).SetCellValue("合计");
                 row.CreateCell(1);
                 row.CreateCell(2);
-                row.CreateCell(3).SetCellValue(dblOldQty);
-                row.CreateCell(5).SetCellValue(dblOldPowerRating);
-                row.CreateCell(7).SetCellValue(dblOldSumPrice);
-                row.CreateCell(8).SetCellValue(dblNewPowerRating);
-                row.CreateCell(9).SetCellValue(dblOldSubsidy);
+                row.CreateCell(3).SetCellValue(dblNewQty);
+                row.CreateCell(5).SetCellValue(dblNewRating);
+                row.CreateCell(7).SetCellValue(dblNewSubsidy);
+                row.CreateCell(8).SetCellValue(dblNewSubsidy);
+                row.CreateCell(9).SetCellValue(dblNewSubsidy);
                 row.GetCell(0).CellStyle = style;
                 row.GetCell(1).CellStyle = style;
                 row.GetCell(2).CellStyle = style;

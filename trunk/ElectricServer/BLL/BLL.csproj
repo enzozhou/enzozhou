@@ -152,6 +152,7 @@
     </Compile>
     <Compile Include="self_BS_BuyInfo_Details.cs" />
     <Compile Include="self_BS_NewForOld_Details.cs" />
+    <Compile Include="self_BS_PurchaseContract.cs" />
     <Compile Include="SysManage.cs" />
     <Compile Include="BAS_Code.cs" />
     <Compile Include="BAS_CodeProfire.cs" />

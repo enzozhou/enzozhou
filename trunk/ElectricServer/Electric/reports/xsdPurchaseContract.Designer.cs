@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Electric {
+namespace Electric.reports {
     
     
     /// <summary>
@@ -21,16 +21,16 @@ namespace Electric {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("xsdBuyInfo")]
+    [global::System.Xml.Serialization.XmlRootAttribute("xsdPurchaseContract")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class xsdBuyInfo : global::System.Data.DataSet {
+    public partial class xsdPurchaseContract : global::System.Data.DataSet {
         
         private dtPurchaseContractDataTable tabledtPurchaseContract;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public xsdBuyInfo() {
+        public xsdPurchaseContract() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -40,7 +40,7 @@ namespace Electric {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        protected xsdBuyInfo(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected xsdPurchaseContract(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -120,7 +120,7 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public override global::System.Data.DataSet Clone() {
-            xsdBuyInfo cln = ((xsdBuyInfo)(base.Clone()));
+            xsdPurchaseContract cln = ((xsdPurchaseContract)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -185,9 +185,9 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitClass() {
-            this.DataSetName = "xsdBuyInfo";
+            this.DataSetName = "xsdPurchaseContract";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/xsdBuyInfo.xsd";
+            this.Namespace = "http://tempuri.org/xsdPurchaseContract.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabledtPurchaseContract = new dtPurchaseContractDataTable();
@@ -208,7 +208,7 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            xsdBuyInfo ds = new xsdBuyInfo();
+            xsdPurchaseContract ds = new xsdPurchaseContract();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -262,7 +262,31 @@ namespace Electric {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class dtPurchaseContractDataTable : global::System.Data.TypedTableBase<dtPurchaseContractRow> {
             
-            private global::System.Data.DataColumn columnNewModel;
+            private global::System.Data.DataColumn columnPartnerName;
+            
+            private global::System.Data.DataColumn columnPartnerAddress;
+            
+            private global::System.Data.DataColumn columnOrganizationName;
+            
+            private global::System.Data.DataColumn columnOrganizationAddress;
+            
+            private global::System.Data.DataColumn columnModel;
+            
+            private global::System.Data.DataColumn columnPowerRating;
+            
+            private global::System.Data.DataColumn columnUnitPrice;
+            
+            private global::System.Data.DataColumn columnPrice;
+            
+            private global::System.Data.DataColumn columnSubsidy;
+            
+            private global::System.Data.DataColumn columnSumPrice;
+            
+            private global::System.Data.DataColumn columnNo;
+            
+            private global::System.Data.DataColumn columnQty;
+            
+            private global::System.Data.DataColumn columnSubPriceWords;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public dtPurchaseContractDataTable() {
@@ -295,9 +319,93 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public global::System.Data.DataColumn NewModelColumn {
+            public global::System.Data.DataColumn PartnerNameColumn {
                 get {
-                    return this.columnNewModel;
+                    return this.columnPartnerName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn PartnerAddressColumn {
+                get {
+                    return this.columnPartnerAddress;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn OrganizationNameColumn {
+                get {
+                    return this.columnOrganizationName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn OrganizationAddressColumn {
+                get {
+                    return this.columnOrganizationAddress;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn ModelColumn {
+                get {
+                    return this.columnModel;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn PowerRatingColumn {
+                get {
+                    return this.columnPowerRating;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn UnitPriceColumn {
+                get {
+                    return this.columnUnitPrice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn PriceColumn {
+                get {
+                    return this.columnPrice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn SubsidyColumn {
+                get {
+                    return this.columnSubsidy;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn SumPriceColumn {
+                get {
+                    return this.columnSumPrice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn NoColumn {
+                get {
+                    return this.columnNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn QtyColumn {
+                get {
+                    return this.columnQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn SubPriceWordsColumn {
+                get {
+                    return this.columnSubPriceWords;
                 }
             }
             
@@ -330,10 +438,22 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public dtPurchaseContractRow AdddtPurchaseContractRow(string NewModel) {
+            public dtPurchaseContractRow AdddtPurchaseContractRow(string PartnerName, string PartnerAddress, string OrganizationName, string OrganizationAddress, string Model, decimal PowerRating, decimal UnitPrice, decimal Price, decimal Subsidy, decimal SumPrice, string No, int Qty, string SubPriceWords) {
                 dtPurchaseContractRow rowdtPurchaseContractRow = ((dtPurchaseContractRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        NewModel};
+                        PartnerName,
+                        PartnerAddress,
+                        OrganizationName,
+                        OrganizationAddress,
+                        Model,
+                        PowerRating,
+                        UnitPrice,
+                        Price,
+                        Subsidy,
+                        SumPrice,
+                        No,
+                        Qty,
+                        SubPriceWords};
                 rowdtPurchaseContractRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdtPurchaseContractRow);
                 return rowdtPurchaseContractRow;
@@ -353,13 +473,49 @@ namespace Electric {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal void InitVars() {
-                this.columnNewModel = base.Columns["NewModel"];
+                this.columnPartnerName = base.Columns["PartnerName"];
+                this.columnPartnerAddress = base.Columns["PartnerAddress"];
+                this.columnOrganizationName = base.Columns["OrganizationName"];
+                this.columnOrganizationAddress = base.Columns["OrganizationAddress"];
+                this.columnModel = base.Columns["Model"];
+                this.columnPowerRating = base.Columns["PowerRating"];
+                this.columnUnitPrice = base.Columns["UnitPrice"];
+                this.columnPrice = base.Columns["Price"];
+                this.columnSubsidy = base.Columns["Subsidy"];
+                this.columnSumPrice = base.Columns["SumPrice"];
+                this.columnNo = base.Columns["No"];
+                this.columnQty = base.Columns["Qty"];
+                this.columnSubPriceWords = base.Columns["SubPriceWords"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             private void InitClass() {
-                this.columnNewModel = new global::System.Data.DataColumn("NewModel", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNewModel);
+                this.columnPartnerName = new global::System.Data.DataColumn("PartnerName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPartnerName);
+                this.columnPartnerAddress = new global::System.Data.DataColumn("PartnerAddress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPartnerAddress);
+                this.columnOrganizationName = new global::System.Data.DataColumn("OrganizationName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrganizationName);
+                this.columnOrganizationAddress = new global::System.Data.DataColumn("OrganizationAddress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrganizationAddress);
+                this.columnModel = new global::System.Data.DataColumn("Model", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnModel);
+                this.columnPowerRating = new global::System.Data.DataColumn("PowerRating", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPowerRating);
+                this.columnUnitPrice = new global::System.Data.DataColumn("UnitPrice", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUnitPrice);
+                this.columnPrice = new global::System.Data.DataColumn("Price", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrice);
+                this.columnSubsidy = new global::System.Data.DataColumn("Subsidy", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSubsidy);
+                this.columnSumPrice = new global::System.Data.DataColumn("SumPrice", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSumPrice);
+                this.columnNo = new global::System.Data.DataColumn("No", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNo);
+                this.columnQty = new global::System.Data.DataColumn("Qty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQty);
+                this.columnSubPriceWords = new global::System.Data.DataColumn("SubPriceWords", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSubPriceWords);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -418,7 +574,7 @@ namespace Electric {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                xsdBuyInfo ds = new xsdBuyInfo();
+                xsdPurchaseContract ds = new xsdPurchaseContract();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -492,28 +648,328 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public string NewModel {
+            public string PartnerName {
                 get {
                     try {
-                        return ((string)(this[this.tabledtPurchaseContract.NewModelColumn]));
+                        return ((string)(this[this.tabledtPurchaseContract.PartnerNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“NewModel”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“PartnerName”的值为 DBNull。", e);
                     }
                 }
                 set {
-                    this[this.tabledtPurchaseContract.NewModelColumn] = value;
+                    this[this.tabledtPurchaseContract.PartnerNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public bool IsNewModelNull() {
-                return this.IsNull(this.tabledtPurchaseContract.NewModelColumn);
+            public string PartnerAddress {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.PartnerAddressColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“PartnerAddress”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.PartnerAddressColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public void SetNewModelNull() {
-                this[this.tabledtPurchaseContract.NewModelColumn] = global::System.Convert.DBNull;
+            public string OrganizationName {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.OrganizationNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“OrganizationName”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.OrganizationNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string OrganizationAddress {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.OrganizationAddressColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“OrganizationAddress”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.OrganizationAddressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string Model {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.ModelColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“Model”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.ModelColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal PowerRating {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtPurchaseContract.PowerRatingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“PowerRating”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.PowerRatingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal UnitPrice {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtPurchaseContract.UnitPriceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“UnitPrice”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.UnitPriceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal Price {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtPurchaseContract.PriceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“Price”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.PriceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal Subsidy {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtPurchaseContract.SubsidyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“Subsidy”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.SubsidyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal SumPrice {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtPurchaseContract.SumPriceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“SumPrice”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.SumPriceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string No {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.NoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“No”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.NoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int Qty {
+                get {
+                    try {
+                        return ((int)(this[this.tabledtPurchaseContract.QtyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“Qty”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.QtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string SubPriceWords {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtPurchaseContract.SubPriceWordsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“SubPriceWords”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tabledtPurchaseContract.SubPriceWordsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsPartnerNameNull() {
+                return this.IsNull(this.tabledtPurchaseContract.PartnerNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetPartnerNameNull() {
+                this[this.tabledtPurchaseContract.PartnerNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsPartnerAddressNull() {
+                return this.IsNull(this.tabledtPurchaseContract.PartnerAddressColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetPartnerAddressNull() {
+                this[this.tabledtPurchaseContract.PartnerAddressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsOrganizationNameNull() {
+                return this.IsNull(this.tabledtPurchaseContract.OrganizationNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetOrganizationNameNull() {
+                this[this.tabledtPurchaseContract.OrganizationNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsOrganizationAddressNull() {
+                return this.IsNull(this.tabledtPurchaseContract.OrganizationAddressColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetOrganizationAddressNull() {
+                this[this.tabledtPurchaseContract.OrganizationAddressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsModelNull() {
+                return this.IsNull(this.tabledtPurchaseContract.ModelColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetModelNull() {
+                this[this.tabledtPurchaseContract.ModelColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsPowerRatingNull() {
+                return this.IsNull(this.tabledtPurchaseContract.PowerRatingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetPowerRatingNull() {
+                this[this.tabledtPurchaseContract.PowerRatingColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsUnitPriceNull() {
+                return this.IsNull(this.tabledtPurchaseContract.UnitPriceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetUnitPriceNull() {
+                this[this.tabledtPurchaseContract.UnitPriceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsPriceNull() {
+                return this.IsNull(this.tabledtPurchaseContract.PriceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetPriceNull() {
+                this[this.tabledtPurchaseContract.PriceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsSubsidyNull() {
+                return this.IsNull(this.tabledtPurchaseContract.SubsidyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetSubsidyNull() {
+                this[this.tabledtPurchaseContract.SubsidyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsSumPriceNull() {
+                return this.IsNull(this.tabledtPurchaseContract.SumPriceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetSumPriceNull() {
+                this[this.tabledtPurchaseContract.SumPriceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsNoNull() {
+                return this.IsNull(this.tabledtPurchaseContract.NoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetNoNull() {
+                this[this.tabledtPurchaseContract.NoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsQtyNull() {
+                return this.IsNull(this.tabledtPurchaseContract.QtyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetQtyNull() {
+                this[this.tabledtPurchaseContract.QtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsSubPriceWordsNull() {
+                return this.IsNull(this.tabledtPurchaseContract.SubPriceWordsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetSubPriceWordsNull() {
+                this[this.tabledtPurchaseContract.SubPriceWordsColumn] = global::System.Convert.DBNull;
             }
         }
         

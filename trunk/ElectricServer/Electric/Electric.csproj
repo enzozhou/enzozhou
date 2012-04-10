@@ -126,11 +126,11 @@
     <Compile Include="manufacture\frm_BuyInfo_list.Designer.cs">
       <DependentUpon>frm_BuyInfo_list.cs</DependentUpon>
     </Compile>
-    <Compile Include="manufacture\frm_BuyInfo_report.cs">
+    <Compile Include="manufacture\frm_PurchaseContract_report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="manufacture\frm_BuyInfo_report.Designer.cs">
-      <DependentUpon>frm_BuyInfo_report.cs</DependentUpon>
+    <Compile Include="manufacture\frm_PurchaseContract_report.Designer.cs">
+      <DependentUpon>frm_PurchaseContract_report.cs</DependentUpon>
     </Compile>
     <Compile Include="manufacture\frm_PurchaseContract.cs">
       <SubType>Form</SubType>
@@ -226,8 +226,8 @@
       <DependentUpon>frm_BuyInfo_list.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="manufacture\frm_BuyInfo_report.resx">
-      <DependentUpon>frm_BuyInfo_report.cs</DependentUpon>
+    <EmbeddedResource Include="manufacture\frm_PurchaseContract_report.resx">
+      <DependentUpon>frm_PurchaseContract_report.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="manufacture\frm_PurchaseContract.resx">
@@ -303,15 +303,15 @@
       <DependentUpon>frm_RecoveryContract_report.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="reports\rptRecycleContract.rpt">
+    <None Include="reports\rptRecycleContract.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptRecycleContract.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <EmbeddedResource Include="reports\rptBuyInfo.rpt">
+    </None>
+    <None Include="reports\rptPurchaseContract.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptBuyInfo.cs</LastGenOutput>
-    </EmbeddedResource>
+      <LastGenOutput>rptPurchaseContract.cs</LastGenOutput>
+    </None>
     <EmbeddedResource Include="system\frm_User.resx">
       <DependentUpon>frm_User.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -370,11 +370,10 @@
     <Compile Include="recycle\frm_RecoveryContract_report.Designer.cs">
       <DependentUpon>frm_RecoveryContract_report.cs</DependentUpon>
     </Compile>
-    <Compile Include="reports\MessageConstants.cs" />
-    <Compile Include="reports\rptBuyInfo.cs">
+    <Compile Include="reports\rptPurchaseContract.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rptBuyInfo.rpt</DependentUpon>
+      <DependentUpon>rptPurchaseContract.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\rptRecycleContract.cs">
@@ -384,17 +383,18 @@
       <SubType>Component</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="reports\xsdBuyInfo.cs">
-      <DependentUpon>xsdBuyInfo.xsd</DependentUpon>
+    <Compile Include="reports\xsdPurchaseContract.cs">
+      <DependentUpon>xsdPurchaseContract.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="reports\xsdBuyInfo.Designer.cs">
+    <Compile Include="reports\xsdPurchaseContract.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>xsdBuyInfo.xsd</DependentUpon>
+      <DependentUpon>xsdPurchaseContract.xsd</DependentUpon>
     </Compile>
     <Compile Include="reports\xsdRecycleContract.cs">
       <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\xsdRecycleContract.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -461,16 +461,16 @@
     <None Include="Resources\ico.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="reports\xsdBuyInfo.xsc">
-      <DependentUpon>xsdBuyInfo.xsd</DependentUpon>
+    <None Include="reports\xsdPurchaseContract.xsc">
+      <DependentUpon>xsdPurchaseContract.xsd</DependentUpon>
     </None>
-    <None Include="reports\xsdBuyInfo.xsd">
+    <None Include="reports\xsdPurchaseContract.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>xsdBuyInfo.Designer.cs</LastGenOutput>
+      <LastGenOutput>xsdPurchaseContract.Designer.cs</LastGenOutput>
     </None>
-    <None Include="reports\xsdBuyInfo.xss">
-      <DependentUpon>xsdBuyInfo.xsd</DependentUpon>
+    <None Include="reports\xsdPurchaseContract.xss">
+      <DependentUpon>xsdPurchaseContract.xsd</DependentUpon>
     </None>
     <None Include="reports\xsdRecycleContract.xsc">
       <DependentUpon>xsdRecycleContract.xsd</DependentUpon>

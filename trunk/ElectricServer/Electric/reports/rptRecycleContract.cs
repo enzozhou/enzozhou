@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Electric {
+namespace Electric.reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace Electric {
         
         public override string FullResourceName {
             get {
-                return "Electric.rptRecycleContract.rpt";
+                return "Electric.reports.rptRecycleContract.rpt";
             }
             set {
                 // Do nothing
