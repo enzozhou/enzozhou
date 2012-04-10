@@ -123,14 +123,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="432640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="417280">
       <assemblyIdentity name="Electric" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LgKz8ffEpydMQOu1T+BVrV6o4jg=</dsig:DigestValue>
+        <dsig:DigestValue>YQQQukrvmY2KCmmekt0RxKfqGTk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -142,7 +142,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZM1YWRIEr6kfx+xAdo3RAO2pwaw=</dsig:DigestValue>
+        <dsig:DigestValue>X7filcATAD+uE0MmAeoWehQFP1Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -166,7 +166,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>agR5JF68CsRUcBsMUmYbtiefcwI=</dsig:DigestValue>
+        <dsig:DigestValue>Gri32XzerNt1k0oz1LMx5SILpL8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -309,6 +309,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>OqFTHcZOOlh8RCn/mgZn3ZD4gzw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="reports\rptRecycleContract.rpt" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7NGtwNrBx1Oq9VkH3fpXSonGk+o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="template\再制造高效电机推广信息明细表.xlt" size="28672">

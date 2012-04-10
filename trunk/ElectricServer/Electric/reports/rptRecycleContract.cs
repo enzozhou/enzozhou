@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Electric.reports {
+namespace Electric {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;

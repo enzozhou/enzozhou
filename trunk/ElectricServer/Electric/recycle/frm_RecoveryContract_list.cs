@@ -229,7 +229,6 @@ namespace Electric
         {
             int _id = 0;
             frm_RecoveryContract_report _frm = new frm_RecoveryContract_report();
-            global.FormStyle((frm_Main)this.MdiParent, _frm, "回收合同打印");
             foreach (DataGridViewRow item in dgv.Rows)
             {
                 if (item.Selected)
@@ -237,6 +236,7 @@ namespace Electric
                     if (int.TryParse(item.Cells["ID"].Value.ToString(), out _id))
                     {
                         _frm.id = _id;
+                        global.FormStyle((frm_Main)this.MdiParent, _frm, "回收合同打印");
                     }
                     return;
                 }
