@@ -107,4 +107,5 @@ D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\Electri
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.frm_RecoveryContract_report.resources
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\reports\rptRecycleContract.rpt
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\reports\rptRecycleContract.cs
+D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\obj\x86\Debug\Electric.manufacture.frm_BuyInfo_report.resources
 D:\document\我的\Project\电机参考资料\Application\enzozhou\trunk\ElectricServer\Electric\bin\UtilityLibrary.pdb
