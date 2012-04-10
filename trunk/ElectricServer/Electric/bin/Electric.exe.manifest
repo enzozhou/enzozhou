@@ -123,14 +123,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="417280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.exe" size="408576">
       <assemblyIdentity name="Electric" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YQQQukrvmY2KCmmekt0RxKfqGTk=</dsig:DigestValue>
+        <dsig:DigestValue>DME+YAE0N7kdir2T5bpN8rzZ1JY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -142,7 +142,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>X7filcATAD+uE0MmAeoWehQFP1Q=</dsig:DigestValue>
+        <dsig:DigestValue>oNVRngl14KqDV7/r+cBCxLwmPSo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -159,14 +159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.DAL.dll" size="208896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electric.DAL.dll" size="212992">
       <assemblyIdentity name="Electric.DAL" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Gri32XzerNt1k0oz1LMx5SILpL8=</dsig:DigestValue>
+        <dsig:DigestValue>khofKkduvmxjw4bDLUJjZc1w8FI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -309,15 +309,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>OqFTHcZOOlh8RCn/mgZn3ZD4gzw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="reports\rptRecycleContract.rpt" size="16384">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>7NGtwNrBx1Oq9VkH3fpXSonGk+o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="template\再制造高效电机推广信息明细表.xlt" size="28672">
