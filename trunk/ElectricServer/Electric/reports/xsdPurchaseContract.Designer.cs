@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Electric {
+namespace Electric.reports {
     
     
     /// <summary>
@@ -21,16 +21,16 @@ namespace Electric {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("xsdPurchaseContract")]
+    [global::System.Xml.Serialization.XmlRootAttribute("xsdBuyInfo")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class xsdPurchaseContract : global::System.Data.DataSet {
+    public partial class xsdBuyInfo : global::System.Data.DataSet {
         
         private dtPurchaseContractDataTable tabledtPurchaseContract;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public xsdPurchaseContract() {
+        public xsdBuyInfo() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -40,7 +40,7 @@ namespace Electric {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        protected xsdPurchaseContract(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected xsdBuyInfo(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -120,7 +120,7 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public override global::System.Data.DataSet Clone() {
-            xsdPurchaseContract cln = ((xsdPurchaseContract)(base.Clone()));
+            xsdBuyInfo cln = ((xsdBuyInfo)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -185,9 +185,9 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitClass() {
-            this.DataSetName = "xsdPurchaseContract";
+            this.DataSetName = "xsdBuyInfo";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/xsdPurchaseContract.xsd";
+            this.Namespace = "http://tempuri.org/xsdBuyInfo.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabledtPurchaseContract = new dtPurchaseContractDataTable();
@@ -208,7 +208,7 @@ namespace Electric {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            xsdPurchaseContract ds = new xsdPurchaseContract();
+            xsdBuyInfo ds = new xsdBuyInfo();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -262,7 +262,7 @@ namespace Electric {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class dtPurchaseContractDataTable : global::System.Data.TypedTableBase<dtPurchaseContractRow> {
             
-            private global::System.Data.DataColumn columnDataColumn1;
+            private global::System.Data.DataColumn columnNewModel;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public dtPurchaseContractDataTable() {
@@ -295,9 +295,9 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public global::System.Data.DataColumn DataColumn1Column {
+            public global::System.Data.DataColumn NewModelColumn {
                 get {
-                    return this.columnDataColumn1;
+                    return this.columnNewModel;
                 }
             }
             
@@ -330,10 +330,10 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public dtPurchaseContractRow AdddtPurchaseContractRow(string DataColumn1) {
+            public dtPurchaseContractRow AdddtPurchaseContractRow(string NewModel) {
                 dtPurchaseContractRow rowdtPurchaseContractRow = ((dtPurchaseContractRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        DataColumn1};
+                        NewModel};
                 rowdtPurchaseContractRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdtPurchaseContractRow);
                 return rowdtPurchaseContractRow;
@@ -353,13 +353,13 @@ namespace Electric {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal void InitVars() {
-                this.columnDataColumn1 = base.Columns["DataColumn1"];
+                this.columnNewModel = base.Columns["NewModel"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             private void InitClass() {
-                this.columnDataColumn1 = new global::System.Data.DataColumn("DataColumn1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn1);
+                this.columnNewModel = new global::System.Data.DataColumn("NewModel", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNewModel);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -418,7 +418,7 @@ namespace Electric {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                xsdPurchaseContract ds = new xsdPurchaseContract();
+                xsdBuyInfo ds = new xsdBuyInfo();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -492,28 +492,28 @@ namespace Electric {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public string DataColumn1 {
+            public string NewModel {
                 get {
                     try {
-                        return ((string)(this[this.tabledtPurchaseContract.DataColumn1Column]));
+                        return ((string)(this[this.tabledtPurchaseContract.NewModelColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“DataColumn1”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“dtPurchaseContract”中列“NewModel”的值为 DBNull。", e);
                     }
                 }
                 set {
-                    this[this.tabledtPurchaseContract.DataColumn1Column] = value;
+                    this[this.tabledtPurchaseContract.NewModelColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public bool IsDataColumn1Null() {
-                return this.IsNull(this.tabledtPurchaseContract.DataColumn1Column);
+            public bool IsNewModelNull() {
+                return this.IsNull(this.tabledtPurchaseContract.NewModelColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public void SetDataColumn1Null() {
-                this[this.tabledtPurchaseContract.DataColumn1Column] = global::System.Convert.DBNull;
+            public void SetNewModelNull() {
+                this[this.tabledtPurchaseContract.NewModelColumn] = global::System.Convert.DBNull;
             }
         }
         
