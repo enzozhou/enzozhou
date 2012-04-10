@@ -16,14 +16,14 @@ namespace Electric {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptRecycleContract : ReportClass {
+    public class rptPurchaseContract : ReportClass {
         
-        public rptRecycleContract() {
+        public rptPurchaseContract() {
         }
         
         public override string ResourceName {
             get {
-                return "rptRecycleContract.rpt";
+                return "rptPurchaseContract.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Electric {
         
         public override string FullResourceName {
             get {
-                return "Electric.rptRecycleContract.rpt";
+                return "Electric.rptPurchaseContract.rpt";
             }
             set {
                 // Do nothing
@@ -82,25 +82,17 @@ namespace Electric {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section ReportFooterSection1 {
-            get {
-                return this.ReportDefinition.Sections[4];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.ReportDefinition.Sections[5];
+                return this.ReportDefinition.Sections[4];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptRecycleContract : Component, ICachedReport {
+    public class CachedrptPurchaseContract : Component, ICachedReport {
         
-        public CachedrptRecycleContract() {
+        public CachedrptPurchaseContract() {
         }
         
         [Browsable(false)]
@@ -137,7 +129,7 @@ namespace Electric {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptRecycleContract rpt = new rptRecycleContract();
+            rptPurchaseContract rpt = new rptPurchaseContract();
             rpt.Site = this.Site;
             return rpt;
         }
