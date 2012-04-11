@@ -218,6 +218,11 @@
       <DependentUpon>frm_Main.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="IconImages.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="manufacture\frm_BuyInfo.resx">
       <DependentUpon>frm_BuyInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -401,6 +406,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>xsdRecycleContract.xsd</DependentUpon>
     </Compile>
+    <Compile Include="IconImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconImages.resx</DependentUpon>
+    </Compile>
     <Compile Include="system\frm_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -416,7 +426,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Electric_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -461,6 +470,7 @@
     <None Include="Resources\ico.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Electric_TemporaryKey.pfx" />
     <None Include="reports\xsdPurchaseContract.xsc">
       <DependentUpon>xsdPurchaseContract.xsd</DependentUpon>
     </None>
